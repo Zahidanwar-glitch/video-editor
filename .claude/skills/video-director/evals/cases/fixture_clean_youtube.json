@@ -1,0 +1,3 @@
+{"name": "fixture_clean_youtube", "video": "@fixture:1280x720",
+ "draft": {"style": "clean", "platform": "youtube", "hook": "S6", "hook_mode": "tease"},
+ "proxy": true}

@@ -1,0 +1,12 @@
+{
+  "name": "podcast",
+  "description": "Podcast/interview clip: keep conversational rhythm and laughter, cut only true dead air and stumbles, speaker-following framing, readable captions.",
+  "inspired_by": "long-form interview podcasts and their clip channels",
+  "platform": "shorts",
+  "pacing": {"max_pause": 0.4, "pause_after_sentence": 0.5, "cut_hard_fillers": true, "target_cut_every_s": 4, "lead_pad": 0.08, "tail_pad": 0.2},
+  "zoom": {"every_s": 7.0, "scale": 1.1, "ease": "punch", "alternate": true},
+  "captions": {"enabled": true, "style": "karaoke", "size": 0.05, "color": "#FFFFFF", "highlight_color": "#7CFC9A", "outline": 4, "max_words": 4, "position_y": 0.7, "uppercase": false, "drop_fillers": true},
+  "graphics": {"min_gap_s": 15, "accent": "#7CFC9A", "sfx": null},
+  "audio": {"music_volume_db": -26, "duck_db": -18, "lufs": -14},
+  "color": {"contrast": 1.04, "saturation": 1.05, "warmth": 0.03}
+}

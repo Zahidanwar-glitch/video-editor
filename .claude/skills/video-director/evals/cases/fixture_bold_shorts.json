@@ -1,0 +1,3 @@
+{"name": "fixture_bold_shorts", "video": "@fixture:1280x720",
+ "draft": {"style": "bold_shorts", "platform": "shorts", "keep": "S0-S5", "hook": "S6", "auto_graphics": true},
+ "target_seconds": 24, "proxy": true}

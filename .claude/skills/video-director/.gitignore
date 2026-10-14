@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+assets/sfx/
+evals/.runs/
+evals/.fixtures/
+evals/results/
+evals/footage/

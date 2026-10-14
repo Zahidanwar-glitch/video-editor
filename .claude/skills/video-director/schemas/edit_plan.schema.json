@@ -1,0 +1,195 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Video Director edit plan",
+  "description": "Every editing decision for one output video. ALL times are SOURCE seconds (as in analysis.json); render.py maps them to the output timeline, so cuts never shift your graphics.",
+  "type": "object",
+  "required": ["version", "source", "output", "segments"],
+  "additionalProperties": false,
+  "$defs": {
+    "time": {"type": "number", "minimum": 0},
+    "color": {"type": "string", "pattern": "^#[0-9A-Fa-f]{6}$"}
+  },
+  "properties": {
+    "version": {"const": 1},
+    "source": {"type": "string", "description": "main source video path"},
+    "analysis": {"type": "string", "description": "analysis.json path (enables cut snapping and face-aware layout)"},
+    "platform": {"enum": ["youtube", "shorts", "reels", "tiktok", "square", "podcast"]},
+    "style": {"type": "string"},
+    "brief": {
+      "type": "object",
+      "description": "Creative brief written BEFORE cutting. Every decision should serve it.",
+      "properties": {
+        "message": {"type": "string"},
+        "audience": {"type": "string"},
+        "arc": {"type": "string"},
+        "hook": {"type": "string"},
+        "cta": {"type": "string"},
+        "target_seconds": {"type": "number"}
+      }
+    },
+    "output": {
+      "type": "object",
+      "required": ["width", "height"],
+      "properties": {
+        "width": {"type": "integer", "minimum": 64},
+        "height": {"type": "integer", "minimum": 64},
+        "fps": {"type": "number", "minimum": 1, "maximum": 120},
+        "lufs": {"type": "number", "minimum": -40, "maximum": -5},
+        "fade_in": {"type": "number", "minimum": 0},
+        "fade_out": {"type": "number", "minimum": 0},
+        "crf": {"type": "integer", "minimum": 0, "maximum": 51},
+        "preset": {"type": "string"}
+      }
+    },
+    "segments": {
+      "type": "array", "minItems": 1,
+      "description": "Kept source ranges in OUTPUT order. Reordering = story editing (e.g. hook first).",
+      "items": {
+        "type": "object", "required": ["in", "out"],
+        "properties": {
+          "src": {"type": "string"},
+          "in": {"$ref": "#/$defs/time"},
+          "out": {"$ref": "#/$defs/time"},
+          "role": {"enum": ["hook", "setup", "body", "payoff", "cta", "tease"]},
+          "reframe_x": {"type": "number", "minimum": 0, "maximum": 1, "description": "override horizontal crop centre"},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "cuts_removed": {
+      "type": "array",
+      "description": "Source ranges removed inside segments (fillers, dead air, mistakes).",
+      "items": {
+        "type": "object", "required": ["start", "end"],
+        "properties": {
+          "src": {"type": "string"},
+          "start": {"$ref": "#/$defs/time"},
+          "end": {"$ref": "#/$defs/time"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "zooms": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["at", "dur", "scale"],
+        "properties": {
+          "src": {"type": "string"},
+          "at": {"$ref": "#/$defs/time"},
+          "dur": {"type": "number", "exclusiveMinimum": 0},
+          "scale": {"type": "number", "minimum": 1, "maximum": 2},
+          "ease": {"enum": ["punch", "smooth"]},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "broll": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["at", "dur"],
+        "properties": {
+          "at": {"$ref": "#/$defs/time"},
+          "dur": {"type": "number", "exclusiveMinimum": 0},
+          "file": {"type": "string", "description": "local licensed clip or image; entries without a file are skipped with a warning"},
+          "file_in": {"type": "number", "minimum": 0},
+          "query": {"type": "string"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "graphics": {
+      "type": "array",
+      "items": {
+        "type": "object", "required": ["type", "at", "dur"],
+        "properties": {
+          "type": {"enum": ["counter", "list", "quote", "bar", "title", "lower_third", "callout"]},
+          "at": {"$ref": "#/$defs/time"},
+          "dur": {"type": "number", "exclusiveMinimum": 0},
+          "position": {"enum": ["auto", "top", "center", "bottom", "left", "right"]},
+          "value": {"type": "number"},
+          "from": {"type": "number"},
+          "prefix": {"type": "string"},
+          "suffix": {"type": "string"},
+          "decimals": {"type": "integer", "minimum": 0, "maximum": 3},
+          "label": {"type": "string"},
+          "title": {"type": "string"},
+          "subtitle": {"type": "string"},
+          "text": {"type": "string"},
+          "attribution": {"type": "string"},
+          "items": {"type": "array", "items": {"type": "string"}},
+          "item_times": {"type": "array", "items": {"$ref": "#/$defs/time"}, "description": "source time each list item appears (sync to speech)"},
+          "bars": {"type": "array", "items": {"type": "object", "required": ["label", "value"], "properties": {"label": {"type": "string"}, "value": {"type": "number"}}}},
+          "accent": {"$ref": "#/$defs/color"},
+          "reason": {"type": "string"}
+        }
+      }
+    },
+    "captions": {
+      "type": "object",
+      "properties": {
+        "enabled": {"type": "boolean"},
+        "style": {"enum": ["word_pop", "karaoke", "line", "minimal"]},
+        "font": {"type": "string"},
+        "size": {"type": "number", "description": "font size as a fraction of output height"},
+        "color": {"$ref": "#/$defs/color"},
+        "highlight_color": {"$ref": "#/$defs/color"},
+        "outline": {"type": "number"},
+        "max_words": {"type": "integer", "minimum": 1, "maximum": 12},
+        "max_chars": {"type": "integer", "minimum": 8},
+        "position_y": {"type": "number", "minimum": 0.1, "maximum": 0.95, "description": "vertical centre as fraction of height"},
+        "uppercase": {"type": "boolean"},
+        "emphasis_words": {"type": "array", "items": {"type": "string"}},
+        "drop_fillers": {"type": "boolean"}
+      }
+    },
+    "audio": {
+      "type": "object",
+      "properties": {
+        "enhance_speech": {"enum": [false, true, "light", "strong"]},
+        "voiceover": {
+          "type": ["object", "null"],
+          "properties": {"file": {"type": "string"}, "mode": {"enum": ["replace", "mix"]}, "volume_db": {"type": "number"}},
+          "required": ["file"]
+        },
+        "music": {
+          "type": ["object", "null"],
+          "properties": {
+            "file": {"type": "string"},
+            "volume_db": {"type": "number"},
+            "duck_db": {"type": "number"},
+            "fade_in": {"type": "number"},
+            "fade_out": {"type": "number"},
+            "start_in": {"type": "number"}
+          },
+          "required": ["file"]
+        },
+        "sfx": {
+          "type": "array",
+          "items": {
+            "type": "object", "required": ["at"],
+            "properties": {
+              "at": {"$ref": "#/$defs/time"},
+              "type": {"enum": ["pop", "whoosh", "click", "riser", "ding"]},
+              "file": {"type": "string"},
+              "volume_db": {"type": "number"}
+            }
+          }
+        }
+      }
+    },
+    "color": {
+      "type": "object",
+      "properties": {
+        "lut": {"type": "string"},
+        "contrast": {"type": "number"},
+        "saturation": {"type": "number"},
+        "brightness": {"type": "number"},
+        "gamma": {"type": "number"},
+        "warmth": {"type": "number", "minimum": -1, "maximum": 1},
+        "vignette": {"type": "boolean"}
+      }
+    },
+    "notes": {"type": "array", "items": {"type": "string"}},
+    "suggestions": {"type": "array", "description": "ideas from draft_plan.py; ignored by render until moved into graphics/zooms/etc."}
+  }
+}

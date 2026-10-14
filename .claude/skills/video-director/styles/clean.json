@@ -1,0 +1,12 @@
+{
+  "name": "clean",
+  "description": "Calm, premium, minimal: natural pauses kept, few smooth zooms, small sentence captions, restrained graphics. Good default for tech reviews, tutorials and brand content.",
+  "inspired_by": "minimal tech-review channels",
+  "platform": "youtube",
+  "pacing": {"max_pause": 0.45, "pause_after_sentence": 0.6, "cut_hard_fillers": true, "target_cut_every_s": 6, "lead_pad": 0.1, "tail_pad": 0.25},
+  "zoom": {"every_s": 12.0, "scale": 1.08, "ease": "smooth", "alternate": false},
+  "captions": {"enabled": true, "style": "line", "size": 0.042, "color": "#FFFFFF", "highlight_color": "#FFFFFF", "outline": 2, "max_words": 7, "position_y": 0.86, "uppercase": false, "drop_fillers": true},
+  "graphics": {"min_gap_s": 15, "accent": "#E8E8E8", "sfx": null},
+  "audio": {"music_volume_db": -24, "duck_db": -16, "lufs": -14},
+  "color": {"contrast": 1.03, "saturation": 1.0, "warmth": 0.0}
+}

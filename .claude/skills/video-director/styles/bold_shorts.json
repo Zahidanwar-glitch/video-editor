@@ -1,0 +1,12 @@
+{
+  "name": "bold_shorts",
+  "description": "High-retention talking-head short: hook in first second, zero dead air, bold word-by-word captions, punch-in zooms on every beat, pop SFX on graphics.",
+  "inspired_by": "business/education short-form creators (bold emphasis captions, rapid punch-ins)",
+  "platform": "shorts",
+  "pacing": {"max_pause": 0.25, "pause_after_sentence": 0.35, "cut_hard_fillers": true, "target_cut_every_s": 2.5, "lead_pad": 0.06, "tail_pad": 0.12},
+  "zoom": {"every_s": 3.0, "scale": 1.15, "ease": "punch", "alternate": true},
+  "captions": {"enabled": true, "style": "word_pop", "size": 0.055, "color": "#FFFFFF", "highlight_color": "#FFD400", "outline": 5, "max_words": 3, "position_y": 0.68, "uppercase": true, "drop_fillers": true},
+  "graphics": {"min_gap_s": 6, "accent": "#FFD400", "sfx": "pop"},
+  "audio": {"music_volume_db": -20, "duck_db": -14, "lufs": -14},
+  "color": {"contrast": 1.06, "saturation": 1.12, "warmth": 0.05}
+}

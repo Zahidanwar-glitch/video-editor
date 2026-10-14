@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "source": "footage/interview.mp4",
+  "analysis": "footage/interview_edit/analysis.json",
+  "platform": "youtube",
+  "style": "clean",
+  "brief": {
+    "message": "Failure taught me more than success",
+    "target_seconds": 24,
+    "audience": "Early-stage founders",
+    "arc": "shock -> curiosity -> 3 lessons -> hope",
+    "hook": "S6: I lost everything in six months...",
+    "cta": "Follow for part 2"
+  },
+  "output": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "lufs": -14,
+    "fade_in": 0.3,
+    "fade_out": 0.3
+  },
+  "segments": [
+    {
+      "in": 3.94,
+      "out": 34.6,
+      "role": "body"
+    }
+  ],
+  "cuts_removed": [
+    {
+      "start": 7.19,
+      "end": 8.68,
+      "reason": "filler 'Um' + pause 1.29s -> 0.35s"
+    },
+    {
+      "start": 13.01,
+      "end": 14.2,
+      "reason": "filler 'Uh' + pause 0.99s -> 0.25s"
+    },
+    {
+      "start": 18.617,
+      "end": 18.758,
+      "reason": "pause 0.49s -> 0.35s"
+    },
+    {
+      "start": 20.418,
+      "end": 20.558,
+      "reason": "pause 0.49s -> 0.35s"
+    }
+  ],
+  "zooms": [
+    {
+      "at": 8.42,
+      "dur": 4.5,
+      "scale": 1.1,
+      "ease": "smooth"
+    },
+    {
+      "at": 24.77,
+      "dur": 7.2,
+      "scale": 1.12,
+      "ease": "punch"
+    }
+  ],
+  "broll": [
+    {
+      "at": 14.3,
+      "dur": 2.5,
+      "file": "footage/broll/warehouse.mp4"
+    },
+    {
+      "at": 22.0,
+      "dur": 2.0,
+      "file": "footage/broll/team-photo.jpg"
+    },
+    {
+      "at": 5.0,
+      "dur": 1.0,
+      "query": "office"
+    }
+  ],
+  "graphics": [
+    {
+      "type": "lower_third",
+      "at": 4.2,
+      "dur": 3.0,
+      "title": "Alex Rivera",
+      "subtitle": "Founder, Example Co"
+    },
+    {
+      "type": "counter",
+      "at": 11.0,
+      "dur": 2.5,
+      "value": 300,
+      "suffix": "%",
+      "label": "Revenue growth in 6 months",
+      "accent": "#FFD400"
+    },
+    {
+      "type": "list",
+      "at": 17.0,
+      "dur": 6.0,
+      "title": "3 lessons",
+      "items": [
+        "Start small",
+        "Ship fast",
+        "Listen to customers"
+      ],
+      "item_times": [
+        17.06,
+        18.9,
+        20.7
+      ]
+    },
+    {
+      "type": "quote",
+      "at": 25.0,
+      "dur": 3.5,
+      "text": "Losing everything was the best thing that ever happened to me",
+      "attribution": "Alex Rivera"
+    },
+    {
+      "type": "bar",
+      "at": 14.4,
+      "dur": 2.0,
+      "title": "Revenue",
+      "bars": [
+        {
+          "label": "2023",
+          "value": 1.2
+        },
+        {
+          "label": "2024",
+          "value": 4.8
+        }
+      ],
+      "prefix": "$",
+      "suffix": "M"
+    },
+    {
+      "type": "callout",
+      "at": 29.0,
+      "dur": 2.0,
+      "text": "Best thing ever"
+    },
+    {
+      "type": "title",
+      "at": 32.9,
+      "dur": 1.6,
+      "title": "Thanks for watching",
+      "subtitle": "Subscribe for more"
+    }
+  ],
+  "captions": {
+    "enabled": true,
+    "style": "karaoke",
+    "size": 0.045,
+    "color": "#FFFFFF",
+    "highlight_color": "#FFD400",
+    "outline": 5,
+    "max_words": 5,
+    "position_y": 0.86,
+    "uppercase": false,
+    "drop_fillers": true,
+    "emphasis_words": [
+      "300%"
+    ]
+  },
+  "audio": {
+    "enhance_speech": "strong",
+    "music": {
+      "file": "music/upbeat-licensed.mp3",
+      "volume_db": -18,
+      "duck_db": -14
+    },
+    "sfx": [
+      {
+        "at": 11.0,
+        "type": "pop"
+      },
+      {
+        "at": 17.0,
+        "type": "whoosh"
+      },
+      {
+        "at": 25.0,
+        "type": "ding",
+        "volume_db": -14
+      }
+    ]
+  },
+  "color": {
+    "contrast": 1.05,
+    "saturation": 1.05,
+    "warmth": 0.3,
+    "vignette": true
+  },
+  "notes": [
+    "Example plan exercising every feature. All times are source seconds."
+  ],
+  "suggestions": []
+}

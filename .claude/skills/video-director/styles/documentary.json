@@ -1,0 +1,12 @@
+{
+  "name": "documentary",
+  "description": "Story-first video essay: breathing room after key lines, B-roll heavy, slow push-ins, lower thirds, maps/timelines, music carries emotion.",
+  "inspired_by": "video-essay and explainer documentary channels",
+  "platform": "youtube",
+  "pacing": {"max_pause": 0.6, "pause_after_sentence": 0.9, "cut_hard_fillers": true, "target_cut_every_s": 5, "lead_pad": 0.12, "tail_pad": 0.35},
+  "zoom": {"every_s": 8.0, "scale": 1.06, "ease": "smooth", "alternate": false},
+  "captions": {"enabled": false, "style": "minimal", "size": 0.038, "color": "#FFFFFF", "highlight_color": "#FFFFFF", "outline": 2, "max_words": 8, "position_y": 0.88, "uppercase": false, "drop_fillers": true},
+  "graphics": {"min_gap_s": 12, "accent": "#F2C14E", "sfx": "whoosh"},
+  "audio": {"music_volume_db": -20, "duck_db": -14, "lufs": -14},
+  "color": {"contrast": 1.08, "saturation": 0.92, "warmth": 0.12, "vignette": true}
+}

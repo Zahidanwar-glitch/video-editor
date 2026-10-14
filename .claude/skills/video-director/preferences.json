@@ -1,0 +1,13 @@
+{
+  "_doc": "Lasting taste of this user/brand. Claude reads this before every edit and appends to rules when the user expresses a durable preference.",
+  "brand": {
+    "name": "",
+    "accent": "",
+    "fonts": {"captions": "", "graphics": ""},
+    "logo": "",
+    "intro": "",
+    "outro": ""
+  },
+  "defaults": {"platform": "", "style": "", "music_folder": "", "broll_folder": ""},
+  "rules": []
+}

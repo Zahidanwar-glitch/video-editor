@@ -1,0 +1,12 @@
+{
+  "name": "high_energy",
+  "description": "Maximum-retention entertainment: a cut or visual change every 1-2s, constant re-hooks, big on-screen numbers, whooshes on transitions.",
+  "inspired_by": "large-scale entertainment/challenge channels",
+  "platform": "youtube",
+  "pacing": {"max_pause": 0.15, "pause_after_sentence": 0.25, "cut_hard_fillers": true, "target_cut_every_s": 1.5, "lead_pad": 0.04, "tail_pad": 0.1},
+  "zoom": {"every_s": 2.0, "scale": 1.2, "ease": "punch", "alternate": true},
+  "captions": {"enabled": true, "style": "word_pop", "size": 0.06, "color": "#FFFFFF", "highlight_color": "#00E5FF", "outline": 6, "max_words": 2, "position_y": 0.72, "uppercase": true, "drop_fillers": true},
+  "graphics": {"min_gap_s": 5, "accent": "#00E5FF", "sfx": "whoosh"},
+  "audio": {"music_volume_db": -18, "duck_db": -12, "lufs": -14},
+  "color": {"contrast": 1.1, "saturation": 1.2, "warmth": 0.0}
+}

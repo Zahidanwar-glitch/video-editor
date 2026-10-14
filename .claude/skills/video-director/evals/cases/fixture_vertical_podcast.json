@@ -1,0 +1,3 @@
+{"name": "fixture_vertical_podcast", "video": "@fixture:720x1280",
+ "draft": {"style": "podcast", "platform": "shorts", "keep": "S1-S7", "auto_graphics": true},
+ "proxy": true}
