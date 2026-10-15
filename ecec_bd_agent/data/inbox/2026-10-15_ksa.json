@@ -1,0 +1,783 @@
+{
+ "run_date": "2026-10-15",
+ "researcher": "discovery-agent:ksa",
+ "opportunities": [
+  {
+   "project": "GCC Railway (Saudi section) - Design Management & Review Consultancy",
+   "client": "Saudi Arabia Railways (SAR)",
+   "country": "Saudi Arabia",
+   "location": "Eastern Province, Al-Khafji to Al-Batha (~672 km)",
+   "sector": "Transportation",
+   "opportunity_type": "RFP",
+   "services_needed": [
+    "design review",
+    "design management",
+    "technical audit",
+    "stakeholder management"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "RFP open; deadline moved from 18 Oct to November 2026",
+   "bid_due_date": null,
+   "project_duration_months": 16,
+   "procurement_route": "Competitive consultancy RFP",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "SAR procurement / engineering"
+   ],
+   "source": "https://www.meed.com/sar-sets-november-deadline-for-gcc-rail-design-review",
+   "source_date": "2026-10-14",
+   "description": "Manage, audit and verify deliverables of SAR's GCC rail design consultant; core team seconded at SAR offices; single-track non-electrified freight/mixed line; ~16-month design period.",
+   "missing": [
+    "exact November deadline",
+    "fee",
+    "capex"
+   ],
+   "analyst": {
+    "fit": {
+     "technical_fit": {
+      "score": 6,
+      "why": "Design-management/review is a PMC-type service ECEC delivers (Blue Book governance, design management), but ECEC has no rail reference projects."
+     }
+    },
+    "win": {
+     "strategic_partnerships": {
+      "score": 0.5,
+      "why": "Pair with a rail-specialist reviewer (e.g. a European rail consultancy without a Saudi entity) - ECEC brings Saudi presence and the seconded team."
+     }
+    }
+   }
+  },
+  {
+   "project": "GCC Railway (Saudi section) - Design Services Consultancy (local design partner to frontrunner)",
+   "client": "Saudi Arabia Railways (SAR)",
+   "country": "Saudi Arabia",
+   "location": "Eastern Province (~672 km, 4 sections)",
+   "sector": "Transportation",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "design",
+    "surveys",
+    "utilities",
+    "roads interfaces",
+    "authority approvals"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Bid evaluation; Systra reported frontrunner (12 Oct 2026)",
+   "bid_due_date": null,
+   "project_duration_months": 16,
+   "procurement_route": "Competitive consultancy tender (bids 14 Jul 2026)",
+   "main_contractor": null,
+   "consultant": "Systra (frontrunner, unconfirmed); others AtkinsRealis/K&A, DB E&C/ARX, Egis/Sener, Idom/Dar",
+   "decision_makers": [
+    "SAR"
+   ],
+   "source": "https://www.meed.com/frontrunner-emerges-for-saudi-arabias-gcc-rail-link-design",
+   "source_date": "2026-10-12",
+   "description": "Frontrunner without a strong local partner may need Saudi design capacity for roads/interfaces, utilities, approvals.",
+   "missing": [
+    "award",
+    "fee"
+   ]
+  },
+  {
+   "project": "Oxagon Freight Rail Network - Concept Design, Feasibility & Route Alignment",
+   "client": "NEOM",
+   "country": "Saudi Arabia",
+   "location": "Oxagon / Port of NEOM, Tabuk",
+   "sector": "Transportation",
+   "opportunity_type": "RFP",
+   "services_needed": [
+    "feasibility",
+    "concept design",
+    "route alignment",
+    "transport planning"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Restricted tender to EOI respondents (EOI 16 Sep 2026)",
+   "bid_due_date": "2026-10-29",
+   "project_duration_months": null,
+   "procurement_route": "EOI then restricted tender",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "NEOM procurement / Oxagon"
+   ],
+   "source": "https://www.meed.com/neom-tenders-oxagon-freight-rail-design",
+   "source_date": "2026-09-30",
+   "description": "Freight rail concept/feasibility for Port of NEOM. If ECEC did not submit an EOI, angle is partnering with an invited firm.",
+   "missing": [
+    "invited list",
+    "fee",
+    "whether ECEC submitted EOI"
+   ],
+   "analyst": {
+    "fit": {
+     "technical_fit": {
+      "score": 5,
+      "why": "Transport planning/TIS capability exists but no rail alignment references."
+     }
+    }
+   }
+  },
+  {
+   "project": "Makkah Metro - Initial Design Studies (sub-consultancy / TOD & PMC positioning)",
+   "client": "Royal Commission for Makkah City & Holy Sites (RCMC)",
+   "country": "Saudi Arabia",
+   "location": "Makkah",
+   "sector": "Transportation",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "concept design",
+    "land acquisition studies",
+    "integration planning",
+    "TOD master planning"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Bids closed 14 Oct 2026; evaluation",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Open consultancy tender; later civil/systems, TOD and O&M packages",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "RCMC"
+   ],
+   "source": "https://guest.meed.com/saudi-arabia-sets-october-deadline-for-mecca-metro-design/",
+   "source_date": "2026-09-11",
+   "description": "4-line, 89-station metro, phased 2032-2045; Stage 1 Lines B & C (~62 km). Angle: sub-consultancy with winner, then TOD/PMC packages.",
+   "missing": [
+    "bidders",
+    "fee",
+    "capex"
+   ]
+  },
+  {
+   "project": "Oxagon Industrial & Sanitary Wastewater Treatment Plant - Design partner to DBO bidders",
+   "client": "NEOM / ENOWA",
+   "country": "Saudi Arabia",
+   "location": "Oxagon, NEOM",
+   "sector": "Utilities-Water",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "design",
+    "civil design",
+    "supervision"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "DBO bids due 25 Oct 2026",
+   "bid_due_date": "2026-10-25",
+   "project_duration_months": null,
+   "procurement_route": "Design-build-operate with 3 yrs O&M",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "ENOWA"
+   ],
+   "source": "https://www.meed.com/contractors-line-up-for-neom-wastewater-plant",
+   "source_date": "2026-10-13",
+   "description": "35,000 m3/d modular industrial WWTP + 1,000 m3/d sanitary; bidders incl. Alfanar (ECEC logo-wall client), PowerChina, Veolia.",
+   "missing": [
+    "capex",
+    "fee"
+   ],
+   "analyst": {
+    "win": {
+     "strategic_partnerships": {
+      "score": 1.0,
+      "why": "Alfanar appears on ECEC's client wall and is a reported bidder - warm route to a civil/MEP design sub-consultancy."
+     }
+    }
+   }
+  },
+  {
+   "project": "Oxagon Highway 55 Permanent Upgrade Phase 1 (14 km)",
+   "client": "NEOM",
+   "country": "Saudi Arabia",
+   "location": "Oxagon / Duba-NEOM corridor",
+   "sector": "Transportation",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "roads design",
+    "supervision",
+    "PMC"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "D&B bids submitted late Sep 2026; evaluation",
+   "bid_due_date": null,
+   "project_duration_months": 22,
+   "procurement_route": "Design and build",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "NEOM"
+   ],
+   "source": "https://guest.meed.com/neom-tenders-oxagon-highway-contract/",
+   "source_date": "2026-09-17",
+   "description": "Dual 2-lane highway, 1 bridge, 3 interchanges. Designer-of-record for winning D&B contractor, or supervision if NEOM procures.",
+   "missing": [
+    "bidders",
+    "capex"
+   ]
+  },
+  {
+   "project": "Riyadh Metro Line 7 (65 km, 19 stations) - Local design / supervision sub-consultancy",
+   "client": "Royal Commission for Riyadh City (RCRC)",
+   "country": "Saudi Arabia",
+   "location": "Riyadh",
+   "sector": "Transportation",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "detailed design",
+    "construction supervision",
+    "utilities diversion design",
+    "traffic management"
+   ],
+   "estimated_project_value_usd": 15000000000,
+   "expected_consulting_value_usd": 12000000,
+   "current_stage": "BAFOs submitted 21 Jun 2026; award expected Nov 2026",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Design & build; PMC tendered separately Feb 2026",
+   "main_contractor": null,
+   "consultant": "Egis, Dar Al-Handasah (scheme); bidder designers Typsa/Ayesa/Aecom, Idom/Dowha, Sener/Jacobs",
+   "decision_makers": [
+    "RCRC"
+   ],
+   "source": "https://www.meedprojects.com/project-profile/?pid=437611",
+   "source_date": "2026-09-01",
+   "description": "Largest pending Gulf metro award (Alstom/Siemens/Hitachi/CRRC consortia). Large local design-support, supervision manpower and utilities/roads interface demand after award.",
+   "missing": [
+    "consulting value is an ANALYST ESTIMATE of an addressable local sub-consultancy share (~0.08% of capex), not a tender value",
+    "award date"
+   ]
+  },
+  {
+   "project": "Saudi Landbridge - Riyadh Rail Link Section (35 km) - Supervision / utilities sub-consultancy",
+   "client": "Saudi Arabia Railways (SAR)",
+   "country": "Saudi Arabia",
+   "location": "Riyadh",
+   "sector": "Transportation",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "construction supervision",
+    "utilities diversion",
+    "design"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Commercial bids opened Aug 2026; award imminent",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Design & build",
+   "main_contractor": null,
+   "consultant": "Sener (Landbridge lead design)",
+   "decision_makers": [
+    "SAR"
+   ],
+   "source": "https://guest.meed.com/contract-award-nears-for-saudi-landbridge-riyadh-section/",
+   "source_date": "2026-08-31",
+   "description": "Links North-South Railway to Eastern network in Riyadh; bidders CCECC/Al-Ayuni, Nesma/China Harbour, Al-Rashid/Ictas/Saipem, SBG.",
+   "missing": [
+    "section capex",
+    "fee"
+   ]
+  },
+  {
+   "project": "Qiddiya District 0 Infrastructure Package 3 (17.4 km roads & bridges) - Designer of record",
+   "client": "Qiddiya Investment Company",
+   "country": "Saudi Arabia",
+   "location": "Qiddiya, Riyadh",
+   "sector": "Infrastructure",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "roads design",
+    "structures design",
+    "supervision"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "D&B proposals closed 14 Oct 2026",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Design & build",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "Qiddiya Investment Company"
+   ],
+   "source": "https://guest.meed.com/?p=18200",
+   "source_date": "2026-10-08",
+   "description": "Design-of-record support for winning contractor plus subsequent packages.",
+   "missing": [
+    "bidders",
+    "value"
+   ]
+  },
+  {
+   "project": "Qiddiya High-Speed Rail (Q-Express, 84 km)",
+   "client": "RCRC / Qiddiya Investment Company / NCP",
+   "country": "Saudi Arabia",
+   "location": "KSIA - KAFD - Qiddiya, Riyadh",
+   "sector": "Transportation",
+   "opportunity_type": "Pre-tender intelligence",
+   "services_needed": [
+    "owner's engineer",
+    "technical advisory",
+    "design",
+    "supervision"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "EPCF/PPP tender expected (issue unconfirmed)",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "EPCF + PPP",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "RCRC",
+    "QIC",
+    "NCP"
+   ],
+   "source": "https://www.meed.com/qiddiya-to-tender-high-speed-rail-in-september",
+   "source_date": "2026-07-10",
+   "description": "250 km/h line, 30-minute airport-Qiddiya link; bidder consortia will need local design partners.",
+   "missing": [
+    "tender issue",
+    "capex"
+   ]
+  },
+  {
+   "project": "King Abdulaziz International Airport Expansion - 5-year Construction Framework & T3A",
+   "client": "Jeddah Airports Company (Jedco)",
+   "country": "Saudi Arabia",
+   "location": "Jeddah",
+   "sector": "Transportation",
+   "opportunity_type": "Pre-tender intelligence",
+   "services_needed": [
+    "design",
+    "supervision",
+    "PMC"
+   ],
+   "estimated_project_value_usd": 31000000000,
+   "expected_consulting_value_usd": 10000000,
+   "current_stage": "Packaging: framework Q4 2026, T3A Q1 2027",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Staged packages incl. 5-yr framework",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "Jedco"
+   ],
+   "source": "https://guest.meed.com/?p=17879",
+   "source_date": "2026-09-22",
+   "description": "SR115bn programme to 114 mppa by 2031; terminal buildings fit ECEC buildings/MEP capability.",
+   "missing": [
+    "consultant procurement plan",
+    "package values",
+    "consulting value is an ANALYST ESTIMATE (supervision/design-support slice of framework/T3A, USD 5-15M)"
+   ]
+  },
+  {
+   "project": "King Salman Bay Marine Infrastructure - Supervision",
+   "client": "Red Sea Global",
+   "country": "Saudi Arabia",
+   "location": "Red Sea coast north of Jeddah",
+   "sector": "Infrastructure",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "supervision",
+    "marine design"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Five bids submitted 31 Jul 2026; award pending",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Competitive tender after EOI",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "Red Sea Global"
+   ],
+   "source": "https://guest.meed.com/red-sea-global-tenders-king-salman-bay-deal/",
+   "source_date": "2026-06-25",
+   "description": "Dredging, quay walls, edge protection ~11 km.",
+   "missing": [
+    "value",
+    "supervision status"
+   ],
+   "analyst": {
+    "fit": {
+     "technical_fit": {
+      "score": 3,
+      "why": "Marine/coastal engineering is outside ECEC's documented capability."
+     }
+    }
+   }
+  },
+  {
+   "project": "Al-Urubah Road Axis Upgrade (15.5 km) - Riyadh Roads Programme",
+   "client": "Royal Commission for Riyadh City (RCRC)",
+   "country": "Saudi Arabia",
+   "location": "Riyadh",
+   "sector": "Transportation",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "design support",
+    "construction supervision",
+    "traffic management"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Five works bids submitted early Oct 2026",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Competitive; programme managed by Parsons",
+   "main_contractor": null,
+   "consultant": "Parsons (programme implementation manager)",
+   "decision_makers": [
+    "RCRC"
+   ],
+   "source": "https://www.meed.com/contractors-submit-riyadh-road-scheme-bids",
+   "source_date": "2026-10-13",
+   "description": "Part of 500 km Riyadh roads programme; recurring supervision/design-support demand. Riyadh home turf.",
+   "missing": [
+    "value"
+   ]
+  },
+  {
+   "project": "Prince Fawaz Neighbourhood Stormwater Drainage Network - Supervision",
+   "client": "Jeddah Municipality",
+   "country": "Saudi Arabia",
+   "location": "Jeddah",
+   "sector": "Utilities-Water",
+   "opportunity_type": "Pre-tender intelligence",
+   "services_needed": [
+    "construction supervision",
+    "stormwater drainage"
+   ],
+   "estimated_project_value_usd": 60000000,
+   "expected_consulting_value_usd": 1800000,
+   "current_stage": "Works tender, deadline extended (14 Oct 2026)",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Works tender; supervision route unconfirmed",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "Jeddah Municipality"
+   ],
+   "source": "https://www.meed.com/jeddah-extends-bid-deadline-for-drainage-scheme",
+   "source_date": "2026-10-14",
+   "description": "$60m stormwater network; recurring Jeddah drainage programme.",
+   "missing": [
+    "consulting value estimated at 3% of capex",
+    "supervision route"
+   ]
+  },
+  {
+   "project": "King Fahd Suburb Boulevard PPP (~1M sqm mixed-use) - Technical partner to bidding consortia",
+   "client": "MOMAH / NCP / Ashraq Development",
+   "country": "Saudi Arabia",
+   "location": "Dammam",
+   "sector": "Urban Development",
+   "opportunity_type": "PQ",
+   "services_needed": [
+    "master planning",
+    "design",
+    "technical advisory",
+    "supervision"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "RFQ open",
+   "bid_due_date": "2026-10-22",
+   "project_duration_months": null,
+   "procurement_route": "PPP DBFOMT, 43-year term",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "MOMAH",
+    "NCP",
+    "Ashraq Development"
+   ],
+   "source": "https://gcctendernews.com/article/saudi-tender-watch-issue-2/",
+   "source_date": "2026-09-01",
+   "description": "Mixed-use commercial/leisure boulevard PPP; consultants join developer consortia before RFQ deadline.",
+   "missing": [
+    "capex",
+    "foreign eligibility"
+   ]
+  },
+  {
+   "project": "Umm Al-Qura University Hospital PPP (391 beds) - Healthcare design / completion engineering partner",
+   "client": "Umm Al-Qura University / NCP",
+   "country": "Saudi Arabia",
+   "location": "Makkah",
+   "sector": "Healthcare",
+   "opportunity_type": "EOI",
+   "services_needed": [
+    "completion design",
+    "technical advisory",
+    "independent engineer",
+    "supervision"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "73 EOIs received (28 developers); RFQ next",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "PPP DBFOM, 30 years",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "Umm Al-Qura University",
+    "NCP"
+   ],
+   "source": "https://www.saudigulfprojects.com/2026/09/umm-al-qura-university-hospital-ppp-attracts-interest-from-73-companies/",
+   "source_date": "2026-09-28",
+   "description": "Complete, equip, operate a part-built teaching hospital. Strong match with ECEC hospital design record (Al-Ahsa 500-bed, Jazan 300-bed, Dammam 400-bed).",
+   "missing": [
+    "capex",
+    "RFQ date"
+   ],
+   "analyst": {
+    "win": {
+     "previous_ecec_experience": {
+      "score": 2,
+      "why": "Three MOH/armed-forces hospitals (300-500 beds) designed; MOH cooperation agreement renewed Dec 2025."
+     }
+    }
+   }
+  },
+  {
+   "project": "PIF Tower District (2 km tower & new CBD) - PMC sub-consultancy / district infrastructure design",
+   "client": "Tower District Real Estate Development Company (PIF)",
+   "country": "Saudi Arabia",
+   "location": "North Riyadh",
+   "sector": "Buildings",
+   "opportunity_type": "Pre-tender intelligence",
+   "services_needed": [
+    "PMC",
+    "supervision",
+    "infrastructure design"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Contractor market sounding Oct 2026; PMC offers from Aecom, Jacobs, Parsons, Turner, Mace",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "PMC procurement under way",
+   "main_contractor": null,
+   "consultant": "Foster + Partners (architect)",
+   "decision_makers": [
+    "PIF"
+   ],
+   "source": "https://guest.meed.com/riyadh-approaches-contractors-for-2km-tower/",
+   "source_date": "2026-10-01",
+   "description": "Local sub-consultant to winning PMC, or district infrastructure design.",
+   "missing": [
+    "PMC award",
+    "capex"
+   ]
+  },
+  {
+   "project": "Fire Prevention & Protection Systems Studies/Designs for Government Buildings - Al Baha",
+   "client": "Emirate of Al Baha Region",
+   "country": "Saudi Arabia",
+   "location": "Al Baha Region",
+   "sector": "Buildings",
+   "opportunity_type": "Tender",
+   "services_needed": [
+    "study",
+    "fire & life safety MEP design"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": 300000,
+   "current_stage": "Open on Etimad (ref 260939010245); inquiries close 16 Oct",
+   "bid_due_date": "2026-10-21",
+   "project_duration_months": null,
+   "procurement_route": "Etimad public tender (docs SAR 1,500)",
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [
+    "Emirate of Al Baha Region - Procurement"
+   ],
+   "source": "https://bidsfactory.com/en/tenders/-saudi_etimad-687612ce4d57127f",
+   "source_date": "2026-10-06",
+   "description": "Small Etimad consulting tender; fast win for SCE-classified firm with Civil Defence approvals experience.",
+   "missing": [
+    "consulting value is an ANALYST ESTIMATE (small regional study, USD 0.2-0.4M)"
+   ]
+  },
+  {
+   "project": "United States Pavilion - Expo 2030 Riyadh (local AoR / approvals / supervision)",
+   "client": "US Government (Expo 2030 participation)",
+   "country": "Saudi Arabia",
+   "location": "Expo 2030 site, Riyadh",
+   "sector": "Buildings",
+   "opportunity_type": "Pre-tender intelligence",
+   "services_needed": [
+    "design",
+    "authority approvals",
+    "supervision",
+    "PMC"
+   ],
+   "estimated_project_value_usd": null,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Procurement initiated (MEED 14 Oct 2026)",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": null,
+   "main_contractor": null,
+   "consultant": null,
+   "decision_makers": [],
+   "source": "https://www.meed.com/usa-initiates-procurement-for-expo-2030-riyadh-pavilion",
+   "source_date": "2026-10-14",
+   "description": "National pavilions need local consultants for design adaptation, permitting and supervision. Template for ~190 pavilions.",
+   "missing": [
+    "scope",
+    "route",
+    "deadline",
+    "value"
+   ]
+  },
+  {
+   "project": "Dariya-Afif Road Dualisation - Supervision staffing / testing sub-consultancy",
+   "client": "Roads General Authority / MOTLS",
+   "country": "Saudi Arabia",
+   "location": "Riyadh Province",
+   "sector": "Transportation",
+   "opportunity_type": "Award (sub-consultancy angle)",
+   "services_needed": [
+    "supervision",
+    "QA/QC",
+    "materials testing"
+   ],
+   "estimated_project_value_usd": 296000000,
+   "expected_consulting_value_usd": null,
+   "current_stage": "Works bids closed 1 Oct 2026",
+   "bid_due_date": null,
+   "project_duration_months": null,
+   "procurement_route": "Works tender",
+   "main_contractor": null,
+   "consultant": "Euro Group Engineering Consultancy",
+   "decision_makers": [
+    "Roads General Authority"
+   ],
+   "source": "https://guest.meed.com/saudi-arabia-tenders-dariya-afif-road-dualisation/",
+   "source_date": "2026-09-21",
+   "description": "SR1.1bn intercity dualisation; incumbent consultant in place; sub-consultancy or teaming on similar RGA packages.",
+   "missing": [
+    "supervision procurement"
+   ]
+  }
+ ],
+ "market_intelligence": [
+  {
+   "date": "2026-10-13",
+   "headline": "RCRC signs ~SAR5.5bn contracts with Siemens and Alstom for 94 new Riyadh Metro trains",
+   "category": "Infrastructure program",
+   "country": "Saudi Arabia",
+   "implication": "Depot, stabling, systems-integration works and supervision ahead of Expo 2030/FIFA 2034.",
+   "source": "https://www.arabnews.com/saudi-arabia/royal-commission-for-riyadh-city-expands-metro-fleet-by-purchasing-94-new-trains-3006117"
+  },
+  {
+   "date": "2026-10-14",
+   "headline": "Houthi missile strike damages Aramco HQ Dhahran days after deadly strike on Riyadh airport",
+   "category": "Mega-project",
+   "country": "Saudi Arabia",
+   "implication": "Rising security/war-risk costs; schedule slippage risk on Red Sea, aviation and energy projects; demand for resilience/hardening studies.",
+   "source": "https://apnews.com/article/saudi-arabia-yemen-strikes-mideast-conflict-riyadh-c81a91347c00b17097c8fafde7e4eeec"
+  },
+  {
+   "date": "2026-10-08",
+   "headline": "Saudi-UAE MoU on cross-border rail, grid interconnection and electricity trading",
+   "category": "Infrastructure program",
+   "country": "Saudi Arabia",
+   "implication": "Early-stage feasibility study pipeline; power interconnection fits ECEC's P&I department.",
+   "source": "https://www.arabnews.com/saudi-arabia/saudi-arabia-and-uae-agree-to-strengthen-power-grid-and-rail-connectivity-3005358"
+  },
+  {
+   "date": "2026-09-04",
+   "headline": "New Government Tenders & Procurement Law published; effective ~Jan 2027 (direct purchase limit SR1m, SME priority)",
+   "category": "Funding approval",
+   "country": "Saudi Arabia",
+   "implication": "Faster awards; more direct-purchase consulting for local firms - update Etimad strategy.",
+   "source": "https://www.meed.com/riyadh-rewrites-government-contracting-rules"
+  },
+  {
+   "date": "2026-10-12",
+   "headline": "Systra frontrunner for GCC railway Saudi section design",
+   "category": "Consultant appointment",
+   "country": "Saudi Arabia",
+   "implication": "Teaming window for local design partner; design-review tender in parallel.",
+   "source": "https://www.meed.com/frontrunner-emerges-for-saudi-arabias-gcc-rail-link-design"
+  },
+  {
+   "date": "2026-10-01",
+   "headline": "PIF sounds out contractors for 2 km megatall tower (Foster + Partners)",
+   "category": "PIF investment",
+   "country": "Saudi Arabia",
+   "implication": "PMC/district infrastructure/supervision follow-on work.",
+   "source": "https://guest.meed.com/riyadh-approaches-contractors-for-2km-tower/"
+  },
+  {
+   "date": "2026-09-15",
+   "headline": "National Waste Management Platform PPP RFQ (123 EOIs)",
+   "category": "Smart city",
+   "country": "Saudi Arabia",
+   "implication": "ICT/smart-city advisory partner roles in digital PPPs.",
+   "source": "https://www.zawya.com/en/projects/saudi-arabia-launches-rfq-for-national-waste-management-platform-ppp-716212"
+  },
+  {
+   "date": "2026-09-02",
+   "headline": "Eight bidders qualify for Riyadh Quality Valley mixed-use PPP",
+   "category": "Project announcement",
+   "country": "Saudi Arabia",
+   "implication": "Developer consortia need design consultants at RFP stage - SASO is an ECEC logo-wall client.",
+   "source": "https://www.gulfconstructiononline.com/Article/467314/eight-in-race-for-riyadh%E2%80%99s-quality-valley-ppp-project"
+  },
+  {
+   "date": "2026-09-22",
+   "headline": "Six bidders prequalified for Qassim airport 30-yr BTO PPP",
+   "category": "Infrastructure program",
+   "country": "Saudi Arabia",
+   "implication": "Design-for-bidders and independent engineer roles.",
+   "source": "https://insight.astrolabs.com/saudi-roundup-new-tenders-in-aviation-and-waste-management"
+  },
+  {
+   "date": "2026-10-01",
+   "headline": "SEPCO wins 500MW/2,000MWh KSB battery storage project",
+   "category": "Contractor appointment",
+   "country": "Saudi Arabia",
+   "implication": "Grid connection/substation design and OE roles with SEC - core P&I department fit.",
+   "source": "https://www.saudigulfprojects.com/2026/10/sepco-wins-saudi-arabias-500-mw-2000-mwh-ksb-battery-energy-storage-project/"
+  },
+  {
+   "date": "2026-09-30",
+   "headline": "Oxagon takes centre stage as NEOM pivots to industry and logistics",
+   "category": "Mega-project",
+   "country": "Saudi Arabia",
+   "implication": "Focus NEOM pursuit effort on Oxagon port, highway, rail and utilities.",
+   "source": "https://www.meed.com/oxagon-takes-centre-stage-at-neom"
+  },
+  {
+   "date": "2026-10-13",
+   "headline": "Mnzil/TDG/Capital Partners SAR1bn workforce housing fund",
+   "category": "Project announcement",
+   "country": "Saudi Arabia",
+   "implication": "Mid-size residential compound design/supervision - matches ECEC compound references.",
+   "source": "https://www.saudigulfprojects.com/2026/10/mnzil-tdg-and-capital-partners-launch-sar-1-billion-fund-for-workforce-housing-across-saudi-arabia/"
+  }
+ ]
+}

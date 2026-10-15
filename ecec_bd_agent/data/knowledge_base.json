@@ -1,0 +1,739 @@
+{
+  "_meta": {
+    "last_updated": "2026-10-15",
+    "updated_by": "ECEC_BD_INTELLIGENCE_AGENT",
+    "confidence": "high (entity), medium (financials/headcount)",
+    "refresh": "Re-verify quarterly or whenever ECEC announces a new award/partnership."
+  },
+  "company_profile": {
+    "legal_name": "East Consulting Engineering Company (CR name not confirmed)",
+    "brand": "ecec / ECEC Consulting",
+    "hq": "Al Jamiah St, Al Malaz, Riyadh 12629, Saudi Arabia",
+    "founded": "1979 (Eng. Ahmed Al-AbdulKarim)",
+    "website": "https://ecec.com.sa",
+    "linkedin": "https://www.linkedin.com/company/ecec-east-consulting-engineering-company/",
+    "bd_email": "BD@ecec.com.sa",
+    "size_estimate": "~500-650 staff (aggregators: 601; 150+ design specialists Riyadh+Cairo); 750+ projects since 1979; SAR 70bn+ cumulative project value (company claim)",
+    "revenue_estimate_usd": "~62.5M (UNVERIFIED aggregator)",
+    "leadership": {
+      "Chairman/Founder": "Eng. Ahmed Al-AbdulKarim",
+      "CEO": "Eng. Turki Al-AbdulKarim",
+      "CCO": "Hisam Siddiqui",
+      "COO": "Mahmoud Al-Bakri",
+      "Projects Director": "Moutaz Alsayed"
+    },
+    "departments": [
+      "Design Engineering (6 in-house disciplines, BIM-first, Riyadh + Cairo)",
+      "Projects Delivery (CS, PMC, PMO, PMIS, integrated PMCCS, 'Blue Book' governance)",
+      "Power & Infrastructure Delivery (SEC ecosystem)",
+      "Business Excellence Office (BXO)"
+    ],
+    "positioning": "Saudi-owned multidisciplinary consultancy, 45+ years, Vision 2030 delivery partner; strongest in government, healthcare, hospitality/mixed-use and power.",
+    "sources": [
+      "https://ecec.com.sa/",
+      "https://ecec.com.sa/about-us/",
+      "https://www.dailynewsegypt.com/2026/08/16/ecec-signs-mou-with-siemens-smart-infrastructure-to-expand-saudi-cooperation/"
+    ]
+  },
+  "service_offerings": [
+    {
+      "name": "Master planning",
+      "detail": "urban structure plans, land use, mobility, phasing",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "Architecture, landscape and interior design",
+      "detail": "residential, hospitality, healthcare, civic",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "Structural engineering design",
+      "detail": "RC, steel, precast, PT",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "Sitewide infrastructure and roads design",
+      "detail": "grading, road geometry, pavement, drainage, utility coordination",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "MEP / ICT design",
+      "detail": "MEP and ICT/ELV, data centers",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "Traffic impact studies",
+      "detail": "access, parking, transport integration",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "Facade engineering",
+      "detail": "thermal, glazing, cladding",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "BIM and GIS",
+      "detail": "Revit LOD100-400, clash detection, 4D, GIS site analysis",
+      "source": "https://ecec.com.sa/services/"
+    },
+    {
+      "name": "Construction supervision",
+      "detail": "site supervision, QA/QC, inspection, T&C support, handover / commissioning support",
+      "source": "https://ecec.com.sa/project-2/"
+    },
+    {
+      "name": "Project management consultancy (PMC / PMO / PMIS / PMCCS)",
+      "detail": "cost and claims management, contract administration, planning, risk, procurement and tendering, design management",
+      "source": "https://ecec.com.sa/project-2/"
+    },
+    {
+      "name": "Power & utilities: construction management services",
+      "detail": "CMS for substations, transmission, utilities",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "name": "Power: substation, OHL and cable engineering design",
+      "detail": "SEC/IEC/CIGRE standards; electric power",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "name": "Professional manpower supply services (PMSS)",
+      "detail": "seconded engineers to SEC ecosystem",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "name": "Business Excellence / governance advisory (BXO)",
+      "detail": "governance, SOPs, KPIs, enterprise risk, audit and assurance advisory",
+      "source": "https://ecec.com.sa/bxo/"
+    }
+  ],
+  "service_gaps_declared": [
+    "No published water/wastewater process design capability (NWC prequalified, though)",
+    "No rail/metro systems or airport airside track record",
+    "No published environmental (EIA) or geotechnical in-house service",
+    "No published smart-city systems integration / ITS track record"
+  ],
+  "market_sectors": [
+    {
+      "name": "Buildings - residential, high-rise, mixed-use, commercial, offices",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Healthcare - hospitals",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Hospitality - hotels",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Industrial facilities and data centers (ICT)",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Government and public buildings",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Education - universities",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Sports and entertainment - stadiums, parks",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Culture and heritage",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Infrastructure - primary and secondary",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Energy and utilities - power substations, transmission",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "name": "Master planning / urban development",
+      "source": "https://www.ecec.com.sa/projects/"
+    }
+  ],
+  "client_references": [
+    {
+      "client": "Ministry of Health",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://www.linkedin.com/posts/ecec-east-consulting-engineering-company_ecec-moh-strategicpartnership-activity-7401526802147454976-du4k"
+    },
+    {
+      "client": "Saudi Electricity Company",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "client": "SE Projects Development Co. (SE-PDC)",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "client": "National Grid SA",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "client": "NEOM",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "client": "Ministry of Culture",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "client": "Princess Al-Anoud Foundation",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "client": "Almarai",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "client": "Retal",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Al-Basar Medical Services",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "client": "SPIMACO",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "client": "Nawat",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://ecec.com.sa/project/nawat-eleven-tower/"
+    },
+    {
+      "client": "Armed Forces Medical Services",
+      "country": "Saudi Arabia",
+      "evidence": "documented_projects",
+      "source": "https://ecec.com.sa/project/300-bed-armed-forces-hospital/"
+    },
+    {
+      "client": "Saudi Post",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "ABB",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Abdullatif Alissa Group",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Alfanar",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Al Yamamah Steel",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ar Riyadh Holding",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Daem Real Estate",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "GCC Standardization Organization",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "GCC Secretariat",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Gulf Health Council",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Imam Muhammad Ibn Saud Islamic University",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ministry of Justice",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "King Saud University",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Mawani",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ministry of National Guard",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "MCIT",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ministry of Education",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ministry of Islamic Affairs",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Mobily",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ministry of Finance",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "SAPTCO",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Qassim University",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Riyadh Municipality",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "SFDA",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Saudi Health Council",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Al-Jouf Municipality",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Northern Border University",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Najran University",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ministry of Commerce",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "ZATCA",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Saudi Railway",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Tatweer Buildings",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "SASO",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Saudi Tourism Authority",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "KAFD",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Osool",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ajdan",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "ROSHN",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Diriyah",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Green Riyadh",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "MEWA",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Ministry of Tourism",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    },
+    {
+      "client": "Saudi Arabian Football Federation",
+      "country": "Saudi Arabia",
+      "evidence": "logo_wall",
+      "source": "https://ecec.com.sa/"
+    }
+  ],
+  "project_references": [
+    {
+      "project": "National Control Center",
+      "client": "Saudi Electricity Company",
+      "country": "Saudi Arabia",
+      "sector": "Data center / power utilities",
+      "role": "Design",
+      "year": "2011",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Southern Regional Control Center",
+      "client": "SEC (likely)",
+      "country": "Saudi Arabia",
+      "sector": "Data center / power",
+      "role": "Design",
+      "year": "2017",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Distribution Control Centers (multiple)",
+      "client": "SEC (likely)",
+      "country": "Saudi Arabia",
+      "sector": "Data center / power",
+      "role": "Design + supervision",
+      "year": "2015-16",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Retal Rise & NOBU Hotel, Al Khobar",
+      "client": "Retal",
+      "country": "Saudi Arabia",
+      "sector": "Mixed-use hospitality building",
+      "role": "Construction supervision",
+      "year": "ongoing",
+      "source": "https://ecec.com.sa/project/retal-rise-nobu-hotel/"
+    },
+    {
+      "project": "Nawat Eleven Tower, Riyadh",
+      "client": "Nawat",
+      "country": "Saudi Arabia",
+      "sector": "Mixed-use building office tower",
+      "role": "Design + PMC/supervision",
+      "year": "ongoing",
+      "source": "https://ecec.com.sa/project/nawat-eleven-tower/"
+    },
+    {
+      "project": "Jax District, Riyadh",
+      "client": "n/s",
+      "country": "Saudi Arabia",
+      "sector": "Cultural mixed-use building",
+      "role": "CS & PMC",
+      "year": "2024",
+      "source": "https://ecec.com.sa/project/3466/"
+    },
+    {
+      "project": "300-Bed Armed Forces Hospital, Jazan",
+      "client": "Armed Forces Medical Services",
+      "country": "Saudi Arabia",
+      "sector": "Healthcare hospital",
+      "role": "Design, BIM, AOR",
+      "year": "2025",
+      "source": "https://ecec.com.sa/project/300-bed-armed-forces-hospital/"
+    },
+    {
+      "project": "500-Bed General Hospital, Al-Ahsa",
+      "client": "Ministry of Health",
+      "country": "Saudi Arabia",
+      "sector": "Healthcare hospital",
+      "role": "Design",
+      "year": "2020",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "400-Bed Maternity & Children's Hospital, Dammam",
+      "client": "Ministry of Health",
+      "country": "Saudi Arabia",
+      "sector": "Healthcare hospital",
+      "role": "Design",
+      "year": "2010",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "NEOM Construction Village",
+      "client": "NEOM",
+      "country": "Saudi Arabia",
+      "sector": "Master plan residential urban",
+      "role": "Design + supervision",
+      "year": "2019+",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "NEOM Staff Offices",
+      "client": "NEOM",
+      "country": "Saudi Arabia",
+      "sector": "Commercial office building",
+      "role": "Design",
+      "year": "2021",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "MOC Public Libraries",
+      "client": "Ministry of Culture",
+      "country": "Saudi Arabia",
+      "sector": "Culture public building",
+      "role": "Design + supervision",
+      "year": "2021+",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Princess Al-Anoud Towers, Riyadh",
+      "client": "Princess Al-Anoud Foundation",
+      "country": "Saudi Arabia",
+      "sector": "Commercial tower building",
+      "role": "Design",
+      "year": "2002-05",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "King Abdullah Park, Riyadh",
+      "client": "n/s",
+      "country": "Saudi Arabia",
+      "sector": "Landscape park leisure",
+      "role": "Supervision",
+      "year": "2012",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Telal Al-Khamis compound",
+      "client": "n/s",
+      "country": "Saudi Arabia",
+      "sector": "Residential housing",
+      "role": "Supervision",
+      "year": "2022",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Al-Sulay / North Industrial Projects, Riyadh",
+      "client": "n/s",
+      "country": "Saudi Arabia",
+      "sector": "Industrial infrastructure",
+      "role": "Supervision",
+      "year": "2015/ongoing",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Intercity / Marriott Courtyard / Times Hotels, Riyadh",
+      "client": "n/s",
+      "country": "Saudi Arabia",
+      "sector": "Hospitality building",
+      "role": "Design/CS/PM",
+      "year": "2015-21",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "SPIMACO Medical Tower",
+      "client": "SPIMACO",
+      "country": "Saudi Arabia",
+      "sector": "Commercial building",
+      "role": "Supervision",
+      "year": "2021",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "project": "Janadriya Cultural Center",
+      "client": "n/s",
+      "country": "Saudi Arabia",
+      "sector": "Culture building",
+      "role": "Design",
+      "year": "2014",
+      "source": "https://www.ecec.com.sa/projects/"
+    }
+  ],
+  "strategic_partners": [
+    {
+      "name": "Siemens Smart Infrastructure",
+      "nature": "MoU (Aug 2026) - energy, industry, water, data centers, MEP in KSA",
+      "source": "https://www.dailynewsegypt.com/2026/08/16/ecec-signs-mou-with-siemens-smart-infrastructure-to-expand-saudi-cooperation/"
+    },
+    {
+      "name": "Ministry of Health",
+      "nature": "Cooperation agreement renewed Dec 2025",
+      "source": "https://www.linkedin.com/posts/ecec-east-consulting-engineering-company_ecec-moh-strategicpartnership-activity-7401526802147454976-du4k"
+    },
+    {
+      "name": "SEC ecosystem (SE-PDC, SE-NG)",
+      "nature": "Formalised collaboration; Power & Infrastructure department",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    }
+  ],
+  "geographic_presence": [
+    {
+      "country": "Saudi Arabia",
+      "office": "HQ Riyadh; projects in all 5 regions",
+      "source": "https://www.ecec.com.sa/projects/"
+    },
+    {
+      "country": "Egypt",
+      "office": "Cairo engineering hub (design production)",
+      "source": "https://almotawwer.com/english/321367/"
+    }
+  ],
+  "certifications": [
+    {
+      "name": "ISO 9001 (claimed; certificate not published)",
+      "source": "https://ecec.com.sa/services/"
+    }
+  ],
+  "classifications": [
+    {
+      "authority": "SEC SE-PDC / SE-NG",
+      "grade": "active vendor",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "authority": "National Water Company (NWC)",
+      "grade": "prequalified",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "authority": "SPARK; SPPC; Saudi Energy Solutions Valley",
+      "grade": "prequalified",
+      "source": "https://ecec.com.sa/power-infrastructure-delivery/"
+    },
+    {
+      "authority": "Saudi Aramco",
+      "grade": "qualification in progress (2026)",
+      "source": "https://www.dailynewsegypt.com/2026/08/16/ecec-signs-mou-with-siemens-smart-infrastructure-to-expand-saudi-cooperation/"
+    }
+  ],
+  "gaps": [
+    "Saudi Council of Engineers / MOMAH classification grade not found",
+    "CR number / legal form not found",
+    "ISO 14001/45001/19650 not evidenced",
+    "Headcount and revenue unverified",
+    "No GCC offices outside KSA (UAE/Qatar entry needs local partner)",
+    "Company profile PDF not retrieved"
+  ],
+  "entity_disambiguation": "Do NOT credit projects of ECEC (ecec.co, Dubai/Riyadh/Amman) e.g. Saudi French Hospital MEP; nor East China Engineering S&T (chinaecec.com)."
+}

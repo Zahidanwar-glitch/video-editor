@@ -1,0 +1,314 @@
+{
+  "_comment": "Scoring parameters for the ECEC BD Intelligence Agent. Change weights here, never in code. Every run records a hash of this file in the audit log so you can trace which model version produced which score.",
+  "model_version": "1.1.0",
+  "gcc_countries": [
+    "Saudi Arabia",
+    "UAE",
+    "Qatar"
+  ],
+  "fit_weights": {
+    "technical_fit": 0.15,
+    "service_alignment": 0.15,
+    "sector_experience": 0.1,
+    "client_relationship_potential": 0.1,
+    "geographic_fit": 0.05,
+    "strategic_importance": 0.1,
+    "revenue_potential": 0.15,
+    "resource_availability": 0.05,
+    "competitive_position": 0.1,
+    "long_term_growth_potential": 0.05
+  },
+  "min_technical_alignment_pct": 50,
+  "risk_categories": [
+    "commercial",
+    "financial",
+    "client_credit",
+    "technical_complexity",
+    "contractual",
+    "competition",
+    "resource_availability",
+    "schedule",
+    "supply_chain",
+    "regulatory",
+    "political",
+    "market_entry",
+    "subconsultant",
+    "reputation",
+    "payment"
+  ],
+  "risk_bands": [
+    [
+      30,
+      "Low Risk"
+    ],
+    [
+      60,
+      "Medium Risk"
+    ],
+    [
+      80,
+      "High Risk"
+    ],
+    [
+      100,
+      "Critical Risk"
+    ]
+  ],
+  "win_base_rates": {
+    "Tender": 0.15,
+    "RFP": 0.18,
+    "RFQ": 0.22,
+    "EOI": 0.2,
+    "PQ": 0.22,
+    "Pre-tender intelligence": 0.2,
+    "Award (sub-consultancy angle)": 0.25,
+    "Framework": 0.3,
+    "default": 0.15
+  },
+  "win_probability_bounds": [
+    0.03,
+    0.75
+  ],
+  "decision_rules": {
+    "go": {
+      "min_fit": 70,
+      "max_risk": 60,
+      "min_win": 0.25
+    },
+    "no_go": {
+      "max_fit": 50,
+      "min_risk": 81,
+      "max_win": 0.12
+    },
+    "strategic_override_min_importance": 9,
+    "min_expected_value_usd": 50000
+  },
+  "economics": {
+    "bid_cost_pct_of_fee": 0.015,
+    "bid_cost_min_usd": 15000,
+    "bid_cost_max_usd": 400000,
+    "assumed_margin_pct": 0.18,
+    "default_consulting_pct_of_capex": {
+      "PMC": 0.03,
+      "design": 0.05,
+      "supervision": 0.025,
+      "design+supervision": 0.07,
+      "default": 0.04
+    },
+    "assumed_fee_when_unknown_usd": {
+      "_comment": "Placeholder fee for ranking only when the source gives no value. Always flagged in the report.",
+      "Tender": 1500000,
+      "RFP": 2000000,
+      "RFQ": 800000,
+      "PQ": 3000000,
+      "EOI": 2000000,
+      "Award (sub-consultancy angle)": 1000000,
+      "Pre-tender intelligence": 2000000,
+      "default": 1500000
+    },
+    "sub_consultancy_share": 0.2
+  },
+  "capacity": {
+    "_comment": "Edit to reflect real bench strength. Used by Resource Availability and Resource Demand.",
+    "max_concurrent_major_bids": 6,
+    "comfortable_fee_usd": 15000000,
+    "stretch_fee_usd": 40000000
+  },
+  "strategic_keywords": {
+    "10": [
+      "expo 2030",
+      "fifa",
+      "world cup 2034",
+      "diriyah",
+      "king salman park",
+      "riyadh metro",
+      "qiddiya",
+      "red sea",
+      "neom",
+      "roshn",
+      "king salman international airport",
+      "sports boulevard",
+      "new murabba",
+      "mukaab"
+    ],
+    "8": [
+      "ministry",
+      "royal commission",
+      "aramco",
+      "sec ",
+      "saudi electricity",
+      "swcc",
+      "swpc",
+      "nwc",
+      "national water",
+      "nhc",
+      "ashghal",
+      "adnoc",
+      "dewa",
+      "rta",
+      "etihad rail",
+      "qatarenergy",
+      "kahramaa",
+      "pif"
+    ],
+    "6": [
+      "municipality",
+      "amanah",
+      "authority",
+      "developer",
+      "university",
+      "hospital"
+    ]
+  },
+  "growth_sectors": [
+    "Smart City",
+    "ICT",
+    "Utilities-Water",
+    "Transportation",
+    "Infrastructure",
+    "Sports & Entertainment",
+    "Urban Development"
+  ],
+  "country_profile": {
+    "Saudi Arabia": {
+      "geo": 10,
+      "market_entry_risk": 1,
+      "political_risk": 2,
+      "regulatory_risk": 2,
+      "payment_risk": 3,
+      "local_preference": true
+    },
+    "UAE": {
+      "geo": 6,
+      "market_entry_risk": 3,
+      "political_risk": 1,
+      "regulatory_risk": 2,
+      "payment_risk": 2,
+      "local_preference": false
+    },
+    "Qatar": {
+      "geo": 5,
+      "market_entry_risk": 4,
+      "political_risk": 2,
+      "regulatory_risk": 3,
+      "payment_risk": 2,
+      "local_preference": true
+    }
+  },
+  "client_risk_overrides": {
+    "_comment": "Lowercase substring match on client name. Reflects publicly reported funding reprioritisation and payment track records; review quarterly.",
+    "neom": {
+      "client_credit": 4,
+      "payment": 4,
+      "political": 3,
+      "note": "Public reports since 2024-25 of NEOM scope re-phasing and contract cancellations; funding reprioritised by PIF."
+    },
+    "red sea": {
+      "client_credit": 2,
+      "payment": 3
+    },
+    "aramco": {
+      "client_credit": 1,
+      "payment": 2,
+      "contractual": 4,
+      "note": "Strong credit; onerous GI/contract terms and strict vendor qualification."
+    },
+    "adnoc": {
+      "client_credit": 1,
+      "payment": 2,
+      "contractual": 4
+    },
+    "qatarenergy": {
+      "client_credit": 1,
+      "payment": 2,
+      "contractual": 4
+    },
+    "ministry": {
+      "client_credit": 2,
+      "payment": 3,
+      "note": "Government payment cycles in KSA can be slow; Etimad payment tracking improved since 2023."
+    }
+  },
+  "competitor_landscape": {
+    "Saudi Arabia": {
+      "global_tier1": [
+        "AECOM",
+        "Parsons",
+        "Jacobs",
+        "WSP",
+        "AtkinsRéalis",
+        "Mace",
+        "Turner & Townsend",
+        "Egis",
+        "Systra",
+        "Arcadis",
+        "Hill International",
+        "KEO International",
+        "Dar Al-Handasah",
+        "Khatib & Alami"
+      ],
+      "local_leaders": [
+        "Saud Consult (Saudi Consulting Services)",
+        "Zuhair Fayez Partnership",
+        "Al-Othman Consulting",
+        "Omrania",
+        "EHAF Consulting Engineers",
+        "Projacs",
+        "Bin Laden Engineering",
+        "SRCC Consulting"
+      ]
+    },
+    "UAE": {
+      "global_tier1": [
+        "AECOM",
+        "WSP",
+        "AtkinsRéalis",
+        "Jacobs",
+        "Mott MacDonald",
+        "Arcadis",
+        "Parsons",
+        "Egis",
+        "Systra",
+        "Hill International",
+        "Turner & Townsend"
+      ],
+      "local_leaders": [
+        "KEO International",
+        "Dar Al-Handasah",
+        "Khatib & Alami",
+        "Dewan Architects + Engineers",
+        "Pace (Pacific Consultants)",
+        "Archgroup",
+        "Ginco",
+        "AESG"
+      ]
+    },
+    "Qatar": {
+      "global_tier1": [
+        "AECOM",
+        "WSP",
+        "Jacobs",
+        "AtkinsRéalis",
+        "Parsons",
+        "KEO International",
+        "Hill International",
+        "Mott MacDonald",
+        "Arcadis"
+      ],
+      "local_leaders": [
+        "Arab Engineering Bureau",
+        "Qatar Design Consortium",
+        "Khatib & Alami",
+        "Dar Al-Handasah",
+        "Ghazal Consultants",
+        "Engineering Consultants Group (ECG)"
+      ]
+    }
+  },
+  "learning": {
+    "min_outcomes_for_calibration": 8,
+    "max_calibration_shift": 0.5
+  },
+  "win_factor_coef": 0.2,
+  "win_factor_cap_logit": 1.4
+}
