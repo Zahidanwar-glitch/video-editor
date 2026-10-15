@@ -1,0 +1,36 @@
+{
+  "_about": "Per space type: occupancy, activity, lighting/equipment densities, ventilation category (keys in ventilation_rates.json), exhaust rule, conditioning and noise target. 'occupants' is either {'fixed': n} or {'m2_per_person': a}. Equipment 'fixed_w' is added on top of w_m2.",
+  "_status": "Typical design values from ASHRAE Fundamentals 2021 Ch.18 and residential practice in KSA/GCC. Edit to suit the project brief.",
+  "activity_gains_w": {
+    "_source": "ASHRAE Fundamentals 2021 Ch.18 Table 1 (adjusted, at 24 C room)",
+    "seated":     {"sensible": 70, "latent": 45},
+    "office":     {"sensible": 75, "latent": 55},
+    "light_work": {"sensible": 80, "latent": 80},
+    "sleeping":   {"sensible": 60, "latent": 25},
+    "retail":     {"sensible": 75, "latent": 70}
+  },
+  "types": {
+    "majlis":         {"label": "Majlis / reception", "occupants": {"m2_per_person": 2.5}, "activity": "seated", "lighting_w_m2": 12, "equip_w_m2": 4, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 30},
+    "living":         {"label": "Living / family", "occupants": {"m2_per_person": 4.0}, "activity": "seated", "lighting_w_m2": 10, "equip_w_m2": 8, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 30},
+    "dining":         {"label": "Dining", "occupants": {"m2_per_person": 2.5}, "activity": "seated", "lighting_w_m2": 10, "equip_w_m2": 3, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 30},
+    "bedroom":        {"label": "Bedroom", "occupants": {"fixed": 2}, "activity": "sleeping", "lighting_w_m2": 8, "equip_w_m2": 5, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 25},
+    "master_bedroom": {"label": "Master bedroom", "occupants": {"fixed": 2}, "activity": "sleeping", "lighting_w_m2": 8, "equip_w_m2": 6, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 25},
+    "maid_room":      {"label": "Maid / driver room", "occupants": {"fixed": 1}, "activity": "sleeping", "lighting_w_m2": 8, "equip_w_m2": 5, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 30},
+    "kitchen":        {"label": "Kitchen", "occupants": {"fixed": 2}, "activity": "light_work", "lighting_w_m2": 10, "equip_w_m2": 0, "equip_fixed_w": 1500, "equip_latent_w": 500, "vent_category": "dwelling", "exhaust": "kitchen_residential", "conditioned": true, "nc": 40},
+    "dressing":       {"label": "Dressing", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 8, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 30},
+    "hall":           {"label": "Entrance hall / lobby", "occupants": {"fixed": 1}, "activity": "seated", "lighting_w_m2": 8, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "corridor", "exhaust": null, "conditioned": true, "nc": 35},
+    "corridor":       {"label": "Corridor", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 6, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "corridor", "exhaust": null, "conditioned": true, "nc": 35},
+    "stair":          {"label": "Stair", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 6, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "corridor", "exhaust": null, "conditioned": true, "nc": 35},
+    "bath":           {"label": "Bath / toilet (private)", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 8, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": null, "exhaust": "toilet_private", "conditioned": false, "nc": 40},
+    "toilet_public":  {"label": "Toilet (public)", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 8, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": null, "exhaust": "toilet_public", "conditioned": false, "nc": 40},
+    "laundry":        {"label": "Laundry", "occupants": {"fixed": 0}, "activity": "light_work", "lighting_w_m2": 8, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": null, "exhaust": "laundry", "conditioned": false, "nc": 45},
+    "store":          {"label": "Store", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 5, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": null, "exhaust": null, "conditioned": false, "nc": 45},
+    "shaft":          {"label": "Shaft / riser", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 0, "equip_w_m2": 0, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": null, "exhaust": null, "conditioned": false, "nc": 60, "is_shaft": true},
+    "office":         {"label": "Office", "occupants": {"m2_per_person": 10.0}, "activity": "office", "lighting_w_m2": 9, "equip_w_m2": 12, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "office", "exhaust": null, "conditioned": true, "nc": 35},
+    "meeting":        {"label": "Meeting room", "occupants": {"m2_per_person": 2.0}, "activity": "office", "lighting_w_m2": 11, "equip_w_m2": 5, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "conference", "exhaust": null, "conditioned": true, "nc": 30},
+    "retail":         {"label": "Shop / retail", "occupants": {"m2_per_person": 6.7}, "activity": "retail", "lighting_w_m2": 14, "equip_w_m2": 5, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "retail", "exhaust": null, "conditioned": true, "nc": 40},
+    "pantry":         {"label": "Pantry", "occupants": {"fixed": 1}, "activity": "light_work", "lighting_w_m2": 10, "equip_w_m2": 30, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "breakroom", "exhaust": "pantry", "conditioned": true, "nc": 40},
+    "electrical":     {"label": "Electrical / IT room", "occupants": {"fixed": 0}, "activity": "seated", "lighting_w_m2": 8, "equip_w_m2": 100, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": null, "exhaust": null, "conditioned": true, "nc": 50},
+    "unknown":        {"label": "Unknown - ask user", "occupants": {"m2_per_person": 10.0}, "activity": "seated", "lighting_w_m2": 10, "equip_w_m2": 5, "equip_fixed_w": 0, "equip_latent_w": 0, "vent_category": "dwelling", "exhaust": null, "conditioned": true, "nc": 35}
+  }
+}

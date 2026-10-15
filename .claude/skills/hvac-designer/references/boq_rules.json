@@ -1,0 +1,26 @@
+{
+  "_about": "Rules turning the design model into BOQ quantities (no prices). Waste % per section is editable in the Excel too.",
+  "waste_pct": {
+    "equipment": 0, "ductwork": 10, "flexible_duct": 10, "air_terminals": 0, "dampers": 0, "fans": 0,
+    "pipes": 10, "fittings": 5, "insulation": 10, "condensate": 10, "supports": 5, "controls": 0, "testing": 0
+  },
+  "duct_supports_spacing_m": {"SMACNA": 2.4, "DW144": 3.0},
+  "duct_insulation": {
+    "supply": "25 mm glass wool 24 kg/m3 with FSK facing (external wrap)",
+    "return": "25 mm glass wool 24 kg/m3 with FSK facing (external wrap)",
+    "fresh_air": "25 mm glass wool 24 kg/m3 with FSK facing (hot outdoor air)",
+    "exhaust": null
+  },
+  "duct_fittings_note": "Duct area includes straight duct only; fittings are allowed within the waste %.",
+  "refrigerant_fittings_per_run": {"elbows_fixed": 4, "elbows_per_bend": 1, "couplings_per_m": 0.33},
+  "flex_duct": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
+  "vcd_per_branch": true,
+  "fire_damper_note": "Fire dampers where ducts cross fire-rated walls/floors - fire compartmentation not shown on architectural plan: confirm with fire consultant.",
+  "testing_items": [
+    ["Pressure testing of refrigerant piping (nitrogen, 24 h hold) and evacuation", "Lot"],
+    ["Ductwork leakage testing per SMACNA HVAC Air Duct Leakage Test Manual / DW/143 (sample basis)", "Lot"],
+    ["Testing, adjusting and balancing (TAB) of all air systems by NEBB/AABC certified agency", "Lot"],
+    ["Commissioning of indoor/outdoor units, fans and controls incl. functional performance tests", "Lot"],
+    ["As-built drawings, O&M manuals and training", "Lot"]
+  ]
+}

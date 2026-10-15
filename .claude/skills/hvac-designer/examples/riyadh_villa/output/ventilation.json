@@ -1,0 +1,325 @@
+{
+  "zones": {
+    "Z-GF-01": {
+      "rooms": [
+        {
+          "room": "GF-06",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 21.92,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 6.6,
+          "Vbz": 11.6,
+          "Voz": 14.5
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 6.6,
+      "Vot_ls": 14.5,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "transfer air from Z-GF-04 (OA added to that zone)"
+    },
+    "Z-GF-02": {
+      "rooms": [
+        {
+          "room": "GF-07",
+          "category": "dwelling",
+          "people": 1,
+          "area_m2": 12.99,
+          "Rp_Pz": 2.5,
+          "Ra_Az": 3.9,
+          "Vbz": 6.4,
+          "Voz": 8.0
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 2.5,
+      "sum_RaAz": 3.9,
+      "Vot_ls": 8.0,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-03": {
+      "rooms": [
+        {
+          "room": "GF-01",
+          "category": "dwelling",
+          "people": 12,
+          "area_m2": 27.79,
+          "Rp_Pz": 30.0,
+          "Ra_Az": 8.3,
+          "Vbz": 38.3,
+          "Voz": 47.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 30.0,
+      "sum_RaAz": 8.3,
+      "Vot_ls": 47.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-GF-04": {
+      "rooms": [
+        {
+          "room": "GF-05",
+          "category": "dwelling",
+          "people": 9,
+          "area_m2": 21.31,
+          "Rp_Pz": 22.5,
+          "Ra_Az": 6.4,
+          "Vbz": 28.9,
+          "Voz": 36.1
+        },
+        {
+          "room": "GF-08",
+          "category": "corridor",
+          "people": 0,
+          "area_m2": 12.54,
+          "Rp_Pz": 0.0,
+          "Ra_Az": 3.8,
+          "Vbz": 3.8,
+          "Voz": 4.7
+        },
+        {
+          "room": "GF-04",
+          "category": "corridor",
+          "people": 0,
+          "area_m2": 7.16,
+          "Rp_Pz": 0.0,
+          "Ra_Az": 2.1,
+          "Vbz": 2.1,
+          "Voz": 2.7
+        },
+        {
+          "room": "GF-02",
+          "category": "corridor",
+          "people": 1,
+          "area_m2": 16.55,
+          "Rp_Pz": 0.0,
+          "Ra_Az": 5.0,
+          "Vbz": 5.0,
+          "Voz": 6.2
+        },
+        {
+          "room": "GF-03",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 30.32,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 9.1,
+          "Vbz": 29.1,
+          "Voz": 36.4
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 0.75,
+      "sum_RpPz": 42.5,
+      "sum_RaAz": 26.4,
+      "Vot_ls": 106.3,
+      "method": "multi-zone simplified: Vot = (D·ΣRpPz + ΣRaAz)/Ev",
+      "oa_method": "ducted to unit return plenum",
+      "transfer_out_ls": 14.5
+    },
+    "Z-FF-01": {
+      "rooms": [
+        {
+          "room": "FF-03",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 27.79,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 8.3,
+          "Vbz": 13.3,
+          "Voz": 16.7
+        },
+        {
+          "room": "FF-04",
+          "category": "dwelling",
+          "people": 0,
+          "area_m2": 5.73,
+          "Rp_Pz": 0.0,
+          "Ra_Az": 1.7,
+          "Vbz": 1.7,
+          "Voz": 2.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 0.75,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 10.1,
+      "Vot_ls": 20.1,
+      "method": "multi-zone simplified: Vot = (D·ΣRpPz + ΣRaAz)/Ev",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-FF-02": {
+      "rooms": [
+        {
+          "room": "FF-10",
+          "category": "dwelling",
+          "people": 9,
+          "area_m2": 32.64,
+          "Rp_Pz": 22.5,
+          "Ra_Az": 9.8,
+          "Vbz": 32.3,
+          "Voz": 40.4
+        },
+        {
+          "room": "FF-11",
+          "category": "corridor",
+          "people": 0,
+          "area_m2": 12.46,
+          "Rp_Pz": 0.0,
+          "Ra_Az": 3.7,
+          "Vbz": 3.7,
+          "Voz": 4.7
+        },
+        {
+          "room": "FF-07",
+          "category": "corridor",
+          "people": 0,
+          "area_m2": 7.23,
+          "Rp_Pz": 0.0,
+          "Ra_Az": 2.2,
+          "Vbz": 2.2,
+          "Voz": 2.7
+        },
+        {
+          "room": "FF-08",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 19.76,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 5.9,
+          "Vbz": 10.9,
+          "Voz": 13.7
+        },
+        {
+          "room": "FF-05",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 21.37,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 6.4,
+          "Vbz": 11.4,
+          "Voz": 14.3
+        },
+        {
+          "room": "FF-09",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 13.04,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.9,
+          "Vbz": 8.9,
+          "Voz": 11.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 0.75,
+      "sum_RpPz": 37.5,
+      "sum_RaAz": 31.9,
+      "Vot_ls": 92.6,
+      "method": "multi-zone simplified: Vot = (D·ΣRpPz + ΣRaAz)/Ev",
+      "oa_method": "ducted to unit return plenum"
+    }
+  },
+  "exhaust": {
+    "GF-06": {
+      "room": "KITCHEN",
+      "floor": "GF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "GF-09": {
+      "room": "MAID WC",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-11": {
+      "room": "GUEST WC",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-13": {
+      "room": "LAUNDRY",
+      "floor": "GF",
+      "rule": "laundry",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": "Treated as toilet rate (designer choice)"
+    },
+    "FF-01": {
+      "room": "MASTER BATH",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-02": {
+      "room": "BATH 2",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-12": {
+      "room": "BATH 4",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-14": {
+      "room": "BATH 3",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    }
+  },
+  "transfers": [
+    {
+      "from_zone": "Z-GF-04",
+      "to_zone": "Z-GF-01",
+      "ls": 14.5
+    }
+  ],
+  "basis": {
+    "Ez": 0.8,
+    "Ez_reason": "heat-pump heating with ceiling supply of warm air",
+    "clause_oa": "SBC 501 §403.3.1.1 & Table 403.3.1.1; ASHRAE 62.1-2019 §6.2.2.1 Eq.6-1, Table 6-1",
+    "clause_ez": "ASHRAE 62.1-2019 §6.2.2.2 Table 6-2 (Ez)",
+    "clause_ev": "ASHRAE 62.1-2019 §6.2.4.3.1 simplified procedure (Ev)"
+  },
+  "totals": {
+    "oa_ls": 274.9,
+    "exhaust_ls": 225.0,
+    "balance_ls": 49.9,
+    "res_62_2_check_ls": 64.6
+  }
+}

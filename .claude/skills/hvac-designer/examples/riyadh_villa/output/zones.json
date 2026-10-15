@@ -1,0 +1,89 @@
+{
+  "zones": [
+    {
+      "id": "Z-GF-01",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-06"
+      ],
+      "load_kw": 2.54
+    },
+    {
+      "id": "Z-GF-02",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-07"
+      ],
+      "load_kw": 0.74
+    },
+    {
+      "id": "Z-GF-03",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-01"
+      ],
+      "load_kw": 3.04
+    },
+    {
+      "id": "Z-GF-04",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-05",
+        "GF-08",
+        "GF-04",
+        "GF-02",
+        "GF-03"
+      ],
+      "load_kw": 5.8
+    },
+    {
+      "id": "Z-FF-01",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-03",
+        "FF-04"
+      ],
+      "load_kw": 2.03
+    },
+    {
+      "id": "Z-FF-02",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-10",
+        "FF-11",
+        "FF-07",
+        "FF-08",
+        "FF-05",
+        "FF-09"
+      ],
+      "load_kw": 6.78
+    }
+  ],
+  "exhaust_only": [
+    "GF-09",
+    "GF-11",
+    "GF-13",
+    "FF-01",
+    "FF-02",
+    "FF-12",
+    "FF-14"
+  ],
+  "unconditioned": [
+    "GF-10",
+    "GF-12",
+    "FF-06",
+    "FF-13"
+  ]
+}

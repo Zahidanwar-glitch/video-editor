@@ -1,0 +1,43 @@
+{
+  "_about": "Envelope design values per U-value set (W/m2.K). Code maximum values are used as design values when the actual wall/roof build-up is unknown - log this and ask for the real build-up. 'project_override' in project.json wins over these.",
+  "_status": "Compiled from the named codes for preliminary design; values are prescriptive maxima. VERIFY against the adopted edition and climate zone.",
+  "sets": {
+    "SBC602": {
+      "source": "SBC 602 (2018) residential prescriptive envelope - climate zone 1/2 (verify zone for city)",
+      "wall_ext": 0.40, "roof": 0.20, "glazing_u": 2.67, "glazing_shgc": 0.25, "door_ext": 2.0,
+      "floor_exposed": 0.40, "slab_edge_f_w_mk": 1.2, "partition_unconditioned": 1.6,
+      "wall_group": "D", "roof_type": "roof_insulated_concrete"
+    },
+    "SBC601": {
+      "source": "SBC 601 (2018) commercial prescriptive envelope (verify zone)",
+      "wall_ext": 0.51, "roof": 0.27, "glazing_u": 2.56, "glazing_shgc": 0.25, "door_ext": 2.0,
+      "floor_exposed": 0.40, "slab_edge_f_w_mk": 1.2, "partition_unconditioned": 1.6,
+      "wall_group": "D", "roof_type": "roof_insulated_concrete"
+    },
+    "GCC": {
+      "source": "Dubai Green Building Regulations §501 (typical GCC values)",
+      "wall_ext": 0.57, "roof": 0.30, "glazing_u": 2.10, "glazing_shgc": 0.40, "door_ext": 2.0,
+      "floor_exposed": 0.50, "slab_edge_f_w_mk": 1.2, "partition_unconditioned": 1.6,
+      "wall_group": "D", "roof_type": "roof_insulated_concrete"
+    },
+    "UK_PartL": {
+      "source": "Approved Document L 2021 Vol.1 Table 4.1 limiting values",
+      "wall_ext": 0.26, "roof": 0.16, "glazing_u": 1.60, "glazing_shgc": 0.50, "door_ext": 1.6,
+      "floor_exposed": 0.18, "slab_edge_f_w_mk": 0.6, "partition_unconditioned": 1.6,
+      "wall_group": "D", "roof_type": "roof_insulated_concrete"
+    },
+    "IECC_CZ2": {
+      "source": "IECC 2021 Table R402.1.2 climate zone 2 (U-0.084 wall, U-0.026 ceiling, U-0.40 fenestration)",
+      "wall_ext": 0.477, "roof": 0.148, "glazing_u": 2.27, "glazing_shgc": 0.25, "door_ext": 2.27,
+      "floor_exposed": 0.37, "slab_edge_f_w_mk": 1.0, "partition_unconditioned": 1.6,
+      "wall_group": "D", "roof_type": "roof_insulated_concrete"
+    },
+    "ASHRAE90.1_CZ1_2": {
+      "source": "ASHRAE 90.1-2019 Tables 5.5-1/5.5-2 (mass wall, insulation entirely above deck)",
+      "wall_ext": 0.70, "roof": 0.27, "glazing_u": 3.41, "glazing_shgc": 0.25, "door_ext": 2.0,
+      "floor_exposed": 0.60, "slab_edge_f_w_mk": 1.26, "partition_unconditioned": 1.6,
+      "wall_group": "D", "roof_type": "roof_insulated_concrete"
+    }
+  },
+  "shading_coefficient_from_shgc": "SC = SHGC / 0.87 (ASHRAE Fundamentals 1997 Ch.29)"
+}

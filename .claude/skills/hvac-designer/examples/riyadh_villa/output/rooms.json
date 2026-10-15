@@ -1,0 +1,6273 @@
+{
+  "source_pdf": "../sample_villa.pdf",
+  "floors": [
+    {
+      "id": "GF",
+      "name": "Ground Floor",
+      "title": "GROUND FLOOR PLAN",
+      "page": 1,
+      "kind": "floor",
+      "zoom": 2.3518518518518516,
+      "mm_per_pt": 35.27777777777777,
+      "page_size_pt": [
+        1190.551025390625,
+        841.8897705078125
+      ],
+      "rooms": [
+        {
+          "name": "MAJLIS",
+          "space_type": "majlis",
+          "area_m2": 27.79,
+          "area_text_m2": 27.31,
+          "bbox_pt": [
+            130.11,
+            334.2,
+            296.36,
+            472.39
+          ],
+          "centroid_pt": [
+            213.94,
+            404.15
+          ],
+          "polygon_pt": [
+            [
+              162.0,
+              334.2
+            ],
+            [
+              212.17,
+              334.2
+            ],
+            [
+              213.02,
+              337.18
+            ],
+            [
+              296.36,
+              337.61
+            ],
+            [
+              295.94,
+              472.39
+            ],
+            [
+              133.09,
+              471.97
+            ],
+            [
+              133.09,
+              431.57
+            ],
+            [
+              130.11,
+              430.72
+            ],
+            [
+              130.11,
+              397.13
+            ],
+            [
+              133.09,
+              396.28
+            ],
+            [
+              133.09,
+              337.61
+            ],
+            [
+              161.15,
+              337.18
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                162.0,
+                334.2
+              ],
+              "p2": [
+                212.17,
+                334.2
+              ],
+              "length_m": 1.77,
+              "exterior_frac": 1.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                213.02,
+                337.18
+              ],
+              "p2": [
+                296.36,
+                337.61
+              ],
+              "length_m": 2.94,
+              "exterior_frac": 1.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.005,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                296.36,
+                337.61
+              ],
+              "p2": [
+                295.94,
+                472.39
+              ],
+              "length_m": 4.75,
+              "exterior_frac": 0.0,
+              "bearing": 70.6,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.003
+              ]
+            },
+            {
+              "p1": [
+                295.94,
+                472.39
+              ],
+              "p2": [
+                133.09,
+                471.97
+              ],
+              "length_m": 5.75,
+              "exterior_frac": 0.0,
+              "bearing": 160.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.003,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                471.97
+              ],
+              "p2": [
+                133.09,
+                431.57
+              ],
+              "length_m": 1.43,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                130.11,
+                430.72
+              ],
+              "p2": [
+                130.11,
+                397.13
+              ],
+              "length_m": 1.18,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                396.28
+              ],
+              "p2": [
+                133.09,
+                337.61
+              ],
+              "length_m": 2.07,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                337.61
+              ],
+              "p2": [
+                161.15,
+                337.18
+              ],
+              "length_m": 0.99,
+              "exterior_frac": 1.0,
+              "bearing": 339.5,
+              "orientation": "N",
+              "normal_page": [
+                -0.015,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 5.7
+            },
+            {
+              "orientation": "W",
+              "length_m": 4.68
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W1",
+              "orientation": "N",
+              "bearing": 340.4,
+              "width_m": 1.8,
+              "height_m": 1.5,
+              "at_pt": [
+                187.1,
+                318.0
+              ]
+            },
+            {
+              "tag": "W2",
+              "orientation": "W",
+              "bearing": 250.4,
+              "width_m": 1.2,
+              "height_m": 1.5,
+              "at_pt": [
+                109.1,
+                413.8
+              ]
+            }
+          ],
+          "id": "GF-01",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "ENTRANCE HALL",
+          "space_type": "hall",
+          "area_m2": 16.55,
+          "area_text_m2": 16.15,
+          "bbox_pt": [
+            295.94,
+            337.18,
+            398.41,
+            474.94
+          ],
+          "centroid_pt": [
+            346.96,
+            405.04
+          ],
+          "polygon_pt": [
+            [
+              299.34,
+              337.18
+            ],
+            [
+              395.86,
+              337.61
+            ],
+            [
+              395.86,
+              406.06
+            ],
+            [
+              398.41,
+              406.91
+            ],
+            [
+              398.41,
+              429.45
+            ],
+            [
+              395.86,
+              430.3
+            ],
+            [
+              395.43,
+              472.39
+            ],
+            [
+              325.28,
+              472.39
+            ],
+            [
+              324.43,
+              474.94
+            ],
+            [
+              298.91,
+              474.52
+            ],
+            [
+              298.91,
+              430.3
+            ],
+            [
+              295.94,
+              429.45
+            ],
+            [
+              295.94,
+              406.91
+            ],
+            [
+              298.91,
+              406.06
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                299.34,
+                337.18
+              ],
+              "p2": [
+                395.86,
+                337.61
+              ],
+              "length_m": 3.41,
+              "exterior_frac": 1.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.004,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                395.86,
+                337.61
+              ],
+              "p2": [
+                395.86,
+                406.06
+              ],
+              "length_m": 2.41,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                398.41,
+                406.91
+              ],
+              "p2": [
+                398.41,
+                429.45
+              ],
+              "length_m": 0.8,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                395.86,
+                430.3
+              ],
+              "p2": [
+                395.43,
+                472.39
+              ],
+              "length_m": 1.48,
+              "exterior_frac": 0.0,
+              "bearing": 71.0,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.01
+              ]
+            },
+            {
+              "p1": [
+                395.43,
+                472.39
+              ],
+              "p2": [
+                325.28,
+                472.39
+              ],
+              "length_m": 2.47,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                324.43,
+                474.94
+              ],
+              "p2": [
+                298.91,
+                474.52
+              ],
+              "length_m": 0.9,
+              "exterior_frac": 0.0,
+              "bearing": 161.3,
+              "orientation": "S",
+              "normal_page": [
+                -0.016,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                298.91,
+                474.52
+              ],
+              "p2": [
+                298.91,
+                430.3
+              ],
+              "length_m": 1.56,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                295.94,
+                429.45
+              ],
+              "p2": [
+                295.94,
+                406.91
+              ],
+              "length_m": 0.8,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                298.91,
+                406.06
+              ],
+              "p2": [
+                299.34,
+                337.18
+              ],
+              "length_m": 2.43,
+              "exterior_frac": 0.0,
+              "bearing": 250.8,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.006
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 3.41
+            }
+          ],
+          "id": "GF-02",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "LIVING",
+          "space_type": "living",
+          "area_m2": 30.32,
+          "area_text_m2": 29.69,
+          "bbox_pt": [
+            397.98,
+            334.2,
+            578.27,
+            472.39
+          ],
+          "centroid_pt": [
+            487.13,
+            403.95
+          ],
+          "polygon_pt": [
+            [
+              453.69,
+              334.2
+            ],
+            [
+              521.29,
+              334.2
+            ],
+            [
+              522.14,
+              337.18
+            ],
+            [
+              575.72,
+              337.61
+            ],
+            [
+              575.72,
+              370.77
+            ],
+            [
+              578.27,
+              371.62
+            ],
+            [
+              578.27,
+              422.22
+            ],
+            [
+              575.72,
+              423.07
+            ],
+            [
+              575.29,
+              472.39
+            ],
+            [
+              397.98,
+              471.97
+            ],
+            [
+              397.98,
+              337.61
+            ],
+            [
+              452.83,
+              337.18
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                453.69,
+                334.2
+              ],
+              "p2": [
+                521.29,
+                334.2
+              ],
+              "length_m": 2.38,
+              "exterior_frac": 1.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                522.14,
+                337.18
+              ],
+              "p2": [
+                575.72,
+                337.61
+              ],
+              "length_m": 1.89,
+              "exterior_frac": 1.0,
+              "bearing": 340.9,
+              "orientation": "N",
+              "normal_page": [
+                0.008,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                337.61
+              ],
+              "p2": [
+                575.72,
+                370.77
+              ],
+              "length_m": 1.17,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                578.27,
+                371.62
+              ],
+              "p2": [
+                578.27,
+                422.22
+              ],
+              "length_m": 1.79,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                423.07
+              ],
+              "p2": [
+                575.29,
+                472.39
+              ],
+              "length_m": 1.74,
+              "exterior_frac": 1.0,
+              "bearing": 70.9,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.009
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                472.39
+              ],
+              "p2": [
+                397.98,
+                471.97
+              ],
+              "length_m": 6.26,
+              "exterior_frac": 0.0,
+              "bearing": 160.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.002,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                397.98,
+                471.97
+              ],
+              "p2": [
+                397.98,
+                337.61
+              ],
+              "length_m": 4.74,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                397.98,
+                337.61
+              ],
+              "p2": [
+                452.83,
+                337.18
+              ],
+              "length_m": 1.94,
+              "exterior_frac": 1.0,
+              "bearing": 340.0,
+              "orientation": "N",
+              "normal_page": [
+                -0.008,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 6.21
+            },
+            {
+              "orientation": "E",
+              "length_m": 4.7
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W4",
+              "orientation": "N",
+              "bearing": 340.4,
+              "width_m": 2.4,
+              "height_m": 2.1,
+              "at_pt": [
+                487.6,
+                318.0
+              ]
+            },
+            {
+              "tag": "W1",
+              "orientation": "E",
+              "bearing": 70.4,
+              "width_m": 1.8,
+              "height_m": 1.5,
+              "at_pt": [
+                599.5,
+                396.8
+              ]
+            }
+          ],
+          "id": "GF-03",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "CORRIDOR",
+          "space_type": "corridor",
+          "area_m2": 7.16,
+          "area_text_m2": 6.96,
+          "bbox_pt": [
+            270.43,
+            474.52,
+            353.34,
+            545.95
+          ],
+          "centroid_pt": [
+            311.67,
+            509.02
+          ],
+          "polygon_pt": [
+            [
+              270.85,
+              474.52
+            ],
+            [
+              352.91,
+              474.52
+            ],
+            [
+              353.34,
+              542.55
+            ],
+            [
+              325.28,
+              542.98
+            ],
+            [
+              324.43,
+              545.95
+            ],
+            [
+              299.34,
+              545.95
+            ],
+            [
+              298.49,
+              542.98
+            ],
+            [
+              270.85,
+              542.98
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                270.85,
+                474.52
+              ],
+              "p2": [
+                352.91,
+                474.52
+              ],
+              "length_m": 2.89,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                352.91,
+                474.52
+              ],
+              "p2": [
+                353.34,
+                542.55
+              ],
+              "length_m": 2.4,
+              "exterior_frac": 0.0,
+              "bearing": 70.0,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.006
+              ]
+            },
+            {
+              "p1": [
+                353.34,
+                542.55
+              ],
+              "p2": [
+                325.28,
+                542.98
+              ],
+              "length_m": 0.99,
+              "exterior_frac": 0.0,
+              "bearing": 159.5,
+              "orientation": "S",
+              "normal_page": [
+                0.015,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                324.43,
+                545.95
+              ],
+              "p2": [
+                299.34,
+                545.95
+              ],
+              "length_m": 0.89,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                298.49,
+                542.98
+              ],
+              "p2": [
+                270.85,
+                542.98
+              ],
+              "length_m": 0.98,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                270.85,
+                542.98
+              ],
+              "p2": [
+                270.85,
+                474.52
+              ],
+              "length_m": 2.42,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            }
+          ],
+          "exterior_walls": [],
+          "id": "GF-04",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "DINING",
+          "space_type": "dining",
+          "area_m2": 21.31,
+          "area_text_m2": 20.9,
+          "bbox_pt": [
+            130.11,
+            474.52,
+            268.3,
+            602.5
+          ],
+          "centroid_pt": [
+            199.64,
+            537.23
+          ],
+          "polygon_pt": [
+            [
+              133.51,
+              474.52
+            ],
+            [
+              267.45,
+              474.52
+            ],
+            [
+              267.87,
+              599.1
+            ],
+            [
+              242.79,
+              599.53
+            ],
+            [
+              241.94,
+              602.5
+            ],
+            [
+              222.8,
+              602.5
+            ],
+            [
+              221.95,
+              599.53
+            ],
+            [
+              172.2,
+              599.53
+            ],
+            [
+              171.35,
+              602.5
+            ],
+            [
+              151.8,
+              602.5
+            ],
+            [
+              150.94,
+              599.53
+            ],
+            [
+              133.51,
+              599.53
+            ],
+            [
+              133.09,
+              559.13
+            ],
+            [
+              130.11,
+              558.28
+            ],
+            [
+              130.11,
+              507.69
+            ],
+            [
+              133.09,
+              506.83
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                133.51,
+                474.52
+              ],
+              "p2": [
+                267.45,
+                474.52
+              ],
+              "length_m": 4.73,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                267.45,
+                474.52
+              ],
+              "p2": [
+                267.87,
+                599.1
+              ],
+              "length_m": 4.39,
+              "exterior_frac": 0.0,
+              "bearing": 70.2,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.003
+              ]
+            },
+            {
+              "p1": [
+                267.87,
+                599.1
+              ],
+              "p2": [
+                242.79,
+                599.53
+              ],
+              "length_m": 0.88,
+              "exterior_frac": 0.0,
+              "bearing": 159.4,
+              "orientation": "S",
+              "normal_page": [
+                0.017,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                241.94,
+                602.5
+              ],
+              "p2": [
+                222.8,
+                602.5
+              ],
+              "length_m": 0.68,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                221.95,
+                599.53
+              ],
+              "p2": [
+                172.2,
+                599.53
+              ],
+              "length_m": 1.76,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                171.35,
+                602.5
+              ],
+              "p2": [
+                151.8,
+                602.5
+              ],
+              "length_m": 0.69,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                150.94,
+                599.53
+              ],
+              "p2": [
+                133.51,
+                599.53
+              ],
+              "length_m": 0.61,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                133.51,
+                599.53
+              ],
+              "p2": [
+                133.09,
+                559.13
+              ],
+              "length_m": 1.43,
+              "exterior_frac": 1.0,
+              "bearing": 249.8,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                0.01
+              ]
+            },
+            {
+              "p1": [
+                130.11,
+                558.28
+              ],
+              "p2": [
+                130.11,
+                507.69
+              ],
+              "length_m": 1.78,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                506.83
+              ],
+              "p2": [
+                133.51,
+                474.52
+              ],
+              "length_m": 1.14,
+              "exterior_frac": 1.0,
+              "bearing": 251.1,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.013
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "W",
+              "length_m": 4.35
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W1",
+              "orientation": "W",
+              "bearing": 250.4,
+              "width_m": 1.8,
+              "height_m": 1.5,
+              "at_pt": [
+                109.1,
+                532.9
+              ]
+            }
+          ],
+          "id": "GF-05",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "KITCHEN",
+          "space_type": "kitchen",
+          "area_m2": 21.92,
+          "area_text_m2": 21.56,
+          "bbox_pt": [
+            352.91,
+            474.52,
+            483.45,
+            616.96
+          ],
+          "centroid_pt": [
+            417.76,
+            544.12
+          ],
+          "polygon_pt": [
+            [
+              355.89,
+              474.52
+            ],
+            [
+              480.47,
+              474.94
+            ],
+            [
+              480.47,
+              519.59
+            ],
+            [
+              483.45,
+              520.44
+            ],
+            [
+              483.45,
+              542.55
+            ],
+            [
+              480.47,
+              543.4
+            ],
+            [
+              480.05,
+              613.98
+            ],
+            [
+              418.82,
+              613.98
+            ],
+            [
+              417.97,
+              616.96
+            ],
+            [
+              408.19,
+              616.96
+            ],
+            [
+              398.41,
+              616.54
+            ],
+            [
+              397.56,
+              613.98
+            ],
+            [
+              355.46,
+              613.56
+            ],
+            [
+              355.46,
+              526.39
+            ],
+            [
+              352.91,
+              525.54
+            ],
+            [
+              352.91,
+              503.43
+            ],
+            [
+              355.46,
+              502.58
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                355.89,
+                474.52
+              ],
+              "p2": [
+                480.47,
+                474.94
+              ],
+              "length_m": 4.39,
+              "exterior_frac": 0.0,
+              "bearing": 340.6,
+              "orientation": "N",
+              "normal_page": [
+                0.003,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                480.47,
+                474.94
+              ],
+              "p2": [
+                480.47,
+                519.59
+              ],
+              "length_m": 1.58,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                483.45,
+                520.44
+              ],
+              "p2": [
+                483.45,
+                542.55
+              ],
+              "length_m": 0.78,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                480.47,
+                543.4
+              ],
+              "p2": [
+                480.05,
+                613.98
+              ],
+              "length_m": 2.49,
+              "exterior_frac": 0.0,
+              "bearing": 70.7,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.006
+              ]
+            },
+            {
+              "p1": [
+                480.05,
+                613.98
+              ],
+              "p2": [
+                418.82,
+                613.98
+              ],
+              "length_m": 2.16,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                417.97,
+                616.96
+              ],
+              "p2": [
+                408.19,
+                616.96
+              ],
+              "length_m": 0.35,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                408.19,
+                616.96
+              ],
+              "p2": [
+                398.41,
+                616.54
+              ],
+              "length_m": 0.35,
+              "exterior_frac": 0.0,
+              "bearing": 162.9,
+              "orientation": "S",
+              "normal_page": [
+                -0.043,
+                0.999
+              ]
+            },
+            {
+              "p1": [
+                397.56,
+                613.98
+              ],
+              "p2": [
+                355.46,
+                613.56
+              ],
+              "length_m": 1.49,
+              "exterior_frac": 0.0,
+              "bearing": 161.0,
+              "orientation": "S",
+              "normal_page": [
+                -0.01,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                355.46,
+                613.56
+              ],
+              "p2": [
+                355.46,
+                526.39
+              ],
+              "length_m": 3.08,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                352.91,
+                525.54
+              ],
+              "p2": [
+                352.91,
+                503.43
+              ],
+              "length_m": 0.78,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                355.46,
+                502.58
+              ],
+              "p2": [
+                355.89,
+                474.52
+              ],
+              "length_m": 0.99,
+              "exterior_frac": 0.0,
+              "bearing": 251.3,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.015
+              ]
+            }
+          ],
+          "exterior_walls": [],
+          "id": "GF-06",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "MAID ROOM",
+          "space_type": "maid_room",
+          "area_m2": 12.99,
+          "area_text_m2": 12.68,
+          "bbox_pt": [
+            483.02,
+            474.52,
+            578.27,
+            588.47
+          ],
+          "centroid_pt": [
+            529.48,
+            530.13
+          ],
+          "polygon_pt": [
+            [
+              483.45,
+              474.52
+            ],
+            [
+              575.72,
+              474.94
+            ],
+            [
+              575.72,
+              512.36
+            ],
+            [
+              578.27,
+              513.21
+            ],
+            [
+              578.27,
+              546.8
+            ],
+            [
+              575.72,
+              547.65
+            ],
+            [
+              575.29,
+              585.5
+            ],
+            [
+              526.39,
+              585.5
+            ],
+            [
+              525.54,
+              588.47
+            ],
+            [
+              505.98,
+              588.47
+            ],
+            [
+              505.13,
+              585.5
+            ],
+            [
+              483.02,
+              585.07
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                483.45,
+                474.52
+              ],
+              "p2": [
+                575.72,
+                474.94
+              ],
+              "length_m": 3.26,
+              "exterior_frac": 0.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.005,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                474.94
+              ],
+              "p2": [
+                575.72,
+                512.36
+              ],
+              "length_m": 1.32,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                578.27,
+                513.21
+              ],
+              "p2": [
+                578.27,
+                546.8
+              ],
+              "length_m": 1.18,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                547.65
+              ],
+              "p2": [
+                575.29,
+                585.5
+              ],
+              "length_m": 1.34,
+              "exterior_frac": 1.0,
+              "bearing": 71.1,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.011
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                585.5
+              ],
+              "p2": [
+                526.39,
+                585.5
+              ],
+              "length_m": 1.73,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                525.54,
+                588.47
+              ],
+              "p2": [
+                505.98,
+                588.47
+              ],
+              "length_m": 0.69,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                505.13,
+                585.5
+              ],
+              "p2": [
+                483.02,
+                585.07
+              ],
+              "length_m": 0.78,
+              "exterior_frac": 0.0,
+              "bearing": 161.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.019,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                483.02,
+                585.07
+              ],
+              "p2": [
+                483.45,
+                474.52
+              ],
+              "length_m": 3.9,
+              "exterior_frac": 0.0,
+              "bearing": 250.6,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.004
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "E",
+              "length_m": 3.84
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W2",
+              "orientation": "E",
+              "bearing": 70.4,
+              "width_m": 1.2,
+              "height_m": 1.5,
+              "at_pt": [
+                599.5,
+                530.0
+              ]
+            }
+          ],
+          "id": "GF-07",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "STAIR",
+          "space_type": "stair",
+          "area_m2": 12.54,
+          "area_text_m2": 12.32,
+          "bbox_pt": [
+            267.45,
+            545.53,
+            353.34,
+            666.28
+          ],
+          "centroid_pt": [
+            311.39,
+            605.47
+          ],
+          "polygon_pt": [
+            [
+              270.85,
+              545.53
+            ],
+            [
+              353.34,
+              545.95
+            ],
+            [
+              352.91,
+              666.28
+            ],
+            [
+              270.43,
+              665.86
+            ],
+            [
+              270.43,
+              583.37
+            ],
+            [
+              267.87,
+              582.52
+            ],
+            [
+              267.45,
+              559.98
+            ],
+            [
+              270.43,
+              559.13
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                270.85,
+                545.53
+              ],
+              "p2": [
+                353.34,
+                545.95
+              ],
+              "length_m": 2.91,
+              "exterior_frac": 0.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.005,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                353.34,
+                545.95
+              ],
+              "p2": [
+                352.91,
+                666.28
+              ],
+              "length_m": 4.25,
+              "exterior_frac": 0.0,
+              "bearing": 70.6,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.004
+              ]
+            },
+            {
+              "p1": [
+                352.91,
+                666.28
+              ],
+              "p2": [
+                270.43,
+                665.86
+              ],
+              "length_m": 2.91,
+              "exterior_frac": 1.0,
+              "bearing": 160.7,
+              "orientation": "S",
+              "normal_page": [
+                -0.005,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                270.43,
+                665.86
+              ],
+              "p2": [
+                270.43,
+                583.37
+              ],
+              "length_m": 2.91,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                267.87,
+                582.52
+              ],
+              "p2": [
+                267.45,
+                559.98
+              ],
+              "length_m": 0.8,
+              "exterior_frac": 0.0,
+              "bearing": 249.3,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                0.019
+              ]
+            },
+            {
+              "p1": [
+                270.43,
+                559.13
+              ],
+              "p2": [
+                270.85,
+                545.53
+              ],
+              "length_m": 0.48,
+              "exterior_frac": 0.0,
+              "bearing": 252.2,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.031
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 2.91
+            }
+          ],
+          "id": "GF-08",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "MAID WC",
+          "space_type": "bath",
+          "area_m2": 6.73,
+          "area_text_m2": 6.6,
+          "bbox_pt": [
+            483.02,
+            588.05,
+            551.48,
+            669.26
+          ],
+          "centroid_pt": [
+            517.03,
+            627.34
+          ],
+          "polygon_pt": [
+            [
+              483.45,
+              588.05
+            ],
+            [
+              551.48,
+              588.47
+            ],
+            [
+              551.06,
+              666.28
+            ],
+            [
+              525.12,
+              666.28
+            ],
+            [
+              524.27,
+              669.26
+            ],
+            [
+              507.69,
+              669.26
+            ],
+            [
+              506.83,
+              666.28
+            ],
+            [
+              483.02,
+              665.86
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                483.45,
+                588.05
+              ],
+              "p2": [
+                551.48,
+                588.47
+              ],
+              "length_m": 2.4,
+              "exterior_frac": 0.0,
+              "bearing": 340.8,
+              "orientation": "N",
+              "normal_page": [
+                0.006,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                551.48,
+                588.47
+              ],
+              "p2": [
+                551.06,
+                666.28
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 70.7,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.005
+              ]
+            },
+            {
+              "p1": [
+                551.06,
+                666.28
+              ],
+              "p2": [
+                525.12,
+                666.28
+              ],
+              "length_m": 0.92,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                524.27,
+                669.26
+              ],
+              "p2": [
+                507.69,
+                669.26
+              ],
+              "length_m": 0.58,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                506.83,
+                666.28
+              ],
+              "p2": [
+                483.02,
+                665.86
+              ],
+              "length_m": 0.84,
+              "exterior_frac": 1.0,
+              "bearing": 161.4,
+              "orientation": "S",
+              "normal_page": [
+                -0.018,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                483.02,
+                665.86
+              ],
+              "p2": [
+                483.45,
+                588.05
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 250.7,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.006
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 2.34
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W3",
+              "orientation": "S",
+              "bearing": 160.4,
+              "width_m": 0.6,
+              "height_m": 0.6,
+              "at_pt": [
+                515.9,
+                687.9
+              ]
+            }
+          ],
+          "id": "GF-09",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "SHAFT",
+          "space_type": "shaft",
+          "area_m2": 2.11,
+          "area_text_m2": 2.06,
+          "bbox_pt": [
+            554.03,
+            588.05,
+            575.72,
+            666.28
+          ],
+          "centroid_pt": [
+            564.66,
+            626.95
+          ],
+          "polygon_pt": [
+            [
+              554.46,
+              588.05
+            ],
+            [
+              575.72,
+              588.47
+            ],
+            [
+              575.29,
+              666.28
+            ],
+            [
+              554.03,
+              665.86
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                554.46,
+                588.05
+              ],
+              "p2": [
+                575.72,
+                588.47
+              ],
+              "length_m": 0.75,
+              "exterior_frac": 0.0,
+              "bearing": 341.5,
+              "orientation": "N",
+              "normal_page": [
+                0.02,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                588.47
+              ],
+              "p2": [
+                575.29,
+                666.28
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 1.0,
+              "bearing": 70.7,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.006
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                666.28
+              ],
+              "p2": [
+                554.03,
+                665.86
+              ],
+              "length_m": 0.75,
+              "exterior_frac": 1.0,
+              "bearing": 161.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.02,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                554.03,
+                665.86
+              ],
+              "p2": [
+                554.46,
+                588.05
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 250.7,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.006
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "E",
+              "length_m": 2.75
+            },
+            {
+              "orientation": "S",
+              "length_m": 0.75
+            }
+          ],
+          "id": "GF-10",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "GUEST WC",
+          "space_type": "bath",
+          "area_m2": 5.19,
+          "area_text_m2": 5.06,
+          "bbox_pt": [
+            133.09,
+            602.08,
+            197.29,
+            669.26
+          ],
+          "centroid_pt": [
+            164.93,
+            634.38
+          ],
+          "polygon_pt": [
+            [
+              133.51,
+              602.08
+            ],
+            [
+              197.29,
+              602.5
+            ],
+            [
+              196.87,
+              666.28
+            ],
+            [
+              170.5,
+              666.28
+            ],
+            [
+              169.65,
+              669.26
+            ],
+            [
+              153.5,
+              669.26
+            ],
+            [
+              152.65,
+              666.28
+            ],
+            [
+              133.09,
+              665.86
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                133.51,
+                602.08
+              ],
+              "p2": [
+                197.29,
+                602.5
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 0.0,
+              "bearing": 340.8,
+              "orientation": "N",
+              "normal_page": [
+                0.007,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                197.29,
+                602.5
+              ],
+              "p2": [
+                196.87,
+                666.28
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 0.0,
+              "bearing": 70.8,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.007
+              ]
+            },
+            {
+              "p1": [
+                196.87,
+                666.28
+              ],
+              "p2": [
+                170.5,
+                666.28
+              ],
+              "length_m": 0.93,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                169.65,
+                669.26
+              ],
+              "p2": [
+                153.5,
+                669.26
+              ],
+              "length_m": 0.57,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                152.65,
+                666.28
+              ],
+              "p2": [
+                133.09,
+                665.86
+              ],
+              "length_m": 0.69,
+              "exterior_frac": 1.0,
+              "bearing": 161.6,
+              "orientation": "S",
+              "normal_page": [
+                -0.021,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                665.86
+              ],
+              "p2": [
+                133.51,
+                602.08
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 1.0,
+              "bearing": 250.8,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.007
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 2.19
+            },
+            {
+              "orientation": "W",
+              "length_m": 2.25
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W3",
+              "orientation": "S",
+              "bearing": 160.4,
+              "width_m": 0.6,
+              "height_m": 0.6,
+              "at_pt": [
+                161.6,
+                687.9
+              ]
+            }
+          ],
+          "id": "GF-11",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "STORE",
+          "space_type": "store",
+          "area_m2": 5.43,
+          "area_text_m2": 5.4,
+          "bbox_pt": [
+            199.84,
+            602.08,
+            267.87,
+            666.28
+          ],
+          "centroid_pt": [
+            233.65,
+            633.97
+          ],
+          "polygon_pt": [
+            [
+              200.27,
+              602.08
+            ],
+            [
+              267.45,
+              602.08
+            ],
+            [
+              267.87,
+              665.86
+            ],
+            [
+              200.27,
+              666.28
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                200.27,
+                602.08
+              ],
+              "p2": [
+                267.45,
+                602.08
+              ],
+              "length_m": 2.37,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                267.45,
+                602.08
+              ],
+              "p2": [
+                267.87,
+                665.86
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 0.0,
+              "bearing": 70.0,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.007
+              ]
+            },
+            {
+              "p1": [
+                267.87,
+                665.86
+              ],
+              "p2": [
+                200.27,
+                666.28
+              ],
+              "length_m": 2.38,
+              "exterior_frac": 1.0,
+              "bearing": 160.0,
+              "orientation": "S",
+              "normal_page": [
+                0.006,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                200.27,
+                666.28
+              ],
+              "p2": [
+                200.27,
+                602.08
+              ],
+              "length_m": 2.26,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 2.38
+            }
+          ],
+          "id": "GF-12",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "LAUNDRY",
+          "space_type": "laundry",
+          "area_m2": 7.87,
+          "area_text_m2": 7.7,
+          "bbox_pt": [
+            355.46,
+            616.11,
+            480.47,
+            669.26
+          ],
+          "centroid_pt": [
+            417.68,
+            641.61
+          ],
+          "polygon_pt": [
+            [
+              398.41,
+              616.11
+            ],
+            [
+              480.05,
+              616.54
+            ],
+            [
+              480.47,
+              665.86
+            ],
+            [
+              431.57,
+              666.28
+            ],
+            [
+              430.72,
+              669.26
+            ],
+            [
+              397.13,
+              669.26
+            ],
+            [
+              396.28,
+              666.28
+            ],
+            [
+              355.89,
+              666.28
+            ],
+            [
+              355.46,
+              616.96
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                398.41,
+                616.11
+              ],
+              "p2": [
+                480.05,
+                616.54
+              ],
+              "length_m": 2.88,
+              "exterior_frac": 0.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.005,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                480.05,
+                616.54
+              ],
+              "p2": [
+                480.47,
+                665.86
+              ],
+              "length_m": 1.74,
+              "exterior_frac": 0.0,
+              "bearing": 69.9,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.009
+              ]
+            },
+            {
+              "p1": [
+                480.47,
+                665.86
+              ],
+              "p2": [
+                431.57,
+                666.28
+              ],
+              "length_m": 1.73,
+              "exterior_frac": 1.0,
+              "bearing": 159.9,
+              "orientation": "S",
+              "normal_page": [
+                0.009,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                430.72,
+                669.26
+              ],
+              "p2": [
+                397.13,
+                669.26
+              ],
+              "length_m": 1.18,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                396.28,
+                666.28
+              ],
+              "p2": [
+                355.89,
+                666.28
+              ],
+              "length_m": 1.42,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                355.89,
+                666.28
+              ],
+              "p2": [
+                355.46,
+                616.96
+              ],
+              "length_m": 1.74,
+              "exterior_frac": 0.0,
+              "bearing": 249.9,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                0.009
+              ]
+            },
+            {
+              "p1": [
+                355.46,
+                616.96
+              ],
+              "p2": [
+                398.41,
+                616.11
+              ],
+              "length_m": 1.52,
+              "exterior_frac": 0.0,
+              "bearing": 339.3,
+              "orientation": "N",
+              "normal_page": [
+                -0.02,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 4.33
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W2",
+              "orientation": "S",
+              "bearing": 160.4,
+              "width_m": 1.2,
+              "height_m": 1.5,
+              "at_pt": [
+                413.9,
+                687.9
+              ]
+            }
+          ],
+          "id": "GF-13",
+          "roof_exposed_frac": 0.0,
+          "ground_contact": true,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        }
+      ],
+      "columns": [],
+      "doors_found": 12,
+      "window_schedule": {
+        "W1": [
+          1800,
+          1500
+        ],
+        "W2": [
+          1200,
+          1500
+        ],
+        "W3": [
+          600,
+          600
+        ],
+        "W4": [
+          2400,
+          2100
+        ]
+      },
+      "heights_found_m": [],
+      "scale": 100,
+      "north_deg": 19.6,
+      "scale_detail": {
+        "candidates": {
+          "title_block": [
+            {
+              "denominator": 100,
+              "source": "SCALE 1:100 @ A3"
+            }
+          ],
+          "dimension_ratios": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "denominator": 100,
+        "method": "title+dimensions",
+        "confidence": "high",
+        "dimension_estimate": 100.0,
+        "mm_per_pt": 35.27777777777777
+      },
+      "preview": "gate1_GF.png"
+    },
+    {
+      "id": "FF",
+      "name": "First Floor",
+      "title": "FIRST FLOOR PLAN",
+      "page": 2,
+      "kind": "floor",
+      "zoom": 2.3518518518518516,
+      "mm_per_pt": 35.27777777777777,
+      "page_size_pt": [
+        1190.551025390625,
+        841.8897705078125
+      ],
+      "rooms": [
+        {
+          "name": "MASTER BATH",
+          "space_type": "bath",
+          "area_m2": 8.09,
+          "area_text_m2": 7.97,
+          "bbox_pt": [
+            298.91,
+            334.2,
+            381.4,
+            415.42
+          ],
+          "centroid_pt": [
+            339.95,
+            375.77
+          ],
+          "polygon_pt": [
+            [
+              332.08,
+              334.2
+            ],
+            [
+              348.24,
+              334.2
+            ],
+            [
+              349.09,
+              337.18
+            ],
+            [
+              381.4,
+              337.61
+            ],
+            [
+              380.98,
+              415.42
+            ],
+            [
+              298.91,
+              414.99
+            ],
+            [
+              298.91,
+              337.61
+            ],
+            [
+              331.23,
+              337.18
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                332.08,
+                334.2
+              ],
+              "p2": [
+                348.24,
+                334.2
+              ],
+              "length_m": 0.57,
+              "exterior_frac": 1.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                349.09,
+                337.18
+              ],
+              "p2": [
+                381.4,
+                337.61
+              ],
+              "length_m": 1.14,
+              "exterior_frac": 1.0,
+              "bearing": 341.2,
+              "orientation": "N",
+              "normal_page": [
+                0.013,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                381.4,
+                337.61
+              ],
+              "p2": [
+                380.98,
+                415.42
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 70.7,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.005
+              ]
+            },
+            {
+              "p1": [
+                380.98,
+                415.42
+              ],
+              "p2": [
+                298.91,
+                414.99
+              ],
+              "length_m": 2.9,
+              "exterior_frac": 0.0,
+              "bearing": 160.7,
+              "orientation": "S",
+              "normal_page": [
+                -0.005,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                298.91,
+                414.99
+              ],
+              "p2": [
+                298.91,
+                337.61
+              ],
+              "length_m": 2.73,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                298.91,
+                337.61
+              ],
+              "p2": [
+                331.23,
+                337.18
+              ],
+              "length_m": 1.14,
+              "exterior_frac": 1.0,
+              "bearing": 339.6,
+              "orientation": "N",
+              "normal_page": [
+                -0.013,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 2.85
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W3",
+              "orientation": "N",
+              "bearing": 340.4,
+              "width_m": 0.6,
+              "height_m": 0.6,
+              "at_pt": [
+                340.2,
+                318.0
+              ]
+            }
+          ],
+          "id": "FF-01",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "BATH 2",
+          "space_type": "bath",
+          "area_m2": 6.31,
+          "area_text_m2": 6.19,
+          "bbox_pt": [
+            511.51,
+            337.18,
+            578.27,
+            415.42
+          ],
+          "centroid_pt": [
+            543.7,
+            376.07
+          ],
+          "polygon_pt": [
+            [
+              511.94,
+              337.18
+            ],
+            [
+              575.72,
+              337.61
+            ],
+            [
+              575.72,
+              364.82
+            ],
+            [
+              578.27,
+              365.67
+            ],
+            [
+              578.27,
+              382.68
+            ],
+            [
+              575.72,
+              383.53
+            ],
+            [
+              575.29,
+              415.42
+            ],
+            [
+              511.51,
+              414.99
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                511.94,
+                337.18
+              ],
+              "p2": [
+                575.72,
+                337.61
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 1.0,
+              "bearing": 340.8,
+              "orientation": "N",
+              "normal_page": [
+                0.007,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                337.61
+              ],
+              "p2": [
+                575.72,
+                364.82
+              ],
+              "length_m": 0.96,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                578.27,
+                365.67
+              ],
+              "p2": [
+                578.27,
+                382.68
+              ],
+              "length_m": 0.6,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                383.53
+              ],
+              "p2": [
+                575.29,
+                415.42
+              ],
+              "length_m": 1.13,
+              "exterior_frac": 1.0,
+              "bearing": 71.2,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.013
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                415.42
+              ],
+              "p2": [
+                511.51,
+                414.99
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 0.0,
+              "bearing": 160.8,
+              "orientation": "S",
+              "normal_page": [
+                -0.007,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                511.51,
+                414.99
+              ],
+              "p2": [
+                511.94,
+                337.18
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 250.7,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.006
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 2.25
+            },
+            {
+              "orientation": "E",
+              "length_m": 2.69
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W3",
+              "orientation": "E",
+              "bearing": 70.4,
+              "width_m": 0.6,
+              "height_m": 0.6,
+              "at_pt": [
+                599.5,
+                374.1
+              ]
+            }
+          ],
+          "id": "FF-02",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "MASTER BEDROOM",
+          "space_type": "master_bedroom",
+          "area_m2": 27.79,
+          "area_text_m2": 27.31,
+          "bbox_pt": [
+            130.11,
+            334.2,
+            296.36,
+            472.39
+          ],
+          "centroid_pt": [
+            214.1,
+            404.13
+          ],
+          "polygon_pt": [
+            [
+              184.54,
+              334.2
+            ],
+            [
+              235.13,
+              334.2
+            ],
+            [
+              235.98,
+              337.18
+            ],
+            [
+              296.36,
+              337.61
+            ],
+            [
+              295.94,
+              472.39
+            ],
+            [
+              133.09,
+              471.97
+            ],
+            [
+              133.09,
+              428.6
+            ],
+            [
+              130.11,
+              427.75
+            ],
+            [
+              130.11,
+              394.16
+            ],
+            [
+              133.09,
+              393.31
+            ],
+            [
+              133.09,
+              337.61
+            ],
+            [
+              183.69,
+              337.18
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                184.54,
+                334.2
+              ],
+              "p2": [
+                235.13,
+                334.2
+              ],
+              "length_m": 1.78,
+              "exterior_frac": 1.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                235.98,
+                337.18
+              ],
+              "p2": [
+                296.36,
+                337.61
+              ],
+              "length_m": 2.13,
+              "exterior_frac": 1.0,
+              "bearing": 340.8,
+              "orientation": "N",
+              "normal_page": [
+                0.007,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                296.36,
+                337.61
+              ],
+              "p2": [
+                295.94,
+                472.39
+              ],
+              "length_m": 4.75,
+              "exterior_frac": 0.0,
+              "bearing": 70.6,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.003
+              ]
+            },
+            {
+              "p1": [
+                295.94,
+                472.39
+              ],
+              "p2": [
+                133.09,
+                471.97
+              ],
+              "length_m": 5.75,
+              "exterior_frac": 0.0,
+              "bearing": 160.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.003,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                471.97
+              ],
+              "p2": [
+                133.09,
+                428.6
+              ],
+              "length_m": 1.53,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                130.11,
+                427.75
+              ],
+              "p2": [
+                130.11,
+                394.16
+              ],
+              "length_m": 1.18,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                393.31
+              ],
+              "p2": [
+                133.09,
+                337.61
+              ],
+              "length_m": 1.96,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                337.61
+              ],
+              "p2": [
+                183.69,
+                337.18
+              ],
+              "length_m": 1.79,
+              "exterior_frac": 1.0,
+              "bearing": 339.9,
+              "orientation": "N",
+              "normal_page": [
+                -0.008,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 5.7
+            },
+            {
+              "orientation": "W",
+              "length_m": 4.67
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W1",
+              "orientation": "N",
+              "bearing": 340.4,
+              "width_m": 1.8,
+              "height_m": 1.5,
+              "at_pt": [
+                209.8,
+                318.0
+              ]
+            },
+            {
+              "tag": "W2",
+              "orientation": "W",
+              "bearing": 250.4,
+              "width_m": 1.2,
+              "height_m": 1.5,
+              "at_pt": [
+                109.1,
+                411.0
+              ]
+            }
+          ],
+          "id": "FF-03",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "DRESSING",
+          "space_type": "dressing",
+          "area_m2": 5.73,
+          "area_text_m2": 5.51,
+          "bbox_pt": [
+            295.94,
+            414.99,
+            381.4,
+            472.39
+          ],
+          "centroid_pt": [
+            339.27,
+            444.52
+          ],
+          "polygon_pt": [
+            [
+              327.83,
+              414.99
+            ],
+            [
+              346.96,
+              414.99
+            ],
+            [
+              347.81,
+              417.97
+            ],
+            [
+              381.4,
+              418.39
+            ],
+            [
+              380.98,
+              472.39
+            ],
+            [
+              298.91,
+              471.97
+            ],
+            [
+              298.91,
+              455.81
+            ],
+            [
+              295.94,
+              454.96
+            ],
+            [
+              295.94,
+              432.43
+            ],
+            [
+              298.91,
+              431.57
+            ],
+            [
+              298.91,
+              418.39
+            ],
+            [
+              326.98,
+              417.97
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                327.83,
+                414.99
+              ],
+              "p2": [
+                346.96,
+                414.99
+              ],
+              "length_m": 0.67,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                347.81,
+                417.97
+              ],
+              "p2": [
+                381.4,
+                418.39
+              ],
+              "length_m": 1.19,
+              "exterior_frac": 0.0,
+              "bearing": 341.1,
+              "orientation": "N",
+              "normal_page": [
+                0.013,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                381.4,
+                418.39
+              ],
+              "p2": [
+                380.98,
+                472.39
+              ],
+              "length_m": 1.91,
+              "exterior_frac": 0.0,
+              "bearing": 70.8,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.008
+              ]
+            },
+            {
+              "p1": [
+                380.98,
+                472.39
+              ],
+              "p2": [
+                298.91,
+                471.97
+              ],
+              "length_m": 2.9,
+              "exterior_frac": 0.0,
+              "bearing": 160.7,
+              "orientation": "S",
+              "normal_page": [
+                -0.005,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                298.91,
+                471.97
+              ],
+              "p2": [
+                298.91,
+                455.81
+              ],
+              "length_m": 0.57,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                295.94,
+                454.96
+              ],
+              "p2": [
+                295.94,
+                432.43
+              ],
+              "length_m": 0.79,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                298.91,
+                431.57
+              ],
+              "p2": [
+                298.91,
+                418.39
+              ],
+              "length_m": 0.46,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                298.91,
+                418.39
+              ],
+              "p2": [
+                326.98,
+                417.97
+              ],
+              "length_m": 0.99,
+              "exterior_frac": 0.0,
+              "bearing": 339.5,
+              "orientation": "N",
+              "normal_page": [
+                -0.015,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [],
+          "id": "FF-04",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "BEDROOM 2",
+          "space_type": "bedroom",
+          "area_m2": 21.37,
+          "area_text_m2": 20.9,
+          "bbox_pt": [
+            383.95,
+            334.2,
+            511.94,
+            472.39
+          ],
+          "centroid_pt": [
+            446.71,
+            404.03
+          ],
+          "polygon_pt": [
+            [
+              422.65,
+              334.2
+            ],
+            [
+              473.24,
+              334.2
+            ],
+            [
+              474.09,
+              337.18
+            ],
+            [
+              508.96,
+              337.61
+            ],
+            [
+              508.96,
+              377.57
+            ],
+            [
+              511.94,
+              378.43
+            ],
+            [
+              511.94,
+              397.98
+            ],
+            [
+              508.96,
+              398.83
+            ],
+            [
+              508.96,
+              437.53
+            ],
+            [
+              511.94,
+              438.38
+            ],
+            [
+              511.94,
+              457.51
+            ],
+            [
+              508.96,
+              458.36
+            ],
+            [
+              508.54,
+              472.39
+            ],
+            [
+              383.95,
+              471.97
+            ],
+            [
+              383.95,
+              337.61
+            ],
+            [
+              421.8,
+              337.18
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                422.65,
+                334.2
+              ],
+              "p2": [
+                473.24,
+                334.2
+              ],
+              "length_m": 1.78,
+              "exterior_frac": 1.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                474.09,
+                337.18
+              ],
+              "p2": [
+                508.96,
+                337.61
+              ],
+              "length_m": 1.23,
+              "exterior_frac": 1.0,
+              "bearing": 341.1,
+              "orientation": "N",
+              "normal_page": [
+                0.012,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                508.96,
+                337.61
+              ],
+              "p2": [
+                508.96,
+                377.57
+              ],
+              "length_m": 1.41,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                511.94,
+                378.43
+              ],
+              "p2": [
+                511.94,
+                397.98
+              ],
+              "length_m": 0.69,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                508.96,
+                398.83
+              ],
+              "p2": [
+                508.96,
+                437.53
+              ],
+              "length_m": 1.37,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                511.94,
+                438.38
+              ],
+              "p2": [
+                511.94,
+                457.51
+              ],
+              "length_m": 0.67,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                508.96,
+                458.36
+              ],
+              "p2": [
+                508.54,
+                472.39
+              ],
+              "length_m": 0.5,
+              "exterior_frac": 0.0,
+              "bearing": 72.1,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.03
+              ]
+            },
+            {
+              "p1": [
+                508.54,
+                472.39
+              ],
+              "p2": [
+                383.95,
+                471.97
+              ],
+              "length_m": 4.4,
+              "exterior_frac": 0.0,
+              "bearing": 160.6,
+              "orientation": "S",
+              "normal_page": [
+                -0.003,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                383.95,
+                471.97
+              ],
+              "p2": [
+                383.95,
+                337.61
+              ],
+              "length_m": 4.74,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                383.95,
+                337.61
+              ],
+              "p2": [
+                421.8,
+                337.18
+              ],
+              "length_m": 1.34,
+              "exterior_frac": 1.0,
+              "bearing": 339.7,
+              "orientation": "N",
+              "normal_page": [
+                -0.011,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 4.35
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W1",
+              "orientation": "N",
+              "bearing": 340.4,
+              "width_m": 1.8,
+              "height_m": 1.5,
+              "at_pt": [
+                447.9,
+                318.0
+              ]
+            }
+          ],
+          "id": "FF-05",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "LINEN",
+          "space_type": "store",
+          "area_m2": 4.35,
+          "area_text_m2": 4.28,
+          "bbox_pt": [
+            511.51,
+            417.97,
+            575.72,
+            472.39
+          ],
+          "centroid_pt": [
+            543.41,
+            444.97
+          ],
+          "polygon_pt": [
+            [
+              511.94,
+              417.97
+            ],
+            [
+              575.29,
+              417.97
+            ],
+            [
+              575.72,
+              471.97
+            ],
+            [
+              511.94,
+              472.39
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                511.94,
+                417.97
+              ],
+              "p2": [
+                575.29,
+                417.97
+              ],
+              "length_m": 2.23,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                417.97
+              ],
+              "p2": [
+                575.72,
+                471.97
+              ],
+              "length_m": 1.91,
+              "exterior_frac": 1.0,
+              "bearing": 69.9,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.008
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                471.97
+              ],
+              "p2": [
+                511.94,
+                472.39
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 0.0,
+              "bearing": 160.0,
+              "orientation": "S",
+              "normal_page": [
+                0.007,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                511.94,
+                472.39
+              ],
+              "p2": [
+                511.94,
+                417.97
+              ],
+              "length_m": 1.92,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "E",
+              "length_m": 1.91
+            }
+          ],
+          "id": "FF-06",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "LOBBY",
+          "space_type": "corridor",
+          "area_m2": 7.23,
+          "area_text_m2": 6.96,
+          "bbox_pt": [
+            270.43,
+            471.54,
+            353.34,
+            545.95
+          ],
+          "centroid_pt": [
+            311.93,
+            508.64
+          ],
+          "polygon_pt": [
+            [
+              327.4,
+              471.54
+            ],
+            [
+              346.96,
+              471.54
+            ],
+            [
+              347.81,
+              474.52
+            ],
+            [
+              353.34,
+              474.94
+            ],
+            [
+              353.34,
+              542.55
+            ],
+            [
+              325.28,
+              542.98
+            ],
+            [
+              324.43,
+              545.95
+            ],
+            [
+              299.34,
+              545.95
+            ],
+            [
+              298.49,
+              542.98
+            ],
+            [
+              270.85,
+              542.98
+            ],
+            [
+              270.43,
+              474.94
+            ],
+            [
+              326.55,
+              474.52
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                327.4,
+                471.54
+              ],
+              "p2": [
+                346.96,
+                471.54
+              ],
+              "length_m": 0.69,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                353.34,
+                474.94
+              ],
+              "p2": [
+                353.34,
+                542.55
+              ],
+              "length_m": 2.39,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                353.34,
+                542.55
+              ],
+              "p2": [
+                325.28,
+                542.98
+              ],
+              "length_m": 0.99,
+              "exterior_frac": 0.0,
+              "bearing": 159.5,
+              "orientation": "S",
+              "normal_page": [
+                0.015,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                324.43,
+                545.95
+              ],
+              "p2": [
+                299.34,
+                545.95
+              ],
+              "length_m": 0.89,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                298.49,
+                542.98
+              ],
+              "p2": [
+                270.85,
+                542.98
+              ],
+              "length_m": 0.98,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                270.85,
+                542.98
+              ],
+              "p2": [
+                270.43,
+                474.94
+              ],
+              "length_m": 2.4,
+              "exterior_frac": 0.0,
+              "bearing": 250.0,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                0.006
+              ]
+            },
+            {
+              "p1": [
+                270.43,
+                474.94
+              ],
+              "p2": [
+                326.55,
+                474.52
+              ],
+              "length_m": 1.98,
+              "exterior_frac": 0.0,
+              "bearing": 340.0,
+              "orientation": "N",
+              "normal_page": [
+                -0.007,
+                -1.0
+              ]
+            }
+          ],
+          "exterior_walls": [],
+          "id": "FF-07",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "BEDROOM 3",
+          "space_type": "bedroom",
+          "area_m2": 19.76,
+          "area_text_m2": 19.36,
+          "bbox_pt": [
+            352.91,
+            471.54,
+            483.45,
+            602.5
+          ],
+          "centroid_pt": [
+            417.66,
+            536.67
+          ],
+          "polygon_pt": [
+            [
+              412.44,
+              471.54
+            ],
+            [
+              423.5,
+              471.54
+            ],
+            [
+              424.35,
+              474.52
+            ],
+            [
+              480.47,
+              474.94
+            ],
+            [
+              480.47,
+              519.59
+            ],
+            [
+              483.45,
+              520.44
+            ],
+            [
+              483.45,
+              542.55
+            ],
+            [
+              480.47,
+              543.4
+            ],
+            [
+              480.05,
+              599.53
+            ],
+            [
+              398.83,
+              599.53
+            ],
+            [
+              397.98,
+              602.5
+            ],
+            [
+              378.85,
+              602.5
+            ],
+            [
+              378.0,
+              599.53
+            ],
+            [
+              355.46,
+              599.1
+            ],
+            [
+              355.46,
+              520.87
+            ],
+            [
+              352.91,
+              520.02
+            ],
+            [
+              352.91,
+              497.91
+            ],
+            [
+              355.46,
+              497.06
+            ],
+            [
+              355.46,
+              474.94
+            ],
+            [
+              400.54,
+              474.52
+            ],
+            [
+              401.39,
+              471.97
+            ]
+          ],
+          "rectangular": false,
+          "edges": [
+            {
+              "p1": [
+                412.44,
+                471.54
+              ],
+              "p2": [
+                423.5,
+                471.54
+              ],
+              "length_m": 0.39,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                424.35,
+                474.52
+              ],
+              "p2": [
+                480.47,
+                474.94
+              ],
+              "length_m": 1.98,
+              "exterior_frac": 0.0,
+              "bearing": 340.8,
+              "orientation": "N",
+              "normal_page": [
+                0.007,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                480.47,
+                474.94
+              ],
+              "p2": [
+                480.47,
+                519.59
+              ],
+              "length_m": 1.58,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                483.45,
+                520.44
+              ],
+              "p2": [
+                483.45,
+                542.55
+              ],
+              "length_m": 0.78,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                480.47,
+                543.4
+              ],
+              "p2": [
+                480.05,
+                599.53
+              ],
+              "length_m": 1.98,
+              "exterior_frac": 0.0,
+              "bearing": 70.8,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.007
+              ]
+            },
+            {
+              "p1": [
+                480.05,
+                599.53
+              ],
+              "p2": [
+                398.83,
+                599.53
+              ],
+              "length_m": 2.87,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                397.98,
+                602.5
+              ],
+              "p2": [
+                378.85,
+                602.5
+              ],
+              "length_m": 0.67,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                378.0,
+                599.53
+              ],
+              "p2": [
+                355.46,
+                599.1
+              ],
+              "length_m": 0.8,
+              "exterior_frac": 0.0,
+              "bearing": 161.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.019,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                355.46,
+                599.1
+              ],
+              "p2": [
+                355.46,
+                520.87
+              ],
+              "length_m": 2.76,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                352.91,
+                520.02
+              ],
+              "p2": [
+                352.91,
+                497.91
+              ],
+              "length_m": 0.78,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                355.46,
+                497.06
+              ],
+              "p2": [
+                355.46,
+                474.94
+              ],
+              "length_m": 0.78,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                355.46,
+                474.94
+              ],
+              "p2": [
+                400.54,
+                474.52
+              ],
+              "length_m": 1.59,
+              "exterior_frac": 0.0,
+              "bearing": 339.9,
+              "orientation": "N",
+              "normal_page": [
+                -0.009,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                401.39,
+                471.97
+              ],
+              "p2": [
+                412.44,
+                471.54
+              ],
+              "length_m": 0.39,
+              "exterior_frac": 0.0,
+              "bearing": 338.2,
+              "orientation": "N",
+              "normal_page": [
+                -0.039,
+                -0.999
+              ]
+            }
+          ],
+          "exterior_walls": [],
+          "id": "FF-08",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "BEDROOM 4",
+          "space_type": "bedroom",
+          "area_m2": 13.04,
+          "area_text_m2": 12.68,
+          "bbox_pt": [
+            483.02,
+            474.52,
+            578.27,
+            588.47
+          ],
+          "centroid_pt": [
+            529.68,
+            530.06
+          ],
+          "polygon_pt": [
+            [
+              483.45,
+              474.52
+            ],
+            [
+              575.72,
+              474.94
+            ],
+            [
+              575.72,
+              498.33
+            ],
+            [
+              578.27,
+              499.18
+            ],
+            [
+              578.27,
+              549.78
+            ],
+            [
+              575.72,
+              550.63
+            ],
+            [
+              575.29,
+              585.5
+            ],
+            [
+              526.39,
+              585.5
+            ],
+            [
+              525.54,
+              588.47
+            ],
+            [
+              505.98,
+              588.47
+            ],
+            [
+              505.13,
+              585.5
+            ],
+            [
+              483.02,
+              585.07
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                483.45,
+                474.52
+              ],
+              "p2": [
+                575.72,
+                474.94
+              ],
+              "length_m": 3.26,
+              "exterior_frac": 0.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.005,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                474.94
+              ],
+              "p2": [
+                575.72,
+                498.33
+              ],
+              "length_m": 0.83,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                578.27,
+                499.18
+              ],
+              "p2": [
+                578.27,
+                549.78
+              ],
+              "length_m": 1.79,
+              "exterior_frac": 1.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                550.63
+              ],
+              "p2": [
+                575.29,
+                585.5
+              ],
+              "length_m": 1.23,
+              "exterior_frac": 1.0,
+              "bearing": 71.1,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.012
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                585.5
+              ],
+              "p2": [
+                526.39,
+                585.5
+              ],
+              "length_m": 1.73,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                525.54,
+                588.47
+              ],
+              "p2": [
+                505.98,
+                588.47
+              ],
+              "length_m": 0.69,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                505.13,
+                585.5
+              ],
+              "p2": [
+                483.02,
+                585.07
+              ],
+              "length_m": 0.78,
+              "exterior_frac": 0.0,
+              "bearing": 161.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.019,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                483.02,
+                585.07
+              ],
+              "p2": [
+                483.45,
+                474.52
+              ],
+              "length_m": 3.9,
+              "exterior_frac": 0.0,
+              "bearing": 250.6,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.004
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "E",
+              "length_m": 3.85
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W1",
+              "orientation": "E",
+              "bearing": 70.4,
+              "width_m": 1.8,
+              "height_m": 1.5,
+              "at_pt": [
+                599.5,
+                524.3
+              ]
+            }
+          ],
+          "id": "FF-09",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "FAMILY LIVING",
+          "space_type": "living",
+          "area_m2": 32.64,
+          "area_text_m2": 32.06,
+          "bbox_pt": [
+            130.11,
+            474.52,
+            270.85,
+            669.26
+          ],
+          "centroid_pt": [
+            199.89,
+            570.42
+          ],
+          "polygon_pt": [
+            [
+              133.51,
+              474.52
+            ],
+            [
+              267.87,
+              474.94
+            ],
+            [
+              267.87,
+              494.08
+            ],
+            [
+              270.85,
+              494.93
+            ],
+            [
+              270.85,
+              520.02
+            ],
+            [
+              267.87,
+              520.87
+            ],
+            [
+              267.45,
+              666.28
+            ],
+            [
+              207.5,
+              666.28
+            ],
+            [
+              206.65,
+              669.26
+            ],
+            [
+              173.06,
+              669.26
+            ],
+            [
+              172.2,
+              666.28
+            ],
+            [
+              133.09,
+              665.86
+            ],
+            [
+              133.09,
+              610.16
+            ],
+            [
+              130.11,
+              609.31
+            ],
+            [
+              130.11,
+              541.7
+            ],
+            [
+              133.09,
+              540.85
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                133.51,
+                474.52
+              ],
+              "p2": [
+                267.87,
+                474.94
+              ],
+              "length_m": 4.74,
+              "exterior_frac": 0.0,
+              "bearing": 340.6,
+              "orientation": "N",
+              "normal_page": [
+                0.003,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                267.87,
+                474.94
+              ],
+              "p2": [
+                267.87,
+                494.08
+              ],
+              "length_m": 0.68,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                270.85,
+                494.93
+              ],
+              "p2": [
+                270.85,
+                520.02
+              ],
+              "length_m": 0.89,
+              "exterior_frac": 0.0,
+              "bearing": 70.4,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                267.87,
+                520.87
+              ],
+              "p2": [
+                267.45,
+                666.28
+              ],
+              "length_m": 5.13,
+              "exterior_frac": 0.0,
+              "bearing": 70.6,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.003
+              ]
+            },
+            {
+              "p1": [
+                267.45,
+                666.28
+              ],
+              "p2": [
+                207.5,
+                666.28
+              ],
+              "length_m": 2.11,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                206.65,
+                669.26
+              ],
+              "p2": [
+                173.06,
+                669.26
+              ],
+              "length_m": 1.18,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                172.2,
+                666.28
+              ],
+              "p2": [
+                133.09,
+                665.86
+              ],
+              "length_m": 1.38,
+              "exterior_frac": 1.0,
+              "bearing": 161.0,
+              "orientation": "S",
+              "normal_page": [
+                -0.011,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                665.86
+              ],
+              "p2": [
+                133.09,
+                610.16
+              ],
+              "length_m": 1.96,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                130.11,
+                609.31
+              ],
+              "p2": [
+                130.11,
+                541.7
+              ],
+              "length_m": 2.39,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            },
+            {
+              "p1": [
+                133.09,
+                540.85
+              ],
+              "p2": [
+                133.51,
+                474.52
+              ],
+              "length_m": 2.34,
+              "exterior_frac": 1.0,
+              "bearing": 250.8,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.006
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 4.67
+            },
+            {
+              "orientation": "W",
+              "length_m": 6.69
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W4",
+              "orientation": "W",
+              "bearing": 250.4,
+              "width_m": 2.4,
+              "height_m": 2.1,
+              "at_pt": [
+                109.1,
+                575.4
+              ]
+            },
+            {
+              "tag": "W2",
+              "orientation": "S",
+              "bearing": 160.4,
+              "width_m": 1.2,
+              "height_m": 1.5,
+              "at_pt": [
+                189.9,
+                687.9
+              ]
+            }
+          ],
+          "id": "FF-10",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "STAIR",
+          "space_type": "stair",
+          "area_m2": 12.46,
+          "area_text_m2": 12.32,
+          "bbox_pt": [
+            270.43,
+            545.53,
+            353.34,
+            666.28
+          ],
+          "centroid_pt": [
+            311.67,
+            605.7
+          ],
+          "polygon_pt": [
+            [
+              270.85,
+              545.53
+            ],
+            [
+              353.34,
+              545.95
+            ],
+            [
+              352.91,
+              666.28
+            ],
+            [
+              270.43,
+              665.86
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                270.85,
+                545.53
+              ],
+              "p2": [
+                353.34,
+                545.95
+              ],
+              "length_m": 2.91,
+              "exterior_frac": 0.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.005,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                353.34,
+                545.95
+              ],
+              "p2": [
+                352.91,
+                666.28
+              ],
+              "length_m": 4.25,
+              "exterior_frac": 0.0,
+              "bearing": 70.6,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.004
+              ]
+            },
+            {
+              "p1": [
+                352.91,
+                666.28
+              ],
+              "p2": [
+                270.43,
+                665.86
+              ],
+              "length_m": 2.91,
+              "exterior_frac": 1.0,
+              "bearing": 160.7,
+              "orientation": "S",
+              "normal_page": [
+                -0.005,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                270.43,
+                665.86
+              ],
+              "p2": [
+                270.85,
+                545.53
+              ],
+              "length_m": 4.25,
+              "exterior_frac": 0.0,
+              "bearing": 250.6,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.003
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 2.91
+            }
+          ],
+          "id": "FF-11",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": true,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "BATH 4",
+          "space_type": "bath",
+          "area_m2": 6.73,
+          "area_text_m2": 6.6,
+          "bbox_pt": [
+            483.02,
+            588.05,
+            551.48,
+            669.26
+          ],
+          "centroid_pt": [
+            517.03,
+            627.34
+          ],
+          "polygon_pt": [
+            [
+              483.45,
+              588.05
+            ],
+            [
+              551.48,
+              588.47
+            ],
+            [
+              551.06,
+              666.28
+            ],
+            [
+              525.12,
+              666.28
+            ],
+            [
+              524.27,
+              669.26
+            ],
+            [
+              507.69,
+              669.26
+            ],
+            [
+              506.83,
+              666.28
+            ],
+            [
+              483.02,
+              665.86
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                483.45,
+                588.05
+              ],
+              "p2": [
+                551.48,
+                588.47
+              ],
+              "length_m": 2.4,
+              "exterior_frac": 0.0,
+              "bearing": 340.8,
+              "orientation": "N",
+              "normal_page": [
+                0.006,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                551.48,
+                588.47
+              ],
+              "p2": [
+                551.06,
+                666.28
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 70.7,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.005
+              ]
+            },
+            {
+              "p1": [
+                551.06,
+                666.28
+              ],
+              "p2": [
+                525.12,
+                666.28
+              ],
+              "length_m": 0.92,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                524.27,
+                669.26
+              ],
+              "p2": [
+                507.69,
+                669.26
+              ],
+              "length_m": 0.58,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                506.83,
+                666.28
+              ],
+              "p2": [
+                483.02,
+                665.86
+              ],
+              "length_m": 0.84,
+              "exterior_frac": 1.0,
+              "bearing": 161.4,
+              "orientation": "S",
+              "normal_page": [
+                -0.018,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                483.02,
+                665.86
+              ],
+              "p2": [
+                483.45,
+                588.05
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 250.7,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.006
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 2.34
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W3",
+              "orientation": "S",
+              "bearing": 160.4,
+              "width_m": 0.6,
+              "height_m": 0.6,
+              "at_pt": [
+                515.9,
+                687.9
+              ]
+            }
+          ],
+          "id": "FF-12",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "SHAFT",
+          "space_type": "shaft",
+          "area_m2": 2.11,
+          "area_text_m2": 2.06,
+          "bbox_pt": [
+            554.03,
+            588.05,
+            575.72,
+            666.28
+          ],
+          "centroid_pt": [
+            564.66,
+            626.95
+          ],
+          "polygon_pt": [
+            [
+              554.46,
+              588.05
+            ],
+            [
+              575.72,
+              588.47
+            ],
+            [
+              575.29,
+              666.28
+            ],
+            [
+              554.03,
+              665.86
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                554.46,
+                588.05
+              ],
+              "p2": [
+                575.72,
+                588.47
+              ],
+              "length_m": 0.75,
+              "exterior_frac": 0.0,
+              "bearing": 341.5,
+              "orientation": "N",
+              "normal_page": [
+                0.02,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                588.47
+              ],
+              "p2": [
+                575.29,
+                666.28
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 1.0,
+              "bearing": 70.7,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.006
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                666.28
+              ],
+              "p2": [
+                554.03,
+                665.86
+              ],
+              "length_m": 0.75,
+              "exterior_frac": 1.0,
+              "bearing": 161.5,
+              "orientation": "S",
+              "normal_page": [
+                -0.02,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                554.03,
+                665.86
+              ],
+              "p2": [
+                554.46,
+                588.05
+              ],
+              "length_m": 2.75,
+              "exterior_frac": 0.0,
+              "bearing": 250.7,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.006
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "E",
+              "length_m": 2.75
+            },
+            {
+              "orientation": "S",
+              "length_m": 0.75
+            }
+          ],
+          "id": "FF-13",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        },
+        {
+          "name": "BATH 3",
+          "space_type": "bath",
+          "area_m2": 10.05,
+          "area_text_m2": 9.9,
+          "bbox_pt": [
+            355.46,
+            602.08,
+            480.47,
+            669.26
+          ],
+          "centroid_pt": [
+            417.73,
+            634.19
+          ],
+          "polygon_pt": [
+            [
+              355.89,
+              602.08
+            ],
+            [
+              480.05,
+              602.08
+            ],
+            [
+              480.47,
+              665.86
+            ],
+            [
+              423.07,
+              666.28
+            ],
+            [
+              422.22,
+              669.26
+            ],
+            [
+              405.64,
+              669.26
+            ],
+            [
+              404.79,
+              666.28
+            ],
+            [
+              355.89,
+              666.28
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                355.89,
+                602.08
+              ],
+              "p2": [
+                480.05,
+                602.08
+              ],
+              "length_m": 4.38,
+              "exterior_frac": 0.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                480.05,
+                602.08
+              ],
+              "p2": [
+                480.47,
+                665.86
+              ],
+              "length_m": 2.25,
+              "exterior_frac": 0.0,
+              "bearing": 70.0,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.007
+              ]
+            },
+            {
+              "p1": [
+                480.47,
+                665.86
+              ],
+              "p2": [
+                423.07,
+                666.28
+              ],
+              "length_m": 2.02,
+              "exterior_frac": 1.0,
+              "bearing": 160.0,
+              "orientation": "S",
+              "normal_page": [
+                0.007,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                422.22,
+                669.26
+              ],
+              "p2": [
+                405.64,
+                669.26
+              ],
+              "length_m": 0.58,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                404.79,
+                666.28
+              ],
+              "p2": [
+                355.89,
+                666.28
+              ],
+              "length_m": 1.73,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                355.89,
+                666.28
+              ],
+              "p2": [
+                355.89,
+                602.08
+              ],
+              "length_m": 2.26,
+              "exterior_frac": 0.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 4.33
+            }
+          ],
+          "windows": [
+            {
+              "tag": "W3",
+              "orientation": "S",
+              "bearing": 160.4,
+              "width_m": 0.6,
+              "height_m": 0.6,
+              "at_pt": [
+                413.9,
+                687.9
+              ]
+            }
+          ],
+          "id": "FF-14",
+          "roof_exposed_frac": 1.0,
+          "ground_contact": false,
+          "is_conditioned": false,
+          "height_m": 3.0,
+          "floor_to_floor_m": 3.6
+        }
+      ],
+      "columns": [],
+      "doors_found": 12,
+      "window_schedule": {
+        "W1": [
+          1800,
+          1500
+        ],
+        "W2": [
+          1200,
+          1500
+        ],
+        "W3": [
+          600,
+          600
+        ],
+        "W4": [
+          2400,
+          2100
+        ]
+      },
+      "heights_found_m": [],
+      "scale": 100,
+      "north_deg": 19.6,
+      "scale_detail": {
+        "candidates": {
+          "title_block": [
+            {
+              "denominator": 100,
+              "source": "SCALE 1:100 @ A3"
+            }
+          ],
+          "dimension_ratios": [
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "denominator": 100,
+        "method": "title+dimensions",
+        "confidence": "high",
+        "dimension_estimate": 100.0,
+        "mm_per_pt": 35.27777777777777
+      },
+      "preview": "gate1_FF.png"
+    },
+    {
+      "id": "RF",
+      "name": "Roof",
+      "title": "ROOF PLAN",
+      "page": 3,
+      "kind": "roof",
+      "zoom": 2.3518518518518516,
+      "mm_per_pt": 35.27777777777777,
+      "page_size_pt": [
+        1190.551025390625,
+        841.8897705078125
+      ],
+      "rooms": [
+        {
+          "name": "ROOF",
+          "space_type": "roof",
+          "area_m2": 167.94,
+          "area_text_m2": 180.96,
+          "bbox_pt": [
+            133.09,
+            337.18,
+            575.72,
+            666.28
+          ],
+          "centroid_pt": [
+            357.58,
+            493.31
+          ],
+          "polygon_pt": [
+            [
+              133.51,
+              337.18
+            ],
+            [
+              575.29,
+              337.18
+            ],
+            [
+              575.72,
+              665.86
+            ],
+            [
+              355.89,
+              666.28
+            ],
+            [
+              355.46,
+              543.4
+            ],
+            [
+              325.28,
+              542.98
+            ],
+            [
+              324.43,
+              545.95
+            ],
+            [
+              299.34,
+              545.95
+            ],
+            [
+              298.49,
+              542.98
+            ],
+            [
+              268.3,
+              542.98
+            ],
+            [
+              267.45,
+              666.28
+            ],
+            [
+              133.51,
+              666.28
+            ]
+          ],
+          "rectangular": false,
+          "edges": [
+            {
+              "p1": [
+                133.51,
+                337.18
+              ],
+              "p2": [
+                575.29,
+                337.18
+              ],
+              "length_m": 15.59,
+              "exterior_frac": 1.0,
+              "bearing": 340.4,
+              "orientation": "N",
+              "normal_page": [
+                0.0,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                575.29,
+                337.18
+              ],
+              "p2": [
+                575.72,
+                665.86
+              ],
+              "length_m": 11.6,
+              "exterior_frac": 1.0,
+              "bearing": 70.3,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                -0.001
+              ]
+            },
+            {
+              "p1": [
+                575.72,
+                665.86
+              ],
+              "p2": [
+                355.89,
+                666.28
+              ],
+              "length_m": 7.76,
+              "exterior_frac": 1.0,
+              "bearing": 160.3,
+              "orientation": "S",
+              "normal_page": [
+                0.002,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                355.89,
+                666.28
+              ],
+              "p2": [
+                355.46,
+                543.4
+              ],
+              "length_m": 4.33,
+              "exterior_frac": 0.0,
+              "bearing": 250.2,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                0.003
+              ]
+            },
+            {
+              "p1": [
+                355.46,
+                543.4
+              ],
+              "p2": [
+                325.28,
+                542.98
+              ],
+              "length_m": 1.06,
+              "exterior_frac": 0.0,
+              "bearing": 161.2,
+              "orientation": "S",
+              "normal_page": [
+                -0.014,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                324.43,
+                545.95
+              ],
+              "p2": [
+                299.34,
+                545.95
+              ],
+              "length_m": 0.89,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                298.49,
+                542.98
+              ],
+              "p2": [
+                268.3,
+                542.98
+              ],
+              "length_m": 1.07,
+              "exterior_frac": 0.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                268.3,
+                542.98
+              ],
+              "p2": [
+                267.45,
+                666.28
+              ],
+              "length_m": 4.35,
+              "exterior_frac": 0.0,
+              "bearing": 70.8,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.007
+              ]
+            },
+            {
+              "p1": [
+                267.45,
+                666.28
+              ],
+              "p2": [
+                133.51,
+                666.28
+              ],
+              "length_m": 4.73,
+              "exterior_frac": 1.0,
+              "bearing": 160.4,
+              "orientation": "S",
+              "normal_page": [
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                133.51,
+                666.28
+              ],
+              "p2": [
+                133.51,
+                337.18
+              ],
+              "length_m": 11.61,
+              "exterior_frac": 1.0,
+              "bearing": 250.4,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.0
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "N",
+              "length_m": 15.59
+            },
+            {
+              "orientation": "E",
+              "length_m": 11.6
+            },
+            {
+              "orientation": "S",
+              "length_m": 12.49
+            },
+            {
+              "orientation": "W",
+              "length_m": 11.61
+            }
+          ],
+          "id": "RF-01"
+        },
+        {
+          "name": "STAIR HEAD",
+          "space_type": "stair",
+          "area_m2": 12.46,
+          "area_text_m2": 12.32,
+          "bbox_pt": [
+            270.43,
+            545.53,
+            353.34,
+            666.28
+          ],
+          "centroid_pt": [
+            311.67,
+            605.7
+          ],
+          "polygon_pt": [
+            [
+              270.85,
+              545.53
+            ],
+            [
+              353.34,
+              545.95
+            ],
+            [
+              352.91,
+              666.28
+            ],
+            [
+              270.43,
+              665.86
+            ]
+          ],
+          "rectangular": true,
+          "edges": [
+            {
+              "p1": [
+                270.85,
+                545.53
+              ],
+              "p2": [
+                353.34,
+                545.95
+              ],
+              "length_m": 2.91,
+              "exterior_frac": 0.0,
+              "bearing": 340.7,
+              "orientation": "N",
+              "normal_page": [
+                0.005,
+                -1.0
+              ]
+            },
+            {
+              "p1": [
+                353.34,
+                545.95
+              ],
+              "p2": [
+                352.91,
+                666.28
+              ],
+              "length_m": 4.25,
+              "exterior_frac": 0.0,
+              "bearing": 70.6,
+              "orientation": "E",
+              "normal_page": [
+                1.0,
+                0.004
+              ]
+            },
+            {
+              "p1": [
+                352.91,
+                666.28
+              ],
+              "p2": [
+                270.43,
+                665.86
+              ],
+              "length_m": 2.91,
+              "exterior_frac": 1.0,
+              "bearing": 160.7,
+              "orientation": "S",
+              "normal_page": [
+                -0.005,
+                1.0
+              ]
+            },
+            {
+              "p1": [
+                270.43,
+                665.86
+              ],
+              "p2": [
+                270.85,
+                545.53
+              ],
+              "length_m": 4.25,
+              "exterior_frac": 0.0,
+              "bearing": 250.6,
+              "orientation": "W",
+              "normal_page": [
+                -1.0,
+                -0.003
+              ]
+            }
+          ],
+          "exterior_walls": [
+            {
+              "orientation": "S",
+              "length_m": 2.91
+            }
+          ],
+          "id": "RF-02"
+        }
+      ],
+      "columns": [],
+      "doors_found": 1,
+      "window_schedule": {},
+      "heights_found_m": [],
+      "scale": 100,
+      "north_deg": 19.6,
+      "scale_detail": {
+        "candidates": {
+          "title_block": [
+            {
+              "denominator": 100,
+              "source": "SCALE 1:100 @ A3"
+            }
+          ],
+          "dimension_ratios": [
+            100.0,
+            100.0,
+            100.0
+          ]
+        },
+        "denominator": 100,
+        "method": "title+dimensions",
+        "confidence": "high",
+        "dimension_estimate": 100.0,
+        "mm_per_pt": 35.27777777777777
+      },
+      "preview": "gate1_RF.png"
+    }
+  ]
+}

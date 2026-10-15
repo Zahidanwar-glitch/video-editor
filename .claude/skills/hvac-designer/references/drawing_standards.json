@@ -1,0 +1,24 @@
+{
+  "_about": "Layer names, colours, line styles and tag formats shared by the PDF overlay and DXF export. rgb is 0-1 for PDF; aci is AutoCAD colour index.",
+  "layers": {
+    "M-DUCT-SUPP": {"rgb": [0.0, 0.35, 0.85], "aci": 5, "linetype": "CONTINUOUS", "desc": "Supply ductwork"},
+    "M-DUCT-RETN": {"rgb": [0.0, 0.6, 0.3], "aci": 3, "linetype": "CONTINUOUS", "desc": "Return ductwork"},
+    "M-DUCT-FRSH": {"rgb": [0.0, 0.65, 0.65], "aci": 4, "linetype": "DASHED", "desc": "Fresh air ductwork"},
+    "M-DUCT-EXHS": {"rgb": [0.75, 0.0, 0.6], "aci": 6, "linetype": "DASHED", "desc": "Exhaust ductwork"},
+    "M-PIPE-REFG": {"rgb": [0.85, 0.35, 0.0], "aci": 30, "linetype": "CONTINUOUS", "desc": "Refrigerant piping"},
+    "M-PIPE-CHWS": {"rgb": [0.0, 0.2, 0.6], "aci": 150, "linetype": "CONTINUOUS", "desc": "Chilled water supply/return"},
+    "M-PIPE-COND": {"rgb": [0.3, 0.6, 0.9], "aci": 140, "linetype": "DOT", "desc": "Condensate drain"},
+    "M-EQPM":      {"rgb": [0.8, 0.0, 0.0], "aci": 1, "linetype": "CONTINUOUS", "desc": "Equipment (IU, ODU, fans)"},
+    "M-CTRL":      {"rgb": [0.5, 0.2, 0.7], "aci": 200, "linetype": "CONTINUOUS", "desc": "Controls (thermostats)"},
+    "M-ANNO":      {"rgb": [0.1, 0.1, 0.1], "aci": 7, "linetype": "CONTINUOUS", "desc": "Annotation, tags, legend, title"},
+    "A-ARCH-REF":  {"rgb": [0.6, 0.6, 0.6], "aci": 8, "linetype": "CONTINUOUS", "desc": "Architectural background (reference)"}
+  },
+  "tags": {
+    "indoor_unit": "IU-{floor}-{n:02d}", "outdoor_unit": "ODU-{n:02d}", "supply_diffuser": "SD-{floor}-{n:02d}",
+    "return_grille": "RG-{floor}-{n:02d}", "exhaust_grille": "EG-{floor}-{n:02d}", "exhaust_fan": "EF-{floor}-{n:02d}",
+    "fresh_air_fan": "FAF-{floor}-{n:02d}", "thermostat": "T-{floor}-{n:02d}", "louver_fa": "FAL-{floor}-{n:02d}",
+    "louver_ea": "EAL-{floor}-{n:02d}", "zone": "Z-{floor}-{n:02d}"
+  },
+  "text_height_paper_mm": {"tag": 1.8, "size": 1.6, "title": 4.0, "legend": 2.2},
+  "symbol_real_mm": {"thermostat_d": 300, "louver_depth": 150, "riser_d": 250}
+}

@@ -1,0 +1,6 @@
+{
+  "_about": "Display conversion. All calculations are SI internally; IP projects are converted for display only.",
+  "SI": {"flow": ["L/s", 1.0], "power": ["kW", 1.0], "length": ["m", 1.0], "size": ["mm", 1.0], "temp": "C", "area": ["m²", 1.0], "pressure": ["Pa", 1.0], "friction": ["Pa/m", 1.0], "velocity": ["m/s", 1.0], "u": ["W/m²K", 1.0]},
+  "IP": {"flow": ["cfm", 2.11888], "power": ["Btu/h", 3412.14], "length": ["ft", 3.28084], "size": ["in", 0.0393701], "temp": "F", "area": ["ft²", 10.7639], "pressure": ["in.wg", 0.00401463], "friction": ["in.wg/100ft", 0.122367], "velocity": ["fpm", 196.85], "u": ["Btu/h.ft².F", 0.17611]},
+  "tons_per_kw": 0.284345
+}

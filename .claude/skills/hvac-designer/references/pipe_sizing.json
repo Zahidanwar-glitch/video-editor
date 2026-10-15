@@ -1,0 +1,54 @@
+{
+  "_about": "Refrigerant (DX/VRF) pipe sizes by unit capacity, chilled-water pipe data (steel Sch.40), condensate drain sizing, insulation.",
+  "_status": "Refrigerant table is GENERIC (R410A/R32 typical). Replace with the selected manufacturer's piping table. Condensate per IMC/SBC 501 Table 307.2.2.",
+  "refrigerant": {
+    "_clause": "refrigerant_piping",
+    "by_capacity_kw": [
+      {"max_kw": 2.8,  "liquid_mm": 6.35,  "gas_mm": 9.52,  "liquid_in": "1/4", "gas_in": "3/8"},
+      {"max_kw": 5.6,  "liquid_mm": 6.35,  "gas_mm": 12.70, "liquid_in": "1/4", "gas_in": "1/2"},
+      {"max_kw": 8.0,  "liquid_mm": 9.52,  "gas_mm": 15.88, "liquid_in": "3/8", "gas_in": "5/8"},
+      {"max_kw": 14.0, "liquid_mm": 9.52,  "gas_mm": 15.88, "liquid_in": "3/8", "gas_in": "5/8"},
+      {"max_kw": 17.6, "liquid_mm": 9.52,  "gas_mm": 19.05, "liquid_in": "3/8", "gas_in": "3/4"},
+      {"max_kw": 22.4, "liquid_mm": 9.52,  "gas_mm": 22.22, "liquid_in": "3/8", "gas_in": "7/8"},
+      {"max_kw": 28.0, "liquid_mm": 12.70, "gas_mm": 22.22, "liquid_in": "1/2", "gas_in": "7/8"},
+      {"max_kw": 35.2, "liquid_mm": 12.70, "gas_mm": 25.40, "liquid_in": "1/2", "gas_in": "1"},
+      {"max_kw": 45.0, "liquid_mm": 15.88, "gas_mm": 28.58, "liquid_in": "5/8", "gas_in": "1-1/8"},
+      {"max_kw": 68.0, "liquid_mm": 15.88, "gas_mm": 34.92, "liquid_in": "5/8", "gas_in": "1-3/8"}
+    ],
+    "max_length_m": {"wall_split": 25, "ducted_split": 50, "vrf_indoor_ducted": 165},
+    "max_height_m": {"wall_split": 15, "ducted_split": 30, "vrf_indoor_ducted": 50},
+    "insulation_mm": {"liquid": 13, "gas": 19},
+    "support_spacing_m": {"le_15.88": 1.2, "gt_15.88": 1.5}
+  },
+  "chilled_water": {
+    "_clause": "chw_piping",
+    "roughness_mm": 0.046,
+    "water_density": 999.0,
+    "water_viscosity_m2_s": 1.31e-6,
+    "max_velocity_m_s": [[50, 1.2], [150, 2.1], [99999, 3.0]],
+    "max_friction_pa_m": 400,
+    "design_friction_pa_m": 250,
+    "steel_sch40": [
+      {"dn": 15, "id_mm": 15.8, "in": "1/2"}, {"dn": 20, "id_mm": 20.9, "in": "3/4"}, {"dn": 25, "id_mm": 26.6, "in": "1"},
+      {"dn": 32, "id_mm": 35.1, "in": "1-1/4"}, {"dn": 40, "id_mm": 40.9, "in": "1-1/2"}, {"dn": 50, "id_mm": 52.5, "in": "2"},
+      {"dn": 65, "id_mm": 62.7, "in": "2-1/2"}, {"dn": 80, "id_mm": 77.9, "in": "3"}, {"dn": 100, "id_mm": 102.3, "in": "4"},
+      {"dn": 125, "id_mm": 128.2, "in": "5"}, {"dn": 150, "id_mm": 154.1, "in": "6"}, {"dn": 200, "id_mm": 202.7, "in": "8"},
+      {"dn": 250, "id_mm": 254.5, "in": "10"}, {"dn": 300, "id_mm": 303.2, "in": "12"}
+    ],
+    "insulation_mm": [[40, 25], [100, 40], [99999, 50]]
+  },
+  "condensate": {
+    "_clause": "condensate",
+    "_about": "Table 307.2.2: equipment capacity (tons) -> min drain size. kW = tons x 3.517",
+    "by_capacity_kw": [
+      {"max_kw": 70.3, "dn_mm": 20, "in": "3/4"},
+      {"max_kw": 140.7, "dn_mm": 25, "in": "1"},
+      {"max_kw": 316.5, "dn_mm": 32, "in": "1-1/4"},
+      {"max_kw": 439.6, "dn_mm": 40, "in": "1-1/2"},
+      {"max_kw": 879.3, "dn_mm": 50, "in": "2"}
+    ],
+    "material": "uPVC Class E / Sch.40, insulated 9 mm where run in ceiling void",
+    "insulation_mm": 9,
+    "support_spacing_m": 1.0
+  }
+}
