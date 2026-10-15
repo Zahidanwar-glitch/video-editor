@@ -248,12 +248,21 @@
       "step": "B-equip",
       "key": "oversize_Z-GF-02",
       "src": "equipment_select",
-      "text": "IU-GF-02 (WS-09) is 141 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "text": "IU-GF-02 (WS-09) is 161 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
       "source": "designer note",
       "confirm": true
     },
     {
       "id": "A029",
+      "step": "B-equip",
+      "key": "sens_gov_Z-GF-03",
+      "src": "equipment_select",
+      "text": "Z-GF-03: sensible capacity governs (3.8 kW sensible at catalogue SHR) - DS-24 chosen instead of DS-18; brand data at actual (dry) entering conditions may allow the smaller unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A030",
       "step": "B-equip",
       "key": "host_Z-GF-03",
       "src": "equipment_select",
@@ -262,7 +271,7 @@
       "confirm": true
     },
     {
-      "id": "A030",
+      "id": "A031",
       "step": "B-equip",
       "key": "sens_gov_Z-GF-04",
       "src": "equipment_select",
@@ -271,7 +280,7 @@
       "confirm": true
     },
     {
-      "id": "A031",
+      "id": "A032",
       "step": "B-equip",
       "key": "host_Z-GF-04",
       "src": "equipment_select",
@@ -280,16 +289,16 @@
       "confirm": true
     },
     {
-      "id": "A032",
+      "id": "A033",
       "step": "B-equip",
       "key": "oversize_Z-FF-01",
       "src": "equipment_select",
-      "text": "IU-FF-01 (DS-24) is 127 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "text": "IU-FF-01 (DS-18) is 72 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
       "source": "designer note",
       "confirm": true
     },
     {
-      "id": "A033",
+      "id": "A034",
       "step": "B-equip",
       "key": "host_Z-FF-01",
       "src": "equipment_select",
@@ -298,7 +307,7 @@
       "confirm": true
     },
     {
-      "id": "A034",
+      "id": "A035",
       "step": "B-equip",
       "key": "host_Z-FF-02",
       "src": "equipment_select",
@@ -307,7 +316,7 @@
       "confirm": true
     },
     {
-      "id": "A035",
+      "id": "A036",
       "step": "B-equip",
       "key": "odu_roof",
       "src": "equipment_select",
@@ -316,7 +325,7 @@
       "confirm": true
     },
     {
-      "id": "A036",
+      "id": "A037",
       "step": "B-ducts",
       "key": "duct_method",
       "src": "duct_sizing",
@@ -325,7 +334,7 @@
       "confirm": false
     },
     {
-      "id": "A037",
+      "id": "A038",
       "step": "B-ducts",
       "key": "fittings",
       "src": "duct_sizing",
@@ -334,7 +343,7 @@
       "confirm": true
     },
     {
-      "id": "A038",
+      "id": "A039",
       "step": "B-ducts",
       "key": "layout",
       "src": "duct_sizing",
@@ -343,7 +352,7 @@
       "confirm": true
     },
     {
-      "id": "A039",
+      "id": "A040",
       "step": "B-ducts",
       "key": "transfer",
       "src": "duct_sizing",
@@ -352,7 +361,7 @@
       "confirm": true
     },
     {
-      "id": "A040",
+      "id": "A041",
       "step": "B-pipes",
       "key": "refrig_table",
       "src": "pipe_sizing",
@@ -361,7 +370,7 @@
       "confirm": true
     },
     {
-      "id": "A041",
+      "id": "A042",
       "step": "B-pipes",
       "key": "refrig_len",
       "src": "pipe_sizing",
@@ -370,7 +379,7 @@
       "confirm": false
     },
     {
-      "id": "A042",
+      "id": "A043",
       "step": "B-pipes",
       "key": "condensate",
       "src": "pipe_sizing",

@@ -27,7 +27,7 @@
           "room": "GF-07",
           "category": "dwelling",
           "people": 1,
-          "area_m2": 12.99,
+          "area_m2": 12.88,
           "Rp_Pz": 2.5,
           "Ra_Az": 3.9,
           "Vbz": 6.4,
@@ -47,19 +47,19 @@
         {
           "room": "GF-01",
           "category": "dwelling",
-          "people": 12,
-          "area_m2": 27.79,
-          "Rp_Pz": 30.0,
-          "Ra_Az": 8.3,
-          "Vbz": 38.3,
-          "Voz": 47.9
+          "people": 11,
+          "area_m2": 27.47,
+          "Rp_Pz": 27.5,
+          "Ra_Az": 8.2,
+          "Vbz": 35.7,
+          "Voz": 44.7
         }
       ],
       "Ez": 0.8,
       "Ev": 1.0,
-      "sum_RpPz": 30.0,
-      "sum_RaAz": 8.3,
-      "Vot_ls": 47.9,
+      "sum_RpPz": 27.5,
+      "sum_RaAz": 8.2,
+      "Vot_ls": 44.7,
       "method": "single-zone: Vot = Voz",
       "oa_method": "ducted to unit return plenum"
     },
@@ -69,11 +69,11 @@
           "room": "GF-05",
           "category": "dwelling",
           "people": 9,
-          "area_m2": 21.31,
+          "area_m2": 21.12,
           "Rp_Pz": 22.5,
-          "Ra_Az": 6.4,
-          "Vbz": 28.9,
-          "Voz": 36.1
+          "Ra_Az": 6.3,
+          "Vbz": 28.8,
+          "Voz": 36.0
         },
         {
           "room": "GF-08",
@@ -109,18 +109,18 @@
           "room": "GF-03",
           "category": "dwelling",
           "people": 8,
-          "area_m2": 30.32,
+          "area_m2": 29.91,
           "Rp_Pz": 20.0,
-          "Ra_Az": 9.1,
-          "Vbz": 29.1,
-          "Voz": 36.4
+          "Ra_Az": 9.0,
+          "Vbz": 29.0,
+          "Voz": 36.2
         }
       ],
       "Ez": 0.8,
       "Ev": 0.75,
       "sum_RpPz": 42.5,
-      "sum_RaAz": 26.4,
-      "Vot_ls": 106.3,
+      "sum_RaAz": 26.2,
+      "Vot_ls": 106.1,
       "method": "multi-zone simplified: Vot = (D·ΣRpPz + ΣRaAz)/Ev",
       "oa_method": "ducted to unit return plenum",
       "transfer_out_ls": 14.5
@@ -131,11 +131,11 @@
           "room": "FF-03",
           "category": "dwelling",
           "people": 2,
-          "area_m2": 27.79,
+          "area_m2": 27.47,
           "Rp_Pz": 5.0,
-          "Ra_Az": 8.3,
-          "Vbz": 13.3,
-          "Voz": 16.7
+          "Ra_Az": 8.2,
+          "Vbz": 13.2,
+          "Voz": 16.6
         },
         {
           "room": "FF-04",
@@ -151,8 +151,8 @@
       "Ez": 0.8,
       "Ev": 0.75,
       "sum_RpPz": 5.0,
-      "sum_RaAz": 10.1,
-      "Vot_ls": 20.1,
+      "sum_RaAz": 10.0,
+      "Vot_ls": 19.9,
       "method": "multi-zone simplified: Vot = (D·ΣRpPz + ΣRaAz)/Ev",
       "oa_method": "ducted to unit return plenum"
     },
@@ -162,11 +162,11 @@
           "room": "FF-10",
           "category": "dwelling",
           "people": 9,
-          "area_m2": 32.64,
+          "area_m2": 32.26,
           "Rp_Pz": 22.5,
-          "Ra_Az": 9.8,
-          "Vbz": 32.3,
-          "Voz": 40.4
+          "Ra_Az": 9.7,
+          "Vbz": 32.2,
+          "Voz": 40.2
         },
         {
           "room": "FF-11",
@@ -202,17 +202,17 @@
           "room": "FF-05",
           "category": "dwelling",
           "people": 2,
-          "area_m2": 21.37,
+          "area_m2": 21.18,
           "Rp_Pz": 5.0,
           "Ra_Az": 6.4,
           "Vbz": 11.4,
-          "Voz": 14.3
+          "Voz": 14.2
         },
         {
           "room": "FF-09",
           "category": "dwelling",
           "people": 2,
-          "area_m2": 13.04,
+          "area_m2": 12.88,
           "Rp_Pz": 5.0,
           "Ra_Az": 3.9,
           "Vbz": 8.9,
@@ -222,8 +222,8 @@
       "Ez": 0.8,
       "Ev": 0.75,
       "sum_RpPz": 37.5,
-      "sum_RaAz": 31.9,
-      "Vot_ls": 92.6,
+      "sum_RaAz": 31.7,
+      "Vot_ls": 92.3,
       "method": "multi-zone simplified: Vot = (D·ΣRpPz + ΣRaAz)/Ev",
       "oa_method": "ducted to unit return plenum"
     }
@@ -317,9 +317,9 @@
     "clause_ev": "ASHRAE 62.1-2019 §6.2.4.3.1 simplified procedure (Ev)"
   },
   "totals": {
-    "oa_ls": 274.9,
+    "oa_ls": 271.0,
     "exhaust_ls": 225.0,
-    "balance_ls": 49.9,
-    "res_62_2_check_ls": 64.6
+    "balance_ls": 46.0,
+    "res_62_2_check_ls": 64.3
   }
 }

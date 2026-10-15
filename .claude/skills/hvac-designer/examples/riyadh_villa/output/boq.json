@@ -61,7 +61,7 @@
         },
         {
           "desc": "Ducted split indoor unit (concealed)",
-          "spec": "DS-24: 7.0 kW nominal cooling, 380 L/s, ESP 75 Pa, heat 7.6 kW, R410A",
+          "spec": "DS-18: 5.3 kW nominal cooling, 300 L/s, ESP 75 Pa, heat 5.8 kW, R410A",
           "unit": "No.",
           "qty": 1,
           "zone": "Z-FF-01",
@@ -127,7 +127,7 @@
         },
         {
           "desc": "Outdoor condensing unit (heat pump)",
-          "spec": "DS-O-24: 7.0 kW nominal, 2.19 kW input, T3 rated, anti-vibration mounts",
+          "spec": "DS-O-18: 5.3 kW nominal, 1.66 kW input, T3 rated, anti-vibration mounts",
           "unit": "No.",
           "qty": 1,
           "zone": "RF",
@@ -166,7 +166,7 @@
           "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
           "spec": "24 ga (0.70 mm), low pressure (500 Pa) class, Seal class A",
           "unit": "m²",
-          "qty": 6.15,
+          "qty": 4.12,
           "zone": "FF",
           "remarks": "",
           "tags": []
@@ -175,7 +175,7 @@
           "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
           "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
           "unit": "m²",
-          "qty": 23.81,
+          "qty": 24.81,
           "zone": "FF",
           "remarks": "",
           "tags": []
@@ -184,7 +184,7 @@
           "desc": "Galvanised sheet steel round spiral duct incl. fittings, joints, sealant",
           "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
           "unit": "m²",
-          "qty": 15.25,
+          "qty": 14.83,
           "zone": "FF",
           "remarks": "",
           "tags": []
@@ -202,7 +202,7 @@
           "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
           "spec": "24 ga (0.70 mm), low pressure (500 Pa) class, Seal class A",
           "unit": "m²",
-          "qty": 15.1,
+          "qty": 10.32,
           "zone": "GF",
           "remarks": "",
           "tags": []
@@ -211,7 +211,7 @@
           "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
           "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
           "unit": "m²",
-          "qty": 13.95,
+          "qty": 18.07,
           "zone": "GF",
           "remarks": "",
           "tags": []
@@ -220,7 +220,7 @@
           "desc": "Galvanised sheet steel round spiral duct incl. fittings, joints, sealant",
           "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
           "unit": "m²",
-          "qty": 11.75,
+          "qty": 11.52,
           "zone": "GF",
           "remarks": "",
           "tags": []
@@ -235,7 +235,7 @@
           "desc": "Insulated flexible duct Ø200",
           "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
           "unit": "m",
-          "qty": 2.44,
+          "qty": 2.38,
           "zone": "FF",
           "remarks": "",
           "tags": []
@@ -244,7 +244,7 @@
           "desc": "Insulated flexible duct Ø300",
           "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
           "unit": "m",
-          "qty": 2.94,
+          "qty": 2.88,
           "zone": "FF",
           "remarks": "",
           "tags": []
@@ -262,7 +262,7 @@
           "desc": "Insulated flexible duct Ø250",
           "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
           "unit": "m",
-          "qty": 2.44,
+          "qty": 2.38,
           "zone": "GF",
           "remarks": "",
           "tags": []
@@ -271,7 +271,7 @@
           "desc": "Insulated flexible duct Ø350",
           "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
           "unit": "m",
-          "qty": 2.94,
+          "qty": 2.88,
           "zone": "GF",
           "remarks": "",
           "tags": []
@@ -316,14 +316,13 @@
           "desc": "4-way square ceiling diffuser with OBD and plenum box",
           "spec": "SD-200 neck Ø200, face 450x450",
           "unit": "No.",
-          "qty": 4,
+          "qty": 3,
           "zone": "FF",
-          "remarks": "Tags: SD-FF-04, SD-FF-05, SD-FF-06, SD-FF-12",
+          "remarks": "Tags: SD-FF-04, SD-FF-05, SD-FF-06",
           "tags": [
             "SD-FF-04",
             "SD-FF-05",
-            "SD-FF-06",
-            "SD-FF-12"
+            "SD-FF-06"
           ]
         },
         {
@@ -342,12 +341,13 @@
           "desc": "4-way square ceiling diffuser with OBD and plenum box",
           "spec": "SD-250 neck Ø250, face 600x600",
           "unit": "No.",
-          "qty": 2,
+          "qty": 3,
           "zone": "FF",
-          "remarks": "Tags: SD-FF-01, SD-FF-02",
+          "remarks": "Tags: SD-FF-01, SD-FF-02, SD-FF-12",
           "tags": [
             "SD-FF-01",
-            "SD-FF-02"
+            "SD-FF-02",
+            "SD-FF-12"
           ]
         },
         {
@@ -572,7 +572,7 @@
         },
         {
           "desc": "Volume control damper (branch), opposed blade",
-          "spec": "350x300",
+          "spec": "300x300",
           "unit": "No.",
           "qty": 1,
           "zone": "FF",
@@ -759,7 +759,7 @@
           "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
           "spec": "OD 6.35 mm (1/4\")",
           "unit": "m",
-          "qty": 36.3,
+          "qty": 63.5,
           "zone": "All",
           "remarks": "riser + floor + roof runs",
           "tags": []
@@ -768,7 +768,7 @@
           "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
           "spec": "OD 9.52 mm (3/8\")",
           "unit": "m",
-          "qty": 120.9,
+          "qty": 97.5,
           "zone": "All",
           "remarks": "riser + floor + roof runs",
           "tags": []
@@ -777,7 +777,7 @@
           "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
           "spec": "OD 12.7 mm (1/2\")",
           "unit": "m",
-          "qty": 21.7,
+          "qty": 47.0,
           "zone": "All",
           "remarks": "riser + floor + roof runs",
           "tags": []
@@ -786,7 +786,7 @@
           "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
           "spec": "OD 15.88 mm (5/8\")",
           "unit": "m",
-          "qty": 106.3,
+          "qty": 81.0,
           "zone": "All",
           "remarks": "riser + floor + roof runs",
           "tags": []
@@ -795,7 +795,7 @@
           "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
           "spec": "OD 6.35 mm",
           "unit": "No.",
-          "qty": 16,
+          "qty": 24,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -804,7 +804,7 @@
           "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
           "spec": "OD 9.52 mm",
           "unit": "No.",
-          "qty": 40,
+          "qty": 32,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -813,7 +813,7 @@
           "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
           "spec": "OD 12.7 mm",
           "unit": "No.",
-          "qty": 8,
+          "qty": 16,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -822,7 +822,7 @@
           "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
           "spec": "OD 15.88 mm",
           "unit": "No.",
-          "qty": 32,
+          "qty": 24,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -837,7 +837,7 @@
           "desc": "Duct insulation (supply / return / fresh air)",
           "spec": "25 mm glass wool 24 kg/m3 with FSK facing (external wrap)",
           "unit": "m²",
-          "qty": 40.16,
+          "qty": 39.0,
           "zone": "FF",
           "remarks": "",
           "tags": []
@@ -846,7 +846,7 @@
           "desc": "Duct insulation (supply / return / fresh air)",
           "spec": "25 mm glass wool 24 kg/m3 with FSK facing (hot outdoor air)",
           "unit": "m²",
-          "qty": 5.37,
+          "qty": 5.29,
           "zone": "FF",
           "remarks": "",
           "tags": []
@@ -855,7 +855,7 @@
           "desc": "Duct insulation (supply / return / fresh air)",
           "spec": "25 mm glass wool 24 kg/m3 with FSK facing (external wrap)",
           "unit": "m²",
-          "qty": 34.81,
+          "qty": 34.11,
           "zone": "GF",
           "remarks": "",
           "tags": []
@@ -873,7 +873,7 @@
           "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
           "spec": "for OD 6.35 mm, 13 mm thick",
           "unit": "m",
-          "qty": 36.3,
+          "qty": 63.5,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -882,7 +882,7 @@
           "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
           "spec": "for OD 9.52 mm, 19 mm thick",
           "unit": "m",
-          "qty": 120.9,
+          "qty": 97.5,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -891,7 +891,7 @@
           "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
           "spec": "for OD 12.7 mm, 19 mm thick",
           "unit": "m",
-          "qty": 21.7,
+          "qty": 47.0,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -900,7 +900,7 @@
           "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
           "spec": "for OD 15.88 mm, 19 mm thick",
           "unit": "m",
-          "qty": 106.3,
+          "qty": 81.0,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -915,7 +915,7 @@
           "desc": "uPVC condensate pipe incl. fittings, slope 1 %",
           "spec": "Ø25, uPVC Class E / Sch.40, insulated 9 mm where run in ceiling void",
           "unit": "m",
-          "qty": 8.93,
+          "qty": 8.91,
           "zone": "FF",
           "remarks": "Tags: CD-IU-FF-01, CD-IU-FF-02",
           "tags": [
@@ -936,7 +936,7 @@
           "desc": "uPVC condensate pipe incl. fittings, slope 1 %",
           "spec": "Ø25, uPVC Class E / Sch.40, insulated 9 mm where run in ceiling void",
           "unit": "m",
-          "qty": 19.06,
+          "qty": 21.03,
           "zone": "GF",
           "remarks": "Tags: CD-IU-GF-01, CD-IU-GF-02, CD-IU-GF-03, CD-IU-GF-04",
           "tags": [
@@ -974,7 +974,7 @@
           "desc": "Duct hangers: threaded rod + angle/strap, galvanised",
           "spec": "@ 2.4 m max (pairs)",
           "unit": "No.",
-          "qty": 20,
+          "qty": 19,
           "zone": "GF",
           "remarks": "",
           "tags": []
@@ -983,7 +983,7 @@
           "desc": "Refrigerant pipe supports / clamps with insulation saddles",
           "spec": "@ 1.2 m",
           "unit": "No.",
-          "qty": 119,
+          "qty": 121,
           "zone": "All",
           "remarks": "",
           "tags": []
@@ -992,7 +992,7 @@
           "desc": "Condensate pipe clips",
           "spec": "@ 1.0 m",
           "unit": "No.",
-          "qty": 28,
+          "qty": 30,
           "zone": "All",
           "remarks": "",
           "tags": []

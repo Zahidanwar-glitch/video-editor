@@ -76,10 +76,15 @@ def compute(work):
         floor_route = G.l_route(pos, rpos)
         h_floor = G.m(fl, G.polyline_len(floor_route))
         o = odus.get(u["tag"])
+        if o and o.get("floor") == fl["id"] and o.get("pos_pt"):  # outdoor unit on the same floor (facade / balcony)
+            floor_route = G.l_route(pos, tuple(o["pos_pt"]))
+            h_floor = G.m(fl, G.polyline_len(floor_route))
+            rpos, rdesc = tuple(o["pos_pt"]), "none (ODU on facade)"
         if u["type"] != "fcu_ducted":
-            vert = rise_to_roof(fl["id"]) if (o and o.get("floor") == "RF") else va
+            same_floor = bool(o and o.get("floor") == fl["id"])
+            vert = 0.5 if same_floor else (rise_to_roof(fl["id"]) if (o and o.get("floor") == "RF") else va)
             roof_route, h_roof = [], 0.0
-            if o and o.get("pos_pt") and roof:
+            if o and o.get("pos_pt") and roof and not same_floor:
                 roof_route = G.l_route(rpos, tuple(o["pos_pt"]))
                 h_roof = G.m(roof, G.polyline_len(roof_route))
             total = (h_floor + vert + h_roof) * (1 + extra)
@@ -97,6 +102,8 @@ def compute(work):
                 "total_m": round(total, 1), "liquid_mm": sz["liquid_mm"], "gas_mm": sz["gas_mm"], "liquid_in": sz["liquid_in"], "gas_in": sz["gas_in"],
                 "max_length_m": maxL, "max_height_m": maxH, "ok": ok, "bends": max(0, len(floor_route) - 2) + max(0, len(roof_route) - 2) + 2,
                 "capacity_kw": u["nominal_kw"], "system": z["system"]})
+            if rdesc.startswith("none"):
+                pipes["refrigerant"][-1]["riser_pt"] = None
             if z["system"] == "vrf":
                 pipes["branch_kits"].append({"unit": u["tag"], "floor": fl["id"], "pos_pt": [round(rpos[0], 2), round(rpos[1], 2)]})
         else:

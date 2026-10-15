@@ -21,6 +21,7 @@ PT_MM = 25.4 / 72
 SCALE_RE = re.compile(r"(?:SCALE|SC\.?)\s*[:=]?\s*1\s*[:/]\s*(\d{1,4})", re.I)
 BARE_RE = re.compile(r"^1\s*:\s*(\d{1,4})$")
 DIM_RE = re.compile(r"^\d{3,5}$")
+DIM_M_RE = re.compile(r"^\d{1,2}[.,]\d{1,2}$")  # metres with decimal (e.g. 3,27 / 2.48)
 
 
 def text_lines(page):
@@ -61,10 +62,13 @@ def from_dimensions(lines, segs):
     """Pair each numeric (mm) text with the closest parallel line whose midpoint it sits on."""
     ratios = []
     for ln in lines:
-        t = ln["text"].replace(",", "").strip()
-        if not DIM_RE.match(t):
+        t = ln["text"].strip()
+        if DIM_RE.match(t.replace(",", "")):
+            val = float(t.replace(",", ""))
+        elif DIM_M_RE.match(t):
+            val = float(t.replace(",", ".")) * 1000.0
+        else:
             continue
-        val = float(t)
         x0, y0, x1, y1 = ln["bbox"]
         cx, cy = (x0 + x1) / 2, (y0 + y1) / 2
         vertical = abs(ln["dir"][1]) > 0.7

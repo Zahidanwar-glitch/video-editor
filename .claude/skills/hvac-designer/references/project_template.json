@@ -4,16 +4,32 @@
     "name": "",
     "client": "",
     "ref": "",
-    "location": {"city": "", "country": ""},
+    "location": {
+      "city": "",
+      "country": ""
+    },
     "building_type": "villa | house | apartment | office | shop | mixed",
     "floors": [
-      {"id": "GF", "name": "Ground Floor", "floor_to_floor_m": 3.6, "ceiling_height_m": 3.0}
+      {
+        "id": "GF",
+        "name": "Ground Floor",
+        "floor_to_floor_m": 3.6,
+        "ceiling_height_m": 3.0
+      }
     ],
     "roof_page_id": "RF",
     "code_set": null,
     "units": null,
     "envelope_override": null,
-    "confirmed": {"codes": false, "design_conditions": false}
+    "confirmed": {
+      "codes": false,
+      "design_conditions": false
+    },
+    "conditioned_override": {
+      "by_space_type": {},
+      "by_room": {}
+    },
+    "window_sizes": {}
   },
   "design_conditions": {},
   "systems": {

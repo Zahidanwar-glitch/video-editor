@@ -32,6 +32,11 @@
     "sanity_w_m2": [
       25,
       350
+    ],
+    "sanity_exempt_types": [
+      "kitchen",
+      "electrical",
+      "pantry"
     ]
   },
   "zoning": {
@@ -50,7 +55,8 @@
       "bath",
       "stair"
     ],
-    "unconditioned_service": "exhaust_only"
+    "unconditioned_service": "exhaust_only",
+    "group_ducted_rooms": true
   },
   "ventilation": {
     "max_oa_fraction_without_pretreat": 0.15,
@@ -62,7 +68,9 @@
     "min_shr_check": true,
     "odu_location": "roof",
     "refrigerant": "R410A",
-    "vertical_allowance_m": 1.5
+    "vertical_allowance_m": 1.5,
+    "odu_location_by_system": {},
+    "_about": "odu_location_by_system: per system 'roof' or 'facade' (on brackets just outside the room's exterior wall); overrides odu_location"
   },
   "ducts": {
     "ceiling_void_mm": 450,
@@ -98,9 +106,21 @@
   },
   "drawing": {
     "side_panel_pt": 230,
-    "preliminary_note": "PRELIMINARY DESIGN - FOR COORDINATION ONLY. To be checked and stamped by a qualified HVAC engineer before construction."
+    "preliminary_note": "PRELIMINARY DESIGN - FOR COORDINATION ONLY. To be checked and stamped by a qualified HVAC engineer before construction.",
+    "dxf_background_heavy_paths": 2000,
+    "dxf_background_min_segment_m": 0.3
   },
   "boq": {
     "default_waste_pct": 7.5
+  },
+  "reader": {
+    "door_seal_window_m": 1.5,
+    "door_seal_kernel_m": 0,
+    "min_room_area_m2": 0.8,
+    "min_unknown_area_m2": 2.0,
+    "max_room_area_m2": 150.0,
+    "_about": "door_seal_kernel_m: local morphological closing at D-tags, 0 = off (fills busy drawings - use only on clean plans)",
+    "max_text_lines_per_room": 8,
+    "area_mismatch_tol": 0.12
   }
 }

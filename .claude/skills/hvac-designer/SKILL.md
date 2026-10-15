@@ -42,4 +42,5 @@ Scanned PDFs, scale problems, re-zoning, system changes and BOQ edits: see `refe
 `HVAC_plans.pdf` (one sheet per floor + roof + controls/schedule, layered), `HVAC_<floor>.dxf`,
 `HVAC_BOQ.xlsx`, `HVAC_Design_Report.docx/.pdf`, `assumptions.md`.
 
-Worked example: `examples/riyadh_villa/` (Riyadh villa, ducted + wall split). Tests: `python -m unittest discover -s tests`.
+Worked examples: `examples/riyadh_villa/` (clean CAD villa) and `examples/housing_182A/` (real traced 4-storey
+housing block, two plans per sheet). Tests: `python -m unittest discover -s tests`.

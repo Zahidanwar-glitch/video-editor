@@ -35,9 +35,14 @@ FLOOR_RE = [
     (re.compile(r"THIRD\s+FLOOR|3RD\s+FLOOR", re.I), lambda m: "TF", "Third Floor"),
     (re.compile(r"(\d+)(?:ST|ND|RD|TH)\s+FLOOR", re.I), lambda m: f"L{m.group(1)}", "Level"),
     (re.compile(r"TYPICAL\s+FLOOR", re.I), lambda m: "TYP", "Typical Floor"),
-    (re.compile(r"ROOF\s+PLAN|ROOF\s+FLOOR", re.I), lambda m: "RF", "Roof"),
+    (re.compile(r"ROOF\s+PLAN|ROOF\s+FLOOR|TERRACE\s+(FLOOR\s+)?PLAN", re.I), lambda m: "RF", "Roof"),
 ]
-NON_ROOM = re.compile(r"PROJECT|DRAWING|SCALE|DWG|ARCHITECT|SCHEDULE|REV\b|TITLE|CLIENT|NOTES?:|PLAN\b|PARAPET|ALUMINIUM", re.I)
+DIMS_RE = re.compile(r"^(\d{3,5})\s*[xX×]\s*(\d{3,5})$")
+SIZE_RE = re.compile(r"(\d{3,4})\s*[xX×]\s*(\d{3,4})")
+NON_ROOM = re.compile(r"PROJECT|DRAWING|DRG\.?\s*NO|SCALE|DWG|ARCHITECT|SCHEDULE|REV\b|TITLE|CLIENT|NOTES?\b|PLAN\b|PARAPET|ALUMINIUM|FLOOR|STAIRS\b|SHARE|"
+                      r"DETAIL|DATE|S\.?NO|TYPE|SHUTTER|OPENING|DOOR|WINDOW|VENTILATOR|LAYOUT|DESCRIPTION|AREA|TOTAL|BELOW|ABOVE|WIDE|HIGH|WALL|SUNSHADE|"
+                      r"ELEC|METER|DEEP|SPACE|DIM\b|SECTION|ELEVATION|LEVEL|\bUP\b|\bDN\b|\bN\b$", re.I)
+DTAG_RE = re.compile(r"^D\d{1,3}[A-Z]?$", re.I)
 AREA_RE = re.compile(r"(\d+(?:\.\d+)?)\s*(?:m²|m2|sqm|sq\.?\s*m)", re.I)
 WTAG_RE = re.compile(r"^(W[-_ ]?\d{1,3}[A-Z]?)$", re.I)
 WSCHED_RE = re.compile(r"\b(W[-_ ]?\d{1,3}[A-Z]?)\s+(\d{3,4})\s*[xX×]\s*(\d{3,4})")
@@ -97,6 +102,89 @@ def door_arc(curves, mm_pt):
     return None
 
 
+def seal_door_tags(ink, lines, zoom, mm_pt, win_m, kernel_m):
+    """Close wall gaps around door tags (D3, D4 ...) with a local morphological closing, so
+    rooms whose swing arc was not drawn as a path still read as enclosed."""
+    k = max(3, int(round(kernel_m * 1000 / mm_pt * zoom)))
+    w = int(round(win_m * 1000 / mm_pt * zoom))
+    n = 0
+    for ln in lines:
+        t = ln["text"].strip()
+        if not DTAG_RE.match(t):
+            continue
+        row = [o for o in lines if abs((o["bbox"][1] + o["bbox"][3]) / 2 - (ln["bbox"][1] + ln["bbox"][3]) / 2) < 3 and o["bbox"][0] > ln["bbox"][2]]
+        if any(SIZE_RE.search(o["text"]) for o in row):
+            continue  # schedule row, not a door on the plan
+        cx, cy = int((ln["bbox"][0] + ln["bbox"][2]) / 2 * zoom), int((ln["bbox"][1] + ln["bbox"][3]) / 2 * zoom)
+        # pad the window by the kernel so the closing does not fill along the window border
+        Y0, Y1 = max(0, cy - w - k), min(ink.shape[0], cy + w + k)
+        X0, X1 = max(0, cx - w - k), min(ink.shape[1], cx + w + k)
+        if Y1 - Y0 < 3 * k or X1 - X0 < 3 * k:
+            continue
+        sub = ink[Y0:Y1, X0:X1]
+        closed = ndimage.binary_closing(sub, structure=np.ones((k, k), bool)) | sub
+        y0, y1 = cy - w - Y0, cy + w - Y0
+        x0, x1 = cx - w - X0, cx + w - X0
+        y0, x0 = max(0, y0), max(0, x0)
+        ink[Y0 + y0:Y0 + y1, X0 + x0:X0 + x1] = closed[y0:y1, x0:x1]
+        n += 1
+    return n
+
+
+def polyline_arcs(page, mm_pt):
+    """Door swings drawn as chains of short line segments (traced/exploded CAD): chain the
+    segments by shared end points and keep chains that fit a quarter circle of door radius."""
+    max_seg = 300 / mm_pt
+    segs = []
+    for p in page.get_drawings():
+        if p.get("fill") is not None:
+            continue
+        for it in p["items"]:
+            if it[0] == "l" and 0.3 < math.hypot(it[2].x - it[1].x, it[2].y - it[1].y) <= max_seg:
+                segs.append(((it[1].x, it[1].y), (it[2].x, it[2].y)))
+    key = lambda q: (round(q[0] * 4) / 4, round(q[1] * 4) / 4)
+    adj = {}
+    for i, (a, b) in enumerate(segs):
+        adj.setdefault(key(a), []).append(i)
+        adj.setdefault(key(b), []).append(i)
+    seen, doors = set(), []
+    for i in range(len(segs)):
+        if i in seen:
+            continue
+        chain = [segs[i][0], segs[i][1]]
+        seen.add(i)
+        for end in (1, 0):  # extend forward from chain[-1], then backward from chain[0]
+            while True:
+                q = chain[-1] if end else chain[0]
+                nxt = [j for j in adj.get(key(q), []) if j not in seen]
+                if len(nxt) != 1 or len(adj.get(key(q), [])) != 2:
+                    break
+                j = nxt[0]
+                a, b = segs[j]
+                other = b if key(a) == key(q) else a
+                seen.add(j)
+                if end:
+                    chain.append(other)
+                else:
+                    chain.insert(0, other)
+        if len(chain) < 5:
+            continue
+        cen = circumcenter(chain[0], chain[len(chain) // 2], chain[-1])
+        if not cen:
+            continue
+        r = math.hypot(chain[0][0] - cen[0], chain[0][1] - cen[1])
+        if not (450 <= r * mm_pt <= 1600):
+            continue
+        if any(abs(math.hypot(q[0] - cen[0], q[1] - cen[1]) - r) > 0.06 * r for q in chain):
+            continue
+        a1 = math.atan2(chain[0][1] - cen[1], chain[0][0] - cen[0])
+        a2 = math.atan2(chain[-1][1] - cen[1], chain[-1][0] - cen[0])
+        sweep = abs((math.degrees(a2 - a1) + 180) % 360 - 180)
+        if 70 <= sweep <= 110:
+            doors.append({"centre": cen, "start": chain[0], "end": chain[-1], "mid": chain[len(chain) // 2], "r": r})
+    return doors
+
+
 def rasterise(page, zoom, mm_pt=None):
     """Vector paths -> binary 'ink' mask (True = wall/line), text excluded.
     Door swing arcs are closed with their two radii so openings are sealed; returns (mask, doors)."""
@@ -140,6 +228,12 @@ def rasterise(page, zoom, mm_pt=None):
                 dr.line(pts, fill=255, width=lw)
         if fill is not None and len(poly) >= 3:
             dr.polygon(poly, fill=255 if sum(fill) < 2.7 else 0)
+    if mm_pt:
+        for d in polyline_arcs(page, mm_pt):
+            if all(math.hypot(d["centre"][0] - e["centre"][0], d["centre"][1] - e["centre"][1]) > 2 for e in doors):
+                doors.append(d)
+                for q in (d["start"], d["end"]):
+                    dr.line([(d["centre"][0] * zoom, d["centre"][1] * zoom), (q[0] * zoom, q[1] * zoom)], fill=255, width=2)
     return np.array(img) > 0, doors
 
 
@@ -195,6 +289,18 @@ def text_lines(page):
     return scale_detect.text_lines(page)
 
 
+def text_blocks(page):
+    """Block-joined text (a title such as 'THIRD / FLOOR PLAN' spans two lines)."""
+    out = []
+    for b in page.get_text("dict")["blocks"]:
+        ls = b.get("lines", [])
+        if not ls:
+            continue
+        txt = " ".join(" ".join(s["text"] for s in ln["spans"]).strip() for ln in ls)
+        out.append({"text": txt, "bbox": b["bbox"], "dir": ls[0]["dir"], "size": max(s["size"] for ln in ls for s in ln["spans"])})
+    return out
+
+
 def find_north(page, lines):
     """North arrow: a lone 'N' near a filled triangle/arrow; angle clockwise from page-up."""
     ns = [l for l in lines if l["text"].strip().upper() in ("N", "NORTH")]
@@ -224,24 +330,43 @@ def find_north(page, lines):
     return round(best[1], 1) if best else None
 
 
-def detect_floor(lines, idx):
-    for ln in sorted(lines, key=lambda l: -l["size"]):
+def detect_floors(lines, idx):
+    """All plan titles on the page (several plans per sheet are common). Big text only."""
+    cands = []
+    for ln in lines:
         for rx, fid, fname in FLOOR_RE:
             m = rx.search(ln["text"])
             if m:
-                return fid(m), fname, ln["text"]
-    return f"P{idx}", f"Page {idx}", None
+                cx, cy = (ln["bbox"][0] + ln["bbox"][2]) / 2, (ln["bbox"][1] + ln["bbox"][3]) / 2
+                cands.append({"id": fid(m), "name": fname, "title": ln["text"], "size": ln["size"], "pt": (cx, cy)})
+                break
+    if not cands:
+        return [{"id": f"P{idx}", "name": f"Page {idx}", "title": None, "pt": None}]
+    big = max(c["size"] for c in cands)
+    out = []
+    for c in sorted(cands, key=lambda c: (c["pt"][0], c["pt"][1])):
+        if c["size"] >= 0.75 * big and c["id"] not in {o["id"] for o in out} and len(c["title"]) < 40:
+            out.append(c)
+    return out
 
 
 # ------------------------------------------------------------------ main page reader
+WIN_OVERRIDE = {}
+
+
 def read_page(page, idx, den, north, log, work):
     lines = text_lines(page)
-    fid, fname, ftitle = detect_floor(lines, idx)
+    titles = detect_floors(lines + text_blocks(page), idx)
+    fid, fname = f"P{idx}", f"Page {idx}"
     mm_pt = scale_detect.PT_MM * den
     zoom = max(1.0, min(mm_pt / 15.0, 7000 / page.rect.width))
     mm_px = mm_pt / zoom
     px_m2 = (mm_px / 1000) ** 2
     ink, doors = rasterise(page, zoom, mm_pt)
+    rp = C.ref("design_defaults.json")["reader"]
+    n_sealed = seal_door_tags(ink, lines, zoom, mm_pt, rp["door_seal_window_m"], rp["door_seal_kernel_m"]) if rp["door_seal_kernel_m"] else 0
+    if n_sealed:
+        log.add("A-read", f"doorseal_{idx}", f"Page {idx}: {n_sealed} door openings sealed at D-tags (local closing {rp['door_seal_kernel_m']} m) in addition to {len(doors)} swing arcs", "pdf_reader.py")
     lab, n = ndimage.label(~ink)
     objs = ndimage.find_objects(lab)
     sizes = ndimage.sum(np.ones_like(lab), lab, index=np.arange(n + 1))
@@ -255,6 +380,27 @@ def read_page(page, idx, den, north, log, work):
         px, py = int(x_pt * zoom), int(y_pt * zoom)
         return int(lab[py, px]) if 0 <= py < H and 0 <= px < W else 0
 
+    def label_of_text(ln):
+        """Region holding a text line. Glyphs may also exist as filled paths (traced drawings),
+        so when the centre sits on ink, vote over points around the text box."""
+        x0, y0, x1, y1 = ln["bbox"]
+        r = label_at((x0 + x1) / 2, (y0 + y1) / 2)
+        if r:
+            return r
+        votes = {}
+        h = (y1 - y0) * 0.6 + 2 / zoom
+        for fx in (0.1, 0.3, 0.5, 0.7, 0.9):
+            for (px, py) in ((x0 + (x1 - x0) * fx, y0 - h), (x0 + (x1 - x0) * fx, y1 + h)):
+                k = label_at(px, py)
+                if k:
+                    votes[k] = votes.get(k, 0) + 1
+        for fy in (0.25, 0.5, 0.75):
+            for (px, py) in ((x0 - h, y0 + (y1 - y0) * fy), (x1 + h, y0 + (y1 - y0) * fy)):
+                k = label_at(px, py)
+                if k:
+                    votes[k] = votes.get(k, 0) + 1
+        return max(votes, key=votes.get) if votes else 0
+
     # assign text to regions
     labels_txt, area_txt = {}, {}
     wtags, wsched, heights = [], {}, []
@@ -262,11 +408,18 @@ def read_page(page, idx, den, north, log, work):
         t = ln["text"].strip()
         cx = (ln["bbox"][0] + ln["bbox"][2]) / 2
         cy = (ln["bbox"][1] + ln["bbox"][3]) / 2
-        r = label_at(cx, cy)
+        r = label_of_text(ln)
         for m in WSCHED_RE.finditer(t):
             wsched[norm_tag(m.group(1))] = (int(m.group(2)), int(m.group(3)))
         if WTAG_RE.match(t):
-            wtags.append({"tag": norm_tag(t), "pt": (cx, cy)})
+            # schedule laid out in cells: size text on the same row to the right
+            row = [o for o in lines if abs((o["bbox"][1] + o["bbox"][3]) / 2 - cy) < 3 and o["bbox"][0] > ln["bbox"][2]]
+            row.sort(key=lambda o: o["bbox"][0])
+            sz = next((SIZE_RE.search(o["text"]) for o in row if SIZE_RE.search(o["text"])), None)
+            if sz:
+                wsched.setdefault(norm_tag(t), (int(sz.group(1)), int(sz.group(2))))
+            else:
+                wtags.append({"tag": norm_tag(t), "pt": (cx, cy)})
             continue
         hm = HEIGHT_RE.search(t)
         if hm:
@@ -277,10 +430,19 @@ def read_page(page, idx, den, north, log, work):
         if am:
             area_txt.setdefault(r, float(am.group(1)))
             continue
-        if NON_ROOM.search(t) or not re.search(r"[A-Za-z؀-ۿ]", t) or len(t) > 40:
+        dm = DIMS_RE.match(t.replace(" ", ""))
+        if dm:  # room size text "3270X2770" -> area cross-check
+            area_txt.setdefault(r, int(dm.group(1)) * int(dm.group(2)) / 1e6)
+            continue
+        letters = len(re.findall(r"[A-Za-z؀-ۿ]", t))
+        if NON_ROOM.search(t) or letters < 2 or letters < 0.5 * len(t.replace(" ", "")) or len(t) > 40 or DTAG_RE.match(t):
             continue
         labels_txt.setdefault(r, []).append((ln["size"], t, cx, cy))
 
+    leaked = sorted({ln["text"].strip() for ln in lines if label_of_text(ln) in exterior
+                     and space_type(ln["text"].strip()) not in ("unknown", "outdoor", "roof") and not NON_ROOM.search(ln["text"])})
+    if leaked:
+        log.ask("Gate1", f"leak_{idx}", f"Page {idx}: room names found in un-enclosed space (wall gap or missing door): {leaked[:12]} - these rooms were NOT read; close the gap on the plan or add them by hand.")
     # door swing sectors belong to the room the leaf swings into (point just beyond the arc)
     region_of = {r: r for r in labels_txt}
     for d in doors:
@@ -292,8 +454,10 @@ def read_page(page, idx, den, north, log, work):
             region_of[sector] = host
     # other small unlabelled regions -> the labelled neighbour they touch most
     min_room_px = 1.5 / px_m2
-    for r in range(1, n + 1):
-        if r in region_of or r in exterior or sizes[r] == 0 or sizes[r] >= min_room_px:
+    tiny_px = 0.25 / px_m2  # hatching / line gaps: ignore
+    for r in np.nonzero((sizes > tiny_px) & (sizes < min_room_px))[0]:
+        r = int(r)
+        if r in region_of or r in exterior:
             continue
         sl = tuple(slice(max(0, s.start - 3), s.stop + 3) for s in objs[r - 1])
         dil = ndimage.binary_dilation(lab[sl] == r, iterations=3)
@@ -315,10 +479,10 @@ def read_page(page, idx, den, north, log, work):
         grown = ndimage.binary_dilation(m, iterations=1) & ink[y0:y1, x0:x1]
         m = m | grown
         area = float(m.sum() * px_m2)
-        txts.sort(key=lambda t: -t[0])
+        txts.sort(key=lambda t: (space_type(t[1]) == "unknown", -t[0]))
         names = [t[1] for t in txts]
         name = names[0]
-        if len(names) > 1 and txts[0][0] == txts[1][0]:
+        if len(names) > 1 and txts[0][0] == txts[1][0] and space_type(names[1]) != "unknown":
             log.ask("Gate1", f"multi_label_{fid}_{name}", f"{fname}: one enclosed space carries several names {names} - an opening may be unsealed. Split or confirm.")
         ys, xs = np.nonzero(m)
         poly = [((x + x0) / zoom, (y + y0) / zoom) for x, y in trace_polygon(m)]
@@ -334,11 +498,48 @@ def read_page(page, idx, den, north, log, work):
             "rectangular": bool(area / ((bb[2] - bb[0]) * (bb[3] - bb[1]) * px_m2) > 0.93),
             "_mask": (y0, x0, m), "_label": r,
         }
-        if at and st != "roof" and abs(at - area) / at > 0.05:
-            log.ask("Gate1", f"area_mismatch_{fid}_{name}", f"{fname} {name}: measured {area:.2f} m² vs plan text {at:.2f} m² (>5 % difference). Which is right?")
+        if at and st != "roof" and abs(at - area) / at > rp["area_mismatch_tol"]:
+            log.ask("Gate1", f"area_mismatch_{fid}_{name}", f"{fname} {name}: measured {area:.2f} m² vs plan text {at:.2f} m² (>{rp['area_mismatch_tol']:.0%} difference). Which is right?")
         if st == "unknown":
             log.ask("Gate1", f"type_{fid}_{name}", f"{fname}: room '{name}' - what is its use (space type)?")
         rooms.append(room)
+
+    # drop labelled cells that are not rooms (title block, schedules, grid bubbles)
+    n_txt = {}
+    for ln in lines:
+        k = label_of_text(ln)
+        n_txt[k] = n_txt.get(k, 0) + 1
+    for r in rooms:  # a cell full of text lines is a schedule / note box, not a room
+        r["_texty"] = n_txt.get(r["_label"], 0) >= rp["max_text_lines_per_room"]
+    known = [r for r in rooms if r["space_type"] not in ("unknown", "outdoor", "roof") and r["area_m2"] >= rp["min_room_area_m2"]
+             and r["area_m2"] <= rp["max_room_area_m2"] and not r["_texty"]]
+    if known:
+        pad = 1000 / mm_pt
+        px0 = min(r["bbox_pt"][0] for r in known) - pad
+        py0 = min(r["bbox_pt"][1] for r in known) - pad
+        px1 = max(r["bbox_pt"][2] for r in known) + pad
+        py1 = max(r["bbox_pt"][3] for r in known) + pad
+        kept, dropped = [], []
+        for r in rooms:
+            cx, cy = r["centroid_pt"]
+            bx0, by0, bx1, by1 = r["bbox_pt"]
+            inside = px0 <= cx <= px1 and py0 <= cy <= py1
+            touches = bx0 <= px1 and px0 <= bx1 and by0 <= py1 and py0 <= by1
+            if r["space_type"] in ("roof", "outdoor"):  # courtyards, terraces, the roof itself: any size, must touch the plan
+                ok = touches and not r["_texty"] and r["area_m2"] >= rp["min_room_area_m2"]
+            else:
+                ok = inside and not r["_texty"] and r["area_m2"] <= rp["max_room_area_m2"] and (
+                    (r["space_type"] != "unknown" and r["area_m2"] >= rp["min_room_area_m2"]) or r["area_m2"] >= rp["min_unknown_area_m2"])
+            (kept if ok else dropped).append(r)
+        rooms = kept
+        for r in rooms:
+            r.pop("_texty", None)
+        for q in list(log.questions):
+            if q["key"].startswith(("type_", "area_mismatch_", "multi_label_")) and any(q["key"].endswith("_" + d["name"]) for d in dropped) \
+                    and not any(q["key"].endswith("_" + k_["name"]) for k_ in kept):
+                log.questions.remove(q)
+        if dropped:
+            log.add("A-read", f"dropped_{idx}", f"Page {idx}: {len(dropped)} labelled cells ignored as non-rooms (schedule/title/grid text): {sorted({d['name'] for d in dropped})[:15]}", "pdf_reader.py")
 
     # unnamed enclosed spaces inside the building outline
     if rooms:
@@ -360,6 +561,10 @@ def read_page(page, idx, den, north, log, work):
 
     room_labels = {k for k, v in region_of.items()}
     ext_mask = np.isin(lab, list(exterior))
+    for room in rooms:
+        if room["space_type"] in ("outdoor", "roof", "shaft"):
+            y0, x0, m = room["_mask"]
+            ext_mask[y0:y0 + m.shape[0], x0:x0 + m.shape[1]] |= m
     probe = int(round(500 / mm_px)) + 2
 
     def in_room(room, qx, qy):
@@ -392,7 +597,7 @@ def read_page(page, idx, den, north, log, work):
                         hits += 1
                         break
                     lq = lab[qy, qx]
-                    if lq and lq in room_labels and not in_room(room, qx, qy):
+                    if lq and lq in room_labels and not in_room(room, qx, qy) and not ext_mask[qy, qx]:
                         break  # reached another room
             frac = hits / samples
             comp = (math.degrees(math.atan2(nx, -ny)) - north) % 360
@@ -420,7 +625,7 @@ def read_page(page, idx, den, north, log, work):
         if not best:
             log.ask("Gate1", f"wtag_{fid}_{w['tag']}_{int(w['pt'][0])}", f"{fname}: window tag {w['tag']} at ({w['pt'][0]:.0f},{w['pt'][1]:.0f}) pt is not next to an exterior wall - which room?")
             continue
-        size = wsched.get(w["tag"])
+        size = wsched.get(w["tag"]) or WIN_OVERRIDE.get(w["tag"])
         if not size:
             log.ask("Gate1", f"wsize_{w['tag']}", f"Window {w['tag']}: size not found in a window schedule - give width x height (mm).")
         _, room, e = best
@@ -428,7 +633,7 @@ def read_page(page, idx, den, north, log, work):
             "tag": w["tag"], "orientation": e["orientation"], "bearing": e["bearing"],
             "width_m": size[0] / 1000 if size else None, "height_m": size[1] / 1000 if size else None,
             "at_pt": [round(w["pt"][0], 1), round(w["pt"][1], 1)]})
-    if not wtags and fid != "RF":
+    if not wtags and not all(t["id"] == "RF" for t in titles):
         log.ask("Gate1", f"no_windows_{fid}", f"{fname}: no window tags found. Give window sizes per room, or approve a glazing-ratio assumption.")
 
     # columns: small filled near-square rectangles
@@ -441,20 +646,56 @@ def read_page(page, idx, den, north, log, work):
         if 250 <= min(wmm, hmm) and max(wmm, hmm) <= 1200 and max(wmm, hmm) / max(1e-6, min(wmm, hmm)) < 1.6:
             cols.append([round(r.x0, 2), round(r.y0, 2), round(r.x1, 2), round(r.y1, 2)])
 
-    rooms.sort(key=lambda r: (round(r["centroid_pt"][1] / 60), r["centroid_pt"][0]))
-    for i, r in enumerate(rooms, 1):
-        r["id"] = f"{fid}-{i:02d}"
-    footprint = np.zeros_like(ink)
+    floors = []
+    for t in titles:
+        floors.append({"id": t["id"], "name": t["name"], "title": t["title"], "page": idx, "kind": "roof" if t["id"] == "RF" else "floor",
+                       "zoom": zoom, "mm_per_pt": mm_pt, "page_size_pt": [page.rect.width, page.rect.height], "title_pt": t["pt"],
+                       "rooms": [], "columns": [], "doors_found": len(doors), "window_schedule": {k: list(v) for k, v in wsched.items()},
+                       "heights_found_m": heights})
+    # plans side by side -> split by x; stacked -> split by y (titles sit below/beside their plan)
+    if len(floors) > 1 and floors[0]["title_pt"] is not None:
+        xs = [f["title_pt"][0] for f in floors]
+        ys = [f["title_pt"][1] for f in floors]
+        axis = 0 if (max(xs) - min(xs)) >= (max(ys) - min(ys)) else 1
+
+        floors.sort(key=lambda f: f["title_pt"][axis])
+        coords = sorted(r["centroid_pt"][axis] for r in rooms)
+        bounds = []  # between consecutive titles: middle of the widest empty band of room centroids
+        for fa, fb in zip(floors, floors[1:]):
+            ta, tb = fa["title_pt"][axis], fb["title_pt"][axis]
+            inside = [c for c in coords if ta <= c <= tb]
+            best = ((ta + tb) / 2, 0)
+            for c1, c2 in zip(inside, inside[1:]):
+                if c2 - c1 > best[1]:
+                    best = ((c1 + c2) / 2, c2 - c1)
+            bounds.append(best[0])
+
+    def nearest(pt):
+        if len(floors) == 1 or floors[0]["title_pt"] is None:
+            return floors[0]
+        for f, b in zip(floors, bounds):
+            if pt[axis] < b:
+                return f
+        return floors[-1]
     for r in rooms:
-        if r["space_type"] != "roof":
-            y0, x0, m = r["_mask"]
-            footprint[y0:y0 + m.shape[0], x0:x0 + m.shape[1]] |= m
-    footprint = ndimage.binary_closing(footprint, iterations=int(300 / mm_px) + 1)
-    return {"id": fid, "name": fname, "title": ftitle, "page": idx, "kind": "roof" if fid == "RF" else "floor",
-            "zoom": zoom, "mm_per_pt": mm_pt, "page_size_pt": [page.rect.width, page.rect.height],
-            "rooms": rooms, "columns": cols, "doors_found": len(doors),
-            "window_schedule": {k: list(v) for k, v in wsched.items()},
-            "heights_found_m": heights, "_footprint": footprint}
+        nearest(r["centroid_pt"])["rooms"].append(r)
+    for c in cols:
+        nearest(((c[0] + c[2]) / 2, (c[1] + c[3]) / 2))["columns"].append(c)
+    for fl in floors:
+        fl["rooms"].sort(key=lambda r: (round(r["centroid_pt"][1] / 60), r["centroid_pt"][0]))
+        for i, r in enumerate(fl["rooms"], 1):
+            r["id"] = f"{fl['id']}-{i:02d}"
+        footprint = np.zeros_like(ink)
+        for r in fl["rooms"]:
+            if r["space_type"] not in ("roof", "outdoor"):
+                y0, x0, m = r["_mask"]
+                footprint[y0:y0 + m.shape[0], x0:x0 + m.shape[1]] |= m
+        fl["_footprint"] = ndimage.binary_closing(footprint, iterations=int(300 / mm_px) + 1)
+        ys, xs = np.nonzero(fl["_footprint"])
+        fl["_fp_origin"] = (int(ys.min()), int(xs.min())) if len(ys) else (0, 0)
+        if fl["title"] and len(floors) > 1:
+            log.add("A-read", f"split_{fl['id']}", f"Page {idx}: '{fl['title']}' plan separated from the other plan(s) on the sheet by nearest title", "pdf_reader.py")
+    return floors
 
 
 def norm_tag(t):
@@ -511,10 +752,14 @@ def main():
     log = C.Log(a.work, "pdf_reader")
     proj = C.load(a.work, "project.json", default={})
     floors_cfg = {f["id"]: f for f in proj.get("project", {}).get("floors", [])}
+    win_over = {norm_tag(k): v for k, v in proj.get("project", {}).get("window_sizes", {}).items()}
     doc = fitz.open(a.pdf)
     pages = [int(x) for x in a.pages.split(",")] if a.pages else list(range(1, len(doc) + 1))
     out = {"source_pdf": os.path.relpath(os.path.abspath(a.pdf), os.path.abspath(a.work)), "floors": []}
     north_all = []
+    WIN_OVERRIDE.update({k: tuple(v) for k, v in win_over.items()})
+    for k, v in win_over.items():
+        log.add("A-read", f"winsize_{k}", f"Window {k} size {v[0]}x{v[1]} mm given by user (not in schedule)", "user")
     for i in pages:
         page = doc[i - 1]
         page.get_pixmap(dpi=100).save(os.path.join(a.work, "pages", f"page_{i}.png"))
@@ -538,11 +783,11 @@ def main():
                 log.ask("Gate1", f"north_{i}", f"Page {i}: north arrow not found - give north direction (degrees clockwise from page-up).")
             log.add("A-read", f"north_{i}", f"Page {i} north = {north} deg clockwise from page-up (detected from north arrow)", "pdf_reader.py", confirm=False)
         north_all.append(north)
-        fl = read_page(page, i, sc["denominator"], north, log, a.work)
-        fl["scale"] = sc["denominator"]
-        fl["north_deg"] = north
-        fl["scale_detail"] = sc
-        out["floors"].append(fl)
+        for fl in read_page(page, i, sc["denominator"], north, log, a.work):
+            fl["scale"] = sc["denominator"]
+            fl["north_deg"] = north
+            fl["scale_detail"] = sc
+            out["floors"].append(fl)
 
     # roof exposure (room area not covered by the next floor's footprint) and heights
     real = [f for f in out["floors"] if not f.get("needs_vision")]
@@ -554,9 +799,13 @@ def main():
             if upper is None:
                 cov = 0.0
             else:
+                # plans may sit at different places on their sheets: align footprints by their top-left corner
                 fp = upper["_footprint"]
+                dy = upper["_fp_origin"][0] - fl["_fp_origin"][0]
+                dx = upper["_fp_origin"][1] - fl["_fp_origin"][1]
                 y0, x0, m = r["_mask"]
-                sub = fp[y0:y0 + m.shape[0], x0:x0 + m.shape[1]]
+                ys, xs = max(0, y0 + dy), max(0, x0 + dx)
+                sub = fp[ys:ys + m.shape[0], xs:xs + m.shape[1]]
                 h, w = sub.shape
                 cov = float((m[:h, :w] & sub).sum() / max(1, m.sum()))
             r["roof_exposed_frac"] = round(1 - cov, 2) if cov < 0.97 else 0.0
@@ -575,11 +824,12 @@ def main():
             r.pop("_mask", None)
             r.pop("_label", None)
         fl.pop("_footprint", None)
+        fl.pop("_fp_origin", None)
         fl["preview"] = os.path.basename(preview(doc, fl, a.work))
     C.save(a.work, "rooms.json", out)
     log.save()
     gate1_md(out, a.work, log)
-    print(f"rooms.json: {sum(len(f['rooms']) for f in out['floors'])} rooms on {len(out['floors'])} pages; "
+    print(f"rooms.json: {sum(len(f['rooms']) for f in out['floors'])} rooms on {len(out['floors'])} floor plans; "
           f"{sum(1 for q in log.questions if not q['answered'])} open questions")
 
 

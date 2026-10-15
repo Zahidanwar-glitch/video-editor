@@ -108,8 +108,8 @@ def items_for(floor_id, design, rooms, units):
             out.append({"kind": "line", "layer": "M-PIPE-REFG", "pts": r["pts_floor"], "style": "solid", "lw": 1.2, "tag": r["tag"]})
             a = r["pts_floor"][len(r["pts_floor"]) // 2]
             T((a[0] + G.pt(fl, 0.2), a[1] - G.pt(fl, 0.2)), f"{r['tag']} {r['liquid_mm']}/{r['gas_mm']}", layer="M-PIPE-REFG", size="size")
-            key = tuple(r["riser_pt"])
-            if key not in risers_drawn:
+            key = tuple(r["riser_pt"]) if r.get("riser_pt") else None
+            if key and key not in risers_drawn:
                 risers_drawn.add(key)
                 out.append({"kind": "circle", "layer": "M-PIPE-REFG", "center": r["riser_pt"], "r": G.pt(fl, 0.2), "text": "R"})
                 T((r["riser_pt"][0] + G.pt(fl, 0.3), r["riser_pt"][1] + G.pt(fl, 0.6)), "REFG RISER TO ROOF", layer="M-PIPE-REFG", size="size")

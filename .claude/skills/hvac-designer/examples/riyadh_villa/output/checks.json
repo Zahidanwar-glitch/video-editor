@@ -13,7 +13,7 @@
     {
       "check": "Airflows balance",
       "status": "PASS",
-      "detail": "supply = unit airflow in all ducted zones; building OA 274.9 L/s vs exhaust 225.0 L/s (net +50 L/s)"
+      "detail": "supply = unit airflow in all ducted zones; building OA 271.0 L/s vs exhaust 225.0 L/s (net +46 L/s)"
     },
     {
       "check": "All items tagged (unique)",

@@ -1,0 +1,591 @@
+{
+  "zones": [
+    {
+      "id": "Z-GF-01",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-02"
+      ],
+      "load_kw": 0.48
+    },
+    {
+      "id": "Z-GF-02",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-03"
+      ],
+      "load_kw": 0.43
+    },
+    {
+      "id": "Z-GF-03",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-11"
+      ],
+      "load_kw": 0.49
+    },
+    {
+      "id": "Z-GF-04",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-14"
+      ],
+      "load_kw": 0.54
+    },
+    {
+      "id": "Z-GF-05",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-15"
+      ],
+      "load_kw": 0.49
+    },
+    {
+      "id": "Z-GF-06",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-24"
+      ],
+      "load_kw": 0.41
+    },
+    {
+      "id": "Z-GF-07",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-27"
+      ],
+      "load_kw": 0.46
+    },
+    {
+      "id": "Z-GF-08",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-38"
+      ],
+      "load_kw": 0.55
+    },
+    {
+      "id": "Z-GF-09",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-25"
+      ],
+      "load_kw": 1.62
+    },
+    {
+      "id": "Z-GF-10",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-26"
+      ],
+      "load_kw": 1.68
+    },
+    {
+      "id": "Z-GF-11",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-31"
+      ],
+      "load_kw": 1.56
+    },
+    {
+      "id": "Z-GF-12",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-32"
+      ],
+      "load_kw": 1.59
+    },
+    {
+      "id": "Z-FF-01",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-03"
+      ],
+      "load_kw": 0.87
+    },
+    {
+      "id": "Z-FF-02",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-06"
+      ],
+      "load_kw": 0.78
+    },
+    {
+      "id": "Z-FF-03",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-14"
+      ],
+      "load_kw": 0.55
+    },
+    {
+      "id": "Z-FF-04",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-15"
+      ],
+      "load_kw": 0.49
+    },
+    {
+      "id": "Z-FF-05",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-16"
+      ],
+      "load_kw": 0.55
+    },
+    {
+      "id": "Z-FF-06",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-17"
+      ],
+      "load_kw": 0.5
+    },
+    {
+      "id": "Z-FF-07",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-25"
+      ],
+      "load_kw": 0.86
+    },
+    {
+      "id": "Z-FF-08",
+      "floor": "FF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "FF-28"
+      ],
+      "load_kw": 0.76
+    },
+    {
+      "id": "Z-FF-09",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-04"
+      ],
+      "load_kw": 1.56
+    },
+    {
+      "id": "Z-FF-10",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-05"
+      ],
+      "load_kw": 1.59
+    },
+    {
+      "id": "Z-FF-11",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-26"
+      ],
+      "load_kw": 1.63
+    },
+    {
+      "id": "Z-FF-12",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-27"
+      ],
+      "load_kw": 1.62
+    },
+    {
+      "id": "Z-SF-01",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-03"
+      ],
+      "load_kw": 0.59
+    },
+    {
+      "id": "Z-SF-02",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-04"
+      ],
+      "load_kw": 0.56
+    },
+    {
+      "id": "Z-SF-03",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-15"
+      ],
+      "load_kw": 0.46
+    },
+    {
+      "id": "Z-SF-04",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-16"
+      ],
+      "load_kw": 0.69
+    },
+    {
+      "id": "Z-SF-05",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-17"
+      ],
+      "load_kw": 0.62
+    },
+    {
+      "id": "Z-SF-06",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-19"
+      ],
+      "load_kw": 0.69
+    },
+    {
+      "id": "Z-SF-07",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-22"
+      ],
+      "load_kw": 0.62
+    },
+    {
+      "id": "Z-SF-08",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-30"
+      ],
+      "load_kw": 0.67
+    },
+    {
+      "id": "Z-SF-09",
+      "floor": "SF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "SF-31"
+      ],
+      "load_kw": 0.63
+    },
+    {
+      "id": "Z-SF-10",
+      "floor": "SF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "SF-06"
+      ],
+      "load_kw": 1.97
+    },
+    {
+      "id": "Z-SF-11",
+      "floor": "SF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "SF-10"
+      ],
+      "load_kw": 2.06
+    },
+    {
+      "id": "Z-SF-12",
+      "floor": "SF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "SF-24"
+      ],
+      "load_kw": 1.96
+    },
+    {
+      "id": "Z-SF-13",
+      "floor": "SF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "SF-28"
+      ],
+      "load_kw": 1.98
+    },
+    {
+      "id": "Z-TF-01",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-05"
+      ],
+      "load_kw": 0.83
+    },
+    {
+      "id": "Z-TF-02",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-06"
+      ],
+      "load_kw": 0.7
+    },
+    {
+      "id": "Z-TF-03",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-16"
+      ],
+      "load_kw": 0.75
+    },
+    {
+      "id": "Z-TF-04",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-17"
+      ],
+      "load_kw": 0.65
+    },
+    {
+      "id": "Z-TF-05",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-18"
+      ],
+      "load_kw": 0.75
+    },
+    {
+      "id": "Z-TF-06",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-21"
+      ],
+      "load_kw": 0.65
+    },
+    {
+      "id": "Z-TF-07",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-29"
+      ],
+      "load_kw": 0.81
+    },
+    {
+      "id": "Z-TF-08",
+      "floor": "TF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "TF-30"
+      ],
+      "load_kw": 0.78
+    },
+    {
+      "id": "Z-TF-09",
+      "floor": "TF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "TF-08"
+      ],
+      "load_kw": 2.15
+    },
+    {
+      "id": "Z-TF-10",
+      "floor": "TF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "TF-12"
+      ],
+      "load_kw": 2.11
+    },
+    {
+      "id": "Z-TF-11",
+      "floor": "TF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "TF-23"
+      ],
+      "load_kw": 2.09
+    },
+    {
+      "id": "Z-TF-12",
+      "floor": "TF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "TF-27"
+      ],
+      "load_kw": 2.02
+    }
+  ],
+  "exhaust_only": [
+    "GF-04",
+    "GF-05",
+    "GF-06",
+    "GF-08",
+    "GF-09",
+    "GF-17",
+    "GF-18",
+    "GF-19",
+    "GF-21",
+    "GF-22",
+    "GF-23",
+    "GF-33",
+    "GF-34",
+    "GF-36",
+    "GF-37",
+    "FF-07",
+    "FF-08",
+    "FF-09",
+    "FF-11",
+    "FF-12",
+    "FF-13",
+    "FF-18",
+    "FF-19",
+    "FF-20",
+    "FF-22",
+    "FF-23",
+    "FF-24",
+    "SF-05",
+    "SF-07",
+    "SF-09",
+    "SF-11",
+    "SF-12",
+    "SF-13",
+    "SF-14",
+    "SF-20",
+    "SF-21",
+    "SF-23",
+    "SF-25",
+    "SF-27",
+    "SF-29",
+    "TF-07",
+    "TF-09",
+    "TF-11",
+    "TF-13",
+    "TF-14",
+    "TF-15",
+    "TF-19",
+    "TF-20",
+    "TF-22",
+    "TF-24",
+    "TF-26",
+    "TF-28"
+  ],
+  "unconditioned": [
+    "GF-01",
+    "GF-07",
+    "GF-10",
+    "GF-12",
+    "GF-13",
+    "GF-16",
+    "GF-20",
+    "GF-28",
+    "GF-29",
+    "GF-30",
+    "GF-35",
+    "GF-39",
+    "GF-40",
+    "GF-41",
+    "FF-01",
+    "FF-02",
+    "FF-10",
+    "FF-21",
+    "FF-29",
+    "FF-30",
+    "SF-01",
+    "SF-02",
+    "SF-08",
+    "SF-18",
+    "SF-26",
+    "SF-32",
+    "SF-33",
+    "SF-34",
+    "SF-35",
+    "SF-36",
+    "SF-37",
+    "TF-01",
+    "TF-02",
+    "TF-03",
+    "TF-04",
+    "TF-10",
+    "TF-25",
+    "TF-31",
+    "TF-32",
+    "TF-33",
+    "TF-34"
+  ]
+}

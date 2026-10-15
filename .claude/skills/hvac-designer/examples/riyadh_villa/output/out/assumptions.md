@@ -31,18 +31,19 @@ Generated 2026-10-15. Items marked **confirm** need the engineer's confirmation.
 | A025 | B-equip | Equipment from GENERIC catalogue (references/equipment_catalog.json) - replace with the approved brand | references/equipment_catalog.json | **confirm** |
 | A026 | B-equip | Minimum supply per served room 30 L/s (smallest diffuser) | references/air_terminals.json | default |
 | A027 | B-equip | GF-06 KITCHEN has no exterior wall: wall split on interior wall, refrigerant/condensate run in ceiling | designer judgement | **confirm** |
-| A028 | B-equip | IU-GF-02 (WS-09) is 141 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit | designer note | **confirm** |
-| A029 | B-equip | Z-GF-03 indoor unit in the ceiling void of GF-02 ENTRANCE HALL (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
-| A030 | B-equip | Z-GF-04: sensible capacity governs (8.2 kW sensible at catalogue SHR) - DS-48 chosen instead of DS-36; brand data at actual (dry) entering conditions may allow the smaller unit | designer note | **confirm** |
-| A031 | B-equip | Z-GF-04 indoor unit in the ceiling void of GF-04 CORRIDOR (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
-| A032 | B-equip | IU-FF-01 (DS-24) is 127 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit | designer note | **confirm** |
-| A033 | B-equip | Z-FF-01 indoor unit in the ceiling void of FF-04 DRESSING (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
-| A034 | B-equip | Z-FF-02 indoor unit in the ceiling void of FF-07 LOBBY (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
-| A035 | B-equip | Outdoor units grouped on the roof near the riser/shaft with 0.6 m service clearance; check structure, parapet height and acoustic screening | designer judgement | **confirm** |
-| A036 | B-ducts | Ducts sized by equal friction 0.8 Pa/m with velocity limits {'main': 5.0, 'branch': 3.5, 'runout': 2.5, 'return': 3.5, 'fresh_air': 4.0, 'exhaust': 4.0} m/s; max duct depth 300 mm from ceiling void | ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal) | default |
-| A037 | B-ducts | Fittings allowed as +50% equivalent length; unit plenum/filter 40.0 Pa | designer default | **confirm** |
-| A038 | B-ducts | Duct routes are schematic trunk-and-branch lines over the plan; coordinate with structure (beams), lighting and other services | designer judgement | **confirm** |
-| A039 | B-ducts | Return air from rooms via door undercut / door transfer grilles to the return grille near the unit | ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal) | **confirm** |
-| A040 | B-pipes | Refrigerant pipe sizes from GENERIC table (references/pipe_sizing.json) - replace with the selected brand's table | SBC 501 Ch.11 §1107 (refrigerant piping); ASHRAE 15; manufacturer piping tables | **confirm** |
-| A041 | B-pipes | Refrigerant length = route x (1+10%) + vertical rise to roof (+1.5 m allowance) | designer default | default |
-| A042 | B-pipes | Condensate to nearest wet-room floor drain / stack with trap; min 25 mm, slope 1.0 % | SBC 501 §307.2.1 (disposal), §307.2.2 Table 307.2.2 (drain size), slope >= 1 % | **confirm** |
+| A028 | B-equip | IU-GF-02 (WS-09) is 161 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit | designer note | **confirm** |
+| A029 | B-equip | Z-GF-03: sensible capacity governs (3.8 kW sensible at catalogue SHR) - DS-24 chosen instead of DS-18; brand data at actual (dry) entering conditions may allow the smaller unit | designer note | **confirm** |
+| A030 | B-equip | Z-GF-03 indoor unit in the ceiling void of GF-02 ENTRANCE HALL (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
+| A031 | B-equip | Z-GF-04: sensible capacity governs (8.2 kW sensible at catalogue SHR) - DS-48 chosen instead of DS-36; brand data at actual (dry) entering conditions may allow the smaller unit | designer note | **confirm** |
+| A032 | B-equip | Z-GF-04 indoor unit in the ceiling void of GF-04 CORRIDOR (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
+| A033 | B-equip | IU-FF-01 (DS-18) is 72 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit | designer note | **confirm** |
+| A034 | B-equip | Z-FF-01 indoor unit in the ceiling void of FF-04 DRESSING (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
+| A035 | B-equip | Z-FF-02 indoor unit in the ceiling void of FF-07 LOBBY (service space next to the zone) | references/design_defaults.json unit_host_preference | **confirm** |
+| A036 | B-equip | Outdoor units grouped on the roof near the riser/shaft with 0.6 m service clearance; check structure, parapet height and acoustic screening | designer judgement | **confirm** |
+| A037 | B-ducts | Ducts sized by equal friction 0.8 Pa/m with velocity limits {'main': 5.0, 'branch': 3.5, 'runout': 2.5, 'return': 3.5, 'fresh_air': 4.0, 'exhaust': 4.0} m/s; max duct depth 300 mm from ceiling void | ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal) | default |
+| A038 | B-ducts | Fittings allowed as +50% equivalent length; unit plenum/filter 40.0 Pa | designer default | **confirm** |
+| A039 | B-ducts | Duct routes are schematic trunk-and-branch lines over the plan; coordinate with structure (beams), lighting and other services | designer judgement | **confirm** |
+| A040 | B-ducts | Return air from rooms via door undercut / door transfer grilles to the return grille near the unit | ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal) | **confirm** |
+| A041 | B-pipes | Refrigerant pipe sizes from GENERIC table (references/pipe_sizing.json) - replace with the selected brand's table | SBC 501 Ch.11 §1107 (refrigerant piping); ASHRAE 15; manufacturer piping tables | **confirm** |
+| A042 | B-pipes | Refrigerant length = route x (1+10%) + vertical rise to roof (+1.5 m allowance) | designer default | default |
+| A043 | B-pipes | Condensate to nearest wet-room floor drain / stack with trap; min 25 mm, slope 1.0 % | SBC 501 §307.2.1 (disposal), §307.2.2 Table 307.2.2 (drain size), slope >= 1 % | **confirm** |

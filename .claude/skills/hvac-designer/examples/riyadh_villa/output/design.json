@@ -21,15 +21,15 @@
         "eer": 3.3,
         "power_kw": 1.61,
         "btu": 18000,
-        "req_total_kw": 3.19,
-        "req_sensible_kw": 2.46,
-        "req_airflow_ls": 149.4,
-        "block_kw": 2.9,
-        "room_kw": 2.54,
+        "req_total_kw": 3.64,
+        "req_sensible_kw": 3.14,
+        "req_airflow_ls": 198.3,
+        "block_kw": 3.31,
+        "room_kw": 2.95,
         "oa_kw": 0.36,
         "peak_hour": 15,
         "heat_req_kw": 0.26,
-        "oversize_pct": 46.0,
+        "oversize_pct": 28.0,
         "selected_ok": true,
         "oa_ls": 14.5,
         "oa_frac": 0.058,
@@ -78,21 +78,21 @@
         "eer": 3.43,
         "power_kw": 0.76,
         "btu": 9000,
-        "req_total_kw": 0.95,
-        "req_sensible_kw": 0.92,
-        "req_airflow_ls": 57.3,
-        "block_kw": 0.86,
-        "room_kw": 0.67,
+        "req_total_kw": 0.88,
+        "req_sensible_kw": 0.85,
+        "req_airflow_ls": 45.6,
+        "block_kw": 0.8,
+        "room_kw": 0.6,
         "oa_kw": 0.2,
         "peak_hour": 15,
-        "heat_req_kw": 0.47,
-        "oversize_pct": 141.0,
+        "heat_req_kw": 0.48,
+        "oversize_pct": 161.0,
         "selected_ok": true,
         "oa_ls": 8.0,
         "oa_frac": 0.057,
         "pos_pt": [
           571.34,
-          558.96
+          508.09
         ],
         "host_room": "GF-07",
         "footprint_m": [
@@ -119,8 +119,8 @@
         "airflow_ls": 8.0,
         "power_w": 12,
         "pos_pt": [
-          575.44,
-          530.13
+          572.67,
+          530.3
         ]
       }
     },
@@ -145,18 +145,18 @@
         "eer": 3.2,
         "power_kw": 2.19,
         "btu": 24000,
-        "req_total_kw": 4.55,
-        "req_sensible_kw": 3.96,
-        "req_airflow_ls": 198.9,
-        "block_kw": 4.14,
-        "room_kw": 2.98,
-        "oa_kw": 1.16,
+        "req_total_kw": 4.33,
+        "req_sensible_kw": 3.79,
+        "req_airflow_ls": 192.9,
+        "block_kw": 3.94,
+        "room_kw": 2.86,
+        "oa_kw": 1.08,
         "peak_hour": 16,
-        "heat_req_kw": 1.78,
-        "oversize_pct": 35.0,
+        "heat_req_kw": 1.72,
+        "oversize_pct": 42.0,
         "selected_ok": true,
-        "oa_ls": 47.9,
-        "oa_frac": 0.126,
+        "oa_ls": 44.7,
+        "oa_frac": 0.118,
         "pos_pt": [
           346.96,
           405.04
@@ -174,7 +174,7 @@
         "tag": "T-GF-03",
         "room": "GF-01",
         "pos_pt": [
-          214.54,
+          214.91,
           463.68
         ],
         "type": "wired programmable thermostat"
@@ -206,18 +206,18 @@
         "eer": 3.1,
         "power_kw": 4.52,
         "btu": 48000,
-        "req_total_kw": 9.07,
-        "req_sensible_kw": 8.18,
-        "req_airflow_ls": 432.1,
-        "block_kw": 8.25,
-        "room_kw": 5.67,
-        "oa_kw": 2.58,
+        "req_total_kw": 9.05,
+        "req_sensible_kw": 8.16,
+        "req_airflow_ls": 431.0,
+        "block_kw": 8.23,
+        "room_kw": 5.66,
+        "oa_kw": 2.57,
         "peak_hour": 16,
-        "heat_req_kw": 3.93,
+        "heat_req_kw": 3.92,
         "oversize_pct": 36.0,
         "selected_ok": true,
-        "oa_ls": 106.3,
-        "oa_frac": 0.142,
+        "oa_ls": 106.1,
+        "oa_frac": 0.141,
         "pos_pt": [
           311.67,
           509.02
@@ -229,17 +229,17 @@
         ]
       },
       "room_airflow_ls": {
-        "GF-05": 242.8,
-        "GF-08": 52.1,
-        "GF-04": 52.1,
-        "GF-02": 62.5,
-        "GF-03": 340.5
+        "GF-05": 243.1,
+        "GF-08": 52.2,
+        "GF-04": 52.2,
+        "GF-02": 62.6,
+        "GF-03": 339.8
       },
       "thermostat": {
         "tag": "T-GF-04",
         "room": "GF-03",
         "pos_pt": [
-          486.65,
+          487.05,
           463.68
         ],
         "type": "wired programmable thermostat"
@@ -258,28 +258,28 @@
       "unit": {
         "tag": "IU-FF-01",
         "type": "ducted_split",
-        "model": "DS-24",
-        "nominal_kw": 7.0,
-        "derated_kw": 6.16,
-        "sensible_kw": 4.62,
-        "airflow_ls": 380,
+        "model": "DS-18",
+        "nominal_kw": 5.3,
+        "derated_kw": 4.66,
+        "sensible_kw": 3.5,
+        "airflow_ls": 300,
         "esp_pa": 75,
-        "heat_kw": 7.6,
+        "heat_kw": 5.8,
         "eer": 3.2,
-        "power_kw": 2.19,
-        "btu": 24000,
-        "req_total_kw": 2.72,
-        "req_sensible_kw": 2.66,
-        "req_airflow_ls": 180.8,
-        "block_kw": 2.47,
-        "room_kw": 2.01,
+        "power_kw": 1.66,
+        "btu": 18000,
+        "req_total_kw": 2.7,
+        "req_sensible_kw": 2.65,
+        "req_airflow_ls": 180.3,
+        "block_kw": 2.46,
+        "room_kw": 2.0,
         "oa_kw": 0.46,
         "peak_hour": 17,
         "heat_req_kw": 1.18,
-        "oversize_pct": 127.0,
+        "oversize_pct": 72.0,
         "selected_ok": true,
-        "oa_ls": 20.1,
-        "oa_frac": 0.053,
+        "oa_ls": 19.9,
+        "oa_frac": 0.066,
         "pos_pt": [
           339.27,
           444.52
@@ -291,14 +291,14 @@
         ]
       },
       "room_airflow_ls": {
-        "FF-03": 316.9,
-        "FF-04": 63.1
+        "FF-03": 250.1,
+        "FF-04": 49.9
       },
       "thermostat": {
         "tag": "T-FF-01",
         "room": "FF-03",
         "pos_pt": [
-          214.54,
+          214.91,
           463.68
         ],
         "type": "wired programmable thermostat"
@@ -331,17 +331,17 @@
         "eer": 3.1,
         "power_kw": 4.52,
         "btu": 48000,
-        "req_total_kw": 9.59,
-        "req_sensible_kw": 8.98,
-        "req_airflow_ls": 520.4,
-        "block_kw": 8.72,
-        "room_kw": 6.47,
+        "req_total_kw": 9.65,
+        "req_sensible_kw": 9.04,
+        "req_airflow_ls": 522.5,
+        "block_kw": 8.78,
+        "room_kw": 6.54,
         "oa_kw": 2.24,
         "peak_hour": 16,
-        "heat_req_kw": 3.69,
+        "heat_req_kw": 3.75,
         "oversize_pct": 28.0,
         "selected_ok": true,
-        "oa_ls": 92.6,
+        "oa_ls": 92.3,
         "oa_frac": 0.123,
         "pos_pt": [
           311.93,
@@ -354,12 +354,12 @@
         ]
       },
       "room_airflow_ls": {
-        "FF-10": 374.7,
-        "FF-11": 43.2,
-        "FF-07": 43.2,
-        "FF-08": 57.2,
-        "FF-05": 119.0,
-        "FF-09": 112.6
+        "FF-10": 371.9,
+        "FF-11": 43.1,
+        "FF-07": 43.1,
+        "FF-08": 57.0,
+        "FF-05": 118.1,
+        "FF-09": 116.8
       },
       "thermostat": {
         "tag": "T-FF-02",
@@ -455,9 +455,9 @@
       "serves": [
         "IU-FF-01"
       ],
-      "model": "DS-O-24",
-      "cool_kw": 7.0,
-      "power_kw": 2.19,
+      "model": "DS-O-18",
+      "cool_kw": 5.3,
+      "power_kw": 1.66,
       "system": "ducted_split",
       "pos_pt": [
         551.2,
@@ -518,34 +518,34 @@
       "zone": "Z-GF-03",
       "floor": "GF",
       "unit": "IU-GF-03",
-      "trunk_axis": "x",
+      "trunk_axis": "y",
       "segments": [
         {
           "id": "D-GF-001",
           "zone": "Z-GF-03",
           "system": "supply",
-          "kind": "main",
+          "kind": "riser",
           "pts": [
             [
               346.96,
-              404.15
+              405.04
             ],
             [
-              213.24,
-              404.15
+              214.73,
+              405.04
             ]
           ],
           "flow_ls": 380.0,
-          "length_m": 4.72,
+          "length_m": 4.66,
           "shape": "rect",
           "w_mm": 300,
           "h_mm": 300,
           "de_mm": 328,
-          "area_m2": 5.66,
+          "area_m2": 5.6,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 4.22,
           "friction_pa_m": 0.719,
-          "dp_pa": 5.1,
+          "dp_pa": 5.0,
           "serves": null,
           "down": [
             "GF-01"
@@ -558,20 +558,20 @@
           "kind": "runout",
           "pts": [
             [
-              213.24,
-              403.29
+              214.73,
+              404.78
             ],
             [
-              213.24,
-              403.29
+              173.91,
+              404.78
             ],
             [
-              171.67,
-              403.29
+              173.91,
+              404.78
             ]
           ],
           "flow_ls": 190.0,
-          "length_m": 1.47,
+          "length_m": 1.44,
           "shape": "flex",
           "d_mm": 350,
           "de_mm": 350,
@@ -592,20 +592,20 @@
           "kind": "runout",
           "pts": [
             [
-              213.24,
-              403.29
+              214.73,
+              404.78
             ],
             [
-              213.24,
-              403.29
+              255.54,
+              404.78
             ],
             [
-              254.8,
-              403.29
+              255.54,
+              404.78
             ]
           ],
           "flow_ls": 190.0,
-          "length_m": 1.47,
+          "length_m": 1.44,
           "shape": "flex",
           "d_mm": 350,
           "de_mm": 350,
@@ -631,8 +631,8 @@
           "throw_m": 2.9,
           "dp_pa": 15,
           "pos_pt": [
-            171.67,
-            403.29
+            173.91,
+            404.78
           ],
           "tag": "SD-GF-01"
         },
@@ -646,8 +646,8 @@
           "throw_m": 2.9,
           "dp_pa": 15,
           "pos_pt": [
-            254.8,
-            403.29
+            255.54,
+            404.78
           ],
           "tag": "SD-GF-02"
         }
@@ -660,8 +660,8 @@
           "h_mm": 450,
           "flow_ls": 380,
           "pos_pt": [
-            346.96,
-            439.06
+            380.98,
+            405.04
           ],
           "type": "return grille with plenum box and filter"
         },
@@ -673,8 +673,8 @@
             "kind": "main",
             "pts": [
               [
-                346.96,
-                439.06
+                380.98,
+                405.04
               ],
               [
                 346.96,
@@ -700,7 +700,7 @@
           "tag": "FAL-GF-01",
           "w_mm": 300,
           "h_mm": 200,
-          "flow_ls": 47.9,
+          "flow_ls": 44.7,
           "pos_pt": [
             347.26,
             337.39
@@ -731,16 +731,16 @@
                 405.04
               ]
             ],
-            "flow_ls": 47.9,
+            "flow_ls": 44.7,
             "length_m": 2.4,
             "shape": "round",
             "d_mm": 150,
             "de_mm": 150,
             "area_m2": 1.13,
             "gauge": "26 ga (0.55 mm)",
-            "velocity_m_s": 2.71,
-            "friction_pa_m": 0.764,
-            "dp_pa": 2.7
+            "velocity_m_s": 2.53,
+            "friction_pa_m": 0.675,
+            "dp_pa": 2.4
           }
         ],
         "dampers": [
@@ -780,17 +780,17 @@
               406.06
             ]
           ],
-          "flow_ls": 403.0,
+          "flow_ls": 402.4,
           "length_m": 3.63,
           "shape": "rect",
-          "w_mm": 350,
+          "w_mm": 300,
           "h_mm": 300,
-          "de_mm": 354,
-          "area_m2": 4.72,
-          "gauge": "24 ga (0.70 mm)",
-          "velocity_m_s": 3.84,
-          "friction_pa_m": 0.551,
-          "dp_pa": 3.0,
+          "de_mm": 328,
+          "area_m2": 4.36,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 4.47,
+          "friction_pa_m": 0.798,
+          "dp_pa": 4.3,
           "serves": null,
           "down": [
             "GF-02",
@@ -805,37 +805,6 @@
           "pts": [
             [
               311.88,
-              406.06
-            ],
-            [
-              311.88,
-              403.29
-            ]
-          ],
-          "flow_ls": 340.5,
-          "length_m": 0.1,
-          "shape": "rect",
-          "w_mm": 300,
-          "h_mm": 300,
-          "de_mm": 328,
-          "area_m2": 0.12,
-          "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 3.78,
-          "friction_pa_m": 0.589,
-          "dp_pa": 0.1,
-          "serves": null,
-          "down": [
-            "GF-03"
-          ]
-        },
-        {
-          "id": "D-GF-008",
-          "zone": "Z-GF-04",
-          "system": "supply",
-          "kind": "main",
-          "pts": [
-            [
-              311.88,
               510.24
             ],
             [
@@ -843,7 +812,7 @@
               538.51
             ]
           ],
-          "flow_ls": 294.9,
+          "flow_ls": 295.3,
           "length_m": 1.0,
           "shape": "rect",
           "w_mm": 300,
@@ -851,8 +820,8 @@
           "de_mm": 299,
           "area_m2": 1.1,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 3.93,
-          "friction_pa_m": 0.711,
+          "velocity_m_s": 3.94,
+          "friction_pa_m": 0.713,
           "dp_pa": 1.1,
           "serves": null,
           "down": [
@@ -861,7 +830,7 @@
           ]
         },
         {
-          "id": "D-GF-009",
+          "id": "D-GF-008",
           "zone": "Z-GF-04",
           "system": "supply",
           "kind": "main",
@@ -875,7 +844,7 @@
               605.9
             ]
           ],
-          "flow_ls": 52.1,
+          "flow_ls": 52.2,
           "length_m": 2.38,
           "shape": "rect",
           "w_mm": 150,
@@ -884,7 +853,7 @@
           "area_m2": 1.43,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.32,
-          "friction_pa_m": 0.577,
+          "friction_pa_m": 0.579,
           "dp_pa": 2.1,
           "serves": null,
           "down": [
@@ -892,7 +861,7 @@
           ]
         },
         {
-          "id": "D-GF-010",
+          "id": "D-GF-009",
           "zone": "Z-GF-04",
           "system": "supply",
           "kind": "branch",
@@ -902,21 +871,51 @@
               538.51
             ],
             [
-              199.21,
+              200.69,
               538.51
             ]
           ],
-          "flow_ls": 242.8,
-          "length_m": 3.97,
+          "flow_ls": 243.1,
+          "length_m": 3.92,
           "shape": "rect",
           "w_mm": 300,
           "h_mm": 300,
           "de_mm": 328,
-          "area_m2": 4.77,
+          "area_m2": 4.71,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.7,
           "friction_pa_m": 0.32,
           "dp_pa": 1.9,
+          "serves": "GF-05",
+          "down": [
+            "GF-05"
+          ]
+        },
+        {
+          "id": "D-GF-010",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              200.69,
+              538.51
+            ],
+            [
+              166.89,
+              538.51
+            ]
+          ],
+          "flow_ls": 121.5,
+          "length_m": 1.19,
+          "shape": "flex",
+          "d_mm": 250,
+          "de_mm": 250,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 2.48,
+          "friction_pa_m": 0.343,
+          "dp_pa": 0.6,
           "serves": "GF-05",
           "down": [
             "GF-05"
@@ -929,23 +928,23 @@
           "kind": "runout",
           "pts": [
             [
-              199.21,
+              200.69,
               538.51
             ],
             [
-              164.66,
+              234.5,
               538.51
             ]
           ],
-          "flow_ls": 121.4,
-          "length_m": 1.22,
+          "flow_ls": 121.5,
+          "length_m": 1.19,
           "shape": "flex",
           "d_mm": 250,
           "de_mm": 250,
           "area_m2": 0,
           "gauge": "flex",
-          "velocity_m_s": 2.47,
-          "friction_pa_m": 0.342,
+          "velocity_m_s": 2.48,
+          "friction_pa_m": 0.343,
           "dp_pa": 0.6,
           "serves": "GF-05",
           "down": [
@@ -954,36 +953,6 @@
         },
         {
           "id": "D-GF-012",
-          "zone": "Z-GF-04",
-          "system": "supply",
-          "kind": "runout",
-          "pts": [
-            [
-              199.21,
-              538.51
-            ],
-            [
-              233.75,
-              538.51
-            ]
-          ],
-          "flow_ls": 121.4,
-          "length_m": 1.22,
-          "shape": "flex",
-          "d_mm": 250,
-          "de_mm": 250,
-          "area_m2": 0,
-          "gauge": "flex",
-          "velocity_m_s": 2.47,
-          "friction_pa_m": 0.342,
-          "dp_pa": 0.6,
-          "serves": "GF-05",
-          "down": [
-            "GF-05"
-          ]
-        },
-        {
-          "id": "D-GF-013",
           "zone": "Z-GF-04",
           "system": "supply",
           "kind": "branch",
@@ -997,7 +966,7 @@
               406.06
             ]
           ],
-          "flow_ls": 62.5,
+          "flow_ls": 62.6,
           "length_m": 1.25,
           "shape": "rect",
           "w_mm": 200,
@@ -1005,9 +974,43 @@
           "de_mm": 189,
           "area_m2": 0.87,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 2.08,
-          "friction_pa_m": 0.404,
+          "velocity_m_s": 2.09,
+          "friction_pa_m": 0.405,
           "dp_pa": 0.8,
+          "serves": "GF-02",
+          "down": [
+            "GF-02"
+          ]
+        },
+        {
+          "id": "D-GF-013",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              347.18,
+              406.06
+            ],
+            [
+              347.18,
+              406.06
+            ],
+            [
+              347.18,
+              371.62
+            ]
+          ],
+          "flow_ls": 31.3,
+          "length_m": 1.22,
+          "shape": "flex",
+          "d_mm": 150,
+          "de_mm": 150,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.77,
+          "friction_pa_m": 0.357,
+          "dp_pa": 0.7,
           "serves": "GF-02",
           "down": [
             "GF-02"
@@ -1029,10 +1032,10 @@
             ],
             [
               347.18,
-              371.62
+              440.5
             ]
           ],
-          "flow_ls": 31.2,
+          "flow_ls": 31.3,
           "length_m": 1.22,
           "shape": "flex",
           "d_mm": 150,
@@ -1040,8 +1043,8 @@
           "area_m2": 0,
           "gauge": "flex",
           "velocity_m_s": 1.77,
-          "friction_pa_m": 0.355,
-          "dp_pa": 0.6,
+          "friction_pa_m": 0.357,
+          "dp_pa": 0.7,
           "serves": "GF-02",
           "down": [
             "GF-02"
@@ -1051,62 +1054,62 @@
           "id": "D-GF-015",
           "zone": "Z-GF-04",
           "system": "supply",
-          "kind": "runout",
+          "kind": "branch",
           "pts": [
             [
-              347.18,
-              406.06
+              311.88,
+              404.78
             ],
             [
-              347.18,
-              406.06
-            ],
-            [
-              347.18,
-              440.5
+              486.85,
+              404.78
             ]
           ],
-          "flow_ls": 31.2,
-          "length_m": 1.22,
-          "shape": "flex",
-          "d_mm": 150,
-          "de_mm": 150,
-          "area_m2": 0,
-          "gauge": "flex",
-          "velocity_m_s": 1.77,
-          "friction_pa_m": 0.355,
-          "dp_pa": 0.6,
-          "serves": "GF-02",
+          "flow_ls": 339.8,
+          "length_m": 6.17,
+          "shape": "rect",
+          "w_mm": 400,
+          "h_mm": 300,
+          "de_mm": 378,
+          "area_m2": 8.64,
+          "gauge": "24 ga (0.70 mm)",
+          "velocity_m_s": 2.83,
+          "friction_pa_m": 0.295,
+          "dp_pa": 2.7,
+          "serves": "GF-03",
           "down": [
-            "GF-02"
+            "GF-03"
           ]
         },
         {
           "id": "D-GF-016",
           "zone": "Z-GF-04",
           "system": "supply",
-          "kind": "branch",
+          "kind": "runout",
           "pts": [
             [
-              311.88,
-              403.29
+              486.85,
+              404.78
             ],
             [
-              488.12,
-              403.29
+              442.42,
+              404.78
+            ],
+            [
+              442.42,
+              404.78
             ]
           ],
-          "flow_ls": 340.5,
-          "length_m": 6.22,
-          "shape": "rect",
-          "w_mm": 400,
-          "h_mm": 300,
-          "de_mm": 378,
-          "area_m2": 8.7,
-          "gauge": "24 ga (0.70 mm)",
-          "velocity_m_s": 2.84,
-          "friction_pa_m": 0.296,
-          "dp_pa": 2.8,
+          "flow_ls": 169.9,
+          "length_m": 1.57,
+          "shape": "round",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 1.48,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.4,
+          "friction_pa_m": 0.259,
+          "dp_pa": 0.6,
           "serves": "GF-03",
           "down": [
             "GF-03"
@@ -1119,61 +1122,27 @@
           "kind": "runout",
           "pts": [
             [
-              488.12,
-              403.29
+              486.85,
+              404.78
             ],
             [
-              443.05,
-              403.29
+              531.29,
+              404.78
             ],
             [
-              443.05,
-              403.29
+              531.29,
+              404.78
             ]
           ],
-          "flow_ls": 170.2,
-          "length_m": 1.59,
+          "flow_ls": 169.9,
+          "length_m": 1.57,
           "shape": "round",
           "d_mm": 300,
           "de_mm": 300,
-          "area_m2": 1.5,
+          "area_m2": 1.48,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 2.41,
-          "friction_pa_m": 0.26,
-          "dp_pa": 0.6,
-          "serves": "GF-03",
-          "down": [
-            "GF-03"
-          ]
-        },
-        {
-          "id": "D-GF-018",
-          "zone": "Z-GF-04",
-          "system": "supply",
-          "kind": "runout",
-          "pts": [
-            [
-              488.12,
-              403.29
-            ],
-            [
-              533.2,
-              403.29
-            ],
-            [
-              533.2,
-              403.29
-            ]
-          ],
-          "flow_ls": 170.2,
-          "length_m": 1.59,
-          "shape": "round",
-          "d_mm": 300,
-          "de_mm": 300,
-          "area_m2": 1.5,
-          "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 2.41,
-          "friction_pa_m": 0.26,
+          "velocity_m_s": 2.4,
+          "friction_pa_m": 0.259,
           "dp_pa": 0.6,
           "serves": "GF-03",
           "down": [
@@ -1187,12 +1156,12 @@
           "model": "SD-200",
           "neck_mm": 200,
           "face_mm": 450,
-          "flow_ls": 121.4,
+          "flow_ls": 121.5,
           "nc": 26,
           "throw_m": 2.2,
           "dp_pa": 14,
           "pos_pt": [
-            164.66,
+            166.89,
             538.51
           ],
           "tag": "SD-GF-03"
@@ -1202,12 +1171,12 @@
           "model": "SD-200",
           "neck_mm": 200,
           "face_mm": 450,
-          "flow_ls": 121.4,
+          "flow_ls": 121.5,
           "nc": 26,
           "throw_m": 2.2,
           "dp_pa": 14,
           "pos_pt": [
-            233.75,
+            234.5,
             538.51
           ],
           "tag": "SD-GF-04"
@@ -1217,7 +1186,7 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 52.1,
+          "flow_ls": 52.2,
           "nc": 18,
           "throw_m": 1.3,
           "dp_pa": 12,
@@ -1232,7 +1201,7 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 52.1,
+          "flow_ls": 52.2,
           "nc": 18,
           "throw_m": 1.3,
           "dp_pa": 12,
@@ -1247,7 +1216,7 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 31.2,
+          "flow_ls": 31.3,
           "nc": 11,
           "throw_m": 0.8,
           "dp_pa": 12,
@@ -1262,7 +1231,7 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 31.2,
+          "flow_ls": 31.3,
           "nc": 11,
           "throw_m": 0.8,
           "dp_pa": 12,
@@ -1277,13 +1246,13 @@
           "model": "SD-250",
           "neck_mm": 250,
           "face_mm": 600,
-          "flow_ls": 170.2,
-          "nc": 26,
-          "throw_m": 2.6,
+          "flow_ls": 169.9,
+          "nc": 25,
+          "throw_m": 2.5,
           "dp_pa": 15,
           "pos_pt": [
-            443.05,
-            403.29
+            442.42,
+            404.78
           ],
           "tag": "SD-GF-09"
         },
@@ -1292,13 +1261,13 @@
           "model": "SD-250",
           "neck_mm": 250,
           "face_mm": 600,
-          "flow_ls": 170.2,
-          "nc": 26,
-          "throw_m": 2.6,
+          "flow_ls": 169.9,
+          "nc": 25,
+          "throw_m": 2.5,
           "dp_pa": 15,
           "pos_pt": [
-            533.2,
-            403.29
+            531.29,
+            404.78
           ],
           "tag": "SD-GF-10"
         }
@@ -1318,7 +1287,7 @@
         },
         "segments": [
           {
-            "id": "D-GF-019",
+            "id": "D-GF-018",
             "zone": "Z-GF-04",
             "system": "return",
             "kind": "main",
@@ -1351,7 +1320,7 @@
           "tag": "FAL-GF-02",
           "w_mm": 450,
           "h_mm": 300,
-          "flow_ls": 106.3,
+          "flow_ls": 106.1,
           "pos_pt": [
             312.44,
             337.24
@@ -1364,7 +1333,7 @@
         },
         "segments": [
           {
-            "id": "D-GF-020",
+            "id": "D-GF-019",
             "zone": "Z-GF-04",
             "system": "fresh_air",
             "kind": "main",
@@ -1382,7 +1351,7 @@
                 509.02
               ]
             ],
-            "flow_ls": 106.3,
+            "flow_ls": 106.1,
             "length_m": 6.09,
             "shape": "round",
             "d_mm": 200,
@@ -1390,8 +1359,8 @@
             "area_m2": 3.82,
             "gauge": "26 ga (0.55 mm)",
             "velocity_m_s": 3.38,
-            "friction_pa_m": 0.796,
-            "dp_pa": 7.3
+            "friction_pa_m": 0.793,
+            "dp_pa": 7.2
           }
         ],
         "dampers": [
@@ -1409,7 +1378,7 @@
         "GF-05",
         "GF-03"
       ],
-      "esp_required_pa": 72,
+      "esp_required_pa": 73,
       "esp_available_pa": 100,
       "esp_ok": true,
       "conflicts": [],
@@ -1432,21 +1401,21 @@
               443.69
             ],
             [
-              213.24,
+              214.73,
               443.69
             ]
           ],
-          "flow_ls": 316.9,
-          "length_m": 4.43,
+          "flow_ls": 250.1,
+          "length_m": 4.37,
           "shape": "rect",
           "w_mm": 300,
-          "h_mm": 300,
-          "de_mm": 328,
-          "area_m2": 5.31,
+          "h_mm": 250,
+          "de_mm": 299,
+          "area_m2": 4.81,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 3.52,
-          "friction_pa_m": 0.517,
-          "dp_pa": 3.4,
+          "velocity_m_s": 3.33,
+          "friction_pa_m": 0.528,
+          "dp_pa": 3.5,
           "serves": null,
           "down": [
             "FF-03"
@@ -1459,25 +1428,25 @@
           "kind": "branch",
           "pts": [
             [
-              213.24,
+              214.73,
               443.69
             ],
             [
-              213.24,
-              403.29
+              214.73,
+              404.78
             ]
           ],
-          "flow_ls": 316.9,
-          "length_m": 1.43,
+          "flow_ls": 250.1,
+          "length_m": 1.37,
           "shape": "rect",
-          "w_mm": 350,
+          "w_mm": 300,
           "h_mm": 300,
-          "de_mm": 354,
-          "area_m2": 1.85,
-          "gauge": "24 ga (0.70 mm)",
-          "velocity_m_s": 3.02,
-          "friction_pa_m": 0.357,
-          "dp_pa": 0.8,
+          "de_mm": 328,
+          "area_m2": 1.65,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.78,
+          "friction_pa_m": 0.337,
+          "dp_pa": 0.7,
           "serves": "FF-03",
           "down": [
             "FF-03"
@@ -1490,28 +1459,28 @@
           "kind": "runout",
           "pts": [
             [
-              213.24,
-              403.29
+              214.73,
+              404.78
             ],
             [
-              213.24,
-              403.29
+              214.73,
+              404.78
             ],
             [
-              171.67,
-              403.29
+              173.91,
+              404.78
             ]
           ],
-          "flow_ls": 158.4,
-          "length_m": 1.47,
+          "flow_ls": 125.0,
+          "length_m": 1.44,
           "shape": "flex",
           "d_mm": 300,
           "de_mm": 300,
           "area_m2": 0,
           "gauge": "flex",
-          "velocity_m_s": 2.24,
-          "friction_pa_m": 0.228,
-          "dp_pa": 0.5,
+          "velocity_m_s": 1.77,
+          "friction_pa_m": 0.15,
+          "dp_pa": 0.3,
           "serves": "FF-03",
           "down": [
             "FF-03"
@@ -1524,28 +1493,28 @@
           "kind": "runout",
           "pts": [
             [
-              213.24,
-              403.29
+              214.73,
+              404.78
             ],
             [
-              213.24,
-              403.29
+              214.73,
+              404.78
             ],
             [
-              254.8,
-              403.29
+              255.54,
+              404.78
             ]
           ],
-          "flow_ls": 158.4,
-          "length_m": 1.47,
+          "flow_ls": 125.0,
+          "length_m": 1.44,
           "shape": "flex",
           "d_mm": 300,
           "de_mm": 300,
           "area_m2": 0,
           "gauge": "flex",
-          "velocity_m_s": 2.24,
-          "friction_pa_m": 0.228,
-          "dp_pa": 0.5,
+          "velocity_m_s": 1.77,
+          "friction_pa_m": 0.15,
+          "dp_pa": 0.3,
           "serves": "FF-03",
           "down": [
             "FF-03"
@@ -1558,13 +1527,13 @@
           "model": "SD-250",
           "neck_mm": 250,
           "face_mm": 600,
-          "flow_ls": 158.4,
-          "nc": 24,
-          "throw_m": 2.4,
+          "flow_ls": 125.0,
+          "nc": 19,
+          "throw_m": 1.9,
           "dp_pa": 15,
           "pos_pt": [
-            171.67,
-            403.29
+            173.91,
+            404.78
           ],
           "tag": "SD-FF-01"
         },
@@ -1573,13 +1542,13 @@
           "model": "SD-250",
           "neck_mm": 250,
           "face_mm": 600,
-          "flow_ls": 158.4,
-          "nc": 24,
-          "throw_m": 2.4,
+          "flow_ls": 125.0,
+          "nc": 19,
+          "throw_m": 1.9,
           "dp_pa": 15,
           "pos_pt": [
-            254.8,
-            403.29
+            255.54,
+            404.78
           ],
           "tag": "SD-FF-02"
         },
@@ -1588,9 +1557,9 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 63.1,
-          "nc": 22,
-          "throw_m": 1.5,
+          "flow_ls": 49.9,
+          "nc": 18,
+          "throw_m": 1.2,
           "dp_pa": 12,
           "pos_pt": [
             338.67,
@@ -1605,7 +1574,7 @@
           "room": "FF-04",
           "w_mm": 600,
           "h_mm": 450,
-          "flow_ls": 380,
+          "flow_ls": 300,
           "pos_pt": [
             339.27,
             410.5
@@ -1628,16 +1597,16 @@
                 444.52
               ]
             ],
-            "flow_ls": 380,
+            "flow_ls": 300,
             "length_m": 1.2,
             "shape": "rect",
-            "w_mm": 400,
+            "w_mm": 350,
             "h_mm": 300,
-            "de_mm": 378,
-            "area_m2": 1.68,
+            "de_mm": 354,
+            "area_m2": 1.56,
             "gauge": "24 ga (0.70 mm)",
-            "velocity_m_s": 3.17,
-            "friction_pa_m": 0.361,
+            "velocity_m_s": 2.86,
+            "friction_pa_m": 0.323,
             "dp_pa": 0.6
           }
         ]
@@ -1647,10 +1616,10 @@
           "tag": "FAL-FF-01",
           "w_mm": 200,
           "h_mm": 200,
-          "flow_ls": 20.1,
+          "flow_ls": 19.9,
           "pos_pt": [
             339.27,
-            334.2
+            337.18
           ],
           "room": "FF-01",
           "normal": [
@@ -1667,23 +1636,23 @@
             "pts": [
               [
                 339.27,
-                334.2
+                337.18
               ],
               [
                 339.27,
                 444.52
               ]
             ],
-            "flow_ls": 20.1,
-            "length_m": 3.89,
+            "flow_ls": 19.9,
+            "length_m": 3.79,
             "shape": "round",
             "d_mm": 125,
             "de_mm": 125,
-            "area_m2": 1.53,
+            "area_m2": 1.49,
             "gauge": "26 ga (0.55 mm)",
-            "velocity_m_s": 1.64,
-            "friction_pa_m": 0.39,
-            "dp_pa": 2.3
+            "velocity_m_s": 1.62,
+            "friction_pa_m": 0.383,
+            "dp_pa": 2.2
           }
         ],
         "dampers": [
@@ -1702,7 +1671,7 @@
       "esp_available_pa": 75,
       "esp_ok": true,
       "conflicts": [],
-      "supply_total_ls": 379.9
+      "supply_total_ls": 299.9
     },
     {
       "zone": "Z-FF-02",
@@ -1722,10 +1691,10 @@
             ],
             [
               311.93,
-              530.06
+              530.13
             ]
           ],
-          "flow_ls": 749.9,
+          "flow_ls": 750.0,
           "length_m": 0.76,
           "shape": "rect",
           "w_mm": 600,
@@ -1754,24 +1723,24 @@
           "pts": [
             [
               311.88,
-              530.06
+              530.13
             ],
             [
-              188.75,
-              530.06
+              190.49,
+              530.13
             ]
           ],
-          "flow_ls": 374.7,
-          "length_m": 4.34,
+          "flow_ls": 371.9,
+          "length_m": 4.28,
           "shape": "rect",
           "w_mm": 300,
           "h_mm": 300,
           "de_mm": 328,
-          "area_m2": 5.21,
+          "area_m2": 5.14,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 4.16,
-          "friction_pa_m": 0.701,
-          "dp_pa": 4.6,
+          "velocity_m_s": 4.13,
+          "friction_pa_m": 0.691,
+          "dp_pa": 4.4,
           "serves": null,
           "down": [
             "FF-10"
@@ -1785,14 +1754,14 @@
           "pts": [
             [
               311.93,
-              530.06
+              530.13
             ],
             [
               418.18,
-              530.06
+              530.13
             ]
           ],
-          "flow_ls": 288.8,
+          "flow_ls": 291.9,
           "length_m": 3.75,
           "shape": "rect",
           "w_mm": 300,
@@ -1800,8 +1769,8 @@
           "de_mm": 299,
           "area_m2": 4.12,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 3.85,
-          "friction_pa_m": 0.685,
+          "velocity_m_s": 3.89,
+          "friction_pa_m": 0.698,
           "dp_pa": 3.9,
           "serves": null,
           "down": [
@@ -1818,14 +1787,14 @@
           "pts": [
             [
               418.18,
-              530.06
+              530.13
             ],
             [
               447.94,
-              530.06
+              530.13
             ]
           ],
-          "flow_ls": 231.6,
+          "flow_ls": 234.9,
           "length_m": 1.05,
           "shape": "rect",
           "w_mm": 250,
@@ -1833,9 +1802,9 @@
           "de_mm": 273,
           "area_m2": 1.05,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 3.71,
-          "friction_pa_m": 0.712,
-          "dp_pa": 1.1,
+          "velocity_m_s": 3.76,
+          "friction_pa_m": 0.731,
+          "dp_pa": 1.2,
           "serves": null,
           "down": [
             "FF-05",
@@ -1850,24 +1819,24 @@
           "pts": [
             [
               447.94,
-              530.06
+              530.13
             ],
             [
-              530.64,
-              530.06
+              529.37,
+              530.13
             ]
           ],
-          "flow_ls": 112.6,
-          "length_m": 2.92,
+          "flow_ls": 116.8,
+          "length_m": 2.87,
           "shape": "rect",
           "w_mm": 200,
           "h_mm": 200,
           "de_mm": 219,
-          "area_m2": 2.33,
+          "area_m2": 2.3,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 2.81,
-          "friction_pa_m": 0.573,
-          "dp_pa": 2.5,
+          "velocity_m_s": 2.92,
+          "friction_pa_m": 0.612,
+          "dp_pa": 2.6,
           "serves": null,
           "down": [
             "FF-09"
@@ -1880,25 +1849,25 @@
           "kind": "branch",
           "pts": [
             [
-              188.75,
-              530.06
+              190.49,
+              530.13
             ],
             [
-              188.75,
-              555.66
+              190.49,
+              554.42
             ]
           ],
-          "flow_ls": 374.7,
-          "length_m": 0.9,
+          "flow_ls": 371.9,
+          "length_m": 0.86,
           "shape": "rect",
           "w_mm": 400,
           "h_mm": 300,
           "de_mm": 378,
-          "area_m2": 1.26,
+          "area_m2": 1.2,
           "gauge": "24 ga (0.70 mm)",
-          "velocity_m_s": 3.12,
-          "friction_pa_m": 0.352,
-          "dp_pa": 0.5,
+          "velocity_m_s": 3.1,
+          "friction_pa_m": 0.347,
+          "dp_pa": 0.4,
           "serves": "FF-10",
           "down": [
             "FF-10"
@@ -1911,27 +1880,27 @@
           "kind": "runout",
           "pts": [
             [
-              188.75,
-              555.66
+              190.49,
+              554.42
             ],
             [
-              188.75,
-              523.2
+              190.49,
+              522.46
             ],
             [
-              165.3,
-              523.2
+              167.53,
+              522.46
             ]
           ],
-          "flow_ls": 124.9,
-          "length_m": 1.97,
+          "flow_ls": 124.0,
+          "length_m": 1.94,
           "shape": "round",
           "d_mm": 300,
           "de_mm": 300,
-          "area_m2": 1.86,
+          "area_m2": 1.83,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 1.77,
-          "friction_pa_m": 0.149,
+          "velocity_m_s": 1.75,
+          "friction_pa_m": 0.147,
           "dp_pa": 0.4,
           "serves": "FF-10",
           "down": [
@@ -1945,27 +1914,27 @@
           "kind": "runout",
           "pts": [
             [
-              188.75,
-              555.66
+              190.49,
+              554.42
             ],
             [
-              188.75,
-              523.2
+              190.49,
+              522.46
             ],
             [
-              235.67,
-              523.2
+              236.41,
+              522.46
             ]
           ],
-          "flow_ls": 124.9,
-          "length_m": 2.8,
+          "flow_ls": 124.0,
+          "length_m": 2.75,
           "shape": "round",
           "d_mm": 300,
           "de_mm": 300,
-          "area_m2": 2.64,
+          "area_m2": 2.59,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 1.77,
-          "friction_pa_m": 0.149,
+          "velocity_m_s": 1.75,
+          "friction_pa_m": 0.147,
           "dp_pa": 0.6,
           "serves": "FF-10",
           "down": [
@@ -1979,27 +1948,27 @@
           "kind": "runout",
           "pts": [
             [
-              188.75,
-              555.66
+              190.49,
+              554.42
             ],
             [
-              188.75,
-              620.58
+              190.49,
+              618.34
             ],
             [
-              165.3,
-              620.58
+              167.53,
+              618.34
             ]
           ],
-          "flow_ls": 124.9,
-          "length_m": 3.12,
+          "flow_ls": 124.0,
+          "length_m": 3.06,
           "shape": "round",
           "d_mm": 300,
           "de_mm": 300,
-          "area_m2": 2.94,
+          "area_m2": 2.89,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 1.77,
-          "friction_pa_m": 0.149,
+          "velocity_m_s": 1.75,
+          "friction_pa_m": 0.147,
           "dp_pa": 0.7,
           "serves": "FF-10",
           "down": [
@@ -2014,24 +1983,24 @@
           "pts": [
             [
               311.88,
-              530.06
+              530.13
             ],
             [
               311.88,
               605.9
             ]
           ],
-          "flow_ls": 43.2,
-          "length_m": 2.68,
+          "flow_ls": 43.1,
+          "length_m": 2.67,
           "shape": "rect",
           "w_mm": 150,
           "h_mm": 150,
           "de_mm": 164,
-          "area_m2": 1.61,
+          "area_m2": 1.6,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 1.92,
-          "friction_pa_m": 0.413,
-          "dp_pa": 1.7,
+          "friction_pa_m": 0.411,
+          "dp_pa": 1.6,
           "serves": "FF-11",
           "down": [
             "FF-11"
@@ -2045,14 +2014,14 @@
           "pts": [
             [
               311.88,
-              530.06
+              530.13
             ],
             [
               311.88,
               508.75
             ]
           ],
-          "flow_ls": 43.2,
+          "flow_ls": 43.1,
           "length_m": 0.75,
           "shape": "rect",
           "w_mm": 150,
@@ -2061,7 +2030,7 @@
           "area_m2": 0.45,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 1.92,
-          "friction_pa_m": 0.413,
+          "friction_pa_m": 0.411,
           "dp_pa": 0.5,
           "serves": "FF-07",
           "down": [
@@ -2076,24 +2045,24 @@
           "pts": [
             [
               418.18,
-              530.06
+              530.13
             ],
             [
               418.18,
               537.02
             ]
           ],
-          "flow_ls": 57.2,
-          "length_m": 0.25,
+          "flow_ls": 57.0,
+          "length_m": 0.24,
           "shape": "rect",
           "w_mm": 150,
           "h_mm": 150,
           "de_mm": 164,
           "area_m2": 0.15,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 2.54,
-          "friction_pa_m": 0.683,
-          "dp_pa": 0.3,
+          "velocity_m_s": 2.53,
+          "friction_pa_m": 0.679,
+          "dp_pa": 0.2,
           "serves": "FF-08",
           "down": [
             "FF-08"
@@ -2107,24 +2076,24 @@
           "pts": [
             [
               447.94,
-              530.06
+              530.13
             ],
             [
               447.94,
-              403.29
+              404.78
             ]
           ],
-          "flow_ls": 119.0,
-          "length_m": 4.47,
+          "flow_ls": 118.1,
+          "length_m": 4.42,
           "shape": "rect",
           "w_mm": 200,
           "h_mm": 200,
           "de_mm": 219,
-          "area_m2": 3.58,
+          "area_m2": 3.54,
           "gauge": "26 ga (0.55 mm)",
-          "velocity_m_s": 2.97,
-          "friction_pa_m": 0.633,
-          "dp_pa": 4.2,
+          "velocity_m_s": 2.95,
+          "friction_pa_m": 0.624,
+          "dp_pa": 4.1,
           "serves": "FF-05",
           "down": [
             "FF-05"
@@ -2138,26 +2107,26 @@
           "pts": [
             [
               447.94,
-              403.29
+              404.78
             ],
             [
               447.94,
-              368.75
+              370.98
             ],
             [
               447.94,
-              368.75
+              370.98
             ]
           ],
-          "flow_ls": 59.5,
-          "length_m": 1.22,
+          "flow_ls": 59.0,
+          "length_m": 1.19,
           "shape": "flex",
           "d_mm": 200,
           "de_mm": 200,
           "area_m2": 0,
           "gauge": "flex",
-          "velocity_m_s": 1.89,
-          "friction_pa_m": 0.281,
+          "velocity_m_s": 1.88,
+          "friction_pa_m": 0.276,
           "dp_pa": 0.5,
           "serves": "FF-05",
           "down": [
@@ -2172,26 +2141,26 @@
           "pts": [
             [
               447.94,
-              403.29
+              404.78
             ],
             [
               447.94,
-              437.84
+              438.59
             ],
             [
               447.94,
-              437.84
+              438.59
             ]
           ],
-          "flow_ls": 59.5,
-          "length_m": 1.22,
+          "flow_ls": 59.0,
+          "length_m": 1.19,
           "shape": "flex",
           "d_mm": 200,
           "de_mm": 200,
           "area_m2": 0,
           "gauge": "flex",
-          "velocity_m_s": 1.89,
-          "friction_pa_m": 0.281,
+          "velocity_m_s": 1.88,
+          "friction_pa_m": 0.276,
           "dp_pa": 0.5,
           "serves": "FF-05",
           "down": [
@@ -2205,13 +2174,13 @@
           "model": "SD-200",
           "neck_mm": 200,
           "face_mm": 450,
-          "flow_ls": 124.9,
+          "flow_ls": 124.0,
           "nc": 27,
           "throw_m": 2.3,
           "dp_pa": 14,
           "pos_pt": [
-            165.3,
-            523.2
+            167.53,
+            522.46
           ],
           "tag": "SD-FF-04"
         },
@@ -2220,13 +2189,13 @@
           "model": "SD-200",
           "neck_mm": 200,
           "face_mm": 450,
-          "flow_ls": 124.9,
+          "flow_ls": 124.0,
           "nc": 27,
           "throw_m": 2.3,
           "dp_pa": 14,
           "pos_pt": [
-            235.67,
-            523.2
+            236.41,
+            522.46
           ],
           "tag": "SD-FF-05"
         },
@@ -2235,13 +2204,13 @@
           "model": "SD-200",
           "neck_mm": 200,
           "face_mm": 450,
-          "flow_ls": 124.9,
+          "flow_ls": 124.0,
           "nc": 27,
           "throw_m": 2.3,
           "dp_pa": 14,
           "pos_pt": [
-            165.3,
-            620.58
+            167.53,
+            618.34
           ],
           "tag": "SD-FF-06"
         },
@@ -2250,7 +2219,7 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 43.2,
+          "flow_ls": 43.1,
           "nc": 15,
           "throw_m": 1.0,
           "dp_pa": 12,
@@ -2265,7 +2234,7 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 43.2,
+          "flow_ls": 43.1,
           "nc": 15,
           "throw_m": 1.0,
           "dp_pa": 12,
@@ -2280,7 +2249,7 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 57.2,
+          "flow_ls": 57.0,
           "nc": 20,
           "throw_m": 1.4,
           "dp_pa": 12,
@@ -2295,13 +2264,13 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 59.5,
+          "flow_ls": 59.0,
           "nc": 21,
           "throw_m": 1.4,
           "dp_pa": 12,
           "pos_pt": [
             447.94,
-            368.75
+            370.98
           ],
           "tag": "SD-FF-10"
         },
@@ -2310,27 +2279,27 @@
           "model": "SD-150",
           "neck_mm": 150,
           "face_mm": 300,
-          "flow_ls": 59.5,
+          "flow_ls": 59.0,
           "nc": 21,
           "throw_m": 1.4,
           "dp_pa": 12,
           "pos_pt": [
             447.94,
-            437.84
+            438.59
           ],
           "tag": "SD-FF-11"
         },
         {
           "room": "FF-09",
-          "model": "SD-200",
-          "neck_mm": 200,
-          "face_mm": 450,
-          "flow_ls": 112.6,
-          "nc": 24,
-          "throw_m": 2.1,
-          "dp_pa": 14,
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 116.8,
+          "nc": 18,
+          "throw_m": 1.8,
+          "dp_pa": 15,
           "pos_pt": [
-            530.64,
+            529.37,
             531.5
           ],
           "tag": "SD-FF-12"
@@ -2384,14 +2353,14 @@
           "tag": "FAL-FF-02",
           "w_mm": 450,
           "h_mm": 300,
-          "flow_ls": 92.6,
+          "flow_ls": 92.3,
           "pos_pt": [
-            309.65,
-            337.47
+            311.93,
+            337.18
           ],
           "room": "FF-01",
           "normal": [
-            -0.013,
+            0.0,
             -1.0
           ]
         },
@@ -2403,28 +2372,24 @@
             "kind": "main",
             "pts": [
               [
-                309.65,
-                337.47
-              ],
-              [
                 311.93,
-                337.47
+                337.18
               ],
               [
                 311.93,
                 508.64
               ]
             ],
-            "flow_ls": 92.6,
-            "length_m": 6.12,
+            "flow_ls": 92.3,
+            "length_m": 6.05,
             "shape": "round",
             "d_mm": 200,
             "de_mm": 200,
-            "area_m2": 3.84,
+            "area_m2": 3.8,
             "gauge": "26 ga (0.55 mm)",
-            "velocity_m_s": 2.95,
-            "friction_pa_m": 0.62,
-            "dp_pa": 5.7
+            "velocity_m_s": 2.94,
+            "friction_pa_m": 0.617,
+            "dp_pa": 5.6
           }
         ],
         "dampers": [
@@ -2446,11 +2411,11 @@
         "FF-05",
         "FF-09"
       ],
-      "esp_required_pa": 73,
+      "esp_required_pa": 74,
       "esp_available_pa": 100,
       "esp_ok": true,
       "conflicts": [],
-      "supply_total_ls": 749.9
+      "supply_total_ls": 750.0
     }
   ],
   "exhaust_systems": [
@@ -2474,18 +2439,18 @@
         "model": "EF-50",
         "type": "ceiling",
         "airflow_ls": 50.0,
-        "esp_req_pa": 46,
+        "esp_req_pa": 45,
         "esp_pa": 80,
         "power_w": 25,
         "pos_pt": [
-          417.76,
-          575.4
+          417.86,
+          574.61
         ],
         "backdraft_damper": true
       },
       "segments": [
         {
-          "id": "D-GF-021",
+          "id": "D-GF-020",
           "zone": "GF-06",
           "system": "exhaust",
           "kind": "main",
@@ -2496,19 +2461,23 @@
             ],
             [
               417.76,
-              669.26
+              666.07
+            ],
+            [
+              418.17,
+              666.07
             ]
           ],
           "flow_ls": 50.0,
-          "length_m": 4.41,
+          "length_m": 4.32,
           "shape": "round",
           "d_mm": 150,
           "de_mm": 150,
-          "area_m2": 2.08,
+          "area_m2": 2.03,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.83,
           "friction_pa_m": 0.826,
-          "dp_pa": 5.5
+          "dp_pa": 5.3
         }
       ],
       "discharge": {
@@ -2518,12 +2487,12 @@
         "h_mm": 200,
         "room": "GF-13",
         "normal": [
-          0.0,
+          0.003,
           1.0
         ],
         "pos_pt": [
-          417.76,
-          669.26
+          418.17,
+          666.07
         ]
       }
     },
@@ -2538,8 +2507,8 @@
         "w_mm": 150,
         "h_mm": 150,
         "pos_pt": [
-          517.03,
-          627.34
+          517.04,
+          626.96
         ]
       },
       "fan": {
@@ -2551,37 +2520,41 @@
         "esp_pa": 60,
         "power_w": 15,
         "pos_pt": [
-          517.03,
-          637.82
+          525.6,
+          627.01
         ],
         "backdraft_damper": true
       },
       "segments": [
         {
-          "id": "D-GF-022",
+          "id": "D-GF-021",
           "zone": "GF-09",
           "system": "exhaust",
           "kind": "main",
           "pts": [
             [
-              517.03,
-              627.34
+              517.04,
+              626.96
             ],
             [
-              517.03,
-              669.26
+              551.27,
+              626.96
+            ],
+            [
+              551.27,
+              627.14
             ]
           ],
           "flow_ls": 25.0,
-          "length_m": 1.48,
+          "length_m": 1.21,
           "shape": "round",
           "d_mm": 125,
           "de_mm": 125,
-          "area_m2": 0.58,
+          "area_m2": 0.48,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.04,
           "friction_pa_m": 0.575,
-          "dp_pa": 1.3
+          "dp_pa": 1.0
         }
       ],
       "discharge": {
@@ -2591,12 +2564,12 @@
         "h_mm": 200,
         "room": "GF-09",
         "normal": [
-          0.0,
-          1.0
+          1.0,
+          0.005
         ],
         "pos_pt": [
-          517.03,
-          669.26
+          551.27,
+          627.14
         ]
       }
     },
@@ -2611,8 +2584,8 @@
         "w_mm": 150,
         "h_mm": 150,
         "pos_pt": [
-          164.93,
-          634.38
+          164.98,
+          633.97
         ]
       },
       "fan": {
@@ -2624,29 +2597,29 @@
         "esp_pa": 60,
         "power_w": 15,
         "pos_pt": [
-          157.02,
-          634.33
+          157.06,
+          633.92
         ],
         "backdraft_damper": true
       },
       "segments": [
         {
-          "id": "D-GF-023",
+          "id": "D-GF-022",
           "zone": "GF-11",
           "system": "exhaust",
           "kind": "main",
           "pts": [
             [
-              164.93,
-              634.38
+              164.98,
+              633.97
             ],
             [
               133.3,
-              634.38
+              633.97
             ],
             [
               133.3,
-              634.17
+              633.76
             ]
           ],
           "flow_ls": 25.0,
@@ -2673,7 +2646,7 @@
         ],
         "pos_pt": [
           133.3,
-          634.17
+          633.76
         ]
       }
     },
@@ -2688,8 +2661,8 @@
         "w_mm": 150,
         "h_mm": 150,
         "pos_pt": [
-          417.68,
-          641.61
+          417.75,
+          641.18
         ]
       },
       "fan": {
@@ -2697,45 +2670,45 @@
         "model": "EF-25",
         "type": "ceiling",
         "airflow_ls": 25.0,
-        "esp_req_pa": 42,
+        "esp_req_pa": 41,
         "esp_pa": 60,
         "power_w": 15,
         "pos_pt": [
-          412.01,
-          648.52
+          412.1,
+          647.42
         ],
         "backdraft_damper": true
       },
       "segments": [
         {
-          "id": "D-GF-024",
+          "id": "D-GF-023",
           "zone": "GF-13",
           "system": "exhaust",
           "kind": "main",
           "pts": [
             [
-              417.68,
-              641.61
+              417.75,
+              641.18
             ],
             [
-              417.68,
-              669.26
+              417.75,
+              666.15
             ],
             [
-              395.0,
-              669.26
+              395.16,
+              666.15
             ]
           ],
           "flow_ls": 25.0,
-          "length_m": 1.78,
+          "length_m": 1.68,
           "shape": "round",
           "d_mm": 125,
           "de_mm": 125,
-          "area_m2": 0.7,
+          "area_m2": 0.66,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.04,
           "friction_pa_m": 0.575,
-          "dp_pa": 1.5
+          "dp_pa": 1.4
         }
       ],
       "discharge": {
@@ -2745,12 +2718,12 @@
         "h_mm": 200,
         "room": "GF-13",
         "normal": [
-          0.0,
+          0.003,
           1.0
         ],
         "pos_pt": [
-          395.0,
-          669.26
+          395.16,
+          666.15
         ]
       }
     },
@@ -2766,7 +2739,7 @@
         "h_mm": 150,
         "pos_pt": [
           339.95,
-          375.77
+          376.08
         ]
       },
       "fan": {
@@ -2779,7 +2752,7 @@
         "power_w": 15,
         "pos_pt": [
           345.62,
-          365.38
+          366.36
         ],
         "backdraft_damper": true
       },
@@ -2792,27 +2765,27 @@
           "pts": [
             [
               339.95,
-              375.77
+              376.08
             ],
             [
               339.95,
-              334.2
+              337.18
             ],
             [
               362.63,
-              334.2
+              337.18
             ]
           ],
           "flow_ls": 25.0,
-          "length_m": 2.27,
+          "length_m": 2.17,
           "shape": "round",
           "d_mm": 125,
           "de_mm": 125,
-          "area_m2": 0.89,
+          "area_m2": 0.85,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.04,
           "friction_pa_m": 0.575,
-          "dp_pa": 2.0
+          "dp_pa": 1.9
         }
       ],
       "discharge": {
@@ -2827,7 +2800,7 @@
         ],
         "pos_pt": [
           362.63,
-          334.2
+          337.18
         ]
       }
     },
@@ -2842,8 +2815,8 @@
         "w_mm": 150,
         "h_mm": 150,
         "pos_pt": [
-          543.7,
-          376.07
+          543.41,
+          376.08
         ]
       },
       "fan": {
@@ -2855,8 +2828,8 @@
         "esp_pa": 60,
         "power_w": 15,
         "pos_pt": [
-          552.34,
-          376.07
+          551.43,
+          376.12
         ],
         "backdraft_damper": true
       },
@@ -2868,24 +2841,28 @@
           "kind": "main",
           "pts": [
             [
-              543.7,
-              376.07
+              543.41,
+              376.08
             ],
             [
-              578.27,
-              376.07
+              575.51,
+              376.08
+            ],
+            [
+              575.51,
+              376.26
             ]
           ],
           "flow_ls": 25.0,
-          "length_m": 1.22,
+          "length_m": 1.14,
           "shape": "round",
           "d_mm": 125,
           "de_mm": 125,
-          "area_m2": 0.48,
+          "area_m2": 0.45,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.04,
           "friction_pa_m": 0.575,
-          "dp_pa": 1.1
+          "dp_pa": 1.0
         }
       ],
       "discharge": {
@@ -2896,11 +2873,11 @@
         "room": "FF-02",
         "normal": [
           1.0,
-          -0.0
+          0.006
         ],
         "pos_pt": [
-          578.27,
-          376.07
+          575.51,
+          376.26
         ]
       }
     },
@@ -2915,8 +2892,8 @@
         "w_mm": 150,
         "h_mm": 150,
         "pos_pt": [
-          517.03,
-          627.34
+          517.04,
+          626.96
         ]
       },
       "fan": {
@@ -2928,8 +2905,8 @@
         "esp_pa": 60,
         "power_w": 15,
         "pos_pt": [
-          517.03,
-          637.82
+          525.6,
+          627.01
         ],
         "backdraft_damper": true
       },
@@ -2941,24 +2918,28 @@
           "kind": "main",
           "pts": [
             [
-              517.03,
-              627.34
+              517.04,
+              626.96
             ],
             [
-              517.03,
-              669.26
+              551.27,
+              626.96
+            ],
+            [
+              551.27,
+              627.14
             ]
           ],
           "flow_ls": 25.0,
-          "length_m": 1.48,
+          "length_m": 1.21,
           "shape": "round",
           "d_mm": 125,
           "de_mm": 125,
-          "area_m2": 0.58,
+          "area_m2": 0.48,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.04,
           "friction_pa_m": 0.575,
-          "dp_pa": 1.3
+          "dp_pa": 1.0
         }
       ],
       "discharge": {
@@ -2968,12 +2949,12 @@
         "h_mm": 200,
         "room": "FF-12",
         "normal": [
-          0.0,
-          1.0
+          1.0,
+          0.005
         ],
         "pos_pt": [
-          517.03,
-          669.26
+          551.27,
+          627.14
         ]
       }
     },
@@ -2988,8 +2969,8 @@
         "w_mm": 150,
         "h_mm": 150,
         "pos_pt": [
-          417.73,
-          634.19
+          417.76,
+          633.97
         ]
       },
       "fan": {
@@ -3001,8 +2982,8 @@
         "esp_pa": 60,
         "power_w": 15,
         "pos_pt": [
-          417.73,
-          642.96
+          417.79,
+          642.0
         ],
         "backdraft_damper": true
       },
@@ -3014,24 +2995,28 @@
           "kind": "main",
           "pts": [
             [
-              417.73,
-              634.19
+              417.76,
+              633.97
             ],
             [
-              417.73,
-              669.26
+              417.76,
+              666.07
+            ],
+            [
+              417.87,
+              666.07
             ]
           ],
           "flow_ls": 25.0,
-          "length_m": 1.24,
+          "length_m": 1.14,
           "shape": "round",
           "d_mm": 125,
           "de_mm": 125,
-          "area_m2": 0.49,
+          "area_m2": 0.45,
           "gauge": "26 ga (0.55 mm)",
           "velocity_m_s": 2.04,
           "friction_pa_m": 0.575,
-          "dp_pa": 1.1
+          "dp_pa": 1.0
         }
       ],
       "discharge": {
@@ -3041,12 +3026,12 @@
         "h_mm": 200,
         "room": "FF-14",
         "normal": [
-          0.0,
+          0.003,
           1.0
         ],
         "pos_pt": [
-          417.73,
-          669.26
+          417.87,
+          666.07
         ]
       }
     }
@@ -3115,11 +3100,11 @@
         "pts_floor": [
           [
             571.34,
-            558.96
+            508.09
           ],
           [
             564.66,
-            558.96
+            508.09
           ],
           [
             564.66,
@@ -3144,10 +3129,10 @@
           564.66,
           626.95
         ],
-        "horiz_floor_m": 2.63,
+        "horiz_floor_m": 4.43,
         "vertical_m": 8.7,
         "horiz_roof_m": 1.9,
-        "total_m": 14.6,
+        "total_m": 16.5,
         "liquid_mm": 6.35,
         "gas_mm": 9.52,
         "liquid_in": "1/4",
@@ -3307,15 +3292,15 @@
         "vertical_m": 5.1,
         "horiz_roof_m": 3.5,
         "total_m": 25.3,
-        "liquid_mm": 9.52,
-        "gas_mm": 15.88,
-        "liquid_in": "3/8",
-        "gas_in": "5/8",
+        "liquid_mm": 6.35,
+        "gas_mm": 12.7,
+        "liquid_in": "1/4",
+        "gas_in": "1/2",
         "max_length_m": 50,
         "max_height_m": 30,
         "ok": true,
         "bends": 4,
-        "capacity_kw": 7.0,
+        "capacity_kw": 5.3,
         "system": "ducted_split"
       },
       {
@@ -3405,7 +3390,7 @@
         "pts": [
           [
             571.34,
-            558.96
+            508.09
           ],
           [
             571.34,
@@ -3416,7 +3401,7 @@
             626.95
           ]
         ],
-        "length_m": 2.9,
+        "length_m": 4.87,
         "code_min_mm": 20,
         "dn_mm": 25,
         "slope_pct": 1.0
@@ -3481,14 +3466,14 @@
           ],
           [
             339.27,
-            375.77
+            376.08
           ],
           [
             339.95,
-            375.77
+            376.08
           ]
         ],
-        "length_m": 2.69,
+        "length_m": 2.68,
         "code_min_mm": 20,
         "dn_mm": 25,
         "slope_pct": 1.0
@@ -3505,14 +3490,14 @@
           ],
           [
             311.93,
-            375.77
+            376.08
           ],
           [
             339.95,
-            375.77
+            376.08
           ]
         ],
-        "length_m": 6.24,
+        "length_m": 6.23,
         "code_min_mm": 20,
         "dn_mm": 25,
         "slope_pct": 1.0

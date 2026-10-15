@@ -81,6 +81,10 @@ class Log:
                           if not src or q.get("src") != src or q["answered"]]
         # answers the user gave to earlier questions: project.json {"answers": {key: "text"}}
         self.answers = load(work, "project.json", default={}).get("answers", {})
+        for q in self.questions:  # answers given later in project.json close stored questions
+            if q["key"] in self.answers and not q["answered"]:
+                q["answered"] = True
+                self.add(q["step"], f"answer_{q['key']}", f"{q['question']} -> USER ANSWER: {self.answers[q['key']]}", "user", confirm=False)
 
     def add(self, step, key, text, source="", confirm=False):
         for it in self.items:

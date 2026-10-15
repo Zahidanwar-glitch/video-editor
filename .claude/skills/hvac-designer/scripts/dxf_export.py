@@ -37,7 +37,15 @@ def export(work):
         msp = doc.modelspace()
         # architectural background (vector paths of the source page)
         page = src[fl["page"] - 1]
-        for d in page.get_drawings():
+        drawings = page.get_drawings()
+        rp = C.ref("design_defaults.json")["drawing"]
+        heavy = len(drawings) > rp["dxf_background_heavy_paths"]
+        min_pt = rp["dxf_background_min_segment_m"] * 1000 / k
+        skipped = 0
+        for d in drawings:
+            if heavy and d["rect"].width < min_pt and d["rect"].height < min_pt:
+                skipped += 1  # hatching / tiny symbols on traced drawings
+                continue
             for it in d["items"]:
                 if it[0] == "l":
                     msp.add_line(X(it[1]), X(it[2]), dxfattribs={"layer": "A-ARCH-REF"})
@@ -89,6 +97,8 @@ def export(work):
         y0 = -20 * fl["scale"]
         for i, t in enumerate([f"HVAC LAYOUT - {fl['name'].upper()} - {p['project']['name']}", f"Scale 1:{fl['scale']:.0f}, units mm, north {fl['north_deg']:.0f} deg clockwise from sheet-up", note]):
             msp.add_text(t, height=3.5 * fl["scale"] * (1.0 if i < 2 else 0.9), dxfattribs={"layer": "M-ANNO", "color": 1 if i == 2 else 256}).set_placement((0, y0 - i * 6 * fl["scale"]))
+        if skipped:
+            print(f"  {fl['id']}: background simplified - {skipped} small paths (< {rp['dxf_background_min_segment_m']} m) left out of A-ARCH-REF")
         path = os.path.join(work, "out", f"HVAC_{fl['id']}.dxf")
         doc.saveas(path)
         files.append(path)

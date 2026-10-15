@@ -75,7 +75,7 @@ def compute(work):
                 pool.setdefault(s, []).append(r)
         for s, members in pool.items():
             cap = max_kw(p, s)
-            own = [r for r in members if r["space_type"] in zc["own_zone_types"]]
+            own = [r for r in members if r["space_type"] in zc["own_zone_types"]] if zc.get("group_ducted_rooms", True) else list(members)
             rest = [r for r in members if r not in own]
             groups = [[r] for r in own]
             for r in list(rest):

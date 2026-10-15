@@ -111,6 +111,11 @@ def compute(work):
         for r in fl["rooms"]:
             st = st_tbl["types"].get(r["space_type"], st_tbl["types"]["unknown"])
             cond = r.get("is_conditioned", st.get("conditioned", True))
+            co = p["project"].get("conditioned_override", {})
+            if r["id"] in co.get("by_room", {}):
+                cond = bool(co["by_room"][r["id"]])
+            elif r["space_type"] in co.get("by_space_type", {}):
+                cond = bool(co["by_space_type"][r["space_type"]])
             h_ceil = r.get("height_m")
             h_wall = r.get("floor_to_floor_m") or (h_ceil + 0.6 if h_ceil else None)
             if not h_ceil:
@@ -190,8 +195,11 @@ def compute(work):
                 "heating_w": round(sum(hq.values())), "heating_components_w": {k: round(v) for k, v in hq.items()},
             })
             lo, hi = d["sanity_w_m2"]
-            if cond and n_people > 0 and not (lo <= (qs + ql) / max(A, 0.1) <= hi):
+            if cond and n_people > 0 and r["space_type"] not in d["sanity_exempt_types"] and not (lo <= (qs + ql) / max(A, 0.1) <= hi):
                 log.ask("Gate2", f"wm2_{r['id']}", f"{r['id']} {r['name']}: cooling load {(qs + ql) / A:.0f} W/m² is outside {lo}-{hi} W/m² for an occupied room - check inputs.")
+    co = p["project"].get("conditioned_override", {})
+    if co.get("by_space_type") or co.get("by_room"):
+        log.add("B-loads", "cond_override", f"Conditioned/unconditioned overrides from the user: by type {co.get('by_space_type')}, by room {co.get('by_room')}", "user instruction")
     log.add("B-loads", "supply_dt", f"Supply air {ts} °C (room-supply ΔT {dc['ti_c'] - ts:.1f} K) for airflow", "designer default")
     log.add("B-loads", "infiltration", f"Infiltration by air-change method: {d['infiltration_ach']} ACH (residential)", C.clause(p, "infiltration"))
     log.add("B-loads", "occupancy", "Occupancy, lighting and equipment densities from references/space_types.json", C.clause(p, "internal_gains"))

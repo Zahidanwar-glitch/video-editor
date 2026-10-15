@@ -31,13 +31,14 @@ def run(work):
 
     # 1 rooms served
     served = {r for z in design["zones"] for r in z["rooms"]}
+    loads = {r["id"]: r for r in C.load(work, "loads.json")["rooms"]}
     with_diff = {d["room"] for a in design.get("air_systems", []) for d in a["diffusers"]}
     exh = {e["room"] for e in design.get("exhaust_systems", [])}
     miss = []
     for f in G.floors(rooms):
         for r in f["rooms"]:
             st = C.ref("space_types.json")["types"].get(r["space_type"], {})
-            if r.get("is_conditioned") and r["id"] not in served:
+            if loads.get(r["id"], {}).get("conditioned") and r["id"] not in served:
                 miss.append(f"{r['id']} not cooled")
             z = next((z for z in design["zones"] if r["id"] in z["rooms"]), None)
             if z and z["kind"] == "ducted" and r["id"] not in with_diff:

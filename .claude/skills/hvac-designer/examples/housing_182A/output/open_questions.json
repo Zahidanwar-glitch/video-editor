@@ -1,0 +1,85 @@
+{
+  "items": [
+    {
+      "id": "Q001",
+      "step": "Gate1",
+      "key": "wtag_P1_W1_141",
+      "src": "pdf_reader",
+      "question": "Page 1: window tag W1 at (141,512) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q002",
+      "step": "Gate1",
+      "key": "wtag_P1_W1_449",
+      "src": "pdf_reader",
+      "question": "Page 1: window tag W1 at (450,512) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q003",
+      "step": "Gate1",
+      "key": "wtag_P1_W1_140",
+      "src": "pdf_reader",
+      "question": "Page 1: window tag W1 at (141,284) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q004",
+      "step": "Gate1",
+      "key": "wtag_P1_W3A_329",
+      "src": "pdf_reader",
+      "question": "Page 1: window tag W3A at (330,185) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q005",
+      "step": "Gate1",
+      "key": "wtag_P1_W1_450",
+      "src": "pdf_reader",
+      "question": "Page 1: window tag W1 at (450,284) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q006",
+      "step": "Gate1",
+      "key": "wtag_P1_W3A_745",
+      "src": "pdf_reader",
+      "question": "Page 1: window tag W3A at (746,705) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q007",
+      "step": "Gate1",
+      "key": "wtag_P1_W3A_764",
+      "src": "pdf_reader",
+      "question": "Page 1: window tag W3A at (765,705) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q008",
+      "step": "Gate1",
+      "key": "wtag_P2_W3A_361",
+      "src": "pdf_reader",
+      "question": "Page 2: window tag W3A at (361,720) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    },
+    {
+      "id": "Q009",
+      "step": "Gate1",
+      "key": "wtag_P2_W3A_383",
+      "src": "pdf_reader",
+      "question": "Page 2: window tag W3A at (383,720) pt is not next to an exterior wall - which room?",
+      "why": "",
+      "answered": true
+    }
+  ]
+}

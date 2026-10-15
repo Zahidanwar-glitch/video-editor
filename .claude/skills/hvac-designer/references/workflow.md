@@ -38,6 +38,19 @@ Re-running a script clears its own earlier questions/assumptions, so the logs al
 - Show `gate1_rooms.md` as a table and the `gate1_<floor>.png` images. Ask each open question. Apply edits to
   `rooms.json` (e.g. fix a space type, mark a room unconditioned, add a missing window). Wait for approval.
 
+### Real-world drawings - what the reader handles and the helpers
+- Several plans on one sheet: titles ("GROUND FLOOR PLAN", "THIRD / FLOOR PLAN", "TERRACE PLAN") split the sheet; each
+  becomes its own floor. Check the floor room counts in `gate1_rooms.md` - a wrong split shows as uneven counts.
+- Traced/digitised CAD: glyph outlines are ink, schedules are cells, dimensions may be "3,27" metres, door swings may be
+  missing. Rooms that leak through an undrawn door are reported as *room names found in un-enclosed space*; rooms that
+  do not read on one floor can be copied from an identical floor: `python $S/fill_from_floor.py -w $WORK --target GF --source FF`.
+- Window sizes missing from the schedule: `project.json` → `project.window_sizes: {"W1": [600, 600]}`.
+- Rooms not to cool (e.g. small kitchens): `project.conditioned_override.by_space_type / by_room`.
+- Outdoor units per system: `design.equipment.odu_location_by_system: {"wall_split": "facade", "ducted_split": "roof"}`.
+- Zoning: `design.zoning.group_ducted_rooms: false` gives one ducted unit per room (apartments: one per flat living room).
+- Scale: when the title-block scale and the dimension strings disagree (reduced sheet), measure a grid or room
+  dimension, agree the scale with the user and pass `--scale`.
+
 ## Step B - calculations (Gate 2)
 - `loads.py`: CLTD/SCL/CLF per room, hours 8-20; room peak → airflow (supply ΔT from `design_defaults`), block peak
   for zones. Heating steady state. US homes → raises the Manual J question (CLTD is preliminary only).

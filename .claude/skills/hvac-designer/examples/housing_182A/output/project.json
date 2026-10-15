@@ -1,0 +1,111 @@
+{
+  "project": {
+    "name": "DDA MIG Housing Scheme 182A (test run under KSA codes)",
+    "client": "Test",
+    "ref": "HVAC-EX-002",
+    "location": {
+      "city": "Riyadh",
+      "country": "Saudi Arabia"
+    },
+    "building_type": "apartment",
+    "floors": [
+      {
+        "id": "GF",
+        "name": "Ground Floor",
+        "floor_to_floor_m": 3.0,
+        "ceiling_height_m": 2.75
+      },
+      {
+        "id": "FF",
+        "name": "First Floor",
+        "floor_to_floor_m": 3.0,
+        "ceiling_height_m": 2.75
+      },
+      {
+        "id": "SF",
+        "name": "Second Floor",
+        "floor_to_floor_m": 3.0,
+        "ceiling_height_m": 2.75
+      },
+      {
+        "id": "TF",
+        "name": "Third Floor",
+        "floor_to_floor_m": 3.0,
+        "ceiling_height_m": 2.75
+      }
+    ],
+    "roof_page_id": "RF",
+    "confirmed": {
+      "codes": true,
+      "design_conditions": true
+    },
+    "window_sizes": {
+      "W1": [
+        600,
+        600
+      ]
+    },
+    "conditioned_override": {
+      "by_space_type": {
+        "kitchen": false
+      },
+      "by_room": {}
+    }
+  },
+  "systems": {
+    "default": "wall_split",
+    "by_space_type": {
+      "living": "ducted_split",
+      "dining": "ducted_split"
+    },
+    "by_room": {}
+  },
+  "preferences": {
+    "brand": null,
+    "ceiling_void_mm": 400,
+    "odu_location": "roof",
+    "refrigerant": "R410A"
+  },
+  "design": {
+    "zoning": {
+      "group_ducted_rooms": false
+    },
+    "equipment": {
+      "odu_location_by_system": {
+        "wall_split": "facade",
+        "ducted_split": "roof"
+      }
+    }
+  },
+  "answers": {
+    "north_1": "page-up is north (0 deg)",
+    "north_2": "page-up is north (0 deg)",
+    "north_3": "page-up is north (0 deg)",
+    "unnamed_P1": "small unnamed spaces are flat entrance lobbies/passages - not cooled, transfer air",
+    "unnamed_P2": "same - passages",
+    "unnamed_P3": "same - passages / mumty",
+    "area_mismatch_P1_DINNING /LOUNGE": "drawing room + dining/lounge are open plan - one living zone ~18 m2 (measured)",
+    "area_mismatch_P2_DINNING /LOUNGE": "same - one living zone",
+    "area_mismatch_P1_ROOM": "use measured (traced drawing)",
+    "area_mismatch_P1_KITCHEN": "use measured",
+    "area_mismatch_P1_BATH": "use measured",
+    "area_mismatch_P1_SHAFT": "use measured",
+    "area_mismatch_P1_TERRACE": "use measured",
+    "area_mismatch_P2_ROOM": "use measured",
+    "area_mismatch_P2_KITCHEN": "use measured",
+    "area_mismatch_P2_BATH": "use measured",
+    "area_mismatch_P2_SHAFT": "use measured",
+    "area_mismatch_P2_TERRACE": "use measured",
+    "area_mismatch_P3_SHAFT": "use measured",
+    "multi_label_P2_SHAFT": "two shaft labels in one light well - one shaft",
+    "wtag_P1_W1_141": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P1_W1_449": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P1_W1_140": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P1_W1_450": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P1_W3A_329": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P1_W3A_745": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P1_W3A_764": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P2_W3A_361": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore",
+    "wtag_P2_W3A_383": "tag belongs to a stair/sunshade/balcony window outside the flats - ignore"
+  }
+}

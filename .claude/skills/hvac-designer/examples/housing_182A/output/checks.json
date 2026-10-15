@@ -1,0 +1,54 @@
+{
+  "checks": [
+    {
+      "check": "Every room served",
+      "status": "PASS",
+      "detail": "49 conditioned rooms served, 52 exhaust rooms; not served by design (stores/shafts): GF-01, GF-07, GF-10, GF-12, GF-13, GF-16, GF-20, GF-28, GF-29, GF-30, GF-35, GF-39, GF-40, GF-41, FF-01, FF-02, FF-10, FF-21, FF-29, FF-30, SF-01, SF-02, SF-08, SF-18, SF-26, SF-32, SF-33, SF-34, SF-35, SF-36, SF-37, TF-01, TF-02, TF-03, TF-04, TF-10, TF-25, TF-31, TF-32, TF-33, TF-34"
+    },
+    {
+      "check": "No duct crossing shaft/stair/column unresolved",
+      "status": "PASS",
+      "detail": "trunk routes chosen clear of shafts, stairs (not served) and columns; beams not on plan - coordinate"
+    },
+    {
+      "check": "Airflows balance",
+      "status": "PASS",
+      "detail": "supply = unit airflow in all ducted zones; building OA 891.3 L/s vs exhaust 1725.0 L/s (net -834 L/s)"
+    },
+    {
+      "check": "All items tagged (unique)",
+      "status": "PASS",
+      "detail": "400 tags"
+    },
+    {
+      "check": "Every drawing item in BOQ",
+      "status": "PASS",
+      "detail": "465 drawn tags all in BOQ (pipe runs 49 measured by size in section G)"
+    },
+    {
+      "check": "Unit external static pressure",
+      "status": "PASS",
+      "detail": "all ducted units have ESP margin"
+    },
+    {
+      "check": "Refrigerant length / height limits",
+      "status": "PASS",
+      "detail": "within generic limits (verify with brand)"
+    },
+    {
+      "check": "Diffuser noise (NC)",
+      "status": "PASS",
+      "detail": "all diffusers at or below room NC target"
+    },
+    {
+      "check": "Fresh-air fraction",
+      "status": "PASS",
+      "detail": "OA fraction within limit for untreated fresh air"
+    },
+    {
+      "check": "Open questions",
+      "status": "PASS",
+      "detail": "none"
+    }
+  ]
+}

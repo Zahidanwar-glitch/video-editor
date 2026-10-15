@@ -137,9 +137,22 @@ def compute(work):
     if loc == "roof" and not roof:
         log.ask("Gate2", "odu_loc", "Outdoor units on the roof, but no roof plan page was read - where should outdoor units go?")
     split_like = [z for z in design["zones"] if z["unit"]["type"] in ("wall_split", "ducted_split")]
+    by_sys = dz["equipment"].get("odu_location_by_system", {})
     for i, z in enumerate(split_like, 1):
-        design["outdoor_units"].append({"tag": f"ODU-{i:02d}", "serves": [z["unit"]["tag"]], "model": z["unit"]["model"].replace("WS", "WS-O").replace("DS", "DS-O"),
-                                        "cool_kw": z["unit"]["nominal_kw"], "power_kw": z["unit"]["power_kw"], "system": z["system"]})
+        o = {"tag": f"ODU-{i:02d}", "serves": [z["unit"]["tag"]], "model": z["unit"]["model"].replace("WS", "WS-O").replace("DS", "DS-O"),
+             "cool_kw": z["unit"]["nominal_kw"], "power_kw": z["unit"]["power_kw"], "system": z["system"]}
+        if by_sys.get(z["system"], loc) == "facade":
+            fl = fls[z["floor"]]
+            main = max((idx[r][1] for r in z["rooms"]), key=lambda r: loads[r["id"]]["total_w"])
+            q, e, rr = G.nearest_exterior(fl, tuple(main["centroid_pt"]), rooms=[main], min_frac=0.25)
+            if q:
+                o.update(pos_pt=[round(v, 2) for v in G.outset(q, e, fl, 0.45)], floor=fl["id"], footprint_m=odu_size(o["cool_kw"]), mount="wall bracket on facade")
+            else:
+                log.ask("Gate2", f"odu_{o['tag']}", f"{o['tag']} ({main['name']}): no exterior wall for a facade-mounted outdoor unit - roof instead?")
+        design["outdoor_units"].append(o)
+    if any(o.get("mount") for o in design["outdoor_units"]):
+        log.add("B-equip", "odu_facade", "Wall-split outdoor units on brackets on the facade/courtyard wall just outside the served room (architect to approve appearance); ducted-unit ODUs on the roof",
+                "user preference", confirm=True)
     vrf = [z for z in design["zones"] if z["system"] == "vrf"]
     if vrf:
         block = block_load(vrf, loads, vent, dc, to_h, hours) * (1 + sf) / 1000
@@ -163,7 +176,7 @@ def compute(work):
         design["plant"] = {"chiller": "CH-01", "chw_flow_ls": round(flow, 2), "delta_t_k": dt, "pumps": [
             {"tag": "CHWP-01", "duty": "duty", "flow_ls": round(flow, 2)}, {"tag": "CHWP-02", "duty": "standby", "flow_ls": round(flow, 2)}]}
         log.add("B-equip", "chw", f"Chilled water {dz['pipes']['chw_supply_c']} °C supply, ΔT {dt} K, constant-flow duty/standby pumps (head by detailed design)", C.clause(p, "chw_piping"), confirm=True)
-    if roof and design["outdoor_units"]:
+    if roof and any(not o.get("pos_pt") for o in design["outdoor_units"]):
         place_odus(roof, design, rooms, log)
     design["risers"] = risers(rooms)
     C.save(work, "design.json", design)
@@ -212,7 +225,7 @@ def place_ducted(p, fl, zrooms, loads, used, log, z):
         log.add("B-equip", f"host_{z['id']}", f"{z['id']} indoor unit in the ceiling void of {host['id']} {host['name']} (service space next to the zone)", "references/design_defaults.json unit_host_preference", confirm=True)
         return pos, host
     main = max(zrooms, key=lambda r: loads[r["id"]]["total_w"])
-    log.ask("Gate2", f"host_{z['id']}", f"{z['id']}: no corridor/service room next to the zone for the ducted unit - unit placed in {main['name']} ceiling. Confirm location / access panel.")
+    log.add("B-equip", f"host_{z['id']}", f"{z['id']}: no corridor/service room next to the zone - ducted unit in the {main['name']} ({main['id']}) ceiling void, access panel required", "designer judgement", confirm=True)
     return tuple(G.interior_wall_point(fl, main, 0.8)), main
 
 
@@ -235,7 +248,19 @@ def risers(rooms):
 
 
 def place_odus(roof, design, rooms, log):
-    roof_area = max((r for r in roof["rooms"] if r["space_type"] == "roof"), key=lambda r: r["area_m2"], default=None)
+    roof_area = max((r for r in roof["rooms"] if r["space_type"] in ("roof", "outdoor", "store") and r["area_m2"] >= 20), key=lambda r: r["area_m2"], default=None)
+    if roof_area and roof_area["area_m2"] < 20 and roof["rooms"]:
+        roof_area = None
+    if not roof_area and roof["rooms"]:
+        # no labelled open roof: use the building outline on the roof sheet (bbox of what is drawn there)
+        pad = G.pt(roof, 1.5)
+        x0 = min(r["bbox_pt"][0] for r in roof["rooms"]) - pad
+        y0 = min(r["bbox_pt"][1] for r in roof["rooms"]) - pad
+        x1 = max(r["bbox_pt"][2] for r in roof["rooms"]) + pad
+        y1 = max(r["bbox_pt"][3] for r in roof["rooms"]) + pad
+        roof_area = {"id": "ROOF-OUTLINE", "name": "roof (outline)", "bbox_pt": [x0, y0, x1, y1], "centroid_pt": [(x0 + x1) / 2, (y0 + y1) / 2],
+                     "polygon_pt": [[x0, y0], [x1, y0], [x1, y1], [x0, y1]], "area_m2": G.m(roof, x1 - x0) * G.m(roof, y1 - y0), "_synthetic": True}
+        log.add("B-equip", "roof_outline", "Roof plan has no labelled open roof area: outdoor units placed within the building outline on the roof sheet, clear of mumties/shafts/terraces - confirm roof space and structure", "designer judgement", confirm=True)
     if not roof_area:
         log.ask("Gate2", "roof_area", "Roof plan has no open roof area - where do outdoor units go?")
         return
@@ -259,11 +284,12 @@ def place_odus(roof, design, rooms, log):
             x += pitch_x
         y += pitch_y
     cands.sort()
-    for o, (_, pos) in zip(design["outdoor_units"], cands):
+    todo = [o for o in design["outdoor_units"] if not o.get("pos_pt")]
+    for o, (_, pos) in zip(todo, cands):
         o["pos_pt"] = [round(pos[0], 2), round(pos[1], 2)]
         o["floor"] = roof["id"]
         o["footprint_m"] = odu_size(o["cool_kw"])
-    if len(cands) < len(design["outdoor_units"]):
+    if len(cands) < len(todo):
         log.ask("Gate2", "roof_space", "Not enough clear roof area for all outdoor units - confirm locations.")
     log.add("B-equip", "odu_roof", f"Outdoor units grouped on the roof near the riser/shaft with {clr} m service clearance; check structure, parapet height and acoustic screening",
             "designer judgement", confirm=True)

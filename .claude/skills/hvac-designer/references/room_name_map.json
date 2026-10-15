@@ -6,6 +6,10 @@
       "shaft"
     ],
     [
+      "courtyard|open\\s*to\\s*sky|terrace|balcony|verandah|\\bver\\b|light\\s*well|فناء|شرفة|بلكونة",
+      "outdoor"
+    ],
+    [
       "public\\s*(toilet|wc)|gents|ladies",
       "toilet_public"
     ],
@@ -22,7 +26,7 @@
       "maid_room"
     ],
     [
-      "bed\\s*room|\\bbed\\b|\\bbr\\s*\\d*\\b|غرفة\\s*نوم|نوم",
+      "bed\\s*room|\\bbed\\b|\\bbr\\s*\\d*\\b|^room\\b|غرفة\\s*نوم|نوم",
       "bedroom"
     ],
     [
@@ -30,7 +34,7 @@
       "majlis"
     ],
     [
-      "dining|طعام",
+      "dining|dinning|طعام",
       "dining"
     ],
     [
@@ -62,7 +66,7 @@
       "hall"
     ],
     [
-      "living|family|lounge|sitting|صالة|معيشة",
+      "living|family|lounge|sitting|drg\\.?\\s*room|drawing\\s*room|صالة|معيشة",
       "living"
     ],
     [
