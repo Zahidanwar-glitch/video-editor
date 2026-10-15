@@ -1,0 +1,54 @@
+{
+  "_about": "Outdoor-air rates per ventilation category (Rp L/s.person, Ra L/s.m2) and exhaust rules. code_set keys override the default table. 'clause' keys point into codes_by_country.json clauses.",
+  "_status": "From ASHRAE 62.1-2019 Table 6-1 / 6-4, IMC/SBC 501 Table 403.3.1.1, Approved Document F 2021. VERIFY against adopted edition.",
+  "oa_categories": {
+    "default": {
+      "dwelling":   {"Rp": 2.5, "Ra": 0.3, "label": "Residential dwelling unit (IMC/SBC 501 Table 403.3.1.1)"},
+      "corridor":   {"Rp": 0.0, "Ra": 0.3, "label": "Corridors / lobbies"},
+      "office":     {"Rp": 2.5, "Ra": 0.3, "label": "Office space"},
+      "conference": {"Rp": 2.5, "Ra": 0.3, "label": "Conference/meeting"},
+      "retail":     {"Rp": 3.8, "Ra": 0.6, "label": "Sales (except below)"},
+      "breakroom":  {"Rp": 2.5, "Ra": 0.6, "label": "Break rooms"},
+      "restaurant": {"Rp": 3.8, "Ra": 0.9, "label": "Restaurant dining"}
+    },
+    "UK": {
+      "dwelling":   {"Rp": 0.0, "Ra": 0.3, "label": "ADF Vol.1 whole-dwelling minimum 0.3 L/s.m2"},
+      "corridor":   {"Rp": 0.0, "Ra": 0.3, "label": "ADF"},
+      "office":     {"Rp": 10.0, "Ra": 0.0, "label": "ADF Vol.2 10 L/s per person"},
+      "conference": {"Rp": 10.0, "Ra": 0.0, "label": "ADF Vol.2"},
+      "retail":     {"Rp": 10.0, "Ra": 0.0, "label": "ADF Vol.2"},
+      "breakroom":  {"Rp": 10.0, "Ra": 0.0, "label": "ADF Vol.2"},
+      "restaurant": {"Rp": 10.0, "Ra": 0.0, "label": "ADF Vol.2"}
+    }
+  },
+  "zone_effectiveness_Ez": {
+    "_clause": "oa_zone_eff",
+    "ceiling_supply_cool": 1.0,
+    "ceiling_supply_warm": 0.8
+  },
+  "system_effectiveness": {
+    "_clause": "oa_system_eff",
+    "_about": "Simplified procedure: Ev = 0.88*D + 0.22 for D < 0.60, else 0.75. Single-zone systems: Ev = 1.0.",
+    "D_residential": 1.0
+  },
+  "exhaust": {
+    "default": {
+      "toilet_private":      {"mode": "intermittent", "ls": 25.0, "continuous_ls": 10.0, "clause": "exhaust_toilet"},
+      "toilet_public":       {"mode": "per_fixture", "ls_per_fixture": 25.0, "clause": "exhaust_toilet_public"},
+      "kitchen_residential": {"mode": "intermittent", "ls": 50.0, "continuous_ls": 12.0, "clause": "exhaust_kitchen", "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"},
+      "laundry":             {"mode": "intermittent", "ls": 25.0, "clause": "exhaust_toilet", "note": "Treated as toilet rate (designer choice)"},
+      "pantry":              {"mode": "area", "ls_m2": 1.5, "clause": "exhaust_toilet_public"}
+    },
+    "UK": {
+      "toilet_private":      {"mode": "intermittent", "ls": 15.0, "clause": "exhaust_toilet"},
+      "toilet_public":       {"mode": "per_fixture", "ls_per_fixture": 6.0, "clause": "exhaust_toilet_public"},
+      "kitchen_residential": {"mode": "intermittent", "ls": 60.0, "clause": "exhaust_kitchen"},
+      "laundry":             {"mode": "intermittent", "ls": 30.0, "clause": "exhaust_kitchen"},
+      "pantry":              {"mode": "intermittent", "ls": 30.0, "clause": "exhaust_kitchen"}
+    }
+  },
+  "residential_whole_house_62_2": {
+    "_about": "ASHRAE 62.2-2019 Eq.4.1a cross-check: Qtot = 0.15*Afloor + 3.5*(Nbr+1) L/s",
+    "a": 0.15, "b": 3.5
+  }
+}

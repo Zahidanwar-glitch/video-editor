@@ -1,0 +1,3509 @@
+{
+  "zones": [
+    {
+      "id": "Z-GF-01",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-06"
+      ],
+      "unit": {
+        "tag": "IU-GF-01",
+        "type": "wall_split",
+        "model": "WS-18",
+        "nominal_kw": 5.3,
+        "derated_kw": 4.66,
+        "sensible_kw": 3.45,
+        "airflow_ls": 250,
+        "esp_pa": 0,
+        "heat_kw": 5.6,
+        "eer": 3.3,
+        "power_kw": 1.61,
+        "btu": 18000,
+        "req_total_kw": 3.64,
+        "req_sensible_kw": 3.14,
+        "req_airflow_ls": 198.3,
+        "block_kw": 3.31,
+        "room_kw": 2.95,
+        "oa_kw": 0.36,
+        "peak_hour": 15,
+        "heat_req_kw": 0.26,
+        "oversize_pct": 28.0,
+        "selected_ok": true,
+        "oa_ls": 14.5,
+        "oa_frac": 0.058,
+        "pos_pt": [
+          418.17,
+          478.98
+        ],
+        "host_room": "GF-06",
+        "footprint_m": [
+          0.9,
+          0.25
+        ]
+      },
+      "room_airflow_ls": {
+        "GF-06": 250.0
+      },
+      "thermostat": {
+        "tag": "T-GF-01",
+        "room": "GF-06",
+        "pos_pt": [
+          418.15,
+          483.23
+        ],
+        "type": "wired controller"
+      },
+      "oa_method": "transfer air from Z-GF-04 (OA added to that zone)"
+    },
+    {
+      "id": "Z-GF-02",
+      "floor": "GF",
+      "system": "wall_split",
+      "kind": "room_unit",
+      "rooms": [
+        "GF-07"
+      ],
+      "unit": {
+        "tag": "IU-GF-02",
+        "type": "wall_split",
+        "model": "WS-09",
+        "nominal_kw": 2.6,
+        "derated_kw": 2.29,
+        "sensible_kw": 1.74,
+        "airflow_ls": 140,
+        "esp_pa": 0,
+        "heat_kw": 2.9,
+        "eer": 3.43,
+        "power_kw": 0.76,
+        "btu": 9000,
+        "req_total_kw": 0.88,
+        "req_sensible_kw": 0.85,
+        "req_airflow_ls": 45.6,
+        "block_kw": 0.8,
+        "room_kw": 0.6,
+        "oa_kw": 0.2,
+        "peak_hour": 15,
+        "heat_req_kw": 0.48,
+        "oversize_pct": 161.0,
+        "selected_ok": true,
+        "oa_ls": 8.0,
+        "oa_frac": 0.057,
+        "pos_pt": [
+          571.34,
+          508.09
+        ],
+        "host_room": "GF-07",
+        "footprint_m": [
+          0.9,
+          0.25
+        ]
+      },
+      "room_airflow_ls": {
+        "GF-07": 140.0
+      },
+      "thermostat": {
+        "tag": "T-GF-02",
+        "room": "GF-07",
+        "pos_pt": [
+          491.74,
+          529.83
+        ],
+        "type": "wired controller"
+      },
+      "oa_method": "through-wall fresh air fan",
+      "fa_fan": {
+        "tag": "FAF-GF-02",
+        "model": "FAF-15",
+        "airflow_ls": 8.0,
+        "power_w": 12,
+        "pos_pt": [
+          572.67,
+          530.3
+        ]
+      }
+    },
+    {
+      "id": "Z-GF-03",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-01"
+      ],
+      "unit": {
+        "tag": "IU-GF-03",
+        "type": "ducted_split",
+        "model": "DS-24",
+        "nominal_kw": 7.0,
+        "derated_kw": 6.16,
+        "sensible_kw": 4.62,
+        "airflow_ls": 380,
+        "esp_pa": 75,
+        "heat_kw": 7.6,
+        "eer": 3.2,
+        "power_kw": 2.19,
+        "btu": 24000,
+        "req_total_kw": 4.33,
+        "req_sensible_kw": 3.79,
+        "req_airflow_ls": 192.9,
+        "block_kw": 3.94,
+        "room_kw": 2.86,
+        "oa_kw": 1.08,
+        "peak_hour": 16,
+        "heat_req_kw": 1.72,
+        "oversize_pct": 42.0,
+        "selected_ok": true,
+        "oa_ls": 44.7,
+        "oa_frac": 0.118,
+        "pos_pt": [
+          346.96,
+          405.04
+        ],
+        "host_room": "GF-02",
+        "footprint_m": [
+          1.2,
+          0.6
+        ]
+      },
+      "room_airflow_ls": {
+        "GF-01": 380.0
+      },
+      "thermostat": {
+        "tag": "T-GF-03",
+        "room": "GF-01",
+        "pos_pt": [
+          214.91,
+          463.68
+        ],
+        "type": "wired programmable thermostat"
+      },
+      "oa_method": "ducted to unit return plenum"
+    },
+    {
+      "id": "Z-GF-04",
+      "floor": "GF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "GF-05",
+        "GF-08",
+        "GF-04",
+        "GF-02",
+        "GF-03"
+      ],
+      "unit": {
+        "tag": "IU-GF-04",
+        "type": "ducted_split",
+        "model": "DS-48",
+        "nominal_kw": 14.0,
+        "derated_kw": 12.32,
+        "sensible_kw": 9.12,
+        "airflow_ls": 750,
+        "esp_pa": 100,
+        "heat_kw": 15.0,
+        "eer": 3.1,
+        "power_kw": 4.52,
+        "btu": 48000,
+        "req_total_kw": 9.05,
+        "req_sensible_kw": 8.16,
+        "req_airflow_ls": 431.0,
+        "block_kw": 8.23,
+        "room_kw": 5.66,
+        "oa_kw": 2.57,
+        "peak_hour": 16,
+        "heat_req_kw": 3.92,
+        "oversize_pct": 36.0,
+        "selected_ok": true,
+        "oa_ls": 106.1,
+        "oa_frac": 0.141,
+        "pos_pt": [
+          311.67,
+          509.02
+        ],
+        "host_room": "GF-04",
+        "footprint_m": [
+          1.2,
+          0.6
+        ]
+      },
+      "room_airflow_ls": {
+        "GF-05": 243.1,
+        "GF-08": 52.2,
+        "GF-04": 52.2,
+        "GF-02": 62.6,
+        "GF-03": 339.8
+      },
+      "thermostat": {
+        "tag": "T-GF-04",
+        "room": "GF-03",
+        "pos_pt": [
+          487.05,
+          463.68
+        ],
+        "type": "wired programmable thermostat"
+      },
+      "oa_method": "ducted to unit return plenum"
+    },
+    {
+      "id": "Z-FF-01",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-03",
+        "FF-04"
+      ],
+      "unit": {
+        "tag": "IU-FF-01",
+        "type": "ducted_split",
+        "model": "DS-18",
+        "nominal_kw": 5.3,
+        "derated_kw": 4.66,
+        "sensible_kw": 3.5,
+        "airflow_ls": 300,
+        "esp_pa": 75,
+        "heat_kw": 5.8,
+        "eer": 3.2,
+        "power_kw": 1.66,
+        "btu": 18000,
+        "req_total_kw": 2.7,
+        "req_sensible_kw": 2.65,
+        "req_airflow_ls": 180.3,
+        "block_kw": 2.46,
+        "room_kw": 2.0,
+        "oa_kw": 0.46,
+        "peak_hour": 17,
+        "heat_req_kw": 1.18,
+        "oversize_pct": 72.0,
+        "selected_ok": true,
+        "oa_ls": 19.9,
+        "oa_frac": 0.066,
+        "pos_pt": [
+          339.27,
+          444.52
+        ],
+        "host_room": "FF-04",
+        "footprint_m": [
+          1.2,
+          0.6
+        ]
+      },
+      "room_airflow_ls": {
+        "FF-03": 250.1,
+        "FF-04": 49.9
+      },
+      "thermostat": {
+        "tag": "T-FF-01",
+        "room": "FF-03",
+        "pos_pt": [
+          214.91,
+          463.68
+        ],
+        "type": "wired programmable thermostat"
+      },
+      "oa_method": "ducted to unit return plenum"
+    },
+    {
+      "id": "Z-FF-02",
+      "floor": "FF",
+      "system": "ducted_split",
+      "kind": "ducted",
+      "rooms": [
+        "FF-10",
+        "FF-11",
+        "FF-07",
+        "FF-08",
+        "FF-05",
+        "FF-09"
+      ],
+      "unit": {
+        "tag": "IU-FF-02",
+        "type": "ducted_split",
+        "model": "DS-48",
+        "nominal_kw": 14.0,
+        "derated_kw": 12.32,
+        "sensible_kw": 9.12,
+        "airflow_ls": 750,
+        "esp_pa": 100,
+        "heat_kw": 15.0,
+        "eer": 3.1,
+        "power_kw": 4.52,
+        "btu": 48000,
+        "req_total_kw": 9.65,
+        "req_sensible_kw": 9.04,
+        "req_airflow_ls": 522.5,
+        "block_kw": 8.78,
+        "room_kw": 6.54,
+        "oa_kw": 2.24,
+        "peak_hour": 16,
+        "heat_req_kw": 3.75,
+        "oversize_pct": 28.0,
+        "selected_ok": true,
+        "oa_ls": 92.3,
+        "oa_frac": 0.123,
+        "pos_pt": [
+          311.93,
+          508.64
+        ],
+        "host_room": "FF-07",
+        "footprint_m": [
+          1.2,
+          0.6
+        ]
+      },
+      "room_airflow_ls": {
+        "FF-10": 371.9,
+        "FF-11": 43.1,
+        "FF-07": 43.1,
+        "FF-08": 57.0,
+        "FF-05": 118.1,
+        "FF-09": 116.8
+      },
+      "thermostat": {
+        "tag": "T-FF-02",
+        "room": "FF-10",
+        "pos_pt": [
+          259.16,
+          593.55
+        ],
+        "type": "wired programmable thermostat"
+      },
+      "oa_method": "ducted to unit return plenum"
+    }
+  ],
+  "outdoor_units": [
+    {
+      "tag": "ODU-01",
+      "serves": [
+        "IU-GF-01"
+      ],
+      "model": "WS-O-18",
+      "cool_kw": 5.3,
+      "power_kw": 1.61,
+      "system": "wall_split",
+      "pos_pt": [
+        551.2,
+        631.98
+      ],
+      "floor": "RF",
+      "footprint_m": [
+        0.85,
+        0.32
+      ]
+    },
+    {
+      "tag": "ODU-02",
+      "serves": [
+        "IU-GF-02"
+      ],
+      "model": "WS-O-09",
+      "cool_kw": 2.6,
+      "power_kw": 0.76,
+      "system": "wall_split",
+      "pos_pt": [
+        551.2,
+        586.63
+      ],
+      "floor": "RF",
+      "footprint_m": [
+        0.85,
+        0.32
+      ]
+    },
+    {
+      "tag": "ODU-03",
+      "serves": [
+        "IU-GF-03"
+      ],
+      "model": "DS-O-24",
+      "cool_kw": 7.0,
+      "power_kw": 2.19,
+      "system": "ducted_split",
+      "pos_pt": [
+        507.26,
+        631.98
+      ],
+      "floor": "RF",
+      "footprint_m": [
+        0.85,
+        0.32
+      ]
+    },
+    {
+      "tag": "ODU-04",
+      "serves": [
+        "IU-GF-04"
+      ],
+      "model": "DS-O-48",
+      "cool_kw": 14.0,
+      "power_kw": 4.52,
+      "system": "ducted_split",
+      "pos_pt": [
+        507.26,
+        586.63
+      ],
+      "floor": "RF",
+      "footprint_m": [
+        0.95,
+        0.4
+      ]
+    },
+    {
+      "tag": "ODU-05",
+      "serves": [
+        "IU-FF-01"
+      ],
+      "model": "DS-O-18",
+      "cool_kw": 5.3,
+      "power_kw": 1.66,
+      "system": "ducted_split",
+      "pos_pt": [
+        551.2,
+        541.27
+      ],
+      "floor": "RF",
+      "footprint_m": [
+        0.85,
+        0.32
+      ]
+    },
+    {
+      "tag": "ODU-06",
+      "serves": [
+        "IU-FF-02"
+      ],
+      "model": "DS-O-48",
+      "cool_kw": 14.0,
+      "power_kw": 4.52,
+      "system": "ducted_split",
+      "pos_pt": [
+        463.33,
+        631.98
+      ],
+      "floor": "RF",
+      "footprint_m": [
+        0.95,
+        0.4
+      ]
+    }
+  ],
+  "plant": {},
+  "derate": 0.88,
+  "sf_cooling": 0.1,
+  "sf_heating": 0.1,
+  "risers": {
+    "GF": [
+      {
+        "room": "GF-10",
+        "pos_pt": [
+          564.66,
+          626.95
+        ]
+      }
+    ],
+    "FF": [
+      {
+        "room": "FF-13",
+        "pos_pt": [
+          564.66,
+          626.95
+        ]
+      }
+    ]
+  },
+  "air_systems": [
+    {
+      "zone": "Z-GF-03",
+      "floor": "GF",
+      "unit": "IU-GF-03",
+      "trunk_axis": "y",
+      "segments": [
+        {
+          "id": "D-GF-001",
+          "zone": "Z-GF-03",
+          "system": "supply",
+          "kind": "riser",
+          "pts": [
+            [
+              346.96,
+              405.04
+            ],
+            [
+              214.73,
+              405.04
+            ]
+          ],
+          "flow_ls": 380.0,
+          "length_m": 4.66,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 300,
+          "de_mm": 328,
+          "area_m2": 5.6,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 4.22,
+          "friction_pa_m": 0.719,
+          "dp_pa": 5.0,
+          "serves": null,
+          "down": [
+            "GF-01"
+          ]
+        },
+        {
+          "id": "D-GF-002",
+          "zone": "Z-GF-03",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              214.73,
+              404.78
+            ],
+            [
+              173.91,
+              404.78
+            ],
+            [
+              173.91,
+              404.78
+            ]
+          ],
+          "flow_ls": 190.0,
+          "length_m": 1.44,
+          "shape": "flex",
+          "d_mm": 350,
+          "de_mm": 350,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.97,
+          "friction_pa_m": 0.15,
+          "dp_pa": 0.3,
+          "serves": "GF-01",
+          "down": [
+            "GF-01"
+          ]
+        },
+        {
+          "id": "D-GF-003",
+          "zone": "Z-GF-03",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              214.73,
+              404.78
+            ],
+            [
+              255.54,
+              404.78
+            ],
+            [
+              255.54,
+              404.78
+            ]
+          ],
+          "flow_ls": 190.0,
+          "length_m": 1.44,
+          "shape": "flex",
+          "d_mm": 350,
+          "de_mm": 350,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.97,
+          "friction_pa_m": 0.15,
+          "dp_pa": 0.3,
+          "serves": "GF-01",
+          "down": [
+            "GF-01"
+          ]
+        }
+      ],
+      "diffusers": [
+        {
+          "room": "GF-01",
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 190.0,
+          "nc": 28,
+          "throw_m": 2.9,
+          "dp_pa": 15,
+          "pos_pt": [
+            173.91,
+            404.78
+          ],
+          "tag": "SD-GF-01"
+        },
+        {
+          "room": "GF-01",
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 190.0,
+          "nc": 28,
+          "throw_m": 2.9,
+          "dp_pa": 15,
+          "pos_pt": [
+            255.54,
+            404.78
+          ],
+          "tag": "SD-GF-02"
+        }
+      ],
+      "return": {
+        "grille": {
+          "tag": "RG-GF-01",
+          "room": "GF-02",
+          "w_mm": 600,
+          "h_mm": 450,
+          "flow_ls": 380,
+          "pos_pt": [
+            380.98,
+            405.04
+          ],
+          "type": "return grille with plenum box and filter"
+        },
+        "segments": [
+          {
+            "id": "D-GF-004",
+            "zone": "Z-GF-03",
+            "system": "return",
+            "kind": "main",
+            "pts": [
+              [
+                380.98,
+                405.04
+              ],
+              [
+                346.96,
+                405.04
+              ]
+            ],
+            "flow_ls": 380,
+            "length_m": 1.2,
+            "shape": "rect",
+            "w_mm": 400,
+            "h_mm": 300,
+            "de_mm": 378,
+            "area_m2": 1.68,
+            "gauge": "24 ga (0.70 mm)",
+            "velocity_m_s": 3.17,
+            "friction_pa_m": 0.361,
+            "dp_pa": 0.6
+          }
+        ]
+      },
+      "fresh_air": {
+        "louver": {
+          "tag": "FAL-GF-01",
+          "w_mm": 300,
+          "h_mm": 200,
+          "flow_ls": 44.7,
+          "pos_pt": [
+            347.26,
+            337.39
+          ],
+          "room": "GF-02",
+          "normal": [
+            0.004,
+            -1.0
+          ]
+        },
+        "segments": [
+          {
+            "id": "D-GF-005",
+            "zone": "Z-GF-03",
+            "system": "fresh_air",
+            "kind": "main",
+            "pts": [
+              [
+                347.26,
+                337.39
+              ],
+              [
+                346.96,
+                337.39
+              ],
+              [
+                346.96,
+                405.04
+              ]
+            ],
+            "flow_ls": 44.7,
+            "length_m": 2.4,
+            "shape": "round",
+            "d_mm": 150,
+            "de_mm": 150,
+            "area_m2": 1.13,
+            "gauge": "26 ga (0.55 mm)",
+            "velocity_m_s": 2.53,
+            "friction_pa_m": 0.675,
+            "dp_pa": 2.4
+          }
+        ],
+        "dampers": [
+          "VCD",
+          "MD (motorised, interlocked with unit)"
+        ],
+        "filter": "G4 panel filter in louver plenum"
+      },
+      "vcd_branches": [],
+      "transfer_grilles": [
+        "GF-01"
+      ],
+      "esp_required_pa": 71,
+      "esp_available_pa": 75,
+      "esp_ok": true,
+      "conflicts": [],
+      "supply_total_ls": 380.0
+    },
+    {
+      "zone": "Z-GF-04",
+      "floor": "GF",
+      "unit": "IU-GF-04",
+      "trunk_axis": "y",
+      "segments": [
+        {
+          "id": "D-GF-006",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              311.88,
+              509.02
+            ],
+            [
+              311.88,
+              406.06
+            ]
+          ],
+          "flow_ls": 402.4,
+          "length_m": 3.63,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 300,
+          "de_mm": 328,
+          "area_m2": 4.36,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 4.47,
+          "friction_pa_m": 0.798,
+          "dp_pa": 4.3,
+          "serves": null,
+          "down": [
+            "GF-02",
+            "GF-03"
+          ]
+        },
+        {
+          "id": "D-GF-007",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              311.88,
+              510.24
+            ],
+            [
+              311.88,
+              538.51
+            ]
+          ],
+          "flow_ls": 295.3,
+          "length_m": 1.0,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 250,
+          "de_mm": 299,
+          "area_m2": 1.1,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 3.94,
+          "friction_pa_m": 0.713,
+          "dp_pa": 1.1,
+          "serves": null,
+          "down": [
+            "GF-05",
+            "GF-08"
+          ]
+        },
+        {
+          "id": "D-GF-008",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              311.88,
+              538.51
+            ],
+            [
+              311.88,
+              605.9
+            ]
+          ],
+          "flow_ls": 52.2,
+          "length_m": 2.38,
+          "shape": "rect",
+          "w_mm": 150,
+          "h_mm": 150,
+          "de_mm": 164,
+          "area_m2": 1.43,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.32,
+          "friction_pa_m": 0.579,
+          "dp_pa": 2.1,
+          "serves": null,
+          "down": [
+            "GF-08"
+          ]
+        },
+        {
+          "id": "D-GF-009",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              311.88,
+              538.51
+            ],
+            [
+              200.69,
+              538.51
+            ]
+          ],
+          "flow_ls": 243.1,
+          "length_m": 3.92,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 300,
+          "de_mm": 328,
+          "area_m2": 4.71,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.7,
+          "friction_pa_m": 0.32,
+          "dp_pa": 1.9,
+          "serves": "GF-05",
+          "down": [
+            "GF-05"
+          ]
+        },
+        {
+          "id": "D-GF-010",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              200.69,
+              538.51
+            ],
+            [
+              166.89,
+              538.51
+            ]
+          ],
+          "flow_ls": 121.5,
+          "length_m": 1.19,
+          "shape": "flex",
+          "d_mm": 250,
+          "de_mm": 250,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 2.48,
+          "friction_pa_m": 0.343,
+          "dp_pa": 0.6,
+          "serves": "GF-05",
+          "down": [
+            "GF-05"
+          ]
+        },
+        {
+          "id": "D-GF-011",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              200.69,
+              538.51
+            ],
+            [
+              234.5,
+              538.51
+            ]
+          ],
+          "flow_ls": 121.5,
+          "length_m": 1.19,
+          "shape": "flex",
+          "d_mm": 250,
+          "de_mm": 250,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 2.48,
+          "friction_pa_m": 0.343,
+          "dp_pa": 0.6,
+          "serves": "GF-05",
+          "down": [
+            "GF-05"
+          ]
+        },
+        {
+          "id": "D-GF-012",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              311.88,
+              406.06
+            ],
+            [
+              347.18,
+              406.06
+            ]
+          ],
+          "flow_ls": 62.6,
+          "length_m": 1.25,
+          "shape": "rect",
+          "w_mm": 200,
+          "h_mm": 150,
+          "de_mm": 189,
+          "area_m2": 0.87,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.09,
+          "friction_pa_m": 0.405,
+          "dp_pa": 0.8,
+          "serves": "GF-02",
+          "down": [
+            "GF-02"
+          ]
+        },
+        {
+          "id": "D-GF-013",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              347.18,
+              406.06
+            ],
+            [
+              347.18,
+              406.06
+            ],
+            [
+              347.18,
+              371.62
+            ]
+          ],
+          "flow_ls": 31.3,
+          "length_m": 1.22,
+          "shape": "flex",
+          "d_mm": 150,
+          "de_mm": 150,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.77,
+          "friction_pa_m": 0.357,
+          "dp_pa": 0.7,
+          "serves": "GF-02",
+          "down": [
+            "GF-02"
+          ]
+        },
+        {
+          "id": "D-GF-014",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              347.18,
+              406.06
+            ],
+            [
+              347.18,
+              406.06
+            ],
+            [
+              347.18,
+              440.5
+            ]
+          ],
+          "flow_ls": 31.3,
+          "length_m": 1.22,
+          "shape": "flex",
+          "d_mm": 150,
+          "de_mm": 150,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.77,
+          "friction_pa_m": 0.357,
+          "dp_pa": 0.7,
+          "serves": "GF-02",
+          "down": [
+            "GF-02"
+          ]
+        },
+        {
+          "id": "D-GF-015",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              311.88,
+              404.78
+            ],
+            [
+              486.85,
+              404.78
+            ]
+          ],
+          "flow_ls": 339.8,
+          "length_m": 6.17,
+          "shape": "rect",
+          "w_mm": 400,
+          "h_mm": 300,
+          "de_mm": 378,
+          "area_m2": 8.64,
+          "gauge": "24 ga (0.70 mm)",
+          "velocity_m_s": 2.83,
+          "friction_pa_m": 0.295,
+          "dp_pa": 2.7,
+          "serves": "GF-03",
+          "down": [
+            "GF-03"
+          ]
+        },
+        {
+          "id": "D-GF-016",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              486.85,
+              404.78
+            ],
+            [
+              442.42,
+              404.78
+            ],
+            [
+              442.42,
+              404.78
+            ]
+          ],
+          "flow_ls": 169.9,
+          "length_m": 1.57,
+          "shape": "round",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 1.48,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.4,
+          "friction_pa_m": 0.259,
+          "dp_pa": 0.6,
+          "serves": "GF-03",
+          "down": [
+            "GF-03"
+          ]
+        },
+        {
+          "id": "D-GF-017",
+          "zone": "Z-GF-04",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              486.85,
+              404.78
+            ],
+            [
+              531.29,
+              404.78
+            ],
+            [
+              531.29,
+              404.78
+            ]
+          ],
+          "flow_ls": 169.9,
+          "length_m": 1.57,
+          "shape": "round",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 1.48,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.4,
+          "friction_pa_m": 0.259,
+          "dp_pa": 0.6,
+          "serves": "GF-03",
+          "down": [
+            "GF-03"
+          ]
+        }
+      ],
+      "diffusers": [
+        {
+          "room": "GF-05",
+          "model": "SD-200",
+          "neck_mm": 200,
+          "face_mm": 450,
+          "flow_ls": 121.5,
+          "nc": 26,
+          "throw_m": 2.2,
+          "dp_pa": 14,
+          "pos_pt": [
+            166.89,
+            538.51
+          ],
+          "tag": "SD-GF-03"
+        },
+        {
+          "room": "GF-05",
+          "model": "SD-200",
+          "neck_mm": 200,
+          "face_mm": 450,
+          "flow_ls": 121.5,
+          "nc": 26,
+          "throw_m": 2.2,
+          "dp_pa": 14,
+          "pos_pt": [
+            234.5,
+            538.51
+          ],
+          "tag": "SD-GF-04"
+        },
+        {
+          "room": "GF-08",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 52.2,
+          "nc": 18,
+          "throw_m": 1.3,
+          "dp_pa": 12,
+          "pos_pt": [
+            310.39,
+            605.9
+          ],
+          "tag": "SD-GF-05"
+        },
+        {
+          "room": "GF-04",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 52.2,
+          "nc": 18,
+          "throw_m": 1.3,
+          "dp_pa": 12,
+          "pos_pt": [
+            311.88,
+            510.24
+          ],
+          "tag": "SD-GF-06"
+        },
+        {
+          "room": "GF-02",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 31.3,
+          "nc": 11,
+          "throw_m": 0.8,
+          "dp_pa": 12,
+          "pos_pt": [
+            347.18,
+            371.62
+          ],
+          "tag": "SD-GF-07"
+        },
+        {
+          "room": "GF-02",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 31.3,
+          "nc": 11,
+          "throw_m": 0.8,
+          "dp_pa": 12,
+          "pos_pt": [
+            347.18,
+            440.5
+          ],
+          "tag": "SD-GF-08"
+        },
+        {
+          "room": "GF-03",
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 169.9,
+          "nc": 25,
+          "throw_m": 2.5,
+          "dp_pa": 15,
+          "pos_pt": [
+            442.42,
+            404.78
+          ],
+          "tag": "SD-GF-09"
+        },
+        {
+          "room": "GF-03",
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 169.9,
+          "nc": 25,
+          "throw_m": 2.5,
+          "dp_pa": 15,
+          "pos_pt": [
+            531.29,
+            404.78
+          ],
+          "tag": "SD-GF-10"
+        }
+      ],
+      "return": {
+        "grille": {
+          "tag": "RG-GF-02",
+          "room": "GF-04",
+          "w_mm": 900,
+          "h_mm": 600,
+          "flow_ls": 750,
+          "pos_pt": [
+            345.69,
+            509.02
+          ],
+          "type": "return grille with plenum box and filter"
+        },
+        "segments": [
+          {
+            "id": "D-GF-018",
+            "zone": "Z-GF-04",
+            "system": "return",
+            "kind": "main",
+            "pts": [
+              [
+                345.69,
+                509.02
+              ],
+              [
+                311.67,
+                509.02
+              ]
+            ],
+            "flow_ls": 750,
+            "length_m": 1.2,
+            "shape": "rect",
+            "w_mm": 850,
+            "h_mm": 300,
+            "de_mm": 534,
+            "area_m2": 2.76,
+            "gauge": "22 ga (0.85 mm)",
+            "velocity_m_s": 2.94,
+            "friction_pa_m": 0.228,
+            "dp_pa": 0.4
+          }
+        ]
+      },
+      "fresh_air": {
+        "louver": {
+          "tag": "FAL-GF-02",
+          "w_mm": 450,
+          "h_mm": 300,
+          "flow_ls": 106.1,
+          "pos_pt": [
+            312.44,
+            337.24
+          ],
+          "room": "GF-02",
+          "normal": [
+            0.004,
+            -1.0
+          ]
+        },
+        "segments": [
+          {
+            "id": "D-GF-019",
+            "zone": "Z-GF-04",
+            "system": "fresh_air",
+            "kind": "main",
+            "pts": [
+              [
+                312.44,
+                337.24
+              ],
+              [
+                311.67,
+                337.24
+              ],
+              [
+                311.67,
+                509.02
+              ]
+            ],
+            "flow_ls": 106.1,
+            "length_m": 6.09,
+            "shape": "round",
+            "d_mm": 200,
+            "de_mm": 200,
+            "area_m2": 3.82,
+            "gauge": "26 ga (0.55 mm)",
+            "velocity_m_s": 3.38,
+            "friction_pa_m": 0.793,
+            "dp_pa": 7.2
+          }
+        ],
+        "dampers": [
+          "VCD",
+          "MD (motorised, interlocked with unit)"
+        ],
+        "filter": "G4 panel filter in louver plenum"
+      },
+      "vcd_branches": [
+        "GF-02",
+        "GF-03",
+        "GF-05"
+      ],
+      "transfer_grilles": [
+        "GF-05",
+        "GF-03"
+      ],
+      "esp_required_pa": 73,
+      "esp_available_pa": 100,
+      "esp_ok": true,
+      "conflicts": [],
+      "supply_total_ls": 749.8
+    },
+    {
+      "zone": "Z-FF-01",
+      "floor": "FF",
+      "unit": "IU-FF-01",
+      "trunk_axis": "x",
+      "segments": [
+        {
+          "id": "D-FF-001",
+          "zone": "Z-FF-01",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              338.67,
+              443.69
+            ],
+            [
+              214.73,
+              443.69
+            ]
+          ],
+          "flow_ls": 250.1,
+          "length_m": 4.37,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 250,
+          "de_mm": 299,
+          "area_m2": 4.81,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 3.33,
+          "friction_pa_m": 0.528,
+          "dp_pa": 3.5,
+          "serves": null,
+          "down": [
+            "FF-03"
+          ]
+        },
+        {
+          "id": "D-FF-002",
+          "zone": "Z-FF-01",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              214.73,
+              443.69
+            ],
+            [
+              214.73,
+              404.78
+            ]
+          ],
+          "flow_ls": 250.1,
+          "length_m": 1.37,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 300,
+          "de_mm": 328,
+          "area_m2": 1.65,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.78,
+          "friction_pa_m": 0.337,
+          "dp_pa": 0.7,
+          "serves": "FF-03",
+          "down": [
+            "FF-03"
+          ]
+        },
+        {
+          "id": "D-FF-003",
+          "zone": "Z-FF-01",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              214.73,
+              404.78
+            ],
+            [
+              214.73,
+              404.78
+            ],
+            [
+              173.91,
+              404.78
+            ]
+          ],
+          "flow_ls": 125.0,
+          "length_m": 1.44,
+          "shape": "flex",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.77,
+          "friction_pa_m": 0.15,
+          "dp_pa": 0.3,
+          "serves": "FF-03",
+          "down": [
+            "FF-03"
+          ]
+        },
+        {
+          "id": "D-FF-004",
+          "zone": "Z-FF-01",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              214.73,
+              404.78
+            ],
+            [
+              214.73,
+              404.78
+            ],
+            [
+              255.54,
+              404.78
+            ]
+          ],
+          "flow_ls": 125.0,
+          "length_m": 1.44,
+          "shape": "flex",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.77,
+          "friction_pa_m": 0.15,
+          "dp_pa": 0.3,
+          "serves": "FF-03",
+          "down": [
+            "FF-03"
+          ]
+        }
+      ],
+      "diffusers": [
+        {
+          "room": "FF-03",
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 125.0,
+          "nc": 19,
+          "throw_m": 1.9,
+          "dp_pa": 15,
+          "pos_pt": [
+            173.91,
+            404.78
+          ],
+          "tag": "SD-FF-01"
+        },
+        {
+          "room": "FF-03",
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 125.0,
+          "nc": 19,
+          "throw_m": 1.9,
+          "dp_pa": 15,
+          "pos_pt": [
+            255.54,
+            404.78
+          ],
+          "tag": "SD-FF-02"
+        },
+        {
+          "room": "FF-04",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 49.9,
+          "nc": 18,
+          "throw_m": 1.2,
+          "dp_pa": 12,
+          "pos_pt": [
+            338.67,
+            443.69
+          ],
+          "tag": "SD-FF-03"
+        }
+      ],
+      "return": {
+        "grille": {
+          "tag": "RG-FF-01",
+          "room": "FF-04",
+          "w_mm": 600,
+          "h_mm": 450,
+          "flow_ls": 300,
+          "pos_pt": [
+            339.27,
+            410.5
+          ],
+          "type": "return grille with plenum box and filter"
+        },
+        "segments": [
+          {
+            "id": "D-FF-005",
+            "zone": "Z-FF-01",
+            "system": "return",
+            "kind": "main",
+            "pts": [
+              [
+                339.27,
+                410.5
+              ],
+              [
+                339.27,
+                444.52
+              ]
+            ],
+            "flow_ls": 300,
+            "length_m": 1.2,
+            "shape": "rect",
+            "w_mm": 350,
+            "h_mm": 300,
+            "de_mm": 354,
+            "area_m2": 1.56,
+            "gauge": "24 ga (0.70 mm)",
+            "velocity_m_s": 2.86,
+            "friction_pa_m": 0.323,
+            "dp_pa": 0.6
+          }
+        ]
+      },
+      "fresh_air": {
+        "louver": {
+          "tag": "FAL-FF-01",
+          "w_mm": 200,
+          "h_mm": 200,
+          "flow_ls": 19.9,
+          "pos_pt": [
+            339.27,
+            337.18
+          ],
+          "room": "FF-01",
+          "normal": [
+            0.0,
+            -1.0
+          ]
+        },
+        "segments": [
+          {
+            "id": "D-FF-006",
+            "zone": "Z-FF-01",
+            "system": "fresh_air",
+            "kind": "main",
+            "pts": [
+              [
+                339.27,
+                337.18
+              ],
+              [
+                339.27,
+                444.52
+              ]
+            ],
+            "flow_ls": 19.9,
+            "length_m": 3.79,
+            "shape": "round",
+            "d_mm": 125,
+            "de_mm": 125,
+            "area_m2": 1.49,
+            "gauge": "26 ga (0.55 mm)",
+            "velocity_m_s": 1.62,
+            "friction_pa_m": 0.383,
+            "dp_pa": 2.2
+          }
+        ],
+        "dampers": [
+          "VCD",
+          "MD (motorised, interlocked with unit)"
+        ],
+        "filter": "G4 panel filter in louver plenum"
+      },
+      "vcd_branches": [
+        "FF-03"
+      ],
+      "transfer_grilles": [
+        "FF-03"
+      ],
+      "esp_required_pa": 70,
+      "esp_available_pa": 75,
+      "esp_ok": true,
+      "conflicts": [],
+      "supply_total_ls": 299.9
+    },
+    {
+      "zone": "Z-FF-02",
+      "floor": "FF",
+      "unit": "IU-FF-02",
+      "trunk_axis": "x",
+      "segments": [
+        {
+          "id": "D-FF-007",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "riser",
+          "pts": [
+            [
+              311.93,
+              508.64
+            ],
+            [
+              311.93,
+              530.13
+            ]
+          ],
+          "flow_ls": 750.0,
+          "length_m": 0.76,
+          "shape": "rect",
+          "w_mm": 600,
+          "h_mm": 300,
+          "de_mm": 457,
+          "area_m2": 1.36,
+          "gauge": "24 ga (0.70 mm)",
+          "velocity_m_s": 4.17,
+          "friction_pa_m": 0.492,
+          "dp_pa": 0.6,
+          "serves": null,
+          "down": [
+            "FF-10",
+            "FF-11",
+            "FF-07",
+            "FF-08",
+            "FF-05",
+            "FF-09"
+          ]
+        },
+        {
+          "id": "D-FF-008",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              311.88,
+              530.13
+            ],
+            [
+              190.49,
+              530.13
+            ]
+          ],
+          "flow_ls": 371.9,
+          "length_m": 4.28,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 300,
+          "de_mm": 328,
+          "area_m2": 5.14,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 4.13,
+          "friction_pa_m": 0.691,
+          "dp_pa": 4.4,
+          "serves": null,
+          "down": [
+            "FF-10"
+          ]
+        },
+        {
+          "id": "D-FF-009",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              311.93,
+              530.13
+            ],
+            [
+              418.18,
+              530.13
+            ]
+          ],
+          "flow_ls": 291.9,
+          "length_m": 3.75,
+          "shape": "rect",
+          "w_mm": 300,
+          "h_mm": 250,
+          "de_mm": 299,
+          "area_m2": 4.12,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 3.89,
+          "friction_pa_m": 0.698,
+          "dp_pa": 3.9,
+          "serves": null,
+          "down": [
+            "FF-08",
+            "FF-05",
+            "FF-09"
+          ]
+        },
+        {
+          "id": "D-FF-010",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              418.18,
+              530.13
+            ],
+            [
+              447.94,
+              530.13
+            ]
+          ],
+          "flow_ls": 234.9,
+          "length_m": 1.05,
+          "shape": "rect",
+          "w_mm": 250,
+          "h_mm": 250,
+          "de_mm": 273,
+          "area_m2": 1.05,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 3.76,
+          "friction_pa_m": 0.731,
+          "dp_pa": 1.2,
+          "serves": null,
+          "down": [
+            "FF-05",
+            "FF-09"
+          ]
+        },
+        {
+          "id": "D-FF-011",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "main",
+          "pts": [
+            [
+              447.94,
+              530.13
+            ],
+            [
+              529.37,
+              530.13
+            ]
+          ],
+          "flow_ls": 116.8,
+          "length_m": 2.87,
+          "shape": "rect",
+          "w_mm": 200,
+          "h_mm": 200,
+          "de_mm": 219,
+          "area_m2": 2.3,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.92,
+          "friction_pa_m": 0.612,
+          "dp_pa": 2.6,
+          "serves": null,
+          "down": [
+            "FF-09"
+          ]
+        },
+        {
+          "id": "D-FF-012",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              190.49,
+              530.13
+            ],
+            [
+              190.49,
+              554.42
+            ]
+          ],
+          "flow_ls": 371.9,
+          "length_m": 0.86,
+          "shape": "rect",
+          "w_mm": 400,
+          "h_mm": 300,
+          "de_mm": 378,
+          "area_m2": 1.2,
+          "gauge": "24 ga (0.70 mm)",
+          "velocity_m_s": 3.1,
+          "friction_pa_m": 0.347,
+          "dp_pa": 0.4,
+          "serves": "FF-10",
+          "down": [
+            "FF-10"
+          ]
+        },
+        {
+          "id": "D-FF-013",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              190.49,
+              554.42
+            ],
+            [
+              190.49,
+              522.46
+            ],
+            [
+              167.53,
+              522.46
+            ]
+          ],
+          "flow_ls": 124.0,
+          "length_m": 1.94,
+          "shape": "round",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 1.83,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 1.75,
+          "friction_pa_m": 0.147,
+          "dp_pa": 0.4,
+          "serves": "FF-10",
+          "down": [
+            "FF-10"
+          ]
+        },
+        {
+          "id": "D-FF-014",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              190.49,
+              554.42
+            ],
+            [
+              190.49,
+              522.46
+            ],
+            [
+              236.41,
+              522.46
+            ]
+          ],
+          "flow_ls": 124.0,
+          "length_m": 2.75,
+          "shape": "round",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 2.59,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 1.75,
+          "friction_pa_m": 0.147,
+          "dp_pa": 0.6,
+          "serves": "FF-10",
+          "down": [
+            "FF-10"
+          ]
+        },
+        {
+          "id": "D-FF-015",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              190.49,
+              554.42
+            ],
+            [
+              190.49,
+              618.34
+            ],
+            [
+              167.53,
+              618.34
+            ]
+          ],
+          "flow_ls": 124.0,
+          "length_m": 3.06,
+          "shape": "round",
+          "d_mm": 300,
+          "de_mm": 300,
+          "area_m2": 2.89,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 1.75,
+          "friction_pa_m": 0.147,
+          "dp_pa": 0.7,
+          "serves": "FF-10",
+          "down": [
+            "FF-10"
+          ]
+        },
+        {
+          "id": "D-FF-016",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              311.88,
+              530.13
+            ],
+            [
+              311.88,
+              605.9
+            ]
+          ],
+          "flow_ls": 43.1,
+          "length_m": 2.67,
+          "shape": "rect",
+          "w_mm": 150,
+          "h_mm": 150,
+          "de_mm": 164,
+          "area_m2": 1.6,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 1.92,
+          "friction_pa_m": 0.411,
+          "dp_pa": 1.6,
+          "serves": "FF-11",
+          "down": [
+            "FF-11"
+          ]
+        },
+        {
+          "id": "D-FF-017",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              311.88,
+              530.13
+            ],
+            [
+              311.88,
+              508.75
+            ]
+          ],
+          "flow_ls": 43.1,
+          "length_m": 0.75,
+          "shape": "rect",
+          "w_mm": 150,
+          "h_mm": 150,
+          "de_mm": 164,
+          "area_m2": 0.45,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 1.92,
+          "friction_pa_m": 0.411,
+          "dp_pa": 0.5,
+          "serves": "FF-07",
+          "down": [
+            "FF-07"
+          ]
+        },
+        {
+          "id": "D-FF-018",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              418.18,
+              530.13
+            ],
+            [
+              418.18,
+              537.02
+            ]
+          ],
+          "flow_ls": 57.0,
+          "length_m": 0.24,
+          "shape": "rect",
+          "w_mm": 150,
+          "h_mm": 150,
+          "de_mm": 164,
+          "area_m2": 0.15,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.53,
+          "friction_pa_m": 0.679,
+          "dp_pa": 0.2,
+          "serves": "FF-08",
+          "down": [
+            "FF-08"
+          ]
+        },
+        {
+          "id": "D-FF-019",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "branch",
+          "pts": [
+            [
+              447.94,
+              530.13
+            ],
+            [
+              447.94,
+              404.78
+            ]
+          ],
+          "flow_ls": 118.1,
+          "length_m": 4.42,
+          "shape": "rect",
+          "w_mm": 200,
+          "h_mm": 200,
+          "de_mm": 219,
+          "area_m2": 3.54,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.95,
+          "friction_pa_m": 0.624,
+          "dp_pa": 4.1,
+          "serves": "FF-05",
+          "down": [
+            "FF-05"
+          ]
+        },
+        {
+          "id": "D-FF-020",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              447.94,
+              404.78
+            ],
+            [
+              447.94,
+              370.98
+            ],
+            [
+              447.94,
+              370.98
+            ]
+          ],
+          "flow_ls": 59.0,
+          "length_m": 1.19,
+          "shape": "flex",
+          "d_mm": 200,
+          "de_mm": 200,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.88,
+          "friction_pa_m": 0.276,
+          "dp_pa": 0.5,
+          "serves": "FF-05",
+          "down": [
+            "FF-05"
+          ]
+        },
+        {
+          "id": "D-FF-021",
+          "zone": "Z-FF-02",
+          "system": "supply",
+          "kind": "runout",
+          "pts": [
+            [
+              447.94,
+              404.78
+            ],
+            [
+              447.94,
+              438.59
+            ],
+            [
+              447.94,
+              438.59
+            ]
+          ],
+          "flow_ls": 59.0,
+          "length_m": 1.19,
+          "shape": "flex",
+          "d_mm": 200,
+          "de_mm": 200,
+          "area_m2": 0,
+          "gauge": "flex",
+          "velocity_m_s": 1.88,
+          "friction_pa_m": 0.276,
+          "dp_pa": 0.5,
+          "serves": "FF-05",
+          "down": [
+            "FF-05"
+          ]
+        }
+      ],
+      "diffusers": [
+        {
+          "room": "FF-10",
+          "model": "SD-200",
+          "neck_mm": 200,
+          "face_mm": 450,
+          "flow_ls": 124.0,
+          "nc": 27,
+          "throw_m": 2.3,
+          "dp_pa": 14,
+          "pos_pt": [
+            167.53,
+            522.46
+          ],
+          "tag": "SD-FF-04"
+        },
+        {
+          "room": "FF-10",
+          "model": "SD-200",
+          "neck_mm": 200,
+          "face_mm": 450,
+          "flow_ls": 124.0,
+          "nc": 27,
+          "throw_m": 2.3,
+          "dp_pa": 14,
+          "pos_pt": [
+            236.41,
+            522.46
+          ],
+          "tag": "SD-FF-05"
+        },
+        {
+          "room": "FF-10",
+          "model": "SD-200",
+          "neck_mm": 200,
+          "face_mm": 450,
+          "flow_ls": 124.0,
+          "nc": 27,
+          "throw_m": 2.3,
+          "dp_pa": 14,
+          "pos_pt": [
+            167.53,
+            618.34
+          ],
+          "tag": "SD-FF-06"
+        },
+        {
+          "room": "FF-11",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 43.1,
+          "nc": 15,
+          "throw_m": 1.0,
+          "dp_pa": 12,
+          "pos_pt": [
+            311.88,
+            605.9
+          ],
+          "tag": "SD-FF-07"
+        },
+        {
+          "room": "FF-07",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 43.1,
+          "nc": 15,
+          "throw_m": 1.0,
+          "dp_pa": 12,
+          "pos_pt": [
+            311.88,
+            508.75
+          ],
+          "tag": "SD-FF-08"
+        },
+        {
+          "room": "FF-08",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 57.0,
+          "nc": 20,
+          "throw_m": 1.4,
+          "dp_pa": 12,
+          "pos_pt": [
+            418.18,
+            537.02
+          ],
+          "tag": "SD-FF-09"
+        },
+        {
+          "room": "FF-05",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 59.0,
+          "nc": 21,
+          "throw_m": 1.4,
+          "dp_pa": 12,
+          "pos_pt": [
+            447.94,
+            370.98
+          ],
+          "tag": "SD-FF-10"
+        },
+        {
+          "room": "FF-05",
+          "model": "SD-150",
+          "neck_mm": 150,
+          "face_mm": 300,
+          "flow_ls": 59.0,
+          "nc": 21,
+          "throw_m": 1.4,
+          "dp_pa": 12,
+          "pos_pt": [
+            447.94,
+            438.59
+          ],
+          "tag": "SD-FF-11"
+        },
+        {
+          "room": "FF-09",
+          "model": "SD-250",
+          "neck_mm": 250,
+          "face_mm": 600,
+          "flow_ls": 116.8,
+          "nc": 18,
+          "throw_m": 1.8,
+          "dp_pa": 15,
+          "pos_pt": [
+            529.37,
+            531.5
+          ],
+          "tag": "SD-FF-12"
+        }
+      ],
+      "return": {
+        "grille": {
+          "tag": "RG-FF-02",
+          "room": "FF-07",
+          "w_mm": 900,
+          "h_mm": 600,
+          "flow_ls": 750,
+          "pos_pt": [
+            311.93,
+            542.66
+          ],
+          "type": "return grille with plenum box and filter"
+        },
+        "segments": [
+          {
+            "id": "D-FF-022",
+            "zone": "Z-FF-02",
+            "system": "return",
+            "kind": "main",
+            "pts": [
+              [
+                311.93,
+                542.66
+              ],
+              [
+                311.93,
+                508.64
+              ]
+            ],
+            "flow_ls": 750,
+            "length_m": 1.2,
+            "shape": "rect",
+            "w_mm": 850,
+            "h_mm": 300,
+            "de_mm": 534,
+            "area_m2": 2.76,
+            "gauge": "22 ga (0.85 mm)",
+            "velocity_m_s": 2.94,
+            "friction_pa_m": 0.228,
+            "dp_pa": 0.4
+          }
+        ]
+      },
+      "fresh_air": {
+        "louver": {
+          "tag": "FAL-FF-02",
+          "w_mm": 450,
+          "h_mm": 300,
+          "flow_ls": 92.3,
+          "pos_pt": [
+            311.93,
+            337.18
+          ],
+          "room": "FF-01",
+          "normal": [
+            0.0,
+            -1.0
+          ]
+        },
+        "segments": [
+          {
+            "id": "D-FF-023",
+            "zone": "Z-FF-02",
+            "system": "fresh_air",
+            "kind": "main",
+            "pts": [
+              [
+                311.93,
+                337.18
+              ],
+              [
+                311.93,
+                508.64
+              ]
+            ],
+            "flow_ls": 92.3,
+            "length_m": 6.05,
+            "shape": "round",
+            "d_mm": 200,
+            "de_mm": 200,
+            "area_m2": 3.8,
+            "gauge": "26 ga (0.55 mm)",
+            "velocity_m_s": 2.94,
+            "friction_pa_m": 0.617,
+            "dp_pa": 5.6
+          }
+        ],
+        "dampers": [
+          "VCD",
+          "MD (motorised, interlocked with unit)"
+        ],
+        "filter": "G4 panel filter in louver plenum"
+      },
+      "vcd_branches": [
+        "FF-05",
+        "FF-07",
+        "FF-08",
+        "FF-10",
+        "FF-11"
+      ],
+      "transfer_grilles": [
+        "FF-10",
+        "FF-08",
+        "FF-05",
+        "FF-09"
+      ],
+      "esp_required_pa": 74,
+      "esp_available_pa": 100,
+      "esp_ok": true,
+      "conflicts": [],
+      "supply_total_ls": 750.0
+    }
+  ],
+  "exhaust_systems": [
+    {
+      "room": "GF-06",
+      "floor": "GF",
+      "flow_ls": 50.0,
+      "rule": "kitchen_residential",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "grille": {
+        "tag": "EG-GF-01",
+        "w_mm": 200,
+        "h_mm": 200,
+        "pos_pt": [
+          417.76,
+          544.12
+        ]
+      },
+      "fan": {
+        "tag": "EF-GF-01",
+        "model": "EF-50",
+        "type": "ceiling",
+        "airflow_ls": 50.0,
+        "esp_req_pa": 45,
+        "esp_pa": 80,
+        "power_w": 25,
+        "pos_pt": [
+          417.86,
+          574.61
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-GF-020",
+          "zone": "GF-06",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              417.76,
+              544.12
+            ],
+            [
+              417.76,
+              666.07
+            ],
+            [
+              418.17,
+              666.07
+            ]
+          ],
+          "flow_ls": 50.0,
+          "length_m": 4.32,
+          "shape": "round",
+          "d_mm": 150,
+          "de_mm": 150,
+          "area_m2": 2.03,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.83,
+          "friction_pa_m": 0.826,
+          "dp_pa": 5.3
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-GF-01",
+        "w_mm": 300,
+        "h_mm": 200,
+        "room": "GF-13",
+        "normal": [
+          0.003,
+          1.0
+        ],
+        "pos_pt": [
+          418.17,
+          666.07
+        ]
+      }
+    },
+    {
+      "room": "GF-09",
+      "floor": "GF",
+      "flow_ls": 25.0,
+      "rule": "toilet_private",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "grille": {
+        "tag": "EG-GF-02",
+        "w_mm": 150,
+        "h_mm": 150,
+        "pos_pt": [
+          517.04,
+          626.96
+        ]
+      },
+      "fan": {
+        "tag": "EF-GF-02",
+        "model": "EF-25",
+        "type": "ceiling",
+        "airflow_ls": 25.0,
+        "esp_req_pa": 41,
+        "esp_pa": 60,
+        "power_w": 15,
+        "pos_pt": [
+          525.6,
+          627.01
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-GF-021",
+          "zone": "GF-09",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              517.04,
+              626.96
+            ],
+            [
+              551.27,
+              626.96
+            ],
+            [
+              551.27,
+              627.14
+            ]
+          ],
+          "flow_ls": 25.0,
+          "length_m": 1.21,
+          "shape": "round",
+          "d_mm": 125,
+          "de_mm": 125,
+          "area_m2": 0.48,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.04,
+          "friction_pa_m": 0.575,
+          "dp_pa": 1.0
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-GF-02",
+        "w_mm": 200,
+        "h_mm": 200,
+        "room": "GF-09",
+        "normal": [
+          1.0,
+          0.005
+        ],
+        "pos_pt": [
+          551.27,
+          627.14
+        ]
+      }
+    },
+    {
+      "room": "GF-11",
+      "floor": "GF",
+      "flow_ls": 25.0,
+      "rule": "toilet_private",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "grille": {
+        "tag": "EG-GF-03",
+        "w_mm": 150,
+        "h_mm": 150,
+        "pos_pt": [
+          164.98,
+          633.97
+        ]
+      },
+      "fan": {
+        "tag": "EF-GF-03",
+        "model": "EF-25",
+        "type": "ceiling",
+        "airflow_ls": 25.0,
+        "esp_req_pa": 41,
+        "esp_pa": 60,
+        "power_w": 15,
+        "pos_pt": [
+          157.06,
+          633.92
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-GF-022",
+          "zone": "GF-11",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              164.98,
+              633.97
+            ],
+            [
+              133.3,
+              633.97
+            ],
+            [
+              133.3,
+              633.76
+            ]
+          ],
+          "flow_ls": 25.0,
+          "length_m": 1.12,
+          "shape": "round",
+          "d_mm": 125,
+          "de_mm": 125,
+          "area_m2": 0.44,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.04,
+          "friction_pa_m": 0.575,
+          "dp_pa": 1.0
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-GF-03",
+        "w_mm": 200,
+        "h_mm": 200,
+        "room": "GF-11",
+        "normal": [
+          -1.0,
+          -0.007
+        ],
+        "pos_pt": [
+          133.3,
+          633.76
+        ]
+      }
+    },
+    {
+      "room": "GF-13",
+      "floor": "GF",
+      "flow_ls": 25.0,
+      "rule": "laundry",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "grille": {
+        "tag": "EG-GF-04",
+        "w_mm": 150,
+        "h_mm": 150,
+        "pos_pt": [
+          417.75,
+          641.18
+        ]
+      },
+      "fan": {
+        "tag": "EF-GF-04",
+        "model": "EF-25",
+        "type": "ceiling",
+        "airflow_ls": 25.0,
+        "esp_req_pa": 41,
+        "esp_pa": 60,
+        "power_w": 15,
+        "pos_pt": [
+          412.1,
+          647.42
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-GF-023",
+          "zone": "GF-13",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              417.75,
+              641.18
+            ],
+            [
+              417.75,
+              666.15
+            ],
+            [
+              395.16,
+              666.15
+            ]
+          ],
+          "flow_ls": 25.0,
+          "length_m": 1.68,
+          "shape": "round",
+          "d_mm": 125,
+          "de_mm": 125,
+          "area_m2": 0.66,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.04,
+          "friction_pa_m": 0.575,
+          "dp_pa": 1.4
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-GF-04",
+        "w_mm": 200,
+        "h_mm": 200,
+        "room": "GF-13",
+        "normal": [
+          0.003,
+          1.0
+        ],
+        "pos_pt": [
+          395.16,
+          666.15
+        ]
+      }
+    },
+    {
+      "room": "FF-01",
+      "floor": "FF",
+      "flow_ls": 25.0,
+      "rule": "toilet_private",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "grille": {
+        "tag": "EG-FF-01",
+        "w_mm": 150,
+        "h_mm": 150,
+        "pos_pt": [
+          339.95,
+          376.08
+        ]
+      },
+      "fan": {
+        "tag": "EF-FF-01",
+        "model": "EF-25",
+        "type": "ceiling",
+        "airflow_ls": 25.0,
+        "esp_req_pa": 42,
+        "esp_pa": 60,
+        "power_w": 15,
+        "pos_pt": [
+          345.62,
+          366.36
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-FF-024",
+          "zone": "FF-01",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              339.95,
+              376.08
+            ],
+            [
+              339.95,
+              337.18
+            ],
+            [
+              362.63,
+              337.18
+            ]
+          ],
+          "flow_ls": 25.0,
+          "length_m": 2.17,
+          "shape": "round",
+          "d_mm": 125,
+          "de_mm": 125,
+          "area_m2": 0.85,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.04,
+          "friction_pa_m": 0.575,
+          "dp_pa": 1.9
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-FF-01",
+        "w_mm": 200,
+        "h_mm": 200,
+        "room": "FF-01",
+        "normal": [
+          0.0,
+          -1.0
+        ],
+        "pos_pt": [
+          362.63,
+          337.18
+        ]
+      }
+    },
+    {
+      "room": "FF-02",
+      "floor": "FF",
+      "flow_ls": 25.0,
+      "rule": "toilet_private",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "grille": {
+        "tag": "EG-FF-02",
+        "w_mm": 150,
+        "h_mm": 150,
+        "pos_pt": [
+          543.41,
+          376.08
+        ]
+      },
+      "fan": {
+        "tag": "EF-FF-02",
+        "model": "EF-25",
+        "type": "ceiling",
+        "airflow_ls": 25.0,
+        "esp_req_pa": 41,
+        "esp_pa": 60,
+        "power_w": 15,
+        "pos_pt": [
+          551.43,
+          376.12
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-FF-025",
+          "zone": "FF-02",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              543.41,
+              376.08
+            ],
+            [
+              575.51,
+              376.08
+            ],
+            [
+              575.51,
+              376.26
+            ]
+          ],
+          "flow_ls": 25.0,
+          "length_m": 1.14,
+          "shape": "round",
+          "d_mm": 125,
+          "de_mm": 125,
+          "area_m2": 0.45,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.04,
+          "friction_pa_m": 0.575,
+          "dp_pa": 1.0
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-FF-02",
+        "w_mm": 200,
+        "h_mm": 200,
+        "room": "FF-02",
+        "normal": [
+          1.0,
+          0.006
+        ],
+        "pos_pt": [
+          575.51,
+          376.26
+        ]
+      }
+    },
+    {
+      "room": "FF-12",
+      "floor": "FF",
+      "flow_ls": 25.0,
+      "rule": "toilet_private",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "grille": {
+        "tag": "EG-FF-03",
+        "w_mm": 150,
+        "h_mm": 150,
+        "pos_pt": [
+          517.04,
+          626.96
+        ]
+      },
+      "fan": {
+        "tag": "EF-FF-03",
+        "model": "EF-25",
+        "type": "ceiling",
+        "airflow_ls": 25.0,
+        "esp_req_pa": 41,
+        "esp_pa": 60,
+        "power_w": 15,
+        "pos_pt": [
+          525.6,
+          627.01
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-FF-026",
+          "zone": "FF-12",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              517.04,
+              626.96
+            ],
+            [
+              551.27,
+              626.96
+            ],
+            [
+              551.27,
+              627.14
+            ]
+          ],
+          "flow_ls": 25.0,
+          "length_m": 1.21,
+          "shape": "round",
+          "d_mm": 125,
+          "de_mm": 125,
+          "area_m2": 0.48,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.04,
+          "friction_pa_m": 0.575,
+          "dp_pa": 1.0
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-FF-03",
+        "w_mm": 200,
+        "h_mm": 200,
+        "room": "FF-12",
+        "normal": [
+          1.0,
+          0.005
+        ],
+        "pos_pt": [
+          551.27,
+          627.14
+        ]
+      }
+    },
+    {
+      "room": "FF-14",
+      "floor": "FF",
+      "flow_ls": 25.0,
+      "rule": "toilet_private",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "grille": {
+        "tag": "EG-FF-04",
+        "w_mm": 150,
+        "h_mm": 150,
+        "pos_pt": [
+          417.76,
+          633.97
+        ]
+      },
+      "fan": {
+        "tag": "EF-FF-04",
+        "model": "EF-25",
+        "type": "ceiling",
+        "airflow_ls": 25.0,
+        "esp_req_pa": 41,
+        "esp_pa": 60,
+        "power_w": 15,
+        "pos_pt": [
+          417.79,
+          642.0
+        ],
+        "backdraft_damper": true
+      },
+      "segments": [
+        {
+          "id": "D-FF-027",
+          "zone": "FF-14",
+          "system": "exhaust",
+          "kind": "main",
+          "pts": [
+            [
+              417.76,
+              633.97
+            ],
+            [
+              417.76,
+              666.07
+            ],
+            [
+              417.87,
+              666.07
+            ]
+          ],
+          "flow_ls": 25.0,
+          "length_m": 1.14,
+          "shape": "round",
+          "d_mm": 125,
+          "de_mm": 125,
+          "area_m2": 0.45,
+          "gauge": "26 ga (0.55 mm)",
+          "velocity_m_s": 2.04,
+          "friction_pa_m": 0.575,
+          "dp_pa": 1.0
+        }
+      ],
+      "discharge": {
+        "type": "wall_louver",
+        "tag": "EAL-FF-04",
+        "w_mm": 200,
+        "h_mm": 200,
+        "room": "FF-14",
+        "normal": [
+          0.003,
+          1.0
+        ],
+        "pos_pt": [
+          417.87,
+          666.07
+        ]
+      }
+    }
+  ],
+  "pipes": {
+    "refrigerant": [
+      {
+        "tag": "RP-IU-GF-01",
+        "unit": "IU-GF-01",
+        "odu": "ODU-01",
+        "floor": "GF",
+        "riser": "shaft GF-10",
+        "pts_floor": [
+          [
+            418.17,
+            478.98
+          ],
+          [
+            564.66,
+            478.98
+          ],
+          [
+            564.66,
+            626.95
+          ]
+        ],
+        "pts_roof": [
+          [
+            564.66,
+            626.95
+          ],
+          [
+            551.2,
+            626.95
+          ],
+          [
+            551.2,
+            631.98
+          ]
+        ],
+        "riser_pt": [
+          564.66,
+          626.95
+        ],
+        "horiz_floor_m": 10.39,
+        "vertical_m": 8.7,
+        "horiz_roof_m": 0.65,
+        "total_m": 21.7,
+        "liquid_mm": 6.35,
+        "gas_mm": 12.7,
+        "liquid_in": "1/4",
+        "gas_in": "1/2",
+        "max_length_m": 25,
+        "max_height_m": 15,
+        "ok": true,
+        "bends": 4,
+        "capacity_kw": 5.3,
+        "system": "wall_split"
+      },
+      {
+        "tag": "RP-IU-GF-02",
+        "unit": "IU-GF-02",
+        "odu": "ODU-02",
+        "floor": "GF",
+        "riser": "shaft GF-10",
+        "pts_floor": [
+          [
+            571.34,
+            508.09
+          ],
+          [
+            564.66,
+            508.09
+          ],
+          [
+            564.66,
+            626.95
+          ]
+        ],
+        "pts_roof": [
+          [
+            564.66,
+            626.95
+          ],
+          [
+            551.2,
+            626.95
+          ],
+          [
+            551.2,
+            586.63
+          ]
+        ],
+        "riser_pt": [
+          564.66,
+          626.95
+        ],
+        "horiz_floor_m": 4.43,
+        "vertical_m": 8.7,
+        "horiz_roof_m": 1.9,
+        "total_m": 16.5,
+        "liquid_mm": 6.35,
+        "gas_mm": 9.52,
+        "liquid_in": "1/4",
+        "gas_in": "3/8",
+        "max_length_m": 25,
+        "max_height_m": 15,
+        "ok": true,
+        "bends": 4,
+        "capacity_kw": 2.6,
+        "system": "wall_split"
+      },
+      {
+        "tag": "RP-IU-GF-03",
+        "unit": "IU-GF-03",
+        "odu": "ODU-03",
+        "floor": "GF",
+        "riser": "shaft GF-10",
+        "pts_floor": [
+          [
+            346.96,
+            405.04
+          ],
+          [
+            564.66,
+            405.04
+          ],
+          [
+            564.66,
+            626.95
+          ]
+        ],
+        "pts_roof": [
+          [
+            564.66,
+            626.95
+          ],
+          [
+            507.26,
+            626.95
+          ],
+          [
+            507.26,
+            631.98
+          ]
+        ],
+        "riser_pt": [
+          564.66,
+          626.95
+        ],
+        "horiz_floor_m": 15.51,
+        "vertical_m": 8.7,
+        "horiz_roof_m": 2.2,
+        "total_m": 29.1,
+        "liquid_mm": 9.52,
+        "gas_mm": 15.88,
+        "liquid_in": "3/8",
+        "gas_in": "5/8",
+        "max_length_m": 50,
+        "max_height_m": 30,
+        "ok": true,
+        "bends": 4,
+        "capacity_kw": 7.0,
+        "system": "ducted_split"
+      },
+      {
+        "tag": "RP-IU-GF-04",
+        "unit": "IU-GF-04",
+        "odu": "ODU-04",
+        "floor": "GF",
+        "riser": "shaft GF-10",
+        "pts_floor": [
+          [
+            311.67,
+            509.02
+          ],
+          [
+            564.66,
+            509.02
+          ],
+          [
+            564.66,
+            626.95
+          ]
+        ],
+        "pts_roof": [
+          [
+            564.66,
+            626.95
+          ],
+          [
+            507.26,
+            626.95
+          ],
+          [
+            507.26,
+            586.63
+          ]
+        ],
+        "riser_pt": [
+          564.66,
+          626.95
+        ],
+        "horiz_floor_m": 13.09,
+        "vertical_m": 8.7,
+        "horiz_roof_m": 3.45,
+        "total_m": 27.8,
+        "liquid_mm": 9.52,
+        "gas_mm": 15.88,
+        "liquid_in": "3/8",
+        "gas_in": "5/8",
+        "max_length_m": 50,
+        "max_height_m": 30,
+        "ok": true,
+        "bends": 4,
+        "capacity_kw": 14.0,
+        "system": "ducted_split"
+      },
+      {
+        "tag": "RP-IU-FF-01",
+        "unit": "IU-FF-01",
+        "odu": "ODU-05",
+        "floor": "FF",
+        "riser": "shaft FF-13",
+        "pts_floor": [
+          [
+            339.27,
+            444.52
+          ],
+          [
+            564.66,
+            444.52
+          ],
+          [
+            564.66,
+            626.95
+          ]
+        ],
+        "pts_roof": [
+          [
+            564.66,
+            626.95
+          ],
+          [
+            551.2,
+            626.95
+          ],
+          [
+            551.2,
+            541.27
+          ]
+        ],
+        "riser_pt": [
+          564.66,
+          626.95
+        ],
+        "horiz_floor_m": 14.39,
+        "vertical_m": 5.1,
+        "horiz_roof_m": 3.5,
+        "total_m": 25.3,
+        "liquid_mm": 6.35,
+        "gas_mm": 12.7,
+        "liquid_in": "1/4",
+        "gas_in": "1/2",
+        "max_length_m": 50,
+        "max_height_m": 30,
+        "ok": true,
+        "bends": 4,
+        "capacity_kw": 5.3,
+        "system": "ducted_split"
+      },
+      {
+        "tag": "RP-IU-FF-02",
+        "unit": "IU-FF-02",
+        "odu": "ODU-06",
+        "floor": "FF",
+        "riser": "shaft FF-13",
+        "pts_floor": [
+          [
+            311.93,
+            508.64
+          ],
+          [
+            564.66,
+            508.64
+          ],
+          [
+            564.66,
+            626.95
+          ]
+        ],
+        "pts_roof": [
+          [
+            564.66,
+            626.95
+          ],
+          [
+            463.33,
+            626.95
+          ],
+          [
+            463.33,
+            631.98
+          ]
+        ],
+        "riser_pt": [
+          564.66,
+          626.95
+        ],
+        "horiz_floor_m": 13.09,
+        "vertical_m": 5.1,
+        "horiz_roof_m": 3.75,
+        "total_m": 24.1,
+        "liquid_mm": 9.52,
+        "gas_mm": 15.88,
+        "liquid_in": "3/8",
+        "gas_in": "5/8",
+        "max_length_m": 50,
+        "max_height_m": 30,
+        "ok": true,
+        "bends": 4,
+        "capacity_kw": 14.0,
+        "system": "ducted_split"
+      }
+    ],
+    "condensate": [
+      {
+        "tag": "CD-IU-GF-01",
+        "unit": "IU-GF-01",
+        "floor": "GF",
+        "to": "GF-06 KITCHEN (floor drain / waste stack with trap)",
+        "pts": [
+          [
+            418.17,
+            478.98
+          ],
+          [
+            418.17,
+            544.12
+          ],
+          [
+            417.76,
+            544.12
+          ]
+        ],
+        "length_m": 2.54,
+        "code_min_mm": 20,
+        "dn_mm": 25,
+        "slope_pct": 1.0
+      },
+      {
+        "tag": "CD-IU-GF-02",
+        "unit": "IU-GF-02",
+        "floor": "GF",
+        "to": "GF-10 SHAFT (floor drain / waste stack with trap)",
+        "pts": [
+          [
+            571.34,
+            508.09
+          ],
+          [
+            571.34,
+            626.95
+          ],
+          [
+            564.66,
+            626.95
+          ]
+        ],
+        "length_m": 4.87,
+        "code_min_mm": 20,
+        "dn_mm": 25,
+        "slope_pct": 1.0
+      },
+      {
+        "tag": "CD-IU-GF-03",
+        "unit": "IU-GF-03",
+        "floor": "GF",
+        "to": "GF-06 KITCHEN (floor drain / waste stack with trap)",
+        "pts": [
+          [
+            346.96,
+            405.04
+          ],
+          [
+            346.96,
+            544.12
+          ],
+          [
+            417.76,
+            544.12
+          ]
+        ],
+        "length_m": 8.14,
+        "code_min_mm": 20,
+        "dn_mm": 25,
+        "slope_pct": 1.0
+      },
+      {
+        "tag": "CD-IU-GF-04",
+        "unit": "IU-GF-04",
+        "floor": "GF",
+        "to": "GF-06 KITCHEN (floor drain / waste stack with trap)",
+        "pts": [
+          [
+            311.67,
+            509.02
+          ],
+          [
+            311.67,
+            544.12
+          ],
+          [
+            417.76,
+            544.12
+          ]
+        ],
+        "length_m": 5.48,
+        "code_min_mm": 20,
+        "dn_mm": 25,
+        "slope_pct": 1.0
+      },
+      {
+        "tag": "CD-IU-FF-01",
+        "unit": "IU-FF-01",
+        "floor": "FF",
+        "to": "FF-01 MASTER BATH (floor drain / waste stack with trap)",
+        "pts": [
+          [
+            339.27,
+            444.52
+          ],
+          [
+            339.27,
+            376.08
+          ],
+          [
+            339.95,
+            376.08
+          ]
+        ],
+        "length_m": 2.68,
+        "code_min_mm": 20,
+        "dn_mm": 25,
+        "slope_pct": 1.0
+      },
+      {
+        "tag": "CD-IU-FF-02",
+        "unit": "IU-FF-02",
+        "floor": "FF",
+        "to": "FF-01 MASTER BATH (floor drain / waste stack with trap)",
+        "pts": [
+          [
+            311.93,
+            508.64
+          ],
+          [
+            311.93,
+            376.08
+          ],
+          [
+            339.95,
+            376.08
+          ]
+        ],
+        "length_m": 6.23,
+        "code_min_mm": 20,
+        "dn_mm": 25,
+        "slope_pct": 1.0
+      }
+    ],
+    "chw": [],
+    "branch_kits": []
+  }
+}

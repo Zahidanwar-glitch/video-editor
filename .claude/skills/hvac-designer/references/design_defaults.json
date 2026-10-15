@@ -1,0 +1,126 @@
+{
+  "_about": "Designer defaults used when project.json does not set a value. Every value used from here is logged to assumptions.md. Override any key under project.json 'design' (same structure).",
+  "loads": {
+    "safety_factor_cooling": 0.1,
+    "safety_factor_heating": 0.1,
+    "supply_air_temp_c": 13.0,
+    "infiltration_ach": {
+      "one_exterior_side": 0.5,
+      "two_plus_exterior_sides": 0.75,
+      "no_exterior": 0.0
+    },
+    "infiltration_non_residential_ach": 0.0,
+    "interior_shading": true,
+    "wall_color": "medium",
+    "adjacent_unconditioned_dt_k": 3.0,
+    "ignore_negative_oa_latent": true,
+    "design_hours": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "sanity_w_m2": [
+      25,
+      350
+    ],
+    "sanity_exempt_types": [
+      "kitchen",
+      "electrical",
+      "pantry"
+    ]
+  },
+  "zoning": {
+    "max_ducted_unit_kw": 17.6,
+    "own_zone_types": [
+      "majlis",
+      "master_bedroom"
+    ],
+    "group_by": "floor_then_position",
+    "unit_host_preference": [
+      "corridor",
+      "hall",
+      "dressing",
+      "store",
+      "laundry",
+      "bath",
+      "stair"
+    ],
+    "unconditioned_service": "exhaust_only",
+    "group_ducted_rooms": true
+  },
+  "ventilation": {
+    "max_oa_fraction_without_pretreat": 0.15,
+    "wall_split_oa_method": "through_wall_fresh_air_fan",
+    "transfer_air_note": "Door undercut 20 mm or transfer grille for exhaust-only rooms"
+  },
+  "equipment": {
+    "airflow_tolerance": 0.1,
+    "min_shr_check": true,
+    "odu_location": "roof",
+    "refrigerant": "R410A",
+    "vertical_allowance_m": 1.5,
+    "odu_location_by_system": {},
+    "_about": "odu_location_by_system: per system 'roof' or 'facade' (on brackets just outside the room's exterior wall); overrides odu_location"
+  },
+  "ducts": {
+    "ceiling_void_mm": 450,
+    "clearance_mm": 100,
+    "insulation_mm": 25,
+    "trunk_max_aspect": 4.0,
+    "branch_takeoff_flex_m": 1.5,
+    "diffuser_max_area_m2": 16.0,
+    "fittings_equivalent_length_factor": 0.5,
+    "unit_plenum_and_filter_pa": 40.0,
+    "diffuser_pressure_pa": 15.0,
+    "return_path": "ducted_plenum_box",
+    "transfer_duct": false,
+    "return_grille_pa": 10.0,
+    "exhaust_grille_pa": 10.0,
+    "exhaust_louver_backdraft_pa": 30.0,
+    "door_transfer_grille": "450x150 aluminium sight-proof"
+  },
+  "pipes": {
+    "refrigerant_extra_length_factor": 0.1,
+    "condensate_min_mm": 25,
+    "condensate_slope_pct": 1.0,
+    "chw_delta_t_k": 5.5,
+    "chw_supply_c": 6.7,
+    "wet_room_types": [
+      "bath",
+      "toilet_public",
+      "kitchen",
+      "laundry",
+      "pantry",
+      "shaft"
+    ]
+  },
+  "drawing": {
+    "side_panel_pt": 230,
+    "preliminary_note": "PRELIMINARY DESIGN - FOR COORDINATION ONLY. To be checked and stamped by a qualified HVAC engineer before construction.",
+    "dxf_background_heavy_paths": 2000,
+    "dxf_background_min_segment_m": 0.3
+  },
+  "boq": {
+    "default_waste_pct": 7.5
+  },
+  "reader": {
+    "door_seal_window_m": 1.5,
+    "door_seal_kernel_m": 0,
+    "min_room_area_m2": 0.8,
+    "min_unknown_area_m2": 2.0,
+    "max_room_area_m2": 150.0,
+    "_about": "door_seal_kernel_m: local morphological closing at D-tags, 0 = off (fills busy drawings - use only on clean plans)",
+    "max_text_lines_per_room": 8,
+    "area_mismatch_tol": 0.12
+  }
+}

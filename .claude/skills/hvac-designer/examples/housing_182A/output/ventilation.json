@@ -1,0 +1,1517 @@
+{
+  "zones": {
+    "Z-GF-01": {
+      "rooms": [
+        {
+          "room": "GF-02",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.12,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-02": {
+      "rooms": [
+        {
+          "room": "GF-03",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.13,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-03": {
+      "rooms": [
+        {
+          "room": "GF-11",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.05,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-04": {
+      "rooms": [
+        {
+          "room": "GF-14",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 7.57,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.3,
+          "Vbz": 7.3,
+          "Voz": 9.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.3,
+      "Vot_ls": 9.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-05": {
+      "rooms": [
+        {
+          "room": "GF-15",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.07,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-06": {
+      "rooms": [
+        {
+          "room": "GF-24",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.12,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-07": {
+      "rooms": [
+        {
+          "room": "GF-27",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.13,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-08": {
+      "rooms": [
+        {
+          "room": "GF-38",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 7.94,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.2
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.2,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-GF-09": {
+      "rooms": [
+        {
+          "room": "GF-25",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.44,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.5,
+          "Vbz": 25.5,
+          "Voz": 31.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.5,
+      "Vot_ls": 31.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-GF-10": {
+      "rooms": [
+        {
+          "room": "GF-26",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.4,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.5,
+          "Vbz": 25.5,
+          "Voz": 31.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.5,
+      "Vot_ls": 31.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-GF-11": {
+      "rooms": [
+        {
+          "room": "GF-31",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.13,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.4,
+          "Vbz": 25.4,
+          "Voz": 31.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.4,
+      "Vot_ls": 31.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-GF-12": {
+      "rooms": [
+        {
+          "room": "GF-32",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.2,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.5,
+          "Vbz": 25.5,
+          "Voz": 31.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.5,
+      "Vot_ls": 31.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-FF-01": {
+      "rooms": [
+        {
+          "room": "FF-03",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.11,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-02": {
+      "rooms": [
+        {
+          "room": "FF-06",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.13,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-03": {
+      "rooms": [
+        {
+          "room": "FF-14",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 7.94,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.2
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.2,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-04": {
+      "rooms": [
+        {
+          "room": "FF-15",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 7.94,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.2
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.2,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-05": {
+      "rooms": [
+        {
+          "room": "FF-16",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 7.98,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.2
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.2,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-06": {
+      "rooms": [
+        {
+          "room": "FF-17",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 7.96,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.2
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.2,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-07": {
+      "rooms": [
+        {
+          "room": "FF-25",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.13,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-08": {
+      "rooms": [
+        {
+          "room": "FF-28",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 8.14,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 2.4,
+          "Vbz": 7.4,
+          "Voz": 9.3
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 2.4,
+      "Vot_ls": 9.3,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-FF-09": {
+      "rooms": [
+        {
+          "room": "FF-04",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.13,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.4,
+          "Vbz": 25.4,
+          "Voz": 31.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.4,
+      "Vot_ls": 31.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-FF-10": {
+      "rooms": [
+        {
+          "room": "FF-05",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.2,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.5,
+          "Vbz": 25.5,
+          "Voz": 31.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.5,
+      "Vot_ls": 31.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-FF-11": {
+      "rooms": [
+        {
+          "room": "FF-26",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.01,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.4,
+          "Vbz": 25.4,
+          "Voz": 31.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.4,
+      "Vot_ls": 31.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-FF-12": {
+      "rooms": [
+        {
+          "room": "FF-27",
+          "category": "dwelling",
+          "people": 8,
+          "area_m2": 18.14,
+          "Rp_Pz": 20.0,
+          "Ra_Az": 5.4,
+          "Vbz": 25.4,
+          "Voz": 31.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 20.0,
+      "sum_RaAz": 5.4,
+      "Vot_ls": 31.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-SF-01": {
+      "rooms": [
+        {
+          "room": "SF-03",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.38,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-02": {
+      "rooms": [
+        {
+          "room": "SF-04",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.4,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.2
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.2,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-03": {
+      "rooms": [
+        {
+          "room": "SF-15",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 5.29,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 1.6,
+          "Vbz": 6.6,
+          "Voz": 8.2
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 1.6,
+      "Vot_ls": 8.2,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-04": {
+      "rooms": [
+        {
+          "room": "SF-16",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.18,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-05": {
+      "rooms": [
+        {
+          "room": "SF-17",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.13,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.0,
+          "Vbz": 8.0,
+          "Voz": 10.0
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.0,
+      "Vot_ls": 10.0,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-06": {
+      "rooms": [
+        {
+          "room": "SF-19",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.22,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-07": {
+      "rooms": [
+        {
+          "room": "SF-22",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.18,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-08": {
+      "rooms": [
+        {
+          "room": "SF-30",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.34,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-09": {
+      "rooms": [
+        {
+          "room": "SF-31",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.36,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-SF-10": {
+      "rooms": [
+        {
+          "room": "SF-06",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 23.07,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-SF-11": {
+      "rooms": [
+        {
+          "room": "SF-10",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 23.03,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-SF-12": {
+      "rooms": [
+        {
+          "room": "SF-24",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 23.06,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-SF-13": {
+      "rooms": [
+        {
+          "room": "SF-28",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 23.02,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-TF-01": {
+      "rooms": [
+        {
+          "room": "TF-05",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.32,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-02": {
+      "rooms": [
+        {
+          "room": "TF-06",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.36,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-03": {
+      "rooms": [
+        {
+          "room": "TF-16",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.13,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.0,
+          "Vbz": 8.0,
+          "Voz": 10.0
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.0,
+      "Vot_ls": 10.0,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-04": {
+      "rooms": [
+        {
+          "room": "TF-17",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.13,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.0,
+          "Vbz": 8.0,
+          "Voz": 10.0
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.0,
+      "Vot_ls": 10.0,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-05": {
+      "rooms": [
+        {
+          "room": "TF-18",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.18,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-06": {
+      "rooms": [
+        {
+          "room": "TF-21",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.18,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-07": {
+      "rooms": [
+        {
+          "room": "TF-29",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.29,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-08": {
+      "rooms": [
+        {
+          "room": "TF-30",
+          "category": "dwelling",
+          "people": 2,
+          "area_m2": 10.32,
+          "Rp_Pz": 5.0,
+          "Ra_Az": 3.1,
+          "Vbz": 8.1,
+          "Voz": 10.1
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 5.0,
+      "sum_RaAz": 3.1,
+      "Vot_ls": 10.1,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "through-wall fresh air fan"
+    },
+    "Z-TF-09": {
+      "rooms": [
+        {
+          "room": "TF-08",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 22.99,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-TF-10": {
+      "rooms": [
+        {
+          "room": "TF-12",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 22.93,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-TF-11": {
+      "rooms": [
+        {
+          "room": "TF-23",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 22.98,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.9
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.9,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    },
+    "Z-TF-12": {
+      "rooms": [
+        {
+          "room": "TF-27",
+          "category": "dwelling",
+          "people": 10,
+          "area_m2": 22.92,
+          "Rp_Pz": 25.0,
+          "Ra_Az": 6.9,
+          "Vbz": 31.9,
+          "Voz": 39.8
+        }
+      ],
+      "Ez": 0.8,
+      "Ev": 1.0,
+      "sum_RpPz": 25.0,
+      "sum_RaAz": 6.9,
+      "Vot_ls": 39.8,
+      "method": "single-zone: Vot = Voz",
+      "oa_method": "ducted to unit return plenum"
+    }
+  },
+  "exhaust": {
+    "GF-04": {
+      "room": "KITCHEN",
+      "floor": "GF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "GF-05": {
+      "room": "BATH",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-06": {
+      "room": "WC",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-08": {
+      "room": "WC",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-09": {
+      "room": "BATH",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-17": {
+      "room": "KITCHEN",
+      "floor": "GF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "GF-18": {
+      "room": "BATH",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-19": {
+      "room": "WC",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-21": {
+      "room": "WC",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-22": {
+      "room": "BATH",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-23": {
+      "room": "KITCHEN",
+      "floor": "GF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "GF-33": {
+      "room": "BATH",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-34": {
+      "room": "WC",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-36": {
+      "room": "BATH",
+      "floor": "GF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "GF-37": {
+      "room": "KITCHEN",
+      "floor": "GF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "FF-07": {
+      "room": "KITCHEN",
+      "floor": "FF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "FF-08": {
+      "room": "BATH",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-09": {
+      "room": "WC",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-11": {
+      "room": "WC",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-12": {
+      "room": "BATH",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-13": {
+      "room": "KITCHEN",
+      "floor": "FF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "FF-18": {
+      "room": "KITCHEN",
+      "floor": "FF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "FF-19": {
+      "room": "BATH",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-20": {
+      "room": "WC",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-22": {
+      "room": "WC",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-23": {
+      "room": "BATH",
+      "floor": "FF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "FF-24": {
+      "room": "KITCHEN",
+      "floor": "FF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "SF-05": {
+      "room": "KITCHEN",
+      "floor": "SF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "SF-07": {
+      "room": "BATH",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-09": {
+      "room": "BATH",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-11": {
+      "room": "KITCHEN",
+      "floor": "SF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "SF-12": {
+      "room": "KITCHEN",
+      "floor": "SF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "SF-13": {
+      "room": "WC",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-14": {
+      "room": "WC",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-20": {
+      "room": "WC",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-21": {
+      "room": "WC",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-23": {
+      "room": "KITCHEN",
+      "floor": "SF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "SF-25": {
+      "room": "BATH",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-27": {
+      "room": "BATH",
+      "floor": "SF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "SF-29": {
+      "room": "KITCHEN",
+      "floor": "SF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "TF-07": {
+      "room": "KITCHEN",
+      "floor": "TF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "TF-09": {
+      "room": "BATH",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-11": {
+      "room": "BATH",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-13": {
+      "room": "KITCHEN",
+      "floor": "TF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "TF-14": {
+      "room": "WC",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-15": {
+      "room": "WC",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-19": {
+      "room": "WC",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-20": {
+      "room": "WC",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-22": {
+      "room": "KITCHEN",
+      "floor": "TF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    },
+    "TF-24": {
+      "room": "BATH",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-26": {
+      "room": "BATH",
+      "floor": "TF",
+      "rule": "toilet_private",
+      "ls": 25.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "note": ""
+    },
+    "TF-28": {
+      "room": "KITCHEN",
+      "floor": "TF",
+      "rule": "kitchen_residential",
+      "ls": 50.0,
+      "mode": "intermittent",
+      "clause": "SBC 501 Table 403.3.1.1 (kitchens, private dwellings: 50 L/s intermittent or 12 L/s continuous)",
+      "note": "Cooker hood by kitchen supplier; this is the general kitchen exhaust"
+    }
+  },
+  "transfers": [],
+  "basis": {
+    "Ez": 0.8,
+    "Ez_reason": "heat-pump heating with ceiling supply of warm air",
+    "clause_oa": "SBC 501 §403.3.1.1 & Table 403.3.1.1; ASHRAE 62.1-2019 §6.2.2.1 Eq.6-1, Table 6-1",
+    "clause_ez": "ASHRAE 62.1-2019 §6.2.2.2 Table 6-2 (Ez)",
+    "clause_ev": "ASHRAE 62.1-2019 §6.2.4.3.1 simplified procedure (Ev)"
+  },
+  "totals": {
+    "oa_ls": 891.3,
+    "exhaust_ls": 1725.0,
+    "balance_ls": -833.7,
+    "res_62_2_check_ls": 213.1
+  }
+}

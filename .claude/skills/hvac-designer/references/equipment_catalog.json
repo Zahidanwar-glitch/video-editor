@@ -1,0 +1,591 @@
+{
+  "_about": "Generic standard equipment sizes per system type. Replace/extend with the selected brand's catalogue (keep the same keys). Capacities are nominal cooling at AHRI/ISO T1 conditions; derate factor applies for T3 (hot climate) ratings. SI units.",
+  "_status": "GENERIC - not a specific manufacturer. Replace with the approved brand's data before tender.",
+  "t3_derate": {
+    "KSA": 0.88,
+    "GCC": 0.88,
+    "default": 1.0,
+    "_about": "Multiply nominal capacity by this factor when outdoor design DB > 43 C unless brand T3 data is entered."
+  },
+  "wall_split": {
+    "label": "Wall-mounted split (hi-wall)",
+    "esp_pa": 0,
+    "models": [
+      {
+        "model": "WS-09",
+        "cool_kw": 2.6,
+        "heat_kw": 2.9,
+        "shr": 0.76,
+        "airflow_ls": 140,
+        "eer": 3.43,
+        "btu": 9000
+      },
+      {
+        "model": "WS-12",
+        "cool_kw": 3.5,
+        "heat_kw": 3.8,
+        "shr": 0.75,
+        "airflow_ls": 180,
+        "eer": 3.43,
+        "btu": 12000
+      },
+      {
+        "model": "WS-18",
+        "cool_kw": 5.3,
+        "heat_kw": 5.6,
+        "shr": 0.74,
+        "airflow_ls": 250,
+        "eer": 3.3,
+        "btu": 18000
+      },
+      {
+        "model": "WS-24",
+        "cool_kw": 7.0,
+        "heat_kw": 7.4,
+        "shr": 0.74,
+        "airflow_ls": 330,
+        "eer": 3.25,
+        "btu": 24000
+      },
+      {
+        "model": "WS-30",
+        "cool_kw": 8.8,
+        "heat_kw": 9.2,
+        "shr": 0.73,
+        "airflow_ls": 400,
+        "eer": 3.2,
+        "btu": 30000
+      }
+    ]
+  },
+  "ducted_split": {
+    "label": "Ducted split (concealed, medium static)",
+    "models": [
+      {
+        "model": "DS-18",
+        "cool_kw": 5.3,
+        "heat_kw": 5.8,
+        "shr": 0.75,
+        "airflow_ls": 300,
+        "esp_pa": 75,
+        "eer": 3.2,
+        "btu": 18000,
+        "height_mm": 250
+      },
+      {
+        "model": "DS-24",
+        "cool_kw": 7.0,
+        "heat_kw": 7.6,
+        "shr": 0.75,
+        "airflow_ls": 380,
+        "esp_pa": 75,
+        "eer": 3.2,
+        "btu": 24000,
+        "height_mm": 270
+      },
+      {
+        "model": "DS-30",
+        "cool_kw": 8.8,
+        "heat_kw": 9.5,
+        "shr": 0.75,
+        "airflow_ls": 470,
+        "esp_pa": 75,
+        "eer": 3.2,
+        "btu": 30000,
+        "height_mm": 270
+      },
+      {
+        "model": "DS-36",
+        "cool_kw": 10.5,
+        "heat_kw": 11.4,
+        "shr": 0.75,
+        "airflow_ls": 570,
+        "esp_pa": 100,
+        "eer": 3.15,
+        "btu": 36000,
+        "height_mm": 300
+      },
+      {
+        "model": "DS-48",
+        "cool_kw": 14.0,
+        "heat_kw": 15.0,
+        "shr": 0.74,
+        "airflow_ls": 750,
+        "esp_pa": 100,
+        "eer": 3.1,
+        "btu": 48000,
+        "height_mm": 300
+      },
+      {
+        "model": "DS-60",
+        "cool_kw": 17.6,
+        "heat_kw": 18.5,
+        "shr": 0.74,
+        "airflow_ls": 940,
+        "esp_pa": 125,
+        "eer": 3.05,
+        "btu": 60000,
+        "height_mm": 300
+      },
+      {
+        "model": "DS-96",
+        "cool_kw": 28.1,
+        "heat_kw": 30.0,
+        "shr": 0.74,
+        "airflow_ls": 1500,
+        "esp_pa": 150,
+        "eer": 3.0,
+        "btu": 96000,
+        "height_mm": 420
+      },
+      {
+        "model": "DS-120",
+        "cool_kw": 35.2,
+        "heat_kw": 37.0,
+        "shr": 0.74,
+        "airflow_ls": 1890,
+        "esp_pa": 150,
+        "eer": 3.0,
+        "btu": 120000,
+        "height_mm": 420
+      }
+    ]
+  },
+  "vrf_indoor_ducted": {
+    "label": "VRF indoor - ducted medium static",
+    "models": [
+      {
+        "model": "VD-22",
+        "cool_kw": 2.2,
+        "heat_kw": 2.5,
+        "shr": 0.78,
+        "airflow_ls": 140,
+        "esp_pa": 50
+      },
+      {
+        "model": "VD-28",
+        "cool_kw": 2.8,
+        "heat_kw": 3.2,
+        "shr": 0.78,
+        "airflow_ls": 160,
+        "esp_pa": 50
+      },
+      {
+        "model": "VD-36",
+        "cool_kw": 3.6,
+        "heat_kw": 4.0,
+        "shr": 0.77,
+        "airflow_ls": 200,
+        "esp_pa": 50
+      },
+      {
+        "model": "VD-45",
+        "cool_kw": 4.5,
+        "heat_kw": 5.0,
+        "shr": 0.77,
+        "airflow_ls": 250,
+        "esp_pa": 60
+      },
+      {
+        "model": "VD-56",
+        "cool_kw": 5.6,
+        "heat_kw": 6.3,
+        "shr": 0.76,
+        "airflow_ls": 300,
+        "esp_pa": 60
+      },
+      {
+        "model": "VD-71",
+        "cool_kw": 7.1,
+        "heat_kw": 8.0,
+        "shr": 0.76,
+        "airflow_ls": 380,
+        "esp_pa": 80
+      },
+      {
+        "model": "VD-90",
+        "cool_kw": 9.0,
+        "heat_kw": 10.0,
+        "shr": 0.75,
+        "airflow_ls": 470,
+        "esp_pa": 80
+      },
+      {
+        "model": "VD-112",
+        "cool_kw": 11.2,
+        "heat_kw": 12.5,
+        "shr": 0.75,
+        "airflow_ls": 600,
+        "esp_pa": 100
+      },
+      {
+        "model": "VD-140",
+        "cool_kw": 14.0,
+        "heat_kw": 16.0,
+        "shr": 0.74,
+        "airflow_ls": 750,
+        "esp_pa": 100
+      }
+    ]
+  },
+  "vrf_outdoor": {
+    "label": "VRF outdoor heat pump",
+    "combination_ratio": [
+      0.5,
+      1.3
+    ],
+    "models": [
+      {
+        "model": "VO-08HP",
+        "cool_kw": 22.4,
+        "heat_kw": 25.0,
+        "eer": 3.6
+      },
+      {
+        "model": "VO-10HP",
+        "cool_kw": 28.0,
+        "heat_kw": 31.5,
+        "eer": 3.5
+      },
+      {
+        "model": "VO-12HP",
+        "cool_kw": 33.5,
+        "heat_kw": 37.5,
+        "eer": 3.4
+      },
+      {
+        "model": "VO-14HP",
+        "cool_kw": 40.0,
+        "heat_kw": 45.0,
+        "eer": 3.3
+      },
+      {
+        "model": "VO-16HP",
+        "cool_kw": 45.0,
+        "heat_kw": 50.0,
+        "eer": 3.3
+      },
+      {
+        "model": "VO-20HP",
+        "cool_kw": 56.0,
+        "heat_kw": 63.0,
+        "eer": 3.2
+      },
+      {
+        "model": "VO-24HP",
+        "cool_kw": 68.0,
+        "heat_kw": 76.5,
+        "eer": 3.1
+      }
+    ]
+  },
+  "packaged_rooftop": {
+    "label": "Packaged rooftop unit (DX)",
+    "models": [
+      {
+        "model": "RT-05",
+        "cool_kw": 17.6,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 940,
+        "esp_pa": 250,
+        "eer": 2.9
+      },
+      {
+        "model": "RT-08",
+        "cool_kw": 28.1,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 1500,
+        "esp_pa": 250,
+        "eer": 2.9
+      },
+      {
+        "model": "RT-10",
+        "cool_kw": 35.2,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 1890,
+        "esp_pa": 250,
+        "eer": 2.9
+      },
+      {
+        "model": "RT-15",
+        "cool_kw": 52.8,
+        "heat_kw": 0,
+        "shr": 0.73,
+        "airflow_ls": 2830,
+        "esp_pa": 300,
+        "eer": 2.8
+      },
+      {
+        "model": "RT-20",
+        "cool_kw": 70.3,
+        "heat_kw": 0,
+        "shr": 0.73,
+        "airflow_ls": 3780,
+        "esp_pa": 300,
+        "eer": 2.8
+      },
+      {
+        "model": "RT-25",
+        "cool_kw": 87.9,
+        "heat_kw": 0,
+        "shr": 0.73,
+        "airflow_ls": 4720,
+        "esp_pa": 350,
+        "eer": 2.8
+      }
+    ]
+  },
+  "fcu_ducted": {
+    "label": "Chilled-water fan coil unit (ducted, 3-row)",
+    "models": [
+      {
+        "model": "FCU-200",
+        "cool_kw": 2.9,
+        "heat_kw": 0,
+        "shr": 0.75,
+        "airflow_ls": 94,
+        "esp_pa": 30,
+        "chw_ls": 0.13
+      },
+      {
+        "model": "FCU-300",
+        "cool_kw": 4.2,
+        "heat_kw": 0,
+        "shr": 0.75,
+        "airflow_ls": 142,
+        "esp_pa": 30,
+        "chw_ls": 0.18
+      },
+      {
+        "model": "FCU-400",
+        "cool_kw": 5.6,
+        "heat_kw": 0,
+        "shr": 0.75,
+        "airflow_ls": 189,
+        "esp_pa": 40,
+        "chw_ls": 0.24
+      },
+      {
+        "model": "FCU-600",
+        "cool_kw": 8.4,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 283,
+        "esp_pa": 40,
+        "chw_ls": 0.36
+      },
+      {
+        "model": "FCU-800",
+        "cool_kw": 11.2,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 378,
+        "esp_pa": 50,
+        "chw_ls": 0.49
+      },
+      {
+        "model": "FCU-1000",
+        "cool_kw": 14.0,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 472,
+        "esp_pa": 50,
+        "chw_ls": 0.61
+      },
+      {
+        "model": "FCU-1200",
+        "cool_kw": 16.8,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 566,
+        "esp_pa": 60,
+        "chw_ls": 0.73
+      },
+      {
+        "model": "FCU-1400",
+        "cool_kw": 19.6,
+        "heat_kw": 0,
+        "shr": 0.74,
+        "airflow_ls": 661,
+        "esp_pa": 60,
+        "chw_ls": 0.85
+      }
+    ]
+  },
+  "chiller_air_cooled": {
+    "label": "Air-cooled scroll/screw chiller",
+    "models": [
+      {
+        "model": "CH-030",
+        "cool_kw": 105,
+        "eer": 2.9
+      },
+      {
+        "model": "CH-050",
+        "cool_kw": 176,
+        "eer": 2.9
+      },
+      {
+        "model": "CH-080",
+        "cool_kw": 281,
+        "eer": 3.0
+      },
+      {
+        "model": "CH-100",
+        "cool_kw": 352,
+        "eer": 3.0
+      },
+      {
+        "model": "CH-150",
+        "cool_kw": 528,
+        "eer": 3.0
+      },
+      {
+        "model": "CH-200",
+        "cool_kw": 703,
+        "eer": 3.1
+      },
+      {
+        "model": "CH-300",
+        "cool_kw": 1055,
+        "eer": 3.1
+      }
+    ]
+  },
+  "exhaust_fan": {
+    "label": "Ceiling / inline exhaust fan",
+    "models": [
+      {
+        "model": "EF-25",
+        "airflow_ls": 25,
+        "esp_pa": 60,
+        "power_w": 15,
+        "type": "ceiling"
+      },
+      {
+        "model": "EF-50",
+        "airflow_ls": 50,
+        "esp_pa": 80,
+        "power_w": 25,
+        "type": "ceiling"
+      },
+      {
+        "model": "EF-75",
+        "airflow_ls": 75,
+        "esp_pa": 100,
+        "power_w": 40,
+        "type": "inline"
+      },
+      {
+        "model": "EF-100",
+        "airflow_ls": 100,
+        "esp_pa": 120,
+        "power_w": 60,
+        "type": "inline"
+      },
+      {
+        "model": "EF-150",
+        "airflow_ls": 150,
+        "esp_pa": 150,
+        "power_w": 90,
+        "type": "inline"
+      },
+      {
+        "model": "EF-250",
+        "airflow_ls": 250,
+        "esp_pa": 180,
+        "power_w": 150,
+        "type": "inline"
+      },
+      {
+        "model": "EF-400",
+        "airflow_ls": 400,
+        "esp_pa": 200,
+        "power_w": 250,
+        "type": "inline"
+      }
+    ]
+  },
+  "fresh_air_fan": {
+    "label": "Through-wall fresh air fan with G4 filter",
+    "models": [
+      {
+        "model": "FAF-15",
+        "airflow_ls": 15,
+        "esp_pa": 30,
+        "power_w": 12
+      },
+      {
+        "model": "FAF-30",
+        "airflow_ls": 30,
+        "esp_pa": 40,
+        "power_w": 20
+      },
+      {
+        "model": "FAF-60",
+        "airflow_ls": 60,
+        "esp_pa": 60,
+        "power_w": 35
+      }
+    ]
+  },
+  "odu_footprint_m": {
+    "_about": "Outdoor unit plan footprint (W x D, m) by capacity kW, plus service clearance used for roof layout",
+    "by_kw": [
+      [
+        7.1,
+        [
+          0.85,
+          0.32
+        ]
+      ],
+      [
+        17.6,
+        [
+          0.95,
+          0.4
+        ]
+      ],
+      [
+        40.0,
+        [
+          1.3,
+          0.75
+        ]
+      ],
+      [
+        9999,
+        [
+          1.7,
+          0.8
+        ]
+      ]
+    ],
+    "clearance_m": 0.6
+  },
+  "indoor_footprint_m": {
+    "wall_split": [
+      0.9,
+      0.25
+    ],
+    "ducted_split": [
+      1.2,
+      0.6
+    ],
+    "vrf_indoor_ducted": [
+      1.0,
+      0.5
+    ],
+    "fcu_ducted": [
+      1.0,
+      0.5
+    ],
+    "packaged_rooftop": [
+      2.0,
+      1.2
+    ]
+  }
+}

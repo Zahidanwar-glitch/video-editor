@@ -1,0 +1,1048 @@
+{
+  "items": [
+    {
+      "id": "A001",
+      "step": "A-read",
+      "key": "winsize_W1",
+      "src": "pdf_reader",
+      "text": "Window W1 size 600x600 mm given by user (not in schedule)",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A002",
+      "step": "A-read",
+      "key": "scale_1",
+      "src": "pdf_reader",
+      "text": "Page 1 scale 1:139.0 (user, confidence high)",
+      "source": "scale_detect.py",
+      "confirm": false
+    },
+    {
+      "id": "A003",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P1_TERRACE",
+      "src": "pdf_reader",
+      "text": "Page 1 TERRACE: measured 6.06 m² vs plan text 7.36 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A004",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P1_DINNING /LOUNGE",
+      "src": "pdf_reader",
+      "text": "Page 1 DINNING /LOUNGE: measured 22.82 m² vs plan text 11.14 m² (>12% difference). Which is right? -> USER ANSWER: drawing room + dining/lounge are open plan - one living zone ~18 m2 (measured)",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A005",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P1_KITCHEN",
+      "src": "pdf_reader",
+      "text": "Page 1 KITCHEN: measured 4.24 m² vs plan text 4.85 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A006",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P1_BATH",
+      "src": "pdf_reader",
+      "text": "Page 1 BATH: measured 1.59 m² vs plan text 1.85 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A007",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P1_SHAFT",
+      "src": "pdf_reader",
+      "text": "Page 1 SHAFT: measured 2.69 m² vs plan text 3.11 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A008",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P1_ROOM",
+      "src": "pdf_reader",
+      "text": "Page 1 ROOM: measured 7.57 m² vs plan text 9.06 m² (>12% difference). Which is right? -> USER ANSWER: use measured (traced drawing)",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A009",
+      "step": "A-read",
+      "key": "dropped_1",
+      "src": "pdf_reader",
+      "text": "Page 1: 36 labelled cells ignored as non-rooms (schedule/title/grid text): ['3.TERRACE', 'CB', 'D D A', 'DILSHAD GARDEN', 'DINNING /LOUNGE', 'Digitized By', 'EAST ZONE, VIKAS MINAR, D.D.A.', 'FG1', 'GROUND AND FIRST', 'JAHANGIRPURI', 'PASHCHIM PURI', 'PITAMPURA (D&P)', 'SHALIMAR BHAGH (P)', 'STANDARD DESIGN FOR MIG', 'Sch.no. 182A']",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A010",
+      "step": "Gate1",
+      "key": "answer_unnamed_P1",
+      "src": "pdf_reader",
+      "text": "Page 1: 15 enclosed space(s) without a name (areas m²: [1.61, 1.71, 1.71, 3.26, 2.23, 1.71, 1.7, 1.7, 1.7, 2.26, 3.29, 1.71, 1.71, 2.66, 1.61]). Name them or confirm they are voids. -> USER ANSWER: small unnamed spaces are flat entrance lobbies/passages - not cooled, transfer air",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A011",
+      "step": "A-read",
+      "key": "split_GF",
+      "src": "pdf_reader",
+      "text": "Page 1: 'GROUND FLOOR PLAN' plan separated from the other plan(s) on the sheet by nearest title",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A012",
+      "step": "A-read",
+      "key": "split_FF",
+      "src": "pdf_reader",
+      "text": "Page 1: 'FIRST  FLOOR PLAN' plan separated from the other plan(s) on the sheet by nearest title",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A013",
+      "step": "A-read",
+      "key": "scale_2",
+      "src": "pdf_reader",
+      "text": "Page 2 scale 1:139.0 (user, confidence high)",
+      "source": "scale_detect.py",
+      "confirm": false
+    },
+    {
+      "id": "A014",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P2_ROOM",
+      "src": "pdf_reader",
+      "text": "Page 2 ROOM: measured 10.18 m² vs plan text 9.06 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A015",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P2_DINNING /LOUNGE",
+      "src": "pdf_reader",
+      "text": "Page 2 DINNING /LOUNGE: measured 22.92 m² vs plan text 11.14 m² (>12% difference). Which is right? -> USER ANSWER: same - one living zone",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A016",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P2_KITCHEN",
+      "src": "pdf_reader",
+      "text": "Page 2 KITCHEN: measured 5.74 m² vs plan text 4.85 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A017",
+      "step": "Gate1",
+      "key": "answer_multi_label_P2_SHAFT",
+      "src": "pdf_reader",
+      "text": "Page 2: one enclosed space carries several names ['SHAFT', 'SHAFT'] - an opening may be unsealed. Split or confirm. -> USER ANSWER: two shaft labels in one light well - one shaft",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A018",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P2_TERRACE",
+      "src": "pdf_reader",
+      "text": "Page 2 TERRACE: measured 9.24 m² vs plan text 7.36 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A019",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P2_SHAFT",
+      "src": "pdf_reader",
+      "text": "Page 2 SHAFT: measured 3.65 m² vs plan text 3.11 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A020",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P2_BATH",
+      "src": "pdf_reader",
+      "text": "Page 2 BATH: measured 2.08 m² vs plan text 1.85 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A021",
+      "step": "A-read",
+      "key": "dropped_2",
+      "src": "pdf_reader",
+      "text": "Page 2: 33 labelled cells ignored as non-rooms (schedule/title/grid text): ['CB', 'D D A', 'DILSHAD GARDEN', 'Digitized By', 'EAST ZONE, VIKAS MINAR, D.D.A.', 'FG1', 'JAHANGIRPURI', 'PASHCHIM PURI', 'PITAMPURA (D&P)', 'SECOND AND THIRD', 'SHALIMAR BHAGH (P)', 'STANDARD DESIGN FOR MIG', 'Sch.no. 182A', 'TERRACE', 'WING']",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A022",
+      "step": "Gate1",
+      "key": "answer_unnamed_P2",
+      "src": "pdf_reader",
+      "text": "Page 2: 9 enclosed space(s) without a name (areas m²: [2.41, 2.42, 3.46, 3.53, 3.7, 3.44, 3.52, 2.42, 2.42]). Name them or confirm they are voids. -> USER ANSWER: same - passages",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A023",
+      "step": "A-read",
+      "key": "split_SF",
+      "src": "pdf_reader",
+      "text": "Page 2: 'SECOND FLOOR PLAN' plan separated from the other plan(s) on the sheet by nearest title",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A024",
+      "step": "A-read",
+      "key": "split_TF",
+      "src": "pdf_reader",
+      "text": "Page 2: 'THIRD FLOOR PLAN' plan separated from the other plan(s) on the sheet by nearest title",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A025",
+      "step": "A-read",
+      "key": "scale_3",
+      "src": "pdf_reader",
+      "text": "Page 3 scale 1:139.0 (user, confidence high)",
+      "source": "scale_detect.py",
+      "confirm": false
+    },
+    {
+      "id": "A026",
+      "step": "Gate1",
+      "key": "answer_area_mismatch_P3_SHAFT",
+      "src": "pdf_reader",
+      "text": "Page 3 SHAFT: measured 3.65 m² vs plan text 3.11 m² (>12% difference). Which is right? -> USER ANSWER: use measured",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A027",
+      "step": "A-read",
+      "key": "dropped_3",
+      "src": "pdf_reader",
+      "text": "Page 3: 22 labelled cells ignored as non-rooms (schedule/title/grid text): ['D D A', 'Digitized By', 'SLOPE', 'STANDARD DESIGN FOR MIG', 'Sch.no. 182A', 'WING', 'WITH SA VIDE LETTER NO.ACE/D/III/S.D/9/E', 'add. ch. arch.', 'arch. asstt.', 'asstt. arch.', 'asstt. dir.', 'chief arch.', 'deputy director']",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A028",
+      "step": "Gate1",
+      "key": "answer_unnamed_P3",
+      "src": "pdf_reader",
+      "text": "Page 3: 8 enclosed space(s) without a name (areas m²: [2.4, 2.32, 3.5, 2.91, 2.29, 2.13, 3.53, 2.42]). Name them or confirm they are voids. -> USER ANSWER: same - passages / mumty",
+      "source": "user",
+      "confirm": false
+    },
+    {
+      "id": "A029",
+      "step": "Gate1",
+      "key": "fill_SF",
+      "src": "fill_from_floor",
+      "text": "Second Floor: 4 rooms copied from Third Floor where the plan did not read (typical flats): SF-34 BALCONY (TF-02), SF-35 BALCONY (TF-03), SF-36 BALCONY (TF-32), SF-37 BALCONY (TF-33)",
+      "source": "user instruction",
+      "confirm": true
+    },
+    {
+      "id": "A030",
+      "step": "B-loads",
+      "key": "climate",
+      "src": "loads",
+      "text": "Outdoor design 45.6 °C DB / 19.4 °C MCWB (0.4 %), daily range 14.6 K, heating 6.6 °C (99.6 %), elevation 612.0 m (ASHRAE 2021 Ch.14 (0.4% cool / 99.6% heat) - OERK, approximate - verify)",
+      "source": "references/climate_data.csv",
+      "confirm": false
+    },
+    {
+      "id": "A031",
+      "step": "B-loads",
+      "key": "indoor",
+      "src": "loads",
+      "text": "Indoor design 24.0 °C / 50 % RH cooling, 21.0 °C heating",
+      "source": "SBC 602 §302 / SBC 601 §302.1 (design conditions); ASHRAE Fundamentals 2021 Ch.14 (0.4 % cooling, 99.6 % heating)",
+      "confirm": false
+    },
+    {
+      "id": "A032",
+      "step": "B-loads",
+      "key": "u_values",
+      "src": "loads",
+      "text": "Envelope U-values = code maximum (SBC602: wall 0.4, roof 0.2, glazing U 2.67 / SHGC 0.25 W/m²K) - actual build-up not given",
+      "source": "SBC 602 Ch.4 prescriptive envelope table / SBC 601 Ch.5 (max U-factor, SHGC)",
+      "confirm": true
+    },
+    {
+      "id": "A033",
+      "step": "B-loads",
+      "key": "method",
+      "src": "loads",
+      "text": "Cooling loads by CLTD/SCL/CLF; CLTD tables for wall group D, roof 'roof_insulated_concrete', latitude row nearest 24.71°, July; colour factor K=0.83 (medium walls), roof K=1.0; glass with interior shading=True",
+      "source": "ASHRAE Fundamentals 1997 Ch.28 CLTD/SCL/CLF method, Tables 30-36",
+      "confirm": true
+    },
+    {
+      "id": "A034",
+      "step": "B-loads",
+      "key": "cltd_status",
+      "src": "loads",
+      "text": "CLTD/LM/SHGF/CLF tables in references/cltd_tables.json are transcribed-approximate - verify against licensed ASHRAE 1997 Ch.28 tables",
+      "source": "references/cltd_tables.json",
+      "confirm": true
+    },
+    {
+      "id": "A035",
+      "step": "B-loads",
+      "key": "clf_internal",
+      "src": "loads",
+      "text": "CLF for people/lights/equipment = 1.0 (24 h operation, no storage credit)",
+      "source": "ASHRAE Fundamentals 1997 Ch.28 CLTD/SCL/CLF method, Tables 30-36",
+      "confirm": false
+    },
+    {
+      "id": "A036",
+      "step": "B-loads",
+      "key": "partitions",
+      "src": "loads",
+      "text": "Partitions/floors between conditioned and exhaust-only rooms (baths, stores) not counted: those rooms are near room temperature",
+      "source": "designer judgement",
+      "confirm": false
+    },
+    {
+      "id": "A037",
+      "step": "B-loads",
+      "key": "dry_climate",
+      "src": "loads",
+      "text": "Outdoor humidity ratio 4.4 g/kg < indoor 10.0 g/kg at design: outdoor-air latent load taken as 0 (conservative); check a dehumidification design day",
+      "source": "ASHRAE Fundamentals 2021 Ch.14 (DP design)",
+      "confirm": true
+    },
+    {
+      "id": "A038",
+      "step": "B-loads",
+      "key": "cond_override",
+      "src": "loads",
+      "text": "Conditioned/unconditioned overrides from the user: by type {'kitchen': False}, by room {}",
+      "source": "user instruction",
+      "confirm": false
+    },
+    {
+      "id": "A039",
+      "step": "B-loads",
+      "key": "supply_dt",
+      "src": "loads",
+      "text": "Supply air 13.0 °C (room-supply ΔT 11.0 K) for airflow",
+      "source": "designer default",
+      "confirm": false
+    },
+    {
+      "id": "A040",
+      "step": "B-loads",
+      "key": "infiltration",
+      "src": "loads",
+      "text": "Infiltration by air-change method: {'one_exterior_side': 0.5, 'two_plus_exterior_sides': 0.75, 'no_exterior': 0.0} ACH (residential)",
+      "source": "ASHRAE Fundamentals 2021 Ch.16 §'Residential air change method'",
+      "confirm": false
+    },
+    {
+      "id": "A041",
+      "step": "B-loads",
+      "key": "occupancy",
+      "src": "loads",
+      "text": "Occupancy, lighting and equipment densities from references/space_types.json",
+      "source": "ASHRAE Fundamentals 2021 Ch.18 Table 1 (people), Tables 2-3 (lighting), Tables 5-9 (equipment)",
+      "confirm": false
+    },
+    {
+      "id": "A042",
+      "step": "B-zoning",
+      "key": "zoning",
+      "src": "zoning",
+      "text": "Zoning: own zone for ['majlis', 'master_bedroom']; other ducted rooms grouped by position per floor up to 17.6 kW per unit (incl. safety factor)",
+      "source": "references/design_defaults.json zoning",
+      "confirm": true
+    },
+    {
+      "id": "A043",
+      "step": "B-zoning",
+      "key": "exhaust_only",
+      "src": "zoning",
+      "text": "Rooms exhaust-only (not cooled; make-up by transfer air): GF-04, GF-05, GF-06, GF-08, GF-09, GF-17, GF-18, GF-19, GF-21, GF-22, GF-23, GF-33, GF-34, GF-36, GF-37, FF-07, FF-08, FF-09, FF-11, FF-12, FF-13, FF-18, FF-19, FF-20, FF-22, FF-23, FF-24, SF-05, SF-07, SF-09, SF-11, SF-12, SF-13, SF-14, SF-20, SF-21, SF-23, SF-25, SF-27, SF-29, TF-07, TF-09, TF-11, TF-13, TF-14, TF-15, TF-19, TF-20, TF-22, TF-24, TF-26, TF-28",
+      "source": "references/space_types.json",
+      "confirm": true
+    },
+    {
+      "id": "A044",
+      "step": "B-vent",
+      "key": "ez",
+      "src": "ventilation",
+      "text": "Zone air distribution effectiveness Ez = 0.8 (heat-pump heating with ceiling supply of warm air)",
+      "source": "ASHRAE 62.1-2019 §6.2.2.2 Table 6-2 (Ez)",
+      "confirm": false
+    },
+    {
+      "id": "A045",
+      "step": "B-vent",
+      "key": "exhaust_mode",
+      "src": "ventilation",
+      "text": "Exhaust fans sized for the intermittent (rated) rate; continuous operation would allow the lower rate",
+      "source": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "confirm": false
+    },
+    {
+      "id": "A046",
+      "step": "B-vent",
+      "key": "balance",
+      "src": "ventilation",
+      "text": "Building OA 891 L/s < exhaust 1725 L/s (intermittent): building slightly negative when all fans run; acceptable for intermittent fans, else raise OA",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A047",
+      "step": "B-equip",
+      "key": "sf",
+      "src": "equipment_select",
+      "text": "Safety factor 10% on cooling and 10% on heating, applied to coil loads at selection (shown in tables)",
+      "source": "Designer allowance - not a code requirement",
+      "confirm": true
+    },
+    {
+      "id": "A048",
+      "step": "B-equip",
+      "key": "derate",
+      "src": "equipment_select",
+      "text": "Nominal (T1) capacities derated x0.88 for 45.6 °C outdoor design (T3) - replace with brand T3 data",
+      "source": "references/equipment_catalog.json t3_derate",
+      "confirm": true
+    },
+    {
+      "id": "A049",
+      "step": "B-equip",
+      "key": "catalogue",
+      "src": "equipment_select",
+      "text": "Equipment from GENERIC catalogue (references/equipment_catalog.json) - replace with the approved brand",
+      "source": "references/equipment_catalog.json",
+      "confirm": true
+    },
+    {
+      "id": "A050",
+      "step": "B-equip",
+      "key": "min_room_air",
+      "src": "equipment_select",
+      "text": "Minimum supply per served room 30 L/s (smallest diffuser)",
+      "source": "references/air_terminals.json",
+      "confirm": false
+    },
+    {
+      "id": "A051",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-01",
+      "src": "equipment_select",
+      "text": "IU-GF-01 (WS-09) is 194 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A052",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-02",
+      "src": "equipment_select",
+      "text": "IU-GF-02 (WS-09) is 215 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A053",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-03",
+      "src": "equipment_select",
+      "text": "IU-GF-03 (WS-09) is 193 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A054",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-04",
+      "src": "equipment_select",
+      "text": "IU-GF-04 (WS-09) is 184 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A055",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-05",
+      "src": "equipment_select",
+      "text": "IU-GF-05 (WS-09) is 192 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A056",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-06",
+      "src": "equipment_select",
+      "text": "IU-GF-06 (WS-09) is 226 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A057",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-07",
+      "src": "equipment_select",
+      "text": "IU-GF-07 (WS-09) is 204 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A058",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-08",
+      "src": "equipment_select",
+      "text": "IU-GF-08 (WS-09) is 178 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A059",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-09",
+      "src": "equipment_select",
+      "text": "IU-GF-09 (DS-18) is 76 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A060",
+      "step": "B-equip",
+      "key": "host_Z-GF-09",
+      "src": "equipment_select",
+      "text": "Z-GF-09: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (GF-25) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A061",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-10",
+      "src": "equipment_select",
+      "text": "IU-GF-10 (DS-18) is 72 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A062",
+      "step": "B-equip",
+      "key": "host_Z-GF-10",
+      "src": "equipment_select",
+      "text": "Z-GF-10: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (GF-26) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A063",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-11",
+      "src": "equipment_select",
+      "text": "IU-GF-11 (DS-18) is 81 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A064",
+      "step": "B-equip",
+      "key": "host_Z-GF-11",
+      "src": "equipment_select",
+      "text": "Z-GF-11: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (GF-31) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A065",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-12",
+      "src": "equipment_select",
+      "text": "IU-GF-12 (DS-18) is 78 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A066",
+      "step": "B-equip",
+      "key": "host_Z-GF-12",
+      "src": "equipment_select",
+      "text": "Z-GF-12: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (GF-32) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A067",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-01",
+      "src": "equipment_select",
+      "text": "IU-FF-01 (WS-09) is 95 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A068",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-02",
+      "src": "equipment_select",
+      "text": "IU-FF-02 (WS-09) is 129 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A069",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-03",
+      "src": "equipment_select",
+      "text": "IU-FF-03 (WS-09) is 178 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A070",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-04",
+      "src": "equipment_select",
+      "text": "IU-FF-04 (WS-09) is 192 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A071",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-05",
+      "src": "equipment_select",
+      "text": "IU-FF-05 (WS-09) is 177 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A072",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-06",
+      "src": "equipment_select",
+      "text": "IU-FF-06 (WS-09) is 191 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A073",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-07",
+      "src": "equipment_select",
+      "text": "IU-FF-07 (WS-09) is 97 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A074",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-08",
+      "src": "equipment_select",
+      "text": "IU-FF-08 (WS-09) is 131 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A075",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-09",
+      "src": "equipment_select",
+      "text": "IU-FF-09 (DS-18) is 81 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A076",
+      "step": "B-equip",
+      "key": "host_Z-FF-09",
+      "src": "equipment_select",
+      "text": "Z-FF-09: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (FF-04) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A077",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-10",
+      "src": "equipment_select",
+      "text": "IU-FF-10 (DS-18) is 78 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A078",
+      "step": "B-equip",
+      "key": "host_Z-FF-10",
+      "src": "equipment_select",
+      "text": "Z-FF-10: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (FF-05) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A079",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-11",
+      "src": "equipment_select",
+      "text": "IU-FF-11 (DS-18) is 76 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A080",
+      "step": "B-equip",
+      "key": "host_Z-FF-11",
+      "src": "equipment_select",
+      "text": "Z-FF-11: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (FF-26) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A081",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-12",
+      "src": "equipment_select",
+      "text": "IU-FF-12 (DS-18) is 76 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A082",
+      "step": "B-equip",
+      "key": "host_Z-FF-12",
+      "src": "equipment_select",
+      "text": "Z-FF-12: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (FF-27) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A083",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-01",
+      "src": "equipment_select",
+      "text": "IU-SF-01 (WS-09) is 150 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A084",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-02",
+      "src": "equipment_select",
+      "text": "IU-SF-02 (WS-09) is 157 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A085",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-03",
+      "src": "equipment_select",
+      "text": "IU-SF-03 (WS-09) is 217 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A086",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-04",
+      "src": "equipment_select",
+      "text": "IU-SF-04 (WS-09) is 130 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A087",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-05",
+      "src": "equipment_select",
+      "text": "IU-SF-05 (WS-09) is 153 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A088",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-06",
+      "src": "equipment_select",
+      "text": "IU-SF-06 (WS-09) is 130 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A089",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-07",
+      "src": "equipment_select",
+      "text": "IU-SF-07 (WS-09) is 152 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A090",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-08",
+      "src": "equipment_select",
+      "text": "IU-SF-08 (WS-09) is 132 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A091",
+      "step": "B-equip",
+      "key": "oversize_Z-SF-09",
+      "src": "equipment_select",
+      "text": "IU-SF-09 (WS-09) is 138 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A092",
+      "step": "B-equip",
+      "key": "host_Z-SF-10",
+      "src": "equipment_select",
+      "text": "Z-SF-10: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (SF-06) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A093",
+      "step": "B-equip",
+      "key": "host_Z-SF-11",
+      "src": "equipment_select",
+      "text": "Z-SF-11: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (SF-10) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A094",
+      "step": "B-equip",
+      "key": "host_Z-SF-12",
+      "src": "equipment_select",
+      "text": "Z-SF-12: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (SF-24) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A095",
+      "step": "B-equip",
+      "key": "host_Z-SF-13",
+      "src": "equipment_select",
+      "text": "Z-SF-13: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (SF-28) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A096",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-01",
+      "src": "equipment_select",
+      "text": "IU-TF-01 (WS-09) is 98 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A097",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-02",
+      "src": "equipment_select",
+      "text": "IU-TF-02 (WS-09) is 118 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A098",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-03",
+      "src": "equipment_select",
+      "text": "IU-TF-03 (WS-09) is 116 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A099",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-04",
+      "src": "equipment_select",
+      "text": "IU-TF-04 (WS-09) is 137 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A100",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-05",
+      "src": "equipment_select",
+      "text": "IU-TF-05 (WS-09) is 115 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A101",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-06",
+      "src": "equipment_select",
+      "text": "IU-TF-06 (WS-09) is 135 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A102",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-07",
+      "src": "equipment_select",
+      "text": "IU-TF-07 (WS-09) is 99 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A103",
+      "step": "B-equip",
+      "key": "oversize_Z-TF-08",
+      "src": "equipment_select",
+      "text": "IU-TF-08 (WS-09) is 103 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A104",
+      "step": "B-equip",
+      "key": "host_Z-TF-09",
+      "src": "equipment_select",
+      "text": "Z-TF-09: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (TF-08) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A105",
+      "step": "B-equip",
+      "key": "host_Z-TF-10",
+      "src": "equipment_select",
+      "text": "Z-TF-10: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (TF-12) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A106",
+      "step": "B-equip",
+      "key": "host_Z-TF-11",
+      "src": "equipment_select",
+      "text": "Z-TF-11: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (TF-23) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A107",
+      "step": "B-equip",
+      "key": "host_Z-TF-12",
+      "src": "equipment_select",
+      "text": "Z-TF-12: no corridor/service room next to the zone - ducted unit in the DINNING /LOUNGE (TF-27) ceiling void, access panel required",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A108",
+      "step": "B-equip",
+      "key": "odu_facade",
+      "src": "equipment_select",
+      "text": "Wall-split outdoor units on brackets on the facade/courtyard wall just outside the served room (architect to approve appearance); ducted-unit ODUs on the roof",
+      "source": "user preference",
+      "confirm": true
+    },
+    {
+      "id": "A109",
+      "step": "B-equip",
+      "key": "odu_roof",
+      "src": "equipment_select",
+      "text": "Outdoor units grouped on the roof near the riser/shaft with 0.6 m service clearance; check structure, parapet height and acoustic screening",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A110",
+      "step": "B-ducts",
+      "key": "duct_method",
+      "src": "duct_sizing",
+      "text": "Ducts sized by equal friction 0.8 Pa/m with velocity limits {'main': 5.0, 'branch': 3.5, 'runout': 2.5, 'return': 3.5, 'fresh_air': 4.0, 'exhaust': 4.0} m/s; max duct depth 250 mm from ceiling void",
+      "source": "ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal)",
+      "confirm": false
+    },
+    {
+      "id": "A111",
+      "step": "B-ducts",
+      "key": "fittings",
+      "src": "duct_sizing",
+      "text": "Fittings allowed as +50% equivalent length; unit plenum/filter 40.0 Pa",
+      "source": "designer default",
+      "confirm": true
+    },
+    {
+      "id": "A112",
+      "step": "B-ducts",
+      "key": "layout",
+      "src": "duct_sizing",
+      "text": "Duct routes are schematic trunk-and-branch lines over the plan; coordinate with structure (beams), lighting and other services",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A113",
+      "step": "B-ducts",
+      "key": "transfer",
+      "src": "duct_sizing",
+      "text": "Return air from rooms via door undercut / door transfer grilles to the return grille near the unit",
+      "source": "ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal)",
+      "confirm": true
+    },
+    {
+      "id": "A114",
+      "step": "B-pipes",
+      "key": "refrig_table",
+      "src": "pipe_sizing",
+      "text": "Refrigerant pipe sizes from GENERIC table (references/pipe_sizing.json) - replace with the selected brand's table",
+      "source": "SBC 501 Ch.11 §1107 (refrigerant piping); ASHRAE 15; manufacturer piping tables",
+      "confirm": true
+    },
+    {
+      "id": "A115",
+      "step": "B-pipes",
+      "key": "refrig_len",
+      "src": "pipe_sizing",
+      "text": "Refrigerant length = route x (1+10%) + vertical rise to roof (+1.5 m allowance)",
+      "source": "designer default",
+      "confirm": false
+    },
+    {
+      "id": "A116",
+      "step": "B-pipes",
+      "key": "condensate",
+      "src": "pipe_sizing",
+      "text": "Condensate to nearest wet-room floor drain / stack with trap; min 25 mm, slope 1.0 %",
+      "source": "SBC 501 §307.2.1 (disposal), §307.2.2 Table 307.2.2 (drain size), slope >= 1 %",
+      "confirm": true
+    }
+  ]
+}

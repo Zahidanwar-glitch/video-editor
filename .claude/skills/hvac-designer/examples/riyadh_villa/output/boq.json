@@ -1,0 +1,1225 @@
+{
+  "sections": [
+    {
+      "title": "A. HVAC EQUIPMENT",
+      "key": "equipment",
+      "rows": [
+        {
+          "desc": "Wall-mounted split indoor unit",
+          "spec": "WS-18: 5.3 kW nominal cooling, 250 L/s, ESP 0 Pa, heat 5.6 kW, R410A",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-01",
+          "remarks": "Tags: IU-GF-01",
+          "tags": [
+            "IU-GF-01"
+          ]
+        },
+        {
+          "desc": "Wall-mounted split indoor unit",
+          "spec": "WS-09: 2.6 kW nominal cooling, 140 L/s, ESP 0 Pa, heat 2.9 kW, R410A",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-02",
+          "remarks": "Tags: IU-GF-02",
+          "tags": [
+            "IU-GF-02"
+          ]
+        },
+        {
+          "desc": "Through-wall fresh air fan with G4 filter and weather hood",
+          "spec": "FAF-15: 8 L/s, 12 W",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-02",
+          "remarks": "Tags: FAF-GF-02",
+          "tags": [
+            "FAF-GF-02"
+          ]
+        },
+        {
+          "desc": "Ducted split indoor unit (concealed)",
+          "spec": "DS-24: 7.0 kW nominal cooling, 380 L/s, ESP 75 Pa, heat 7.6 kW, R410A",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-03",
+          "remarks": "Tags: IU-GF-03",
+          "tags": [
+            "IU-GF-03"
+          ]
+        },
+        {
+          "desc": "Ducted split indoor unit (concealed)",
+          "spec": "DS-48: 14.0 kW nominal cooling, 750 L/s, ESP 100 Pa, heat 15.0 kW, R410A",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-04",
+          "remarks": "Tags: IU-GF-04",
+          "tags": [
+            "IU-GF-04"
+          ]
+        },
+        {
+          "desc": "Ducted split indoor unit (concealed)",
+          "spec": "DS-18: 5.3 kW nominal cooling, 300 L/s, ESP 75 Pa, heat 5.8 kW, R410A",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-01",
+          "remarks": "Tags: IU-FF-01",
+          "tags": [
+            "IU-FF-01"
+          ]
+        },
+        {
+          "desc": "Ducted split indoor unit (concealed)",
+          "spec": "DS-48: 14.0 kW nominal cooling, 750 L/s, ESP 100 Pa, heat 15.0 kW, R410A",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-02",
+          "remarks": "Tags: IU-FF-02",
+          "tags": [
+            "IU-FF-02"
+          ]
+        },
+        {
+          "desc": "Outdoor condensing unit (heat pump)",
+          "spec": "WS-O-18: 5.3 kW nominal, 1.61 kW input, T3 rated, anti-vibration mounts",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "RF",
+          "remarks": "Tags: ODU-01",
+          "tags": [
+            "ODU-01"
+          ]
+        },
+        {
+          "desc": "Outdoor condensing unit (heat pump)",
+          "spec": "WS-O-09: 2.6 kW nominal, 0.76 kW input, T3 rated, anti-vibration mounts",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "RF",
+          "remarks": "Tags: ODU-02",
+          "tags": [
+            "ODU-02"
+          ]
+        },
+        {
+          "desc": "Outdoor condensing unit (heat pump)",
+          "spec": "DS-O-24: 7.0 kW nominal, 2.19 kW input, T3 rated, anti-vibration mounts",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "RF",
+          "remarks": "Tags: ODU-03",
+          "tags": [
+            "ODU-03"
+          ]
+        },
+        {
+          "desc": "Outdoor condensing unit (heat pump)",
+          "spec": "DS-O-48: 14.0 kW nominal, 4.52 kW input, T3 rated, anti-vibration mounts",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "RF",
+          "remarks": "Tags: ODU-04",
+          "tags": [
+            "ODU-04"
+          ]
+        },
+        {
+          "desc": "Outdoor condensing unit (heat pump)",
+          "spec": "DS-O-18: 5.3 kW nominal, 1.66 kW input, T3 rated, anti-vibration mounts",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "RF",
+          "remarks": "Tags: ODU-05",
+          "tags": [
+            "ODU-05"
+          ]
+        },
+        {
+          "desc": "Outdoor condensing unit (heat pump)",
+          "spec": "DS-O-48: 14.0 kW nominal, 4.52 kW input, T3 rated, anti-vibration mounts",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "RF",
+          "remarks": "Tags: ODU-06",
+          "tags": [
+            "ODU-06"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "B. GALVANISED STEEL DUCTWORK (SMACNA)",
+      "key": "ductwork",
+      "rows": [
+        {
+          "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
+          "spec": "22 ga (0.85 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 2.76,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
+          "spec": "24 ga (0.70 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 4.12,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
+          "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 24.81,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Galvanised sheet steel round spiral duct incl. fittings, joints, sealant",
+          "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 14.83,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
+          "spec": "22 ga (0.85 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 2.76,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
+          "spec": "24 ga (0.70 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 10.32,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Galvanised sheet steel rectangular duct incl. fittings, joints, sealant",
+          "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 18.07,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Galvanised sheet steel round spiral duct incl. fittings, joints, sealant",
+          "spec": "26 ga (0.55 mm), low pressure (500 Pa) class, Seal class A",
+          "unit": "m²",
+          "qty": 11.52,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "C. FLEXIBLE DUCT",
+      "key": "flexible_duct",
+      "rows": [
+        {
+          "desc": "Insulated flexible duct Ø200",
+          "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
+          "unit": "m",
+          "qty": 2.38,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Insulated flexible duct Ø300",
+          "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
+          "unit": "m",
+          "qty": 2.88,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Insulated flexible duct Ø150",
+          "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
+          "unit": "m",
+          "qty": 2.44,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Insulated flexible duct Ø250",
+          "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
+          "unit": "m",
+          "qty": 2.38,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Insulated flexible duct Ø350",
+          "spec": "Insulated flexible duct, aluminium core, 25 mm insulation, UL 181 Class 1",
+          "unit": "m",
+          "qty": 2.88,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "D. AIR TERMINALS AND LOUVERS",
+      "key": "air_terminals",
+      "rows": [
+        {
+          "desc": "4-way square ceiling diffuser with OBD and plenum box",
+          "spec": "SD-150 neck Ø150, face 300x300",
+          "unit": "No.",
+          "qty": 6,
+          "zone": "FF",
+          "remarks": "Tags: SD-FF-03, SD-FF-07, SD-FF-08, SD-FF-09, SD-FF-10, SD-FF-11",
+          "tags": [
+            "SD-FF-03",
+            "SD-FF-07",
+            "SD-FF-08",
+            "SD-FF-09",
+            "SD-FF-10",
+            "SD-FF-11"
+          ]
+        },
+        {
+          "desc": "4-way square ceiling diffuser with OBD and plenum box",
+          "spec": "SD-150 neck Ø150, face 300x300",
+          "unit": "No.",
+          "qty": 4,
+          "zone": "GF",
+          "remarks": "Tags: SD-GF-05, SD-GF-06, SD-GF-07, SD-GF-08",
+          "tags": [
+            "SD-GF-05",
+            "SD-GF-06",
+            "SD-GF-07",
+            "SD-GF-08"
+          ]
+        },
+        {
+          "desc": "4-way square ceiling diffuser with OBD and plenum box",
+          "spec": "SD-200 neck Ø200, face 450x450",
+          "unit": "No.",
+          "qty": 3,
+          "zone": "FF",
+          "remarks": "Tags: SD-FF-04, SD-FF-05, SD-FF-06",
+          "tags": [
+            "SD-FF-04",
+            "SD-FF-05",
+            "SD-FF-06"
+          ]
+        },
+        {
+          "desc": "4-way square ceiling diffuser with OBD and plenum box",
+          "spec": "SD-200 neck Ø200, face 450x450",
+          "unit": "No.",
+          "qty": 2,
+          "zone": "GF",
+          "remarks": "Tags: SD-GF-03, SD-GF-04",
+          "tags": [
+            "SD-GF-03",
+            "SD-GF-04"
+          ]
+        },
+        {
+          "desc": "4-way square ceiling diffuser with OBD and plenum box",
+          "spec": "SD-250 neck Ø250, face 600x600",
+          "unit": "No.",
+          "qty": 3,
+          "zone": "FF",
+          "remarks": "Tags: SD-FF-01, SD-FF-02, SD-FF-12",
+          "tags": [
+            "SD-FF-01",
+            "SD-FF-02",
+            "SD-FF-12"
+          ]
+        },
+        {
+          "desc": "4-way square ceiling diffuser with OBD and plenum box",
+          "spec": "SD-250 neck Ø250, face 600x600",
+          "unit": "No.",
+          "qty": 4,
+          "zone": "GF",
+          "remarks": "Tags: SD-GF-01, SD-GF-02, SD-GF-09, SD-GF-10",
+          "tags": [
+            "SD-GF-01",
+            "SD-GF-02",
+            "SD-GF-09",
+            "SD-GF-10"
+          ]
+        },
+        {
+          "desc": "Door transfer grille",
+          "spec": "450x150 aluminium sight-proof, by door supplier / HVAC",
+          "unit": "No.",
+          "qty": 5,
+          "zone": "FF",
+          "remarks": "rooms FF-03, FF-10, FF-08, FF-05, FF-09",
+          "tags": []
+        },
+        {
+          "desc": "Door transfer grille",
+          "spec": "450x150 aluminium sight-proof, by door supplier / HVAC",
+          "unit": "No.",
+          "qty": 3,
+          "zone": "GF",
+          "remarks": "rooms GF-01, GF-05, GF-03",
+          "tags": []
+        },
+        {
+          "desc": "Exhaust grille",
+          "spec": "150x150, aluminium, eggcrate",
+          "unit": "No.",
+          "qty": 4,
+          "zone": "FF",
+          "remarks": "Tags: EG-FF-01, EG-FF-02, EG-FF-03, EG-FF-04",
+          "tags": [
+            "EG-FF-01",
+            "EG-FF-02",
+            "EG-FF-03",
+            "EG-FF-04"
+          ]
+        },
+        {
+          "desc": "Exhaust grille",
+          "spec": "150x150, aluminium, eggcrate",
+          "unit": "No.",
+          "qty": 3,
+          "zone": "GF",
+          "remarks": "Tags: EG-GF-02, EG-GF-03, EG-GF-04",
+          "tags": [
+            "EG-GF-02",
+            "EG-GF-03",
+            "EG-GF-04"
+          ]
+        },
+        {
+          "desc": "Exhaust grille",
+          "spec": "200x200, aluminium, eggcrate",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "Tags: EG-GF-01",
+          "tags": [
+            "EG-GF-01"
+          ]
+        },
+        {
+          "desc": "Exhaust wall louver / cowl with backdraft shutter",
+          "spec": "200x200, aluminium",
+          "unit": "No.",
+          "qty": 4,
+          "zone": "FF",
+          "remarks": "Tags: EAL-FF-01, EAL-FF-02, EAL-FF-03, EAL-FF-04",
+          "tags": [
+            "EAL-FF-01",
+            "EAL-FF-02",
+            "EAL-FF-03",
+            "EAL-FF-04"
+          ]
+        },
+        {
+          "desc": "Exhaust wall louver / cowl with backdraft shutter",
+          "spec": "200x200, aluminium",
+          "unit": "No.",
+          "qty": 3,
+          "zone": "GF",
+          "remarks": "Tags: EAL-GF-02, EAL-GF-03, EAL-GF-04",
+          "tags": [
+            "EAL-GF-02",
+            "EAL-GF-03",
+            "EAL-GF-04"
+          ]
+        },
+        {
+          "desc": "Exhaust wall louver / cowl with backdraft shutter",
+          "spec": "300x200, aluminium",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "Tags: EAL-GF-01",
+          "tags": [
+            "EAL-GF-01"
+          ]
+        },
+        {
+          "desc": "Fresh air louver with bird screen and sand trap",
+          "spec": "200x200, aluminium",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "FF",
+          "remarks": "Tags: FAL-FF-01",
+          "tags": [
+            "FAL-FF-01"
+          ]
+        },
+        {
+          "desc": "Fresh air louver with bird screen and sand trap",
+          "spec": "300x200, aluminium",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "Tags: FAL-GF-01",
+          "tags": [
+            "FAL-GF-01"
+          ]
+        },
+        {
+          "desc": "Fresh air louver with bird screen and sand trap",
+          "spec": "450x300, aluminium",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "FF",
+          "remarks": "Tags: FAL-FF-02",
+          "tags": [
+            "FAL-FF-02"
+          ]
+        },
+        {
+          "desc": "Fresh air louver with bird screen and sand trap",
+          "spec": "450x300, aluminium",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "Tags: FAL-GF-02",
+          "tags": [
+            "FAL-GF-02"
+          ]
+        },
+        {
+          "desc": "Return grille with filter and plenum box",
+          "spec": "600x450, aluminium, eggcrate",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "FF",
+          "remarks": "Tags: RG-FF-01",
+          "tags": [
+            "RG-FF-01"
+          ]
+        },
+        {
+          "desc": "Return grille with filter and plenum box",
+          "spec": "600x450, aluminium, eggcrate",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "Tags: RG-GF-01",
+          "tags": [
+            "RG-GF-01"
+          ]
+        },
+        {
+          "desc": "Return grille with filter and plenum box",
+          "spec": "900x600, aluminium, eggcrate",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "FF",
+          "remarks": "Tags: RG-FF-02",
+          "tags": [
+            "RG-FF-02"
+          ]
+        },
+        {
+          "desc": "Return grille with filter and plenum box",
+          "spec": "900x600, aluminium, eggcrate",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "Tags: RG-GF-02",
+          "tags": [
+            "RG-GF-02"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "E. DAMPERS",
+      "key": "dampers",
+      "rows": [
+        {
+          "desc": "Volume control damper (branch), opposed blade",
+          "spec": "150x150",
+          "unit": "No.",
+          "qty": 3,
+          "zone": "FF",
+          "remarks": "zones Z-FF-02",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper (branch), opposed blade",
+          "spec": "200x200",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "FF",
+          "remarks": "zones Z-FF-02",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper (branch), opposed blade",
+          "spec": "300x300",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "FF",
+          "remarks": "zones Z-FF-01",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper (branch), opposed blade",
+          "spec": "400x300",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "FF",
+          "remarks": "zones Z-FF-02",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper (branch), opposed blade",
+          "spec": "200x150",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "zones Z-GF-04",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper (branch), opposed blade",
+          "spec": "300x300",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "zones Z-GF-04",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper (branch), opposed blade",
+          "spec": "400x300",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "zones Z-GF-04",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper on fresh air duct",
+          "spec": "Ø150",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-03",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Motorised fresh air damper, 24 V on/off, interlocked with indoor unit",
+          "spec": "Ø150",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-03",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper on fresh air duct",
+          "spec": "Ø200",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-04",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Motorised fresh air damper, 24 V on/off, interlocked with indoor unit",
+          "spec": "Ø200",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-04",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper on fresh air duct",
+          "spec": "Ø125",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-01",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Motorised fresh air damper, 24 V on/off, interlocked with indoor unit",
+          "spec": "Ø125",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-01",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Volume control damper on fresh air duct",
+          "spec": "Ø200",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-02",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Motorised fresh air damper, 24 V on/off, interlocked with indoor unit",
+          "spec": "Ø200",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-02",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Backdraft (non-return) damper at exhaust discharge",
+          "spec": "Gravity type",
+          "unit": "No.",
+          "qty": 8,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Fire dampers at fire-rated walls / floors",
+          "spec": "UL 555, 1.5 h, fusible link",
+          "unit": "No.",
+          "qty": 0,
+          "zone": "TBC",
+          "remarks": "Fire dampers where ducts cross fire-rated walls/floors - fire compartmentation not shown on architectural plan: confirm with fire consultant.",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "F. FANS",
+      "key": "fans",
+      "rows": [
+        {
+          "desc": "Exhaust fan, ceiling",
+          "spec": "EF-25: 25 L/s @ 60 Pa, 15 W",
+          "unit": "No.",
+          "qty": 4,
+          "zone": "FF",
+          "remarks": "Tags: EF-FF-01, EF-FF-02, EF-FF-03, EF-FF-04",
+          "tags": [
+            "EF-FF-01",
+            "EF-FF-02",
+            "EF-FF-03",
+            "EF-FF-04"
+          ]
+        },
+        {
+          "desc": "Exhaust fan, ceiling",
+          "spec": "EF-25: 25 L/s @ 60 Pa, 15 W",
+          "unit": "No.",
+          "qty": 3,
+          "zone": "GF",
+          "remarks": "Tags: EF-GF-02, EF-GF-03, EF-GF-04",
+          "tags": [
+            "EF-GF-02",
+            "EF-GF-03",
+            "EF-GF-04"
+          ]
+        },
+        {
+          "desc": "Exhaust fan, ceiling",
+          "spec": "EF-50: 50 L/s @ 80 Pa, 25 W",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "GF",
+          "remarks": "Tags: EF-GF-01",
+          "tags": [
+            "EF-GF-01"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "G. REFRIGERANT / CHILLED WATER PIPING AND FITTINGS",
+      "key": "pipes",
+      "rows": [
+        {
+          "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
+          "spec": "OD 6.35 mm (1/4\")",
+          "unit": "m",
+          "qty": 63.5,
+          "zone": "All",
+          "remarks": "riser + floor + roof runs",
+          "tags": []
+        },
+        {
+          "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
+          "spec": "OD 9.52 mm (3/8\")",
+          "unit": "m",
+          "qty": 97.5,
+          "zone": "All",
+          "remarks": "riser + floor + roof runs",
+          "tags": []
+        },
+        {
+          "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
+          "spec": "OD 12.7 mm (1/2\")",
+          "unit": "m",
+          "qty": 47.0,
+          "zone": "All",
+          "remarks": "riser + floor + roof runs",
+          "tags": []
+        },
+        {
+          "desc": "Copper refrigerant pipe, ACR grade, seamless, deoxidised",
+          "spec": "OD 15.88 mm (5/8\")",
+          "unit": "m",
+          "qty": 81.0,
+          "zone": "All",
+          "remarks": "riser + floor + roof runs",
+          "tags": []
+        },
+        {
+          "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
+          "spec": "OD 6.35 mm",
+          "unit": "No.",
+          "qty": 24,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
+          "spec": "OD 9.52 mm",
+          "unit": "No.",
+          "qty": 32,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
+          "spec": "OD 12.7 mm",
+          "unit": "No.",
+          "qty": 16,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Copper refrigerant fittings (long-radius elbows / couplings), brazed with nitrogen purge",
+          "spec": "OD 15.88 mm",
+          "unit": "No.",
+          "qty": 24,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "H. THERMAL INSULATION",
+      "key": "insulation",
+      "rows": [
+        {
+          "desc": "Duct insulation (supply / return / fresh air)",
+          "spec": "25 mm glass wool 24 kg/m3 with FSK facing (external wrap)",
+          "unit": "m²",
+          "qty": 39.0,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Duct insulation (supply / return / fresh air)",
+          "spec": "25 mm glass wool 24 kg/m3 with FSK facing (hot outdoor air)",
+          "unit": "m²",
+          "qty": 5.29,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Duct insulation (supply / return / fresh air)",
+          "spec": "25 mm glass wool 24 kg/m3 with FSK facing (external wrap)",
+          "unit": "m²",
+          "qty": 34.11,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Duct insulation (supply / return / fresh air)",
+          "spec": "25 mm glass wool 24 kg/m3 with FSK facing (hot outdoor air)",
+          "unit": "m²",
+          "qty": 4.95,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
+          "spec": "for OD 6.35 mm, 13 mm thick",
+          "unit": "m",
+          "qty": 63.5,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
+          "spec": "for OD 9.52 mm, 19 mm thick",
+          "unit": "m",
+          "qty": 97.5,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
+          "spec": "for OD 12.7 mm, 19 mm thick",
+          "unit": "m",
+          "qty": 47.0,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Closed-cell elastomeric pipe insulation, UV-protected outdoors",
+          "spec": "for OD 15.88 mm, 19 mm thick",
+          "unit": "m",
+          "qty": 81.0,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "I. CONDENSATE DRAIN",
+      "key": "condensate",
+      "rows": [
+        {
+          "desc": "uPVC condensate pipe incl. fittings, slope 1 %",
+          "spec": "Ø25, uPVC Class E / Sch.40, insulated 9 mm where run in ceiling void",
+          "unit": "m",
+          "qty": 8.91,
+          "zone": "FF",
+          "remarks": "Tags: CD-IU-FF-01, CD-IU-FF-02",
+          "tags": [
+            "CD-IU-FF-01",
+            "CD-IU-FF-02"
+          ]
+        },
+        {
+          "desc": "Condensate trap / P-trap with cleanout at unit",
+          "spec": "Ø25",
+          "unit": "No.",
+          "qty": 2,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "uPVC condensate pipe incl. fittings, slope 1 %",
+          "spec": "Ø25, uPVC Class E / Sch.40, insulated 9 mm where run in ceiling void",
+          "unit": "m",
+          "qty": 21.03,
+          "zone": "GF",
+          "remarks": "Tags: CD-IU-GF-01, CD-IU-GF-02, CD-IU-GF-03, CD-IU-GF-04",
+          "tags": [
+            "CD-IU-GF-01",
+            "CD-IU-GF-02",
+            "CD-IU-GF-03",
+            "CD-IU-GF-04"
+          ]
+        },
+        {
+          "desc": "Condensate trap / P-trap with cleanout at unit",
+          "spec": "Ø25",
+          "unit": "No.",
+          "qty": 4,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "J. SUPPORTS AND HANGERS",
+      "key": "supports",
+      "rows": [
+        {
+          "desc": "Duct hangers: threaded rod + angle/strap, galvanised",
+          "spec": "@ 2.4 m max (pairs)",
+          "unit": "No.",
+          "qty": 23,
+          "zone": "FF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Duct hangers: threaded rod + angle/strap, galvanised",
+          "spec": "@ 2.4 m max (pairs)",
+          "unit": "No.",
+          "qty": 19,
+          "zone": "GF",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Refrigerant pipe supports / clamps with insulation saddles",
+          "spec": "@ 1.2 m",
+          "unit": "No.",
+          "qty": 121,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Condensate pipe clips",
+          "spec": "@ 1.0 m",
+          "unit": "No.",
+          "qty": 30,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Outdoor unit steel support frame / concrete plinth with anti-vibration pads",
+          "spec": "Galvanised, by structural check",
+          "unit": "No.",
+          "qty": 6,
+          "zone": "Roof",
+          "remarks": "",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "K. CONTROLS",
+      "key": "controls",
+      "rows": [
+        {
+          "desc": "Wired room controller",
+          "spec": "wired controller",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-01",
+          "remarks": "Tags: T-GF-01",
+          "tags": [
+            "T-GF-01"
+          ]
+        },
+        {
+          "desc": "Wired room controller",
+          "spec": "wired controller",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-02",
+          "remarks": "Tags: T-GF-02",
+          "tags": [
+            "T-GF-02"
+          ]
+        },
+        {
+          "desc": "Wired programmable thermostat / controller",
+          "spec": "wired programmable thermostat",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-03",
+          "remarks": "Tags: T-GF-03",
+          "tags": [
+            "T-GF-03"
+          ]
+        },
+        {
+          "desc": "Wired programmable thermostat / controller",
+          "spec": "wired programmable thermostat",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-GF-04",
+          "remarks": "Tags: T-GF-04",
+          "tags": [
+            "T-GF-04"
+          ]
+        },
+        {
+          "desc": "Wired programmable thermostat / controller",
+          "spec": "wired programmable thermostat",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-01",
+          "remarks": "Tags: T-FF-01",
+          "tags": [
+            "T-FF-01"
+          ]
+        },
+        {
+          "desc": "Wired programmable thermostat / controller",
+          "spec": "wired programmable thermostat",
+          "unit": "No.",
+          "qty": 1,
+          "zone": "Z-FF-02",
+          "remarks": "Tags: T-FF-02",
+          "tags": [
+            "T-FF-02"
+          ]
+        },
+        {
+          "desc": "Control wiring, interlocks (FA damper / FA fan to unit), communication cable",
+          "spec": "Shielded 2-core, in conduit",
+          "unit": "Lot",
+          "qty": 1,
+          "zone": "All",
+          "remarks": "4 motorised damper interlocks",
+          "tags": []
+        }
+      ]
+    },
+    {
+      "title": "L. TESTING AND COMMISSIONING",
+      "key": "testing",
+      "rows": [
+        {
+          "desc": "Pressure testing of refrigerant piping (nitrogen, 24 h hold) and evacuation",
+          "spec": "",
+          "unit": "Lot",
+          "qty": 1,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Ductwork leakage testing per SMACNA HVAC Air Duct Leakage Test Manual / DW/143 (sample basis)",
+          "spec": "",
+          "unit": "Lot",
+          "qty": 1,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Testing, adjusting and balancing (TAB) of all air systems by NEBB/AABC certified agency",
+          "spec": "",
+          "unit": "Lot",
+          "qty": 1,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "Commissioning of indoor/outdoor units, fans and controls incl. functional performance tests",
+          "spec": "",
+          "unit": "Lot",
+          "qty": 1,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        },
+        {
+          "desc": "As-built drawings, O&M manuals and training",
+          "spec": "",
+          "unit": "Lot",
+          "qty": 1,
+          "zone": "All",
+          "remarks": "",
+          "tags": []
+        }
+      ]
+    }
+  ],
+  "tags": [
+    "CD-IU-FF-01",
+    "CD-IU-FF-02",
+    "CD-IU-GF-01",
+    "CD-IU-GF-02",
+    "CD-IU-GF-03",
+    "CD-IU-GF-04",
+    "EAL-FF-01",
+    "EAL-FF-02",
+    "EAL-FF-03",
+    "EAL-FF-04",
+    "EAL-GF-01",
+    "EAL-GF-02",
+    "EAL-GF-03",
+    "EAL-GF-04",
+    "EF-FF-01",
+    "EF-FF-02",
+    "EF-FF-03",
+    "EF-FF-04",
+    "EF-GF-01",
+    "EF-GF-02",
+    "EF-GF-03",
+    "EF-GF-04",
+    "EG-FF-01",
+    "EG-FF-02",
+    "EG-FF-03",
+    "EG-FF-04",
+    "EG-GF-01",
+    "EG-GF-02",
+    "EG-GF-03",
+    "EG-GF-04",
+    "FAF-GF-02",
+    "FAL-FF-01",
+    "FAL-FF-02",
+    "FAL-GF-01",
+    "FAL-GF-02",
+    "IU-FF-01",
+    "IU-FF-02",
+    "IU-GF-01",
+    "IU-GF-02",
+    "IU-GF-03",
+    "IU-GF-04",
+    "ODU-01",
+    "ODU-02",
+    "ODU-03",
+    "ODU-04",
+    "ODU-05",
+    "ODU-06",
+    "RG-FF-01",
+    "RG-FF-02",
+    "RG-GF-01",
+    "RG-GF-02",
+    "SD-FF-01",
+    "SD-FF-02",
+    "SD-FF-03",
+    "SD-FF-04",
+    "SD-FF-05",
+    "SD-FF-06",
+    "SD-FF-07",
+    "SD-FF-08",
+    "SD-FF-09",
+    "SD-FF-10",
+    "SD-FF-11",
+    "SD-FF-12",
+    "SD-GF-01",
+    "SD-GF-02",
+    "SD-GF-03",
+    "SD-GF-04",
+    "SD-GF-05",
+    "SD-GF-06",
+    "SD-GF-07",
+    "SD-GF-08",
+    "SD-GF-09",
+    "SD-GF-10",
+    "T-FF-01",
+    "T-FF-02",
+    "T-GF-01",
+    "T-GF-02",
+    "T-GF-03",
+    "T-GF-04"
+  ]
+}

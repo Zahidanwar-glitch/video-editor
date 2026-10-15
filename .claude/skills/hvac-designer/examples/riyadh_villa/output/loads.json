@@ -1,0 +1,2553 @@
+{
+  "design_conditions": {
+    "city": "Riyadh",
+    "country": "Saudi Arabia",
+    "lat": 24.71,
+    "elev_m": 612.0,
+    "to_c": 45.6,
+    "twb_c": 19.4,
+    "dr_k": 14.6,
+    "th_c": 6.6,
+    "ti_c": 24.0,
+    "rhi": 50,
+    "tih_c": 21.0,
+    "source": "ASHRAE 2021 Ch.14 (0.4% cool / 99.6% heat) - OERK",
+    "status": "approximate - verify",
+    "p_kpa": 94.19,
+    "wo": 0.0043904307190599165,
+    "wi": 0.009991515654195364,
+    "cs": 1.1433348715387592,
+    "cl": 2797.9170433590775
+  },
+  "u_set": "SBC602",
+  "u_values": {
+    "source": "SBC 602 (2018) residential prescriptive envelope - climate zone 1/2 (verify zone for city)",
+    "wall_ext": 0.4,
+    "roof": 0.2,
+    "glazing_u": 2.67,
+    "glazing_shgc": 0.25,
+    "door_ext": 2.0,
+    "floor_exposed": 0.4,
+    "slab_edge_f_w_mk": 1.2,
+    "partition_unconditioned": 1.6,
+    "wall_group": "D",
+    "roof_type": "roof_insulated_concrete"
+  },
+  "hours": [
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "to_hourly_c": [
+    33.3,
+    35.2,
+    37.4,
+    39.9,
+    42.2,
+    44.0,
+    45.2,
+    45.6,
+    45.2,
+    44.1,
+    42.5,
+    40.6,
+    38.7
+  ],
+  "rooms": [
+    {
+      "id": "GF-01",
+      "name": "MAJLIS",
+      "floor": "GF",
+      "space_type": "majlis",
+      "conditioned": true,
+      "area_m2": 27.47,
+      "height_m": 3.0,
+      "volume_m3": 82.4,
+      "people": 11,
+      "infil_ach": 0.75,
+      "infil_ls": 17.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "gross_m2": 20.63,
+            "net_m2": 17.93,
+            "u": 0.4
+          },
+          {
+            "orientation": "W",
+            "gross_m2": 17.17,
+            "net_m2": 15.37,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W1",
+            "orientation": "N",
+            "area_m2": 2.7,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 130
+          },
+          {
+            "tag": "W2",
+            "orientation": "W",
+            "area_m2": 1.8,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 690
+          }
+        ]
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 18,
+      "peak_sensible_hour": 18,
+      "components_w": {
+        "wall": 277.0,
+        "roof": 0.0,
+        "glass_cond": 205.0,
+        "glass_solar": 370.0,
+        "people_s": 770.0,
+        "lights": 330.0,
+        "equip_s": 110.0,
+        "infil_s": 364.0,
+        "people_l": 495,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 2426,
+      "latent_w": 495,
+      "total_w": 2921,
+      "peak_sensible_w": 2426,
+      "hourly_sensible_w": [
+        1797,
+        1856,
+        1926,
+        2001,
+        2073,
+        2134,
+        2216,
+        2303,
+        2362,
+        2405,
+        2426,
+        2293,
+        2078
+      ],
+      "hourly_latent_w": [
+        495,
+        495,
+        495,
+        495,
+        495,
+        495,
+        495,
+        495,
+        495,
+        495,
+        495,
+        495,
+        495
+      ],
+      "w_per_m2": 106.3,
+      "supply_ls": 192.9,
+      "heating_w": 829,
+      "heating_components_w": {
+        "walls": 192,
+        "glass": 173,
+        "roof": 0,
+        "infiltration": 283,
+        "slab_edge": 181
+      }
+    },
+    {
+      "id": "GF-02",
+      "name": "ENTRANCE HALL",
+      "floor": "GF",
+      "space_type": "hall",
+      "conditioned": true,
+      "area_m2": 16.55,
+      "height_m": 3.0,
+      "volume_m3": 49.7,
+      "people": 1,
+      "infil_ach": 0.5,
+      "infil_ls": 6.9,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "gross_m2": 12.28,
+            "net_m2": 12.28,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 15,
+      "peak_sensible_hour": 15,
+      "components_w": {
+        "wall": 81.0,
+        "roof": 0.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 70.0,
+        "lights": 132.0,
+        "equip_s": 0.0,
+        "infil_s": 170.0,
+        "people_l": 45,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 453,
+      "latent_w": 45,
+      "total_w": 498,
+      "peak_sensible_w": 453,
+      "hourly_sensible_w": [
+        345,
+        360,
+        380,
+        399,
+        420,
+        436,
+        447,
+        453,
+        452,
+        448,
+        438,
+        425,
+        410
+      ],
+      "hourly_latent_w": [
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45,
+        45
+      ],
+      "w_per_m2": 30.1,
+      "supply_ls": 36.0,
+      "heating_w": 243,
+      "heating_components_w": {
+        "walls": 71,
+        "glass": 0,
+        "roof": 0,
+        "infiltration": 114,
+        "slab_edge": 59
+      }
+    },
+    {
+      "id": "GF-03",
+      "name": "LIVING",
+      "floor": "GF",
+      "space_type": "living",
+      "conditioned": true,
+      "area_m2": 29.91,
+      "height_m": 3.0,
+      "volume_m3": 89.7,
+      "people": 8,
+      "infil_ach": 0.75,
+      "infil_ls": 18.7,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "gross_m2": 22.46,
+            "net_m2": 17.42,
+            "u": 0.4
+          },
+          {
+            "orientation": "E",
+            "gross_m2": 17.14,
+            "net_m2": 14.44,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W4",
+            "orientation": "N",
+            "area_m2": 5.04,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 130
+          },
+          {
+            "tag": "W1",
+            "orientation": "E",
+            "area_m2": 2.7,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 690
+          }
+        ]
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 15,
+      "peak_sensible_hour": 15,
+      "components_w": {
+        "wall": 249.0,
+        "roof": 0.0,
+        "glass_cond": 376.0,
+        "glass_solar": 272.0,
+        "people_s": 560.0,
+        "lights": 299.0,
+        "equip_s": 239.0,
+        "infil_s": 462.0,
+        "people_l": 360,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 2457,
+      "latent_w": 360,
+      "total_w": 2817,
+      "peak_sensible_w": 2457,
+      "hourly_sensible_w": [
+        2251,
+        2338,
+        2386,
+        2394,
+        2371,
+        2425,
+        2451,
+        2457,
+        2427,
+        2387,
+        2350,
+        2145,
+        2038
+      ],
+      "hourly_latent_w": [
+        360,
+        360,
+        360,
+        360,
+        360,
+        360,
+        360,
+        360,
+        360,
+        360,
+        360,
+        360,
+        360
+      ],
+      "w_per_m2": 94.2,
+      "supply_ls": 195.3,
+      "heating_w": 979,
+      "heating_components_w": {
+        "walls": 184,
+        "glass": 298,
+        "roof": 0,
+        "infiltration": 308,
+        "slab_edge": 190
+      }
+    },
+    {
+      "id": "GF-04",
+      "name": "CORRIDOR",
+      "floor": "GF",
+      "space_type": "corridor",
+      "conditioned": true,
+      "area_m2": 7.16,
+      "height_m": 3.0,
+      "volume_m3": 21.5,
+      "people": 0,
+      "infil_ach": 0.0,
+      "infil_ls": 0.0,
+      "envelope": {
+        "walls": [],
+        "windows": []
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 8,
+      "peak_sensible_hour": 8,
+      "components_w": {
+        "wall": 0.0,
+        "roof": 0.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 43.0,
+        "equip_s": 0.0,
+        "infil_s": 0.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 43,
+      "latent_w": 0,
+      "total_w": 43,
+      "peak_sensible_w": 43,
+      "hourly_sensible_w": [
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43,
+        43
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 6.0,
+      "supply_ls": 3.4,
+      "heating_w": 0,
+      "heating_components_w": {
+        "walls": 0,
+        "glass": 0,
+        "roof": 0,
+        "infiltration": 0,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "GF-05",
+      "name": "DINING",
+      "floor": "GF",
+      "space_type": "dining",
+      "conditioned": true,
+      "area_m2": 21.12,
+      "height_m": 3.0,
+      "volume_m3": 63.4,
+      "people": 9,
+      "infil_ach": 0.5,
+      "infil_ls": 8.8,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "W",
+            "gross_m2": 15.88,
+            "net_m2": 13.18,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W1",
+            "orientation": "W",
+            "area_m2": 2.7,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 690
+          }
+        ]
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 18,
+      "peak_sensible_hour": 18,
+      "components_w": {
+        "wall": 125.0,
+        "roof": 0.0,
+        "glass_cond": 123.0,
+        "glass_solar": 418.0,
+        "people_s": 630.0,
+        "lights": 211.0,
+        "equip_s": 63.0,
+        "infil_s": 186.0,
+        "people_l": 405,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 1757,
+      "latent_w": 405,
+      "total_w": 2162,
+      "peak_sensible_w": 1757,
+      "hourly_sensible_w": [
+        1188,
+        1218,
+        1254,
+        1291,
+        1330,
+        1362,
+        1452,
+        1564,
+        1658,
+        1725,
+        1757,
+        1697,
+        1428
+      ],
+      "hourly_latent_w": [
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405
+      ],
+      "w_per_m2": 102.4,
+      "supply_ls": 139.7,
+      "heating_w": 401,
+      "heating_components_w": {
+        "walls": 76,
+        "glass": 104,
+        "roof": 0,
+        "infiltration": 145,
+        "slab_edge": 76
+      }
+    },
+    {
+      "id": "GF-06",
+      "name": "KITCHEN",
+      "floor": "GF",
+      "space_type": "kitchen",
+      "conditioned": true,
+      "area_m2": 21.92,
+      "height_m": 3.0,
+      "volume_m3": 65.8,
+      "people": 2,
+      "infil_ach": 0.0,
+      "infil_ls": 0.0,
+      "envelope": {
+        "walls": [],
+        "windows": []
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 8,
+      "peak_sensible_hour": 8,
+      "components_w": {
+        "wall": 0.0,
+        "roof": 0.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 160.0,
+        "lights": 219.0,
+        "equip_s": 2115.0,
+        "infil_s": 0.0,
+        "people_l": 160,
+        "equip_l": 300,
+        "infil_l": 0
+      },
+      "sensible_w": 2494,
+      "latent_w": 460,
+      "total_w": 2954,
+      "peak_sensible_w": 2494,
+      "hourly_sensible_w": [
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494,
+        2494
+      ],
+      "hourly_latent_w": [
+        460,
+        460,
+        460,
+        460,
+        460,
+        460,
+        460,
+        460,
+        460,
+        460,
+        460,
+        460,
+        460
+      ],
+      "w_per_m2": 134.8,
+      "supply_ls": 198.3,
+      "heating_w": 0,
+      "heating_components_w": {
+        "walls": 0,
+        "glass": 0,
+        "roof": 0,
+        "infiltration": 0,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "GF-07",
+      "name": "MAID ROOM",
+      "floor": "GF",
+      "space_type": "maid_room",
+      "conditioned": true,
+      "area_m2": 12.88,
+      "height_m": 3.0,
+      "volume_m3": 38.6,
+      "people": 1,
+      "infil_ach": 0.75,
+      "infil_ls": 8.1,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "gross_m2": 14.04,
+            "net_m2": 14.04,
+            "u": 0.4
+          },
+          {
+            "orientation": "S",
+            "gross_m2": 2.63,
+            "net_m2": 2.63,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 15,
+      "peak_sensible_hour": 15,
+      "components_w": {
+        "wall": 147.0,
+        "roof": 0.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 60.0,
+        "lights": 103.0,
+        "equip_s": 64.0,
+        "infil_s": 199.0,
+        "people_l": 25,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 573,
+      "latent_w": 25,
+      "total_w": 598,
+      "peak_sensible_w": 573,
+      "hourly_sensible_w": [
+        410,
+        435,
+        466,
+        500,
+        530,
+        553,
+        568,
+        573,
+        570,
+        559,
+        542,
+        522,
+        499
+      ],
+      "hourly_latent_w": [
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25,
+        25
+      ],
+      "w_per_m2": 46.5,
+      "supply_ls": 45.6,
+      "heating_w": 309,
+      "heating_components_w": {
+        "walls": 96,
+        "glass": 0,
+        "roof": 0,
+        "infiltration": 133,
+        "slab_edge": 80
+      }
+    },
+    {
+      "id": "GF-08",
+      "name": "STAIR",
+      "floor": "GF",
+      "space_type": "stair",
+      "conditioned": true,
+      "area_m2": 12.54,
+      "height_m": 3.0,
+      "volume_m3": 37.6,
+      "people": 0,
+      "infil_ach": 0.5,
+      "infil_ls": 5.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "gross_m2": 10.48,
+            "net_m2": 10.48,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 69.0,
+        "roof": 0.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 75.0,
+        "equip_s": 0.0,
+        "infil_s": 126.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 270,
+      "latent_w": 0,
+      "total_w": 270,
+      "peak_sensible_w": 270,
+      "hourly_sensible_w": [
+        169,
+        180,
+        195,
+        214,
+        232,
+        248,
+        261,
+        269,
+        270,
+        268,
+        259,
+        247,
+        234
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 21.6,
+      "supply_ls": 21.5,
+      "heating_w": 197,
+      "heating_components_w": {
+        "walls": 60,
+        "glass": 0,
+        "roof": 0,
+        "infiltration": 86,
+        "slab_edge": 50
+      }
+    },
+    {
+      "id": "GF-09",
+      "name": "MAID WC",
+      "floor": "GF",
+      "space_type": "bath",
+      "conditioned": false,
+      "area_m2": 6.66,
+      "height_m": 3.0,
+      "volume_m3": 20.0,
+      "people": 0,
+      "infil_ach": 0.75,
+      "infil_ls": 4.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "gross_m2": 9.9,
+            "net_m2": 9.9,
+            "u": 0.4
+          },
+          {
+            "orientation": "S",
+            "gross_m2": 8.64,
+            "net_m2": 8.28,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W3",
+            "orientation": "S",
+            "area_m2": 0.36,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 110
+          }
+        ]
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 147.0,
+        "roof": 0.0,
+        "glass_cond": 17.0,
+        "glass_solar": 10.0,
+        "people_s": 0.0,
+        "lights": 53.0,
+        "equip_s": 0.0,
+        "infil_s": 101.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 328,
+      "latent_w": 0,
+      "total_w": 328,
+      "peak_sensible_w": 328,
+      "hourly_sensible_w": [
+        200,
+        216,
+        237,
+        263,
+        285,
+        305,
+        319,
+        327,
+        328,
+        323,
+        312,
+        298,
+        278
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 49.3,
+      "supply_ls": 0.0,
+      "heating_w": 276,
+      "heating_components_w": {
+        "walls": 105,
+        "glass": 14,
+        "roof": 0,
+        "infiltration": 69,
+        "slab_edge": 89
+      }
+    },
+    {
+      "id": "GF-10",
+      "name": "SHAFT",
+      "floor": "GF",
+      "space_type": "shaft",
+      "conditioned": false,
+      "area_m2": 2.11,
+      "height_m": 3.0,
+      "volume_m3": 6.3,
+      "people": 0,
+      "infil_ach": 0.75,
+      "infil_ls": 1.3,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "gross_m2": 9.9,
+            "net_m2": 9.9,
+            "u": 0.4
+          },
+          {
+            "orientation": "S",
+            "gross_m2": 2.7,
+            "net_m2": 2.7,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 110.0,
+        "roof": 0.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 0.0,
+        "equip_s": 0.0,
+        "infil_s": 32.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 142,
+      "latent_w": 0,
+      "total_w": 142,
+      "peak_sensible_w": 142,
+      "hourly_sensible_w": [
+        85,
+        93,
+        105,
+        117,
+        127,
+        134,
+        139,
+        142,
+        142,
+        140,
+        135,
+        131,
+        124
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 67.3,
+      "supply_ls": 0.0,
+      "heating_w": 155,
+      "heating_components_w": {
+        "walls": 73,
+        "glass": 0,
+        "roof": 0,
+        "infiltration": 22,
+        "slab_edge": 60
+      }
+    },
+    {
+      "id": "GF-11",
+      "name": "GUEST WC",
+      "floor": "GF",
+      "space_type": "bath",
+      "conditioned": false,
+      "area_m2": 5.13,
+      "height_m": 3.0,
+      "volume_m3": 15.4,
+      "people": 0,
+      "infil_ach": 0.75,
+      "infil_ls": 3.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "gross_m2": 8.1,
+            "net_m2": 7.74,
+            "u": 0.4
+          },
+          {
+            "orientation": "W",
+            "gross_m2": 8.1,
+            "net_m2": 8.1,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W3",
+            "orientation": "S",
+            "area_m2": 0.36,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 110
+          }
+        ]
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 18,
+      "peak_sensible_hour": 18,
+      "components_w": {
+        "wall": 131.0,
+        "roof": 0.0,
+        "glass_cond": 16.0,
+        "glass_solar": 8.0,
+        "people_s": 0.0,
+        "lights": 41.0,
+        "equip_s": 0.0,
+        "infil_s": 68.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 264,
+      "latent_w": 0,
+      "total_w": 264,
+      "peak_sensible_w": 264,
+      "hourly_sensible_w": [
+        159,
+        166,
+        177,
+        192,
+        208,
+        223,
+        237,
+        248,
+        257,
+        263,
+        264,
+        260,
+        249
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 51.5,
+      "supply_ls": 0.0,
+      "heating_w": 236,
+      "heating_components_w": {
+        "walls": 91,
+        "glass": 14,
+        "roof": 0,
+        "infiltration": 53,
+        "slab_edge": 78
+      }
+    },
+    {
+      "id": "GF-12",
+      "name": "STORE",
+      "floor": "GF",
+      "space_type": "store",
+      "conditioned": false,
+      "area_m2": 5.43,
+      "height_m": 3.0,
+      "volume_m3": 16.3,
+      "people": 0,
+      "infil_ach": 0.5,
+      "infil_ls": 2.3,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "gross_m2": 8.57,
+            "net_m2": 8.57,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 17,
+      "peak_sensible_hour": 17,
+      "components_w": {
+        "wall": 59.0,
+        "roof": 0.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 27.0,
+        "equip_s": 0.0,
+        "infil_s": 52.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 139,
+      "latent_w": 0,
+      "total_w": 139,
+      "peak_sensible_w": 139,
+      "hourly_sensible_w": [
+        82,
+        87,
+        94,
+        104,
+        113,
+        122,
+        130,
+        136,
+        138,
+        139,
+        134,
+        130,
+        123
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 25.5,
+      "supply_ls": 0.0,
+      "heating_w": 128,
+      "heating_components_w": {
+        "walls": 49,
+        "glass": 0,
+        "roof": 0,
+        "infiltration": 37,
+        "slab_edge": 41
+      }
+    },
+    {
+      "id": "GF-13",
+      "name": "LAUNDRY",
+      "floor": "GF",
+      "space_type": "laundry",
+      "conditioned": false,
+      "area_m2": 7.74,
+      "height_m": 3.0,
+      "volume_m3": 23.2,
+      "people": 0,
+      "infil_ach": 0.5,
+      "infil_ls": 3.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "gross_m2": 15.8,
+            "net_m2": 14.0,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W2",
+            "orientation": "S",
+            "area_m2": 1.8,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 110
+          }
+        ]
+      },
+      "roof_area_m2": 0.0,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 92.0,
+        "roof": 0.0,
+        "glass_cond": 87.0,
+        "glass_solar": 50.0,
+        "people_s": 0.0,
+        "lights": 62.0,
+        "equip_s": 0.0,
+        "infil_s": 78.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 369,
+      "latent_w": 0,
+      "total_w": 369,
+      "peak_sensible_w": 369,
+      "hourly_sensible_w": [
+        204,
+        218,
+        239,
+        269,
+        297,
+        327,
+        348,
+        364,
+        369,
+        366,
+        351,
+        328,
+        288
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 47.7,
+      "supply_ls": 0.0,
+      "heating_w": 279,
+      "heating_components_w": {
+        "walls": 81,
+        "glass": 69,
+        "roof": 0,
+        "infiltration": 53,
+        "slab_edge": 76
+      }
+    },
+    {
+      "id": "FF-01",
+      "name": "MASTER BATH",
+      "floor": "FF",
+      "space_type": "bath",
+      "conditioned": false,
+      "area_m2": 8.03,
+      "height_m": 3.0,
+      "volume_m3": 24.1,
+      "people": 0,
+      "infil_ach": 0.5,
+      "infil_ls": 3.3,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "gross_m2": 10.37,
+            "net_m2": 10.01,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W3",
+            "orientation": "N",
+            "area_m2": 0.36,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 130
+          }
+        ]
+      },
+      "roof_area_m2": 8.03,
+      "peak_hour": 17,
+      "peak_sensible_hour": 17,
+      "components_w": {
+        "wall": 71.0,
+        "roof": 50.0,
+        "glass_cond": 17.0,
+        "glass_solar": 10.0,
+        "people_s": 0.0,
+        "lights": 64.0,
+        "equip_s": 0.0,
+        "infil_s": 77.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 290,
+      "latent_w": 0,
+      "total_w": 290,
+      "peak_sensible_w": 290,
+      "hourly_sensible_w": [
+        195,
+        207,
+        222,
+        238,
+        255,
+        269,
+        280,
+        287,
+        289,
+        290,
+        287,
+        269,
+        257
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 36.1,
+      "supply_ls": 0.0,
+      "heating_w": 150,
+      "heating_components_w": {
+        "walls": 58,
+        "glass": 14,
+        "roof": 23,
+        "infiltration": 55,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-02",
+      "name": "BATH 2",
+      "floor": "FF",
+      "space_type": "bath",
+      "conditioned": false,
+      "area_m2": 6.25,
+      "height_m": 3.0,
+      "volume_m3": 18.8,
+      "people": 0,
+      "infil_ach": 0.75,
+      "infil_ls": 3.9,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "gross_m2": 8.1,
+            "net_m2": 8.1,
+            "u": 0.4
+          },
+          {
+            "orientation": "E",
+            "gross_m2": 9.9,
+            "net_m2": 9.54,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W3",
+            "orientation": "E",
+            "area_m2": 0.36,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 690
+          }
+        ]
+      },
+      "roof_area_m2": 6.25,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 144.0,
+        "roof": 38.0,
+        "glass_cond": 17.0,
+        "glass_solar": 14.0,
+        "people_s": 0.0,
+        "lights": 50.0,
+        "equip_s": 0.0,
+        "infil_s": 95.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 358,
+      "latent_w": 0,
+      "total_w": 358,
+      "peak_sensible_w": 358,
+      "hourly_sensible_w": [
+        279,
+        295,
+        311,
+        320,
+        327,
+        341,
+        352,
+        358,
+        358,
+        353,
+        342,
+        329,
+        310
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 57.3,
+      "supply_ls": 0.0,
+      "heating_w": 198,
+      "heating_components_w": {
+        "walls": 102,
+        "glass": 14,
+        "roof": 18,
+        "infiltration": 64,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-03",
+      "name": "MASTER BEDROOM",
+      "floor": "FF",
+      "space_type": "master_bedroom",
+      "conditioned": true,
+      "area_m2": 27.47,
+      "height_m": 3.0,
+      "volume_m3": 82.4,
+      "people": 2,
+      "infil_ach": 0.75,
+      "infil_ls": 17.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "gross_m2": 20.63,
+            "net_m2": 17.93,
+            "u": 0.4
+          },
+          {
+            "orientation": "W",
+            "gross_m2": 17.17,
+            "net_m2": 15.37,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W1",
+            "orientation": "N",
+            "area_m2": 2.7,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 130
+          },
+          {
+            "tag": "W2",
+            "orientation": "W",
+            "area_m2": 1.8,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 690
+          }
+        ]
+      },
+      "roof_area_m2": 27.47,
+      "peak_hour": 18,
+      "peak_sensible_hour": 18,
+      "components_w": {
+        "wall": 277.0,
+        "roof": 170.0,
+        "glass_cond": 205.0,
+        "glass_solar": 370.0,
+        "people_s": 120.0,
+        "lights": 220.0,
+        "equip_s": 165.0,
+        "infil_s": 364.0,
+        "people_l": 50,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 1891,
+      "latent_w": 50,
+      "total_w": 1941,
+      "peak_sensible_w": 1891,
+      "hourly_sensible_w": [
+        1161,
+        1227,
+        1309,
+        1396,
+        1483,
+        1559,
+        1656,
+        1756,
+        1824,
+        1870,
+        1891,
+        1752,
+        1528
+      ],
+      "hourly_latent_w": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "w_per_m2": 70.6,
+      "supply_ls": 150.3,
+      "heating_w": 727,
+      "heating_components_w": {
+        "walls": 192,
+        "glass": 173,
+        "roof": 79,
+        "infiltration": 283,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-04",
+      "name": "DRESSING",
+      "floor": "FF",
+      "space_type": "dressing",
+      "conditioned": true,
+      "area_m2": 5.73,
+      "height_m": 3.0,
+      "volume_m3": 17.2,
+      "people": 0,
+      "infil_ach": 0.0,
+      "infil_ls": 0.0,
+      "envelope": {
+        "walls": [],
+        "windows": []
+      },
+      "roof_area_m2": 5.73,
+      "peak_hour": 17,
+      "peak_sensible_hour": 17,
+      "components_w": {
+        "wall": 0.0,
+        "roof": 35.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 46.0,
+        "equip_s": 0.0,
+        "infil_s": 0.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 81,
+      "latent_w": 0,
+      "total_w": 81,
+      "peak_sensible_w": 81,
+      "hourly_sensible_w": [
+        60,
+        62,
+        64,
+        67,
+        70,
+        73,
+        76,
+        79,
+        81,
+        81,
+        81,
+        80,
+        78
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 14.2,
+      "supply_ls": 6.5,
+      "heating_w": 17,
+      "heating_components_w": {
+        "walls": 0,
+        "glass": 0,
+        "roof": 17,
+        "infiltration": 0,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-05",
+      "name": "BEDROOM 2",
+      "floor": "FF",
+      "space_type": "bedroom",
+      "conditioned": true,
+      "area_m2": 21.18,
+      "height_m": 3.0,
+      "volume_m3": 63.5,
+      "people": 2,
+      "infil_ach": 0.5,
+      "infil_ls": 8.8,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "N",
+            "gross_m2": 15.8,
+            "net_m2": 13.1,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W1",
+            "orientation": "N",
+            "area_m2": 2.7,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 130
+          }
+        ]
+      },
+      "roof_area_m2": 21.18,
+      "peak_hour": 15,
+      "peak_sensible_hour": 15,
+      "components_w": {
+        "wall": 86.0,
+        "roof": 122.0,
+        "glass_cond": 131.0,
+        "glass_solar": 83.0,
+        "people_s": 120.0,
+        "lights": 169.0,
+        "equip_s": 106.0,
+        "infil_s": 218.0,
+        "people_l": 50,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 1035,
+      "latent_w": 50,
+      "total_w": 1085,
+      "peak_sensible_w": 1035,
+      "hourly_sensible_w": [
+        757,
+        797,
+        846,
+        899,
+        948,
+        992,
+        1018,
+        1035,
+        1033,
+        1029,
+        1024,
+        927,
+        887
+      ],
+      "hourly_latent_w": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "w_per_m2": 51.2,
+      "supply_ls": 82.3,
+      "heating_w": 386,
+      "heating_components_w": {
+        "walls": 75,
+        "glass": 104,
+        "roof": 61,
+        "infiltration": 145,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-06",
+      "name": "LINEN",
+      "floor": "FF",
+      "space_type": "store",
+      "conditioned": false,
+      "area_m2": 4.35,
+      "height_m": 3.0,
+      "volume_m3": 13.0,
+      "people": 0,
+      "infil_ach": 0.5,
+      "infil_ls": 1.8,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "gross_m2": 6.88,
+            "net_m2": 6.88,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 4.35,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 64.0,
+        "roof": 26.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 22.0,
+        "equip_s": 0.0,
+        "infil_s": 44.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 156,
+      "latent_w": 0,
+      "total_w": 156,
+      "peak_sensible_w": 156,
+      "hourly_sensible_w": [
+        95,
+        103,
+        115,
+        127,
+        138,
+        147,
+        153,
+        156,
+        156,
+        153,
+        149,
+        142,
+        135
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 35.9,
+      "supply_ls": 0.0,
+      "heating_w": 82,
+      "heating_components_w": {
+        "walls": 40,
+        "glass": 0,
+        "roof": 13,
+        "infiltration": 30,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-07",
+      "name": "LOBBY",
+      "floor": "FF",
+      "space_type": "corridor",
+      "conditioned": true,
+      "area_m2": 7.23,
+      "height_m": 3.0,
+      "volume_m3": 21.7,
+      "people": 0,
+      "infil_ach": 0.0,
+      "infil_ls": 0.0,
+      "envelope": {
+        "walls": [],
+        "windows": []
+      },
+      "roof_area_m2": 7.23,
+      "peak_hour": 17,
+      "peak_sensible_hour": 17,
+      "components_w": {
+        "wall": 0.0,
+        "roof": 45.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 43.0,
+        "equip_s": 0.0,
+        "infil_s": 0.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 88,
+      "latent_w": 0,
+      "total_w": 88,
+      "peak_sensible_w": 88,
+      "hourly_sensible_w": [
+        62,
+        63,
+        66,
+        70,
+        74,
+        78,
+        82,
+        85,
+        87,
+        88,
+        88,
+        87,
+        84
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 12.2,
+      "supply_ls": 7.0,
+      "heating_w": 21,
+      "heating_components_w": {
+        "walls": 0,
+        "glass": 0,
+        "roof": 21,
+        "infiltration": 0,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-08",
+      "name": "BEDROOM 3",
+      "floor": "FF",
+      "space_type": "bedroom",
+      "conditioned": true,
+      "area_m2": 19.76,
+      "height_m": 3.0,
+      "volume_m3": 59.3,
+      "people": 2,
+      "infil_ach": 0.0,
+      "infil_ls": 0.0,
+      "envelope": {
+        "walls": [],
+        "windows": []
+      },
+      "roof_area_m2": 19.76,
+      "peak_hour": 17,
+      "peak_sensible_hour": 17,
+      "components_w": {
+        "wall": 0.0,
+        "roof": 122.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 120.0,
+        "lights": 158.0,
+        "equip_s": 99.0,
+        "infil_s": 0.0,
+        "people_l": 50,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 499,
+      "latent_w": 50,
+      "total_w": 549,
+      "peak_sensible_w": 499,
+      "hourly_sensible_w": [
+        427,
+        431,
+        440,
+        449,
+        460,
+        471,
+        482,
+        490,
+        497,
+        499,
+        499,
+        495,
+        488
+      ],
+      "hourly_latent_w": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "w_per_m2": 27.8,
+      "supply_ls": 39.7,
+      "heating_w": 57,
+      "heating_components_w": {
+        "walls": 0,
+        "glass": 0,
+        "roof": 57,
+        "infiltration": 0,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-09",
+      "name": "BEDROOM 4",
+      "floor": "FF",
+      "space_type": "bedroom",
+      "conditioned": true,
+      "area_m2": 12.88,
+      "height_m": 3.0,
+      "volume_m3": 38.6,
+      "people": 2,
+      "infil_ach": 0.75,
+      "infil_ls": 8.1,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "gross_m2": 14.04,
+            "net_m2": 11.34,
+            "u": 0.4
+          },
+          {
+            "orientation": "S",
+            "gross_m2": 2.63,
+            "net_m2": 2.63,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W1",
+            "orientation": "E",
+            "area_m2": 2.7,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 690
+          }
+        ]
+      },
+      "roof_area_m2": 12.88,
+      "peak_hour": 9,
+      "peak_sensible_hour": 9,
+      "components_w": {
+        "wall": 86.0,
+        "roof": 35.0,
+        "glass_cond": 83.0,
+        "glass_solar": 428.0,
+        "people_s": 120.0,
+        "lights": 103.0,
+        "equip_s": 64.0,
+        "infil_s": 103.0,
+        "people_l": 50,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 1023,
+      "latent_w": 50,
+      "total_w": 1073,
+      "peak_sensible_w": 1023,
+      "hourly_sensible_w": [
+        989,
+        1023,
+        1018,
+        966,
+        898,
+        912,
+        927,
+        931,
+        922,
+        892,
+        856,
+        809,
+        748
+      ],
+      "hourly_latent_w": [
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "w_per_m2": 83.3,
+      "supply_ls": 81.4,
+      "heating_w": 354,
+      "heating_components_w": {
+        "walls": 80,
+        "glass": 104,
+        "roof": 37,
+        "infiltration": 133,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-10",
+      "name": "FAMILY LIVING",
+      "floor": "FF",
+      "space_type": "living",
+      "conditioned": true,
+      "area_m2": 32.26,
+      "height_m": 3.0,
+      "volume_m3": 96.8,
+      "people": 9,
+      "infil_ach": 0.75,
+      "infil_ls": 20.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "gross_m2": 17.06,
+            "net_m2": 15.26,
+            "u": 0.4
+          },
+          {
+            "orientation": "W",
+            "gross_m2": 24.3,
+            "net_m2": 19.26,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W4",
+            "orientation": "W",
+            "area_m2": 5.04,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 690
+          },
+          {
+            "tag": "W2",
+            "orientation": "S",
+            "area_m2": 1.8,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 110
+          }
+        ]
+      },
+      "roof_area_m2": 32.26,
+      "peak_hour": 18,
+      "peak_sensible_hour": 18,
+      "components_w": {
+        "wall": 289.0,
+        "roof": 200.0,
+        "glass_cond": 312.0,
+        "glass_solar": 821.0,
+        "people_s": 630.0,
+        "lights": 323.0,
+        "equip_s": 258.0,
+        "infil_s": 427.0,
+        "people_l": 405,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 3259,
+      "latent_w": 405,
+      "total_w": 3664,
+      "peak_sensible_w": 3259,
+      "hourly_sensible_w": [
+        1944,
+        2024,
+        2126,
+        2242,
+        2362,
+        2471,
+        2677,
+        2915,
+        3100,
+        3221,
+        3259,
+        3112,
+        2557
+      ],
+      "hourly_latent_w": [
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405,
+        405
+      ],
+      "w_per_m2": 113.6,
+      "supply_ls": 259.1,
+      "heating_w": 887,
+      "heating_components_w": {
+        "walls": 199,
+        "glass": 263,
+        "roof": 93,
+        "infiltration": 332,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-11",
+      "name": "STAIR",
+      "floor": "FF",
+      "space_type": "stair",
+      "conditioned": true,
+      "area_m2": 12.46,
+      "height_m": 3.0,
+      "volume_m3": 37.4,
+      "people": 0,
+      "infil_ach": 0.5,
+      "infil_ls": 5.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "gross_m2": 10.48,
+            "net_m2": 10.48,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 12.46,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 69.0,
+        "roof": 76.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 75.0,
+        "equip_s": 0.0,
+        "infil_s": 126.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 345,
+      "latent_w": 0,
+      "total_w": 345,
+      "peak_sensible_w": 345,
+      "hourly_sensible_w": [
+        199,
+        213,
+        234,
+        258,
+        283,
+        306,
+        325,
+        339,
+        345,
+        344,
+        334,
+        320,
+        303
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 27.7,
+      "supply_ls": 27.4,
+      "heating_w": 182,
+      "heating_components_w": {
+        "walls": 60,
+        "glass": 0,
+        "roof": 36,
+        "infiltration": 85,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-12",
+      "name": "BATH 4",
+      "floor": "FF",
+      "space_type": "bath",
+      "conditioned": false,
+      "area_m2": 6.66,
+      "height_m": 3.0,
+      "volume_m3": 20.0,
+      "people": 0,
+      "infil_ach": 0.75,
+      "infil_ls": 4.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "gross_m2": 9.9,
+            "net_m2": 9.9,
+            "u": 0.4
+          },
+          {
+            "orientation": "S",
+            "gross_m2": 8.64,
+            "net_m2": 8.28,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W3",
+            "orientation": "S",
+            "area_m2": 0.36,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 110
+          }
+        ]
+      },
+      "roof_area_m2": 6.66,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 147.0,
+        "roof": 40.0,
+        "glass_cond": 17.0,
+        "glass_solar": 10.0,
+        "people_s": 0.0,
+        "lights": 53.0,
+        "equip_s": 0.0,
+        "infil_s": 101.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 369,
+      "latent_w": 0,
+      "total_w": 369,
+      "peak_sensible_w": 369,
+      "hourly_sensible_w": [
+        217,
+        235,
+        259,
+        287,
+        313,
+        337,
+        354,
+        365,
+        369,
+        365,
+        353,
+        338,
+        315
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 55.3,
+      "supply_ls": 0.0,
+      "heating_w": 206,
+      "heating_components_w": {
+        "walls": 105,
+        "glass": 14,
+        "roof": 19,
+        "infiltration": 69,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-13",
+      "name": "SHAFT",
+      "floor": "FF",
+      "space_type": "shaft",
+      "conditioned": false,
+      "area_m2": 2.11,
+      "height_m": 3.0,
+      "volume_m3": 6.3,
+      "people": 0,
+      "infil_ach": 0.75,
+      "infil_ls": 1.3,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "E",
+            "gross_m2": 9.9,
+            "net_m2": 9.9,
+            "u": 0.4
+          },
+          {
+            "orientation": "S",
+            "gross_m2": 2.7,
+            "net_m2": 2.7,
+            "u": 0.4
+          }
+        ],
+        "windows": []
+      },
+      "roof_area_m2": 2.11,
+      "peak_hour": 16,
+      "peak_sensible_hour": 16,
+      "components_w": {
+        "wall": 110.0,
+        "roof": 13.0,
+        "glass_cond": 0.0,
+        "glass_solar": 0.0,
+        "people_s": 0.0,
+        "lights": 0.0,
+        "equip_s": 0.0,
+        "infil_s": 32.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 155,
+      "latent_w": 0,
+      "total_w": 155,
+      "peak_sensible_w": 155,
+      "hourly_sensible_w": [
+        90,
+        99,
+        111,
+        124,
+        135,
+        144,
+        151,
+        154,
+        155,
+        153,
+        148,
+        143,
+        135
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 73.3,
+      "supply_ls": 0.0,
+      "heating_w": 100,
+      "heating_components_w": {
+        "walls": 73,
+        "glass": 0,
+        "roof": 6,
+        "infiltration": 22,
+        "slab_edge": 0
+      }
+    },
+    {
+      "id": "FF-14",
+      "name": "BATH 3",
+      "floor": "FF",
+      "space_type": "bath",
+      "conditioned": false,
+      "area_m2": 9.99,
+      "height_m": 3.0,
+      "volume_m3": 30.0,
+      "people": 0,
+      "infil_ach": 0.5,
+      "infil_ls": 4.2,
+      "envelope": {
+        "walls": [
+          {
+            "orientation": "S",
+            "gross_m2": 15.8,
+            "net_m2": 15.44,
+            "u": 0.4
+          }
+        ],
+        "windows": [
+          {
+            "tag": "W3",
+            "orientation": "S",
+            "area_m2": 0.36,
+            "u": 2.67,
+            "sc": 0.287,
+            "shgf": 110
+          }
+        ]
+      },
+      "roof_area_m2": 9.99,
+      "peak_hour": 17,
+      "peak_sensible_hour": 17,
+      "components_w": {
+        "wall": 107.0,
+        "roof": 62.0,
+        "glass_cond": 17.0,
+        "glass_solar": 10.0,
+        "people_s": 0.0,
+        "lights": 80.0,
+        "equip_s": 0.0,
+        "infil_s": 96.0,
+        "people_l": 0,
+        "equip_l": 0,
+        "infil_l": 0
+      },
+      "sensible_w": 371,
+      "latent_w": 0,
+      "total_w": 371,
+      "peak_sensible_w": 371,
+      "hourly_sensible_w": [
+        217,
+        229,
+        249,
+        274,
+        299,
+        325,
+        346,
+        363,
+        370,
+        371,
+        362,
+        347,
+        326
+      ],
+      "hourly_latent_w": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "w_per_m2": 37.1,
+      "supply_ls": 0.0,
+      "heating_w": 200,
+      "heating_components_w": {
+        "walls": 89,
+        "glass": 14,
+        "roof": 29,
+        "infiltration": 69,
+        "slab_edge": 0
+      }
+    }
+  ],
+  "block_hourly_w": [
+    16691,
+    17159,
+    17642,
+    18078,
+    18466,
+    18952,
+    19570,
+    20181,
+    20560,
+    20748,
+    20736,
+    19843,
+    18292
+  ],
+  "summary": {
+    "conditioned_area_m2": 288.5,
+    "sum_room_peaks_kw": 21.09,
+    "block_peak_kw": 20.75,
+    "block_peak_hour": 17,
+    "heating_kw": 5.59
+  }
+}

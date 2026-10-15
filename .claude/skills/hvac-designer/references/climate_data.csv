@@ -1,0 +1,24 @@
+city,country,code_set,lat_deg,lon_deg,elev_m,cool_db_c,cool_mcwb_c,daily_range_k,heat_db_c,peak_month,source,status
+Riyadh,Saudi Arabia,KSA,24.71,46.73,612,45.6,19.4,14.6,6.6,July,ASHRAE 2021 Ch.14 (0.4% cool / 99.6% heat) - OERK,approximate - verify
+Jeddah,Saudi Arabia,KSA,21.68,39.15,12,42.0,25.0,9.5,15.0,August,ASHRAE 2021 Ch.14 - OEJN,approximate - verify
+Dammam,Saudi Arabia,KSA,26.47,49.80,22,46.0,22.6,13.0,8.0,July,ASHRAE 2021 Ch.14 - OEDF,approximate - verify
+Makkah,Saudi Arabia,KSA,21.43,39.83,240,46.0,24.0,11.0,15.5,July,ASHRAE 2021 Ch.14,approximate - verify
+Madinah,Saudi Arabia,KSA,24.55,39.70,654,45.8,19.5,14.0,10.0,July,ASHRAE 2021 Ch.14 - OEMA,approximate - verify
+Abha,Saudi Arabia,KSA,18.24,42.66,2090,32.0,16.8,13.0,4.0,July,ASHRAE 2021 Ch.14 - OEAB,approximate - verify
+Tabuk,Saudi Arabia,KSA,28.37,36.62,768,41.5,19.5,15.0,2.5,July,ASHRAE 2021 Ch.14 - OETB,approximate - verify
+Dubai,United Arab Emirates,GCC,25.25,55.36,5,43.4,23.4,11.0,12.5,August,ASHRAE 2021 Ch.14 - OMDB,approximate - verify
+Abu Dhabi,United Arab Emirates,GCC,24.43,54.65,27,45.0,23.8,12.5,11.5,August,ASHRAE 2021 Ch.14 - OMAA,approximate - verify
+Doha,Qatar,GCC,25.25,51.57,10,44.5,23.5,11.0,12.5,July,ASHRAE 2021 Ch.14 - OTHH,approximate - verify
+Kuwait City,Kuwait,GCC,29.23,47.97,63,48.5,20.5,15.0,6.5,July,ASHRAE 2021 Ch.14 - OKBK,approximate - verify
+Muscat,Oman,GCC,23.59,58.28,15,44.0,24.5,9.0,15.0,June,ASHRAE 2021 Ch.14 - OOMS,approximate - verify
+Manama,Bahrain,GCC,26.27,50.63,2,41.5,27.0,7.0,12.5,August,ASHRAE 2021 Ch.14 - OBBI,approximate - verify
+London,United Kingdom,UK,51.48,-0.45,25,29.3,19.6,9.5,-3.4,July,ASHRAE 2021 Ch.14 - EGLL (CIBSE Guide A Ch.2 preferred),approximate - verify
+Manchester,United Kingdom,UK,53.35,-2.27,69,26.6,18.4,9.0,-4.0,July,ASHRAE 2021 Ch.14 - EGCC,approximate - verify
+Houston,United States,USA,29.98,-95.36,30,36.4,24.6,9.0,-1.9,August,ASHRAE 2021 Ch.14 - KIAH,approximate - verify
+Phoenix,United States,USA,33.43,-112.00,337,44.1,21.3,13.0,3.4,July,ASHRAE 2021 Ch.14 - KPHX,approximate - verify
+New York,United States,USA,40.64,-73.78,4,32.2,23.2,8.0,-10.0,July,ASHRAE 2021 Ch.14 - KJFK,approximate - verify
+Chicago,United States,USA,41.99,-87.91,205,33.1,23.4,10.0,-20.0,July,ASHRAE 2021 Ch.14 - KORD,approximate - verify
+Los Angeles,United States,USA,33.94,-118.41,30,30.5,19.7,7.0,6.0,August,ASHRAE 2021 Ch.14 - KLAX,approximate - verify
+Cairo,Egypt,DEFAULT,30.13,31.40,74,39.5,21.6,13.0,7.0,July,ASHRAE 2021 Ch.14 - HECA,approximate - verify
+Karachi,Pakistan,DEFAULT,24.90,67.17,31,41.0,22.5,10.0,10.0,June,ASHRAE 2021 Ch.14 - OPKC,approximate - verify
+Lahore,Pakistan,DEFAULT,31.52,74.40,214,44.3,23.5,13.0,3.0,June,ASHRAE 2021 Ch.14 - OPLA,approximate - verify

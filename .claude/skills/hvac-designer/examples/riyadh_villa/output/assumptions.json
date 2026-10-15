@@ -1,0 +1,391 @@
+{
+  "items": [
+    {
+      "id": "A001",
+      "step": "A-read",
+      "key": "scale_1",
+      "src": "pdf_reader",
+      "text": "Page 1 scale 1:100 (title+dimensions, confidence high)",
+      "source": "scale_detect.py",
+      "confirm": false
+    },
+    {
+      "id": "A002",
+      "step": "A-read",
+      "key": "north_1",
+      "src": "pdf_reader",
+      "text": "Page 1 north = 19.6 deg clockwise from page-up (detected from north arrow)",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A003",
+      "step": "A-read",
+      "key": "scale_2",
+      "src": "pdf_reader",
+      "text": "Page 2 scale 1:100 (title+dimensions, confidence high)",
+      "source": "scale_detect.py",
+      "confirm": false
+    },
+    {
+      "id": "A004",
+      "step": "A-read",
+      "key": "north_2",
+      "src": "pdf_reader",
+      "text": "Page 2 north = 19.6 deg clockwise from page-up (detected from north arrow)",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A005",
+      "step": "A-read",
+      "key": "scale_3",
+      "src": "pdf_reader",
+      "text": "Page 3 scale 1:100 (title+dimensions, confidence high)",
+      "source": "scale_detect.py",
+      "confirm": false
+    },
+    {
+      "id": "A006",
+      "step": "A-read",
+      "key": "north_3",
+      "src": "pdf_reader",
+      "text": "Page 3 north = 19.6 deg clockwise from page-up (detected from north arrow)",
+      "source": "pdf_reader.py",
+      "confirm": false
+    },
+    {
+      "id": "A007",
+      "step": "B-loads",
+      "key": "climate",
+      "src": "loads",
+      "text": "Outdoor design 45.6 °C DB / 19.4 °C MCWB (0.4 %), daily range 14.6 K, heating 6.6 °C (99.6 %), elevation 612.0 m (ASHRAE 2021 Ch.14 (0.4% cool / 99.6% heat) - OERK, approximate - verify)",
+      "source": "references/climate_data.csv",
+      "confirm": false
+    },
+    {
+      "id": "A008",
+      "step": "B-loads",
+      "key": "indoor",
+      "src": "loads",
+      "text": "Indoor design 24.0 °C / 50 % RH cooling, 21.0 °C heating",
+      "source": "SBC 602 §302 / SBC 601 §302.1 (design conditions); ASHRAE Fundamentals 2021 Ch.14 (0.4 % cooling, 99.6 % heating)",
+      "confirm": false
+    },
+    {
+      "id": "A009",
+      "step": "B-loads",
+      "key": "u_values",
+      "src": "loads",
+      "text": "Envelope U-values = code maximum (SBC602: wall 0.4, roof 0.2, glazing U 2.67 / SHGC 0.25 W/m²K) - actual build-up not given",
+      "source": "SBC 602 Ch.4 prescriptive envelope table / SBC 601 Ch.5 (max U-factor, SHGC)",
+      "confirm": true
+    },
+    {
+      "id": "A010",
+      "step": "B-loads",
+      "key": "method",
+      "src": "loads",
+      "text": "Cooling loads by CLTD/SCL/CLF; CLTD tables for wall group D, roof 'roof_insulated_concrete', latitude row nearest 24.71°, July; colour factor K=0.83 (medium walls), roof K=1.0; glass with interior shading=True",
+      "source": "ASHRAE Fundamentals 1997 Ch.28 CLTD/SCL/CLF method, Tables 30-36",
+      "confirm": true
+    },
+    {
+      "id": "A011",
+      "step": "B-loads",
+      "key": "cltd_status",
+      "src": "loads",
+      "text": "CLTD/LM/SHGF/CLF tables in references/cltd_tables.json are transcribed-approximate - verify against licensed ASHRAE 1997 Ch.28 tables",
+      "source": "references/cltd_tables.json",
+      "confirm": true
+    },
+    {
+      "id": "A012",
+      "step": "B-loads",
+      "key": "clf_internal",
+      "src": "loads",
+      "text": "CLF for people/lights/equipment = 1.0 (24 h operation, no storage credit)",
+      "source": "ASHRAE Fundamentals 1997 Ch.28 CLTD/SCL/CLF method, Tables 30-36",
+      "confirm": false
+    },
+    {
+      "id": "A013",
+      "step": "B-loads",
+      "key": "partitions",
+      "src": "loads",
+      "text": "Partitions/floors between conditioned and exhaust-only rooms (baths, stores) not counted: those rooms are near room temperature",
+      "source": "designer judgement",
+      "confirm": false
+    },
+    {
+      "id": "A014",
+      "step": "B-loads",
+      "key": "dry_climate",
+      "src": "loads",
+      "text": "Outdoor humidity ratio 4.4 g/kg < indoor 10.0 g/kg at design: outdoor-air latent load taken as 0 (conservative); check a dehumidification design day",
+      "source": "ASHRAE Fundamentals 2021 Ch.14 (DP design)",
+      "confirm": true
+    },
+    {
+      "id": "A015",
+      "step": "B-loads",
+      "key": "supply_dt",
+      "src": "loads",
+      "text": "Supply air 13.0 °C (room-supply ΔT 11.0 K) for airflow",
+      "source": "designer default",
+      "confirm": false
+    },
+    {
+      "id": "A016",
+      "step": "B-loads",
+      "key": "infiltration",
+      "src": "loads",
+      "text": "Infiltration by air-change method: {'one_exterior_side': 0.5, 'two_plus_exterior_sides': 0.75, 'no_exterior': 0.0} ACH (residential)",
+      "source": "ASHRAE Fundamentals 2021 Ch.16 §'Residential air change method'",
+      "confirm": false
+    },
+    {
+      "id": "A017",
+      "step": "B-loads",
+      "key": "occupancy",
+      "src": "loads",
+      "text": "Occupancy, lighting and equipment densities from references/space_types.json",
+      "source": "ASHRAE Fundamentals 2021 Ch.18 Table 1 (people), Tables 2-3 (lighting), Tables 5-9 (equipment)",
+      "confirm": false
+    },
+    {
+      "id": "A018",
+      "step": "B-zoning",
+      "key": "zoning",
+      "src": "zoning",
+      "text": "Zoning: own zone for ['majlis', 'master_bedroom']; other ducted rooms grouped by position per floor up to 17.6 kW per unit (incl. safety factor)",
+      "source": "references/design_defaults.json zoning",
+      "confirm": true
+    },
+    {
+      "id": "A019",
+      "step": "B-zoning",
+      "key": "exhaust_only",
+      "src": "zoning",
+      "text": "Rooms exhaust-only (not cooled; make-up by transfer air): GF-09, GF-11, GF-13, FF-01, FF-02, FF-12, FF-14",
+      "source": "references/space_types.json",
+      "confirm": true
+    },
+    {
+      "id": "A020",
+      "step": "B-vent",
+      "key": "transfer_Z-GF-01",
+      "src": "ventilation",
+      "text": "Z-GF-01 (KITCHEN) has no exterior wall: its 14 L/s OA is supplied via Z-GF-04 and transferred",
+      "source": "SBC 501 §403.3.1.1 & Table 403.3.1.1; ASHRAE 62.1-2019 §6.2.2.1 Eq.6-1, Table 6-1",
+      "confirm": true
+    },
+    {
+      "id": "A021",
+      "step": "B-vent",
+      "key": "ez",
+      "src": "ventilation",
+      "text": "Zone air distribution effectiveness Ez = 0.8 (heat-pump heating with ceiling supply of warm air)",
+      "source": "ASHRAE 62.1-2019 §6.2.2.2 Table 6-2 (Ez)",
+      "confirm": false
+    },
+    {
+      "id": "A022",
+      "step": "B-vent",
+      "key": "exhaust_mode",
+      "src": "ventilation",
+      "text": "Exhaust fans sized for the intermittent (rated) rate; continuous operation would allow the lower rate",
+      "source": "SBC 501 Table 403.3.1.1 (toilet rooms, private dwellings: 25 L/s intermittent or 10 L/s continuous)",
+      "confirm": false
+    },
+    {
+      "id": "A023",
+      "step": "B-equip",
+      "key": "sf",
+      "src": "equipment_select",
+      "text": "Safety factor 10% on cooling and 10% on heating, applied to coil loads at selection (shown in tables)",
+      "source": "Designer allowance - not a code requirement",
+      "confirm": true
+    },
+    {
+      "id": "A024",
+      "step": "B-equip",
+      "key": "derate",
+      "src": "equipment_select",
+      "text": "Nominal (T1) capacities derated x0.88 for 45.6 °C outdoor design (T3) - replace with brand T3 data",
+      "source": "references/equipment_catalog.json t3_derate",
+      "confirm": true
+    },
+    {
+      "id": "A025",
+      "step": "B-equip",
+      "key": "catalogue",
+      "src": "equipment_select",
+      "text": "Equipment from GENERIC catalogue (references/equipment_catalog.json) - replace with the approved brand",
+      "source": "references/equipment_catalog.json",
+      "confirm": true
+    },
+    {
+      "id": "A026",
+      "step": "B-equip",
+      "key": "min_room_air",
+      "src": "equipment_select",
+      "text": "Minimum supply per served room 30 L/s (smallest diffuser)",
+      "source": "references/air_terminals.json",
+      "confirm": false
+    },
+    {
+      "id": "A027",
+      "step": "B-equip",
+      "key": "wall_unit_GF-06",
+      "src": "equipment_select",
+      "text": "GF-06 KITCHEN has no exterior wall: wall split on interior wall, refrigerant/condensate run in ceiling",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A028",
+      "step": "B-equip",
+      "key": "oversize_Z-GF-02",
+      "src": "equipment_select",
+      "text": "IU-GF-02 (WS-09) is 161 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A029",
+      "step": "B-equip",
+      "key": "sens_gov_Z-GF-03",
+      "src": "equipment_select",
+      "text": "Z-GF-03: sensible capacity governs (3.8 kW sensible at catalogue SHR) - DS-24 chosen instead of DS-18; brand data at actual (dry) entering conditions may allow the smaller unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A030",
+      "step": "B-equip",
+      "key": "host_Z-GF-03",
+      "src": "equipment_select",
+      "text": "Z-GF-03 indoor unit in the ceiling void of GF-02 ENTRANCE HALL (service space next to the zone)",
+      "source": "references/design_defaults.json unit_host_preference",
+      "confirm": true
+    },
+    {
+      "id": "A031",
+      "step": "B-equip",
+      "key": "sens_gov_Z-GF-04",
+      "src": "equipment_select",
+      "text": "Z-GF-04: sensible capacity governs (8.2 kW sensible at catalogue SHR) - DS-48 chosen instead of DS-36; brand data at actual (dry) entering conditions may allow the smaller unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A032",
+      "step": "B-equip",
+      "key": "host_Z-GF-04",
+      "src": "equipment_select",
+      "text": "Z-GF-04 indoor unit in the ceiling void of GF-04 CORRIDOR (service space next to the zone)",
+      "source": "references/design_defaults.json unit_host_preference",
+      "confirm": true
+    },
+    {
+      "id": "A033",
+      "step": "B-equip",
+      "key": "oversize_Z-FF-01",
+      "src": "equipment_select",
+      "text": "IU-FF-01 (DS-18) is 72 % above requirement - smallest catalogue size; consider combining zones or a smaller (VRF/wall) unit",
+      "source": "designer note",
+      "confirm": true
+    },
+    {
+      "id": "A034",
+      "step": "B-equip",
+      "key": "host_Z-FF-01",
+      "src": "equipment_select",
+      "text": "Z-FF-01 indoor unit in the ceiling void of FF-04 DRESSING (service space next to the zone)",
+      "source": "references/design_defaults.json unit_host_preference",
+      "confirm": true
+    },
+    {
+      "id": "A035",
+      "step": "B-equip",
+      "key": "host_Z-FF-02",
+      "src": "equipment_select",
+      "text": "Z-FF-02 indoor unit in the ceiling void of FF-07 LOBBY (service space next to the zone)",
+      "source": "references/design_defaults.json unit_host_preference",
+      "confirm": true
+    },
+    {
+      "id": "A036",
+      "step": "B-equip",
+      "key": "odu_roof",
+      "src": "equipment_select",
+      "text": "Outdoor units grouped on the roof near the riser/shaft with 0.6 m service clearance; check structure, parapet height and acoustic screening",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A037",
+      "step": "B-ducts",
+      "key": "duct_method",
+      "src": "duct_sizing",
+      "text": "Ducts sized by equal friction 0.8 Pa/m with velocity limits {'main': 5.0, 'branch': 3.5, 'runout': 2.5, 'return': 3.5, 'fresh_air': 4.0, 'exhaust': 4.0} m/s; max duct depth 300 mm from ceiling void",
+      "source": "ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal)",
+      "confirm": false
+    },
+    {
+      "id": "A038",
+      "step": "B-ducts",
+      "key": "fittings",
+      "src": "duct_sizing",
+      "text": "Fittings allowed as +50% equivalent length; unit plenum/filter 40.0 Pa",
+      "source": "designer default",
+      "confirm": true
+    },
+    {
+      "id": "A039",
+      "step": "B-ducts",
+      "key": "layout",
+      "src": "duct_sizing",
+      "text": "Duct routes are schematic trunk-and-branch lines over the plan; coordinate with structure (beams), lighting and other services",
+      "source": "designer judgement",
+      "confirm": true
+    },
+    {
+      "id": "A040",
+      "step": "B-ducts",
+      "key": "transfer",
+      "src": "duct_sizing",
+      "text": "Return air from rooms via door undercut / door transfer grilles to the return grille near the unit",
+      "source": "ASHRAE Fundamentals 2021 Ch.21 (equal friction method, Eq.18-19 Altshul-Tsal)",
+      "confirm": true
+    },
+    {
+      "id": "A041",
+      "step": "B-pipes",
+      "key": "refrig_table",
+      "src": "pipe_sizing",
+      "text": "Refrigerant pipe sizes from GENERIC table (references/pipe_sizing.json) - replace with the selected brand's table",
+      "source": "SBC 501 Ch.11 §1107 (refrigerant piping); ASHRAE 15; manufacturer piping tables",
+      "confirm": true
+    },
+    {
+      "id": "A042",
+      "step": "B-pipes",
+      "key": "refrig_len",
+      "src": "pipe_sizing",
+      "text": "Refrigerant length = route x (1+10%) + vertical rise to roof (+1.5 m allowance)",
+      "source": "designer default",
+      "confirm": false
+    },
+    {
+      "id": "A043",
+      "step": "B-pipes",
+      "key": "condensate",
+      "src": "pipe_sizing",
+      "text": "Condensate to nearest wet-room floor drain / stack with trap; min 25 mm, slope 1.0 %",
+      "source": "SBC 501 §307.2.1 (disposal), §307.2.2 Table 307.2.2 (drain size), slope >= 1 %",
+      "confirm": true
+    }
+  ]
+}

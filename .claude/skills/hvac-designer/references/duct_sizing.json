@@ -1,0 +1,30 @@
+{
+  "_about": "Duct sizing method data: equal friction targets, velocity limits, standard sizes, gauges, flex duct, air properties.",
+  "_status": "From ASHRAE Fundamentals 2021 Ch.21, SMACNA 2005 and DW/144 2016 (typical values). VERIFY gauges against the adopted standard / pressure class.",
+  "air": {"density_kg_m3": 1.20, "viscosity_m2_s": 1.51e-5, "roughness_mm": 0.09},
+  "friction_target_pa_m": {"residential": 0.8, "commercial": 1.0, "exhaust": 1.0},
+  "velocity_limits_m_s": {
+    "residential": {"main": 5.0, "branch": 3.5, "runout": 2.5, "return": 3.5, "fresh_air": 4.0, "exhaust": 4.0},
+    "commercial":  {"main": 6.5, "branch": 4.5, "runout": 3.0, "return": 4.5, "fresh_air": 5.0, "exhaust": 5.0}
+  },
+  "round_sizes_mm": [100, 125, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800, 900, 1000],
+  "round_sizes_in": [4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 36, 40],
+  "rect_increment_mm": 50,
+  "rect_increment_in": 2,
+  "rect_min_mm": 150,
+  "flex_sizes_mm": [100, 125, 150, 200, 250, 300, 350, 400],
+  "flex_max_length_m": 1.5,
+  "gauge_tables": {
+    "SMACNA": {
+      "_about": "Galvanised steel, 500 Pa (2 in.wg) static class, by longest side (mm) - SMACNA Tables 2-1/2-2 simplified",
+      "rect": [[300, "26 ga (0.55 mm)"], [750, "24 ga (0.70 mm)"], [1350, "22 ga (0.85 mm)"], [2100, "20 ga (1.00 mm)"], [99999, "18 ga (1.31 mm)"]],
+      "round": [[350, "26 ga (0.55 mm)"], [650, "24 ga (0.70 mm)"], [900, "22 ga (0.85 mm)"], [99999, "20 ga (1.00 mm)"]]
+    },
+    "DW144": {
+      "_about": "DW/144 low pressure class A, by longest side (mm)",
+      "rect": [[400, "0.5 mm"], [600, "0.6 mm"], [800, "0.6 mm"], [1000, "0.8 mm"], [1250, "0.8 mm"], [1600, "0.8 mm"], [2000, "1.0 mm"], [99999, "1.2 mm"]],
+      "round": [[500, "0.5 mm"], [800, "0.6 mm"], [1000, "0.8 mm"], [99999, "1.0 mm"]]
+    }
+  },
+  "gauge_standard_by_code_set": {"KSA": "SMACNA", "GCC": "SMACNA", "USA": "SMACNA", "UK": "DW144", "DEFAULT": "SMACNA"}
+}
